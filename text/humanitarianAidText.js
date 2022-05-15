@@ -9,17 +9,23 @@ const humanAid = `
 I-VII 9.00 - 18.00     
  +370 5 251 41 73
 erika@motherhood.is
+
 <u>Адреса:</u>
-VILNIUS:  J. Balčikonio str. 3, Technopolis Будинок БЕТА (BETA), 4 поверх.
-KAUNAS: Savanorių ave. 271
+VILNIUS:  <a href="https://goo.gl/maps/obXLqv8qrMwLwa256">J. Balčikonio str. 3</a>
+Technopolis Будинок БЕТА (BETA), 4 поверх.
+
+KAUNAS: <a href="https://goo.gl/maps/rApv3Gp5DQ1qWnpNA">Savanorių Prospektas 271, Каунас</a>
+
 <u>Сайт</u> - https://www.motherhoodissexy.com/misloveparama
 <b>Координаційний центр волонтерів Карітас</b>
 освіти, охорони здоров'я,  пошуку роботи, психологічної, гуманітарної допомоги
 <u>Контакти та робочі години</u>
 I - VII 9.00–19.00
 +370 679 19 084
+
 <u>Адреса:</u> 
-Pilies str. 7, Vilnius
+<a href="https://goo.gl/maps/eSfD5tJQ9XfhPyFFA">Pilies str. 7, Vilnius</a>
+
 <u>Сайт:</u> 
 https://vilnius.caritas.lt/pagalba-ukrainieciams/
 
@@ -29,8 +35,10 @@ https://vilnius.caritas.lt/pagalba-ukrainieciams/
 I - V 10.00–17.00
 +370 679 19 084 
 kulturunamai@vilnius.caritas.lt
+
 <u>Адреса:</u>
-Kalvarijų g. 39, Vilnius
+<a href="https://goo.gl/maps/9rUoKkMZQgsuB6sh6">Kalvarijų g. 39, Vilnius</a>
+
 <u>Сайт:</u>
 https://vilnius.caritas.lt/pagalba-ukrainieciams/
 
@@ -39,8 +47,10 @@ https://vilnius.caritas.lt/pagalba-ukrainieciams/
 <u>Контакти та робочі години</u>
 I - V 9.00–17.00, VI 10.00–15.00
 +370 655 02 288  
+
 <u>Адреса:</u>
-M. K. Paco g. 4 Vilnius
+<a href="https://goo.gl/maps/CyJSLQDUrUCqgigd8">M. K. Paco g. 4 Vilnius</a>
+
 <u>Сайт:</u>
 https://vilnius.caritas.lt/pagalba-ukrainieciams/
 
@@ -51,20 +61,24 @@ https://vilnius.caritas.lt/pagalba-ukrainieciams/
 +370 659 71598
 info@redcross.lt
 vilnius@redcross.lt
+
 <u>Адреса:</u>
-Juozapavičiaus g.10 A, Vilnius
+<a href="https://goo.gl/maps/keSQaLZzouF3XEqu5">Juozapavičiaus g.10 A, Vilnius</a>
+
 <u>Сайт:</u>
 www.redcross.lt 
 
 <b>Збережіть дітей</b>
 допомога дітям та вагітним жінкам
-Контакти та робочі години
+<u>Контакти та робочі години</u>
 8.30 -17.30
 irena.andrijevskaja@savethechildren.org
 informacija@savethechildren.org
 +370 526 10815
+
 <u>Адреса:</u>
-Vilniaus g. 39/Klaipėdos g. 6, Vilnius
+<a href="https://goo.gl/maps/QScMnxJ95fmNUwFN9">Vilniaus g. 39/Klaipėdos g. 6</a>, Vilnius
+
 <u>Сайт:</u>
 https://gelbekitvaikus.lt/ 
 
@@ -74,9 +88,11 @@ https://gelbekitvaikus.lt/
 +370 676 91 941
 milda@maistobankas.lt
 +370 686 44244
-info@maistobankas.lt"
+info@maistobankas.lt
+
 <u>Адреса:</u>
-Vytenio g. 54, Vilnius
+<a href="https://goo.gl/maps/nHed9L4BhbJw4YfR8">Vytenio g. 54, Vilnius</a>
+
 <u>Сайт:</u>
 https://www.maistobankas.lt/ 
 

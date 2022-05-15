@@ -159,7 +159,10 @@ bot.action('btn_usefulContacts', async (ctx) => {
 
 bot.action('btn_addresses', async (ctx) => {
     await ctx.answerCbQuery();
-    await ctx.replyWithHTML(contacts.address);
+    await ctx.replyWithHTML(contacts.address, { 
+        parse_mode: "HTML", 
+        disable_web_page_preview: true 
+     });
 });
 
 bot.action('btn_anotherCities', async (ctx) => {

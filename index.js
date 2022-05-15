@@ -90,13 +90,12 @@ function infoAboutMedicineFunc(ctx) {
 
 //show info about humanitarianAid
 function humanitarianAidFunc(ctx) {
-    ctx.replyWithHTML(humanInfo.humanAid, { 
+    ctx.replyWithHTML(humanInfo.humanAid, Markup.inlineKeyboard([
+        Markup.button.callback("Інші міста", 'btn_anotherCities')
+    ], { 
         parse_mode: "HTML", 
         disable_web_page_preview: true 
-     }, 
-        Markup.inlineKeyboard([
-        Markup.button.callback("Інші міста", 'btn_anotherCities')
-    ]));
+     }));
 }
 
 //show menu about finance

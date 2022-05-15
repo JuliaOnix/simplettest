@@ -105,7 +105,6 @@ I–VII 08:00–20:00
 info@maltieciai.lt 
 <u>Сайт:</u>
 www.maltieciai.lt 
-
 `
 
 /* const partOneHumanAid = `

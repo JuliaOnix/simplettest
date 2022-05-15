@@ -29,10 +29,10 @@ const firstVisit = `
 <a href="https://www.youtube.com/watch?v=neijMI6xKng&ab_channel=IOMVilnius">Вебинар</a>
 
 Пам'ятки, які можна завантажити:
-<a href="./addionalFiles/">Я обираю Литву - Правовий статус</a>
-<a href="">Державна лікарняна каса - Медичні послуги Українцям</a>
-<a href="">Служба зайнятості - Працевлаштування українських військових біженців</a>
-<a href="">Міністерство освіти, науки та спорту - Інформація про освіту у Литві</a>
+<a href="./addionalFiles/RenkuosiLietuva.pdf">Я обираю Литву - Правовий статус</a>
+<a href="./addionalFiles/Med.pdf">Державна лікарняна каса - Медичні послуги Українцям</a>
+<a href="./addionalFiles/work.pdf">Служба зайнятості - Працевлаштування українських військових біженців</a>
+<a href="./addionalFiles/Education.pdf">Міністерство освіти, науки та спорту - Інформація про освіту у Литві</a>
 
 <b>Часті запитання міграційного відділу</b> - <a href='https://migracija.lrv.lt/lt/naudinga-informacija/ukraina-ukrayina-ukraina-ukraine/informatsiia-dlia-gromadian-ukrayini/migratsiini-sluzhbi'>migracija.lrv.lt</a>
 `

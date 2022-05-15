@@ -64,6 +64,8 @@ function mainInfoAboutRefugee(ctx) {
         Markup.button.callback("Контакти", 'btn_usefulContacts'),
         Markup.button.callback("Адреси реєстраційних центрів", 'btn_addresses')
     ]));
+
+    ctx.replyFI
 }
 
 //useful contacts 

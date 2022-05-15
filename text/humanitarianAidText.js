@@ -99,7 +99,7 @@ https://gelbekitvaikus.lt/
 <b>Банк їжі</b>
 продукти харчування
 
-Контакти
+<u>Контакти</u>
 +370 676 91 941
 
 milda@maistobankas.lt
@@ -130,7 +130,7 @@ www.maltieciai.lt
 
 `
 
-const partOneHumanAid = `
+/* const partOneHumanAid = `
 <b>Акмянський район</b>
 
 <u>Карітас (гуманітарна допомога)</u>
@@ -1021,16 +1021,8 @@ ina.orlovskaja@savethechildren.org
 Харчовий банк (продовольча допомога)
 тел. +370 686 44244
 eл. п. info@maistobankas.lt
-`
+` */
 
 
 
 module.exports.humanAid = humanAid;
-module.exports.partOneHumanAid = partOneHumanAid;
-module.exports.partTwoHumanAid = partTwoHumanAid;
-module.exports.partThreeHumanAid = partThreeHumanAid;
-module.exports.partFourHumanAid = partFourHumanAid;
-module.exports.partFiveHumanAid = partFiveHumanAid;
-module.exports.partSixHumanAid = partSixHumanAid;
-module.exports.partSevenHumanAid = partSevenHumanAid;
-module.exports.partEightHumanAid = partEightHumanAid;

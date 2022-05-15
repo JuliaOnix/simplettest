@@ -164,14 +164,7 @@ bot.action('btn_addresses', async (ctx) => {
 
 bot.action('btn_anotherCities', async (ctx) => {
     await ctx.answerCbQuery();
-    await ctx.replyWithHTML(humanInfo.partOneHumanAid);
-    await ctx.replyWithHTML(humanInfo.partTwoHumanAid);
-    await ctx.replyWithHTML(humanInfo.partThreeHumanAid);
-    await ctx.replyWithHTML(humanInfo.partFourHumanAid);
-    await ctx.replyWithHTML(humanInfo.partFiveHumanAid);
-    await ctx.replyWithHTML(humanInfo.partSixHumanAid);
-    await ctx.replyWithHTML(humanInfo.partSevenHumanAid);
-    await ctx.replyWithHTML(humanInfo.partEightHumanAid);
+    ctx.reply('https://www.redcross.lt/kontakti-z-organizaciyami-yaki-nadayut-gumanitarnu-dopomogu-ukrayincyam-ua')
 });
 
 bot.action('freeMedService_btn', async (ctx) => {

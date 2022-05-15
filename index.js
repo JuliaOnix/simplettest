@@ -56,7 +56,7 @@ function startBot(ctx) {
         [mainMenu[1], mainMenu[2]], // Row1 with 2 buttons
         [mainMenu[3], mainMenu[4]], // Row2 with 2 buttons
         [mainMenu[5], mainMenu[6], mainMenu[7]], // Row3 with 3 buttons
-        [mainMenu[8], mainMenu[9]]
+        [mainMenu[8], mainMenu[9], mainMenu[10]]
     ]).oneTime().resize());
 }
 

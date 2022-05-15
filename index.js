@@ -92,7 +92,7 @@ function infoAboutMedicineFunc(ctx) {
 function humanitarianAidFunc(ctx) {
     ctx.replyWithHTML(humanInfo.humanAid, Markup.inlineKeyboard([
         [Markup.button.callback("Інші міста", 'btn_anotherCities')],
-        [{parse_mode: "HTML", disable_web_page_preview: true}]
+        {parse_mode: "HTML", disable_web_page_preview: true}
     ]));
 }
 

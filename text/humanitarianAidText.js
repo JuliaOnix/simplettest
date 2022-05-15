@@ -1,81 +1,81 @@
 const humanAid = `
 <b>MIS Love asociacija</b> 
-Підтримує родини з України, які перетнули литовський кордон. Одяг, взуття, іграшки для дітей різного віку. Засоби гігієни для жінок і дітей. Постільна білизна, рушники, дитячі ліжечка, коляски тощо.
-Необхідні речі можна замовити за тел. Речі доставляються прямо додому в будні дні. У вихідні дні є можливість самостійно забрати речі.
+Підтримує родини з України, які перетнули литовський кордон. 
+Одяг, взуття, іграшки для дітей різного віку. 
+Засоби гігієни для жінок і дітей. Постільна білизна, рушники, дитячі ліжечка, коляски тощо.
+Необхідні речі можна замовити за тел. Речі доставляються прямо додому в будні дні. 
+У вихідні дні є можливість самостійно забрати речі.
 
-Контакти та робочі години
+<u>Контакти та робочі години</u>
 I-VII 9.00 - 18.00     
 
  +370 5 251 41 73
-
 erika@motherhood.is
 
-
-Адреса:
+<u>Адреса:</u>
 VILNIUS:  J. Balčikonio str. 3, Technopolis Будинок БЕТА (BETA), 4 поверх.
 
-
 KAUNAS: Savanorių ave. 271
-
-Сайт - https://www.motherhoodissexy.com/misloveparama
+<u>Сайт</u> - https://www.motherhoodissexy.com/misloveparama
 
 <b>Координаційний центр волонтерів Карітас</b>
 освіти, охорони здоров'я,  пошуку роботи, психологічної, гуманітарної допомоги
 
-Контакти та робочі години
+<u>Контакти та робочі години</u>
 I - VII 9.00–19.00
 
 +370 679 19 084
 
-Адреса: 
+<u>Адреса:</u> 
 Pilies str. 7, Vilnius
 
-Сайт: 
+<u>Сайт:</u> 
 https://vilnius.caritas.lt/pagalba-ukrainieciams/
 
 <b>Програма інтеграції іноземців Карітас</b>
 консультант, психолог, юрист, спеціаліст з працевлаштування, відшкодування витрат на ліки
 
-Контакти та робочі години
+<u>Контакти та робочі години</u>
 I - V 10.00–17.00
 
 +370 679 19 084 
 
 kulturunamai@vilnius.caritas.lt
 
-Адреса:
+<u>Адреса:</u>
 Kalvarijų g. 39, Vilnius
 
-Сайт:
+<u>Сайт:</u>
 https://vilnius.caritas.lt/pagalba-ukrainieciams/
 
 <b>Соціальна служба Карітас</b>
 допомога з одягом, взуттям, постільною білизною, іграшками
 
-Контакти та робочі години
+<u>Контакти та робочі години</u>
 I - V 9.00–17.00, VI 10.00–15.00
 
 +370 655 02 288  
 
-Адреса:
+<u>Адреса:</u>
 M. K. Paco g. 4 Vilnius
 
-Сайт:
+<u>Сайт:</u>
 https://vilnius.caritas.lt/pagalba-ukrainieciams/
 
 <b>Vilnius Red Cross</b>
 психологічна, юридична, гуманітарна допомога
 
-Контакти
+<u>Контакти</u>
+
 +370 609 80 408
 +370 659 71598
 info@redcross.lt
 vilnius@redcross.lt
 
-Адреса:
+<u>Адреса:</u>
 Juozapavičiaus g.10 A, Vilnius
 
-Сайт:
+<u>Сайт:</u>
 www.redcross.lt 
 
 <b>Збережіть дітей</b>
@@ -90,10 +90,10 @@ informacija@savethechildren.org
 
 +370 526 10815
 
-Адреса:
+<u>Адреса:</u>
 Vilniaus g. 39/Klaipėdos g. 6, Vilnius
 
-Сайт:
+<u>Сайт:</u>
 https://gelbekitvaikus.lt/ 
 
 <b>Банк їжі</b>
@@ -108,24 +108,24 @@ milda@maistobankas.lt
 
 info@maistobankas.lt"
 
-Адреса:
+<u>Адреса:</u>
 Vytenio g. 54, Vilnius
 
-Сайт:
+<u>Сайт:</u>
 https://www.maistobankas.lt/ 
 
 
 <b>Служба підтримки Мальтійського ордену</b>
 гуманітарна допомога, продовольчі посилки, медичні товари, супровід до житла
 
-Контакти та робочі години
+<u>Контакти та робочі години</u>
 I–VII 08:00–20:00 
 
 +370 600 23 220
 
 info@maltieciai.lt 
 
-Сайт:
+<u>Сайт:</u>
 www.maltieciai.lt 
 
 `
@@ -134,7 +134,7 @@ const partOneHumanAid = `
 <b>Акмянський район</b>
 
 <u>Карітас (гуманітарна допомога)</u>
-адреса: L.Petravičiaus g.5, Naujoji Akmenė
+<u>Адреса:</u> L.Petravičiaus g.5, Naujoji Akmenė
 тел. +370 61202632
 baredita@gmail.com
 
@@ -150,7 +150,7 @@ eл. п. irena.judzentyte@maistobankas.lt
 <u>Алiтус</u>
 
 <u>Литовський Червоний Хрест філія міста Алітус (гуманітарна допомога)</u>
-адреса: Ligoninės g. 3-19, 
+<u>Адреса:</u> Ligoninės g. 3-19, 
 тел. +370 62010150
 alytus@redcross.lt
 
@@ -166,7 +166,7 @@ eл. п. karolina@maistobankas.lt
 <b>Алітуський район</b>
 
 <u>Литовський Червоний Хрест філія міста Алітус (гуманітарна допомога)</u>
-адреса: Ligoninės g. 3-19
+<u>Адреса:</u> Ligoninės g. 3-19
 +370 62010150
 alytus@redcross.lt
 
@@ -182,7 +182,7 @@ eл. п. karolina@maistobankas.lt
 <b>Анікщяйський район</b>
 
 <u>Литовський Червоний Хрест філія міста Паневєжіс (гуманітарна допомога)</u>
-адреса: Respublikos g. 38 (2 этаж)
+<u>Адреса:</u> Respublikos g. 38 (2 этаж)
 +370 62695165
 panevezys@redcross.lt
 
@@ -228,7 +228,7 @@ eл. п. justina@maistobankas.lt
 <b>Друскiнiнкай</b>
 
 <u>Карітас (гуманітарна допомога)</u> 
-адреса: J. Čečiotos g. 8, LT-66227 Druskininkai
+<u>Адреса:</u> J. Čečiotos g. 8, LT-66227 Druskininkai
 +37061513461
 remeikiene.edita@gmail.com
 
@@ -243,7 +243,7 @@ eл. п. milda@maistobankas.lt
 <b>Електрєнай</b>
 
 <u>Литовський Червоний Хрест філія міста Електрєнай (гуманітарна допомога)</u>
-адреса: Draugystės g 20
+<u>Адреса:</u> Draugystės g 20
 +370 60070703
 elektrenai@redcross.lt
 
@@ -260,7 +260,7 @@ const partTwoHumanAid = `
 <b>Iгналiнський район</b>
 
 <u>Карітас (гуманітарна допомога)</u>
-адреса: Ignalinos Каритас Bažnyčios a. 4
+<u>Адреса:</u> Ignalinos Каритас Bažnyčios a. 4
 +370 68459418
 renatalli@yahoo.com
 
@@ -291,7 +291,7 @@ eл. п. karolina@maistobankas.lt
 <b>Іонишкський район</b>
 
 <u>Карітас (гуманітарна допомога)</u>
-адреса: Bažnyčios g. 2, LT-84139 Joniškis, 
+<u>Адреса:</u> Bažnyčios g. 2, LT-84139 Joniškis, 
 +370 657 86463
 siauliuvc@gmail.com
 
@@ -306,7 +306,7 @@ eл. п. aurelija.paulauskienė@maistobankas.lt
 <b>Юрбаркський район</b>
 
 <u>Карітас (гуманітарна допомога)</u>
-адреса: Valančiaus 1, Jurbarkas, 
+<u>Адреса:</u> Valančiaus 1, Jurbarkas, 
 тел. +370 685 01287
 albualbu@gmail.com
 
@@ -321,7 +321,7 @@ eл. п. jurgita@maistobankas.lt
 <b>Кайшaдорський район</b>
 
 <u>Мальтійці (гуманітарна допомога)</u>
-адреса: Girelės 1, Kaišiadorys, 
+<u>Адреса:</u> Girelės 1, Kaišiadorys, 
 +370 64036592
 audrone.petraskiene@maltieciai.lt
 
@@ -337,7 +337,7 @@ eл. п. jurgita@maistobankas.lt
 <b>Калварiя</b>
 
 <u>Карітас (гуманітарна допомога)</u>
-адреса: Vasario -16 osios G. 48, Kalvarija
+<u>Адреса:</u> Vasario -16 osios G. 48, Kalvarija
 +370 671 53943,
 
 <u>"Врятуємо дітей" (для дітей та вагітних)</u>
@@ -354,7 +354,7 @@ const partThreeHumanAid = `
 <u>Каунас</u>
 
 Литовський Червоний Хрест філія міста Каунас (гуманітарна допомога)
-адреса: Statybininkų g. 12
+<u>Адреса:</u> Statybininkų g. 12
  Kaunas, +370 60286839, kaunas@redcross.lt
 
 "Врятуємо дітей" (для дітей та вагітних): тел. +370 611 62974, roma4n@yahoo.com; адресa:  Kranto al. 62, Kaunas, LT-45282
@@ -375,7 +375,7 @@ eл. п. karolina@maistobankas.lt
 <b>Казлу Руда</b>
 
 <u>Мальтійці (гуманітарна допомога)</u>
-адреса: Atgimimo 8A, Kazlų Rūda
+<u>Адреса:</u> Atgimimo 8A, Kazlų Rūda
 +370 69840147
 vinikiene@gmail.com
 
@@ -394,7 +394,7 @@ const partSevenHumanAid = `
 <b>Кельмеський район</b>
 
 <u>Мальтійці (гуманітарна допомога)</u>
-адреса: Vytauto didžiojo 110, Kelmė
+<u>Адреса:</u> Vytauto didžiojo 110, Kelmė
 +370 61486461 
 lina.simkeviciene@maltieciai.lt
 
@@ -413,7 +413,7 @@ eл. п. aurelija.paulauskiene@maistobankas.lt
 <b>Кедайнський район</b>
 
 <u>Мальтійці (гуманітарна допомога)</u>
-адреса: Ariogalos g.4, Josvainių mstl., Kėdainių raj
+<u>Адреса:</u> Ariogalos g.4, Josvainių mstl., Kėdainių raj
 +370 61008096 
 ausra.vaidotiene@maltieciai.lt
 
@@ -428,7 +428,7 @@ eл. п. justina@maistobankas.lt
 <b>Клайпеда</b>
 
 <u>Литовський Червоний Хрест філія міста Клайпеда  (гуманітарна допомога)</u>
-адреса: Paryžiaus Komunos g. 16A, Klaipėda
+<u>Адреса:</u> Paryžiaus Komunos g. 16A, Klaipėda
 +370 67568475
 klaipeda@redcross.lt
 
@@ -444,7 +444,7 @@ eл. п. irena.judzentyte@maistobankas.lt;
 <b>Клайпедський райо</b>н
 
 <u>Литовський Червоний Хрест філія міста Клайпеда  (гуманітарна допомога)</u>
-адреса: Paryžiaus Komunos g. 16A, Klaipėda
+<u>Адреса:</u> Paryžiaus Komunos g. 16A, Klaipėda
 +370 67568475
 klaipeda@redcross.lt
 
@@ -461,7 +461,7 @@ eл. п. irena.judzentyte@maistobankas.lt;
 <b>Кретінгський райо</b>н
 
 <u>Литовський Червоний Хрест філія міста Клайпеда  (гуманітарна допомога)</u>
-адреса: Turgaus aikštė 23, 2 этаж
+<u>Адреса:</u> Turgaus aikštė 23, 2 этаж
 +370 67568475
 klaipeda@redcross.lt
 
@@ -477,7 +477,7 @@ eл. п. irena.judzentyte@maistobankas.lt;
 <b>Купишкський район</b>
 
 Мальтійці (гуманітарна допомога)
-адреса: Vilniaus g. 8, Kupiškis (проход с другой улицы, звоните)
+<u>Адреса:</u> Vilniaus g. 8, Kupiškis (проход с другой улицы, звоните)
 +370 61592589
 skaistute.paulauskiene@maltieciai.lt
 
@@ -493,7 +493,7 @@ eл. п. justina@maistobankas.lt
 <b>Лаздiйський район</b>
 
 Карітас (гуманітарна допомога)
-адреса: Dainavos g. 4, Lazdijai
+<u>Адреса:</u> Dainavos g. 4, Lazdijai
 тел. +370 687 59771
 
 "Врятуємо дітей" (для дітей та вагітних)
@@ -507,7 +507,7 @@ eл. п. milda@maistobankas.lt
 <b>Маріямполє</b>
 
 Мальтійці (гуманітарна допомога)
-адреса: Kęstučio  3, Marijampolė 
+<u>Адреса:</u> Kęstučio  3, Marijampolė 
 +370 69909080 
 mmm.marijamil@gmail.com
 
@@ -523,7 +523,7 @@ eл. п. karolina@maistobankas.lt
 <b>Мажейкяйський район</b>
 
 Мальтійці (гуманітарна допомога)
-адреса: Bažnyčios 15A, Viekšniai, Mažeikių raj.
+<u>Адреса:</u> Bažnyčios 15A, Viekšniai, Mažeikių raj.
 +370 68736269 
 emilija.plastinina@maltieciai.lt
 
@@ -543,7 +543,7 @@ const partFiveHumanAid = `
 <b>Молетський район</b>
 
 Карітас (гуманітарна допомога)
-адреса: Jono Pauliaus II g. 1, Molėtai
+<u>Адреса:</u> Jono Pauliaus II g. 1, Molėtai
 тел. +37061409548
 el.p. aurutelukosiene@gmail.com
 
@@ -558,7 +558,7 @@ eл. п. milda@maistobankas.lt
 <b>Нерінга</b>
 
 <u>Литовський Червоний Хрест філія міста Клайпеда  (гуманітарна допомога)</u>
-адреса: Turgaus aikštė 23, 2 этаж
+<u>Адреса:</u> Turgaus aikštė 23, 2 этаж
 +370 67568475
 klaipeda@redcross.lt
 
@@ -573,7 +573,7 @@ eл. п. irena.judzenyte@maistobankas.lt
 <b>Пагєгяй</b>
 
 Карітас (гуманітарна допомога)
-адреса: Vydūno g.8 Pagėgiai
+<u>Адреса:</u> Vydūno g.8 Pagėgiai
 +370 68782576
 eputiene@yahoo.com
 
@@ -602,7 +602,7 @@ eл. п. aurelija.paulauskiene@maistobankas.lt
 <b>Паланга</b>
 
 Карітас (гуманітарна допомога)
-адреса: Vytauto g.88, Palanga
+<u>Адреса:</u> Vytauto g.88, Palanga
 +370 68347223
 vilma.b@gmail.com
 
@@ -617,7 +617,7 @@ eл. п. irena.judzentyte@maistobankas.lt
 <b>Паневєжіс</b>
 
 Литовський Червоний Хрест філія міста Паневєжіс (гуманітарна допомога)
-адреса: Respublikos g. 38 (2 этаж)
+<u>Адреса:</u> Respublikos g. 38 (2 этаж)
 +370 62695165
 panevezys@redcross.lt
 
@@ -634,7 +634,7 @@ eл. п. justina@maistobankas.lt
 <b>Панeвєжський район</b>
 
 Литовський Червоний Хрест філія міста Паневєжіс (гуманітарна допомога)
-адреса: Respublikos g. 38 (2 этаж)
+<u>Адреса:</u> Respublikos g. 38 (2 этаж)
 +370 62695165
 panevezys@redcross.lt
 
@@ -650,7 +650,7 @@ eл. п. justina@maistobankas.lt
 <b>Пасвальський район</b>
 
 Карітас (гуманітарна допомога)
-адреса: Vytauto Didžiojo a. 5
+<u>Адреса:</u> Vytauto Didžiojo a. 5
 +370 68671736
 
 "Врятуємо дітей" (для дітей та вагітних)
@@ -682,7 +682,7 @@ eл. п. irena.judzentyte@maistobankas.lt
 <b>Пренайський район</b>
 
 Мальтійці (гуманітарна допомога)
-адреса: Laisvės aikštė 12, Prienai
+<u>Адреса:</u> Laisvės aikštė 12, Prienai
 +370 68686789
 sulinava@gmail.com
 
@@ -712,7 +712,7 @@ eл. п. aurelija.paulauskiene@maistobankas.lt
 <b>Расейнський район</b>
 
 Мальтійці (гуманітарна допомога)
-адреса:: Jaunimo 10, Raseiniai
+<u>Адреса:</u>: Jaunimo 10, Raseiniai
 +370 62015585
 agne.naujokaityte@maltieciai.lt
 
@@ -728,7 +728,7 @@ eл. п. jurgita@maistobankas.lt
 
 Литовський Червоний Хрест філія міста
 Клайпеда (гуманітарна допомога)
-адреса: Turgaus aikštė 23, 2 этаж
+<u>Адреса:</u> Turgaus aikštė 23, 2 этаж
 +370 67568475
 klaipeda@redcross.lt
 
@@ -743,7 +743,7 @@ eл. п. irena.judzentyte@maistobankas.lt
 <b>Рокишкський район</b>
 
 Литовський Червоний Хрест філія міста Рокішкіс (гуманітарна допомога)
-адреса: Vytauto g. 25
+<u>Адреса:</u> Vytauto g. 25
 +370 60677308
 rokiskis@redcross.lt
 
@@ -759,7 +759,7 @@ eл. п. aurelija@maistobankas.lt
 <b>Скуодасський район</b>
 
 Карiтас/Мальтійці (гуманітарна допомога)
-адреса: Birutės g. 15, Skuodas
+<u>Адреса:</u> Birutės g. 15, Skuodas
 +370 61434232 
 graska3@gmail.com
 
@@ -795,7 +795,7 @@ const partSixHumanAid = `
 <b>Шальчінинкський район</b>
 
 Карітас (гуманітарна допомога)
-адреса: Vilniaus g. 49 Šalčininkai
+<u>Адреса:</u> Vilniaus g. 49 Šalčininkai
 +370 65522993
 jolita.matulaityte@vilnius.caritas.lt
 
@@ -810,7 +810,7 @@ eл. п. marija@maistobankas.lt
 <b>Шяуляй</b>
 
 Литовський Червоний Хрест філія міста Шауляй (гуманітарна допомога)
-адреса: Vasario 16-osios g. 46 (3 этаж)
+<u>Адреса:</u> Vasario 16-osios g. 46 (3 этаж)
 +370 60976158
 siauliai@redcross.lt
 
@@ -827,7 +827,7 @@ eл. п. aurelija.paulauskiene@maistobankas.lt;
 <b>Шiлальський район</b>
 
 Карітас (гуманітарна допомога)
-адреса: M.Valančiaus g.2, Šilalė
+<u>Адреса:</u> M.Valančiaus g.2, Šilalė
 angelepauliene@gmail.com 
 +370 65294436
 
@@ -871,7 +871,7 @@ eл. п. milda@maistobankas.lt
 <b>Швенчьонський район</b>
 
 Карітас (гуманітарна допомога)
-адреса: Laisvės a. 5, Švenčionys
+<u>Адреса:</u> Laisvės a. 5, Švenčionys
 +370 64667942 
 ieva.kuzmaite@vilnius.Каритас.lt
 
@@ -886,7 +886,7 @@ eл. п. marija@maistobankas.lt
 <b>Таурагський район</b>
 
 Литовський Червоний Хрест філія міста Таурагe (гуманітарна допомога)
-адреса: V. Kudirkos g. 2
+<u>Адреса:</u> V. Kudirkos g. 2
 +370 65085575
 taurage@redcross.lt
 
@@ -905,7 +905,7 @@ const partEightHumanAid = `
 <b>Тельшяйський район</b>
 
 Карітас (гуманітарна допомога)
-адреса: Šviesos g.2, Telšiai
+<u>Адреса:</u> Šviesos g.2, Telšiai
 +370 61202632
 baredita@gmail.com
 
@@ -920,7 +920,7 @@ eл. п. info@maistobankas.lt
 <b>Тракайський район</b>
 
 Карітас (гуманітарна допомога)
-адреса: Pietų g. 28, Lentvaris
+<u>Адреса:</u> Pietų g. 28, Lentvaris
 +370 65522993
 jolita.matulaityte@vilnius.Каритас.lt
 
@@ -965,7 +965,7 @@ eл. п. justina@maistobankas.lt
 <b>Варенський район</b>
 
 Карітас (гуманітарна допомога)
-адреса: M. K. Čiurlionio g. 61A, Varėna
+<u>Адреса:</u> M. K. Čiurlionio g. 61A, Varėna
 +370 62350019
 
 ПАРТНЕР (для дітей та вагітних): Карiтас.  
@@ -979,7 +979,7 @@ eл. п. milda@maistobankas.lt
 <b>Вiлкавiшкський район</b>
 
 Литовський Червоний Хрест філія міста Вілкавішкіса (гуманітарна допомога)
-адреса: Kęstučio g. 5
+<u>Адреса:</u> Kęstučio g. 5
 +370 61575907
 vilkaviskis@redcross.lt
 
@@ -994,7 +994,7 @@ eл. п. jurgita@maistobankas.lt
 <b>Вiсагiнас</b>
 
 Литовський Червоний Хрест філія міста Вісагінас (гуманітарна допомога)
-адреса: Vilties g. 1, 
+<u>Адреса:</u> Vilties g. 1, 
 +370 69882197
 visaginas@redcross.lt
 
@@ -1009,7 +1009,7 @@ eл. п. aurelija@maistobankas.lt
 <b>Зарасайський район</b>
 
 Мальтійці (гуманітарна допомога)
-адреса: Bažnyčios g. 2  Zarasai
+<u>Адреса:</u> Bažnyčios g. 2  Zarasai
 тел.+370 61019978
 el.p. laimute.lumbiene@gmail.com
 

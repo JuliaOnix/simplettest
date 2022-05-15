@@ -90,7 +90,11 @@ function infoAboutMedicineFunc(ctx) {
 
 //show info about humanitarianAid
 function humanitarianAidFunc(ctx) {
-    ctx.replyWithHTML(humanInfo.humanAid, Markup.inlineKeyboard([
+    ctx.replyWithHTML(humanInfo.humanAid, { 
+        parse_mode: "HTML", 
+        disable_web_page_preview: true 
+     }, 
+        Markup.inlineKeyboard([
         Markup.button.callback("Інші міста", 'btn_anotherCities')
     ]));
 }
@@ -159,10 +163,7 @@ bot.action('btn_usefulContacts', async (ctx) => {
 
 bot.action('btn_addresses', async (ctx) => {
     await ctx.answerCbQuery();
-    await ctx.replyWithHTML(contacts.address, { 
-        parse_mode: "HTML", 
-        disable_web_page_preview: true 
-     });
+    await ctx.replyWithHTML(contacts.address);
 });
 
 bot.action('btn_anotherCities', async (ctx) => {

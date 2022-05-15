@@ -10,13 +10,14 @@ const allowanceFinanceVar = require('./text/allowanceFinanceFile')
 const workInfo = require('./text/workInfoFile')
 const educationShcools = require('./text/educationAndSportInfo')
 const languageInfo = require('./text/languageLitovskiy')
+const questionInfo = require('./text/oftenAks')
 
 
 const token = process.env.BOT_TOKEN
 
 //menu in chatbot
-const mainMenu = ['По Прибутті В Литву', 'Корисні контакти', 'Cпособи пошуку житла', 
-'Гуманітарна Допомога',"Послуги Охорони Здоров'я", 'Фінанси, Пільги, Надбавки', 'Робота В Литвi', 'Діти', 'Безкоштовні Послуги', "Литовська мова"];
+const mainMenu = ['По Прибутті В Литву', 'Корисні контакти', 'Пошуку житла', 
+'Гуманітарна Допомога',"Здоров'я", 'Фінанси, Пільги', 'Робота', 'Діти', 'Безкоштовні Послуги', "Литовська мова", "Поширені питання"];
 
 const bot = new Telegraf(token);
 
@@ -34,15 +35,16 @@ bot.command('start', async (ctx) => {
 //listening to, HEARS
 
 bot.hears('По Прибутті В Литву', async (ctx) => mainInfoAboutRefugee(ctx));
-bot.hears('Cпособи пошуку житла', async (ctx) => lookforanApartment(ctx));
-bot.hears("Послуги Охорони Здоров'я", async (ctx) => infoAboutMedicineFunc(ctx));
+bot.hears('Пошук житла', async (ctx) => lookforanApartment(ctx));
+bot.hears("Здоров'я", async (ctx) => infoAboutMedicineFunc(ctx));
 bot.hears('Гуманітарна Допомога', async (ctx) => humanitarianAidFunc(ctx));
 bot.hears('Корисні контакти', async (ctx) => usefulContactsFunc(ctx));
-bot.hears('Фінанси, Пільги, Надбавки', async (ctx) => allowanceFinanceFunc(ctx));
+bot.hears('Фінанси, Пільги', async (ctx) => allowanceFinanceFunc(ctx));
 bot.hears('Безкоштовні Послуги', async (ctx) => freeStuffForUkraineFunc(ctx));
-bot.hears('Робота В Литвi', async (ctx) => workinLitva(ctx));
+bot.hears('Робота', async (ctx) => workinLitva(ctx));
 bot.hears('Діти', async (ctx) => educationAndSportFunc(ctx));
 bot.hears('Литовська мова', async (ctx) => languageFunc(ctx));
+bot.hears('Поширені питання', async (ctx) => questionOftenFunc(ctx));
 
 //Functions
 
@@ -142,6 +144,10 @@ function freeStuffForUkraineFunc(ctx) {
     ctx.replyWithHTML(allowanceFinanceVar.freeForChildrenAndMothers);
     ctx.replyWithHTML(allowanceFinanceVar.freeKonsulska);
     ctx.replyWithHTML(allowanceFinanceVar.freeArtEvents);
+}
+
+function questionOftenFunc(ctx) {
+    ctx.replyWithHTML(questionInfo.qAndA)
 }
 
 //Actions

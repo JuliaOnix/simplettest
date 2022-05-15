@@ -36,7 +36,7 @@ const firstVisit = `
 
 <b>Часті запитання міграційного відділу</b> - <a href='https://migracija.lrv.lt/lt/naudinga-informacija/ukraina-ukrayina-ukraina-ukraine/informatsiia-dlia-gromadian-ukrayini/migratsiini-sluzhbi'>migracija.lrv.lt</a>
 
-<b>На цьому сайті є багато відповідей на часті запитання</b> - <a href='https://www.renkuosilietuva.lt/ru/informacia-dla-grazdan-ukrainy/'></a>
+<b>На цьому сайті є багато відповідей на часті запитання</b> - <a href='https://www.renkuosilietuva.lt/ru/informacia-dla-grazdan-ukrainy/'>www.renkuosilietuva.lt</a>
 `
 
 module.exports.firstVisit = firstVisit;

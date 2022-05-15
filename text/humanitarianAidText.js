@@ -5,126 +5,88 @@ const humanAid = `
 Засоби гігієни для жінок і дітей. Постільна білизна, рушники, дитячі ліжечка, коляски тощо.
 Необхідні речі можна замовити за тел. Речі доставляються прямо додому в будні дні. 
 У вихідні дні є можливість самостійно забрати речі.
-
 <u>Контакти та робочі години</u>
 I-VII 9.00 - 18.00     
-
  +370 5 251 41 73
 erika@motherhood.is
-
 <u>Адреса:</u>
 VILNIUS:  J. Balčikonio str. 3, Technopolis Будинок БЕТА (BETA), 4 поверх.
-
 KAUNAS: Savanorių ave. 271
 <u>Сайт</u> - https://www.motherhoodissexy.com/misloveparama
-
 <b>Координаційний центр волонтерів Карітас</b>
 освіти, охорони здоров'я,  пошуку роботи, психологічної, гуманітарної допомоги
-
 <u>Контакти та робочі години</u>
 I - VII 9.00–19.00
-
 +370 679 19 084
-
 <u>Адреса:</u> 
 Pilies str. 7, Vilnius
-
 <u>Сайт:</u> 
 https://vilnius.caritas.lt/pagalba-ukrainieciams/
 
 <b>Програма інтеграції іноземців Карітас</b>
 консультант, психолог, юрист, спеціаліст з працевлаштування, відшкодування витрат на ліки
-
 <u>Контакти та робочі години</u>
 I - V 10.00–17.00
-
 +370 679 19 084 
-
 kulturunamai@vilnius.caritas.lt
-
 <u>Адреса:</u>
 Kalvarijų g. 39, Vilnius
-
 <u>Сайт:</u>
 https://vilnius.caritas.lt/pagalba-ukrainieciams/
 
 <b>Соціальна служба Карітас</b>
 допомога з одягом, взуттям, постільною білизною, іграшками
-
 <u>Контакти та робочі години</u>
 I - V 9.00–17.00, VI 10.00–15.00
-
 +370 655 02 288  
-
 <u>Адреса:</u>
 M. K. Paco g. 4 Vilnius
-
 <u>Сайт:</u>
 https://vilnius.caritas.lt/pagalba-ukrainieciams/
 
 <b>Vilnius Red Cross</b>
 психологічна, юридична, гуманітарна допомога
-
 <u>Контакти</u>
-
 +370 609 80 408
 +370 659 71598
 info@redcross.lt
 vilnius@redcross.lt
-
 <u>Адреса:</u>
 Juozapavičiaus g.10 A, Vilnius
-
 <u>Сайт:</u>
 www.redcross.lt 
 
 <b>Збережіть дітей</b>
 допомога дітям та вагітним жінкам
-
 Контакти та робочі години
 8.30 -17.30
-
 irena.andrijevskaja@savethechildren.org
-
 informacija@savethechildren.org
-
 +370 526 10815
-
 <u>Адреса:</u>
 Vilniaus g. 39/Klaipėdos g. 6, Vilnius
-
 <u>Сайт:</u>
 https://gelbekitvaikus.lt/ 
 
 <b>Банк їжі</b>
 продукти харчування
-
 <u>Контакти</u>
 +370 676 91 941
-
 milda@maistobankas.lt
-
 +370 686 44244
-
 info@maistobankas.lt"
-
 <u>Адреса:</u>
 Vytenio g. 54, Vilnius
-
 <u>Сайт:</u>
 https://www.maistobankas.lt/ 
 
 
 <b>Служба підтримки Мальтійського ордену</b>
 гуманітарна допомога, продовольчі посилки, медичні товари, супровід до житла
-
 <u>Контакти та робочі години</u>
 I–VII 08:00–20:00 
-
 +370 600 23 220
-
 info@maltieciai.lt 
-
 <u>Сайт:</u>
 www.maltieciai.lt 
 

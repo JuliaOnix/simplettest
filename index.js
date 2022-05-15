@@ -16,7 +16,7 @@ const questionInfo = require('./text/oftenAks')
 const token = process.env.BOT_TOKEN
 
 //menu in chatbot
-const mainMenu = ['По Прибутті В Литву', 'Корисні контакти', 'Пошуку житла', 
+const mainMenu = ['По Прибутті В Литву', 'Корисні контакти', 'Пошук житла', 
 'Гуманітарна Допомога',"Здоров'я", 'Фінанси, Пільги', 'Робота', 'Діти', 'Безкоштовні Послуги', "Литовська мова", "Поширені питання"];
 
 const bot = new Telegraf(token);

@@ -41,11 +41,11 @@ const medContacts = `
 
 <b>інформація про медичні послуги:</b>
 +370 5 232 2222,
-на сайті www.ligoniukasa.lrv.lt
+на сайті https://ligoniukasa.lrv.lt/en/
 
 <b>вакцинація проти COVID-19: </b> 
 тел. 1808, з нелитовського номера +370 660 11808, 
-в Інтернеті www.koronastop.lrv.lt 
+в Інтернеті https://koronastop.lrv.lt/ru/
 `
 
 module.exports.usefulContacts = usefulContacts;

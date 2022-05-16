@@ -32,7 +32,13 @@ const freeStuffMenu =
 ];
 
 const FORWARD_BTN = `Наступна сторінка ➡️`;
-const BACKWARD_BTN = `⬅️ Попередня сторінка`
+const BACKWARD_BTN = `⬅️ Попередня сторінка`;
+const RETURN_BACK_TO_MENU = "🔙 Повернутися до «Здоров'я»";
+const MENU_HEALTH = [
+    [Markup.button.callback('Стоматологія 🦷', "dental_btn"), Markup.button.callback('Жінкам 🤰🏻', "pregnantWomen_btn")],
+    [Markup.button.callback('Психологічна Допомога', "mentalHealth_btn")],
+    [Markup.button.callback('Діабет', "diabet_btn"), Markup.button.callback('COVID-19 🦠', "covid_btn"), Markup.button.callback('Інше', "anotherMed_btn")]
+];
 
 const bot = new Telegraf(token);
 let currentPostFree;
@@ -86,10 +92,11 @@ function mainInfoAboutRefugee(ctx) {
 
 //show info about med insurance
 function infoAboutMedicineFunc(ctx) {
-    ctx.replyWithHTML(medInfo.aboutMedicine, Markup.inlineKeyboard([
-        Markup.button.callback("Безкоштовні медичні послуги", 'freeMedService_btn')
-    ]
-    ));
+    ctx.replyWithHTML(medInfo.aboutMedicine, {
+        parse_mode: 'HTML',
+        disable_web_page_preview: true,
+        ...Markup.inlineKeyboard(MENU_HEALTH)
+    });
 }
 
 //show info about humanitarianAid
@@ -122,7 +129,6 @@ function educationAndSportFunc(ctx) {
             [Markup.button.callback('Дошкільне виховання', 'preschool_btn'), Markup.button.callback('Художні школи', 'artschools_btn')],
             [Markup.button.callback('Професійне навчання', 'profEduc_btn'),  Markup.button.callback("Вища освіта (університети)", "univer_btn")],
             [Markup.button.callback('Для спортсменів', 'sportEduc_btn'),     Markup.button.callback('Гуртки, уроки, дозвілля', 'lessonsforChildren_btn')]
-            
         ]
     ));
 }
@@ -139,17 +145,6 @@ function freeStuffForUkraineFunc(ctx) {
           Markup.button.callback(FORWARD_BTN, 'forward_btn')
         ])
       }
-        
-        /* Markup.inlineKeyboard(
-        [
-            [Markup.button.callback('ДЛЯ ЖІНОК та ДІТЯМИ', 'womenStuffFree_btn'), Markup.button.callback('КОНСУЛЬТАЦІЇ З ПРАЦІ', 'consultFree_btn')],
-            [Markup.button.callback('ПОСЛУГИ ПЕРЕКЛАДАЧА', 'tranFree_btn'), Markup.button.callback('ДРУК', 'printFree_btn')],
-            [Markup.button.callback('КОМУНІКАЦІЯ', 'communFree_btn'), Markup.button.callback('ЮРИДИЧНІ ПОСЛУГИ', 'jurFree_btn')],
-            [Markup.button.callback('Для домашніх тварин', 'petFree_btn'), Markup.button.callback('Послуги', 'serviceFree_btn')],
-            [Markup.button.callback('ОПТИКА', 'glassesFree_btn'), Markup.button.callback('КУРСИ, ЛЕКЦІЇ', 'coursesFree_btn')],
-            [Markup.button.callback('МИСТЕЦЬКІ ПОДІЇ', 'artStuffFree_btn'), Markup.button.callback('КОНСУЛЬСЬКА ДОПОМОГА', 'konsulFree_btn')],
-        ]
-        ) */
     );
 }
 
@@ -170,44 +165,41 @@ bot.action('btn_anotherCities', async (ctx) => {
     ctx.reply('https://www.redcross.lt/kontakti-z-organizaciyami-yaki-nadayut-gumanitarnu-dopomogu-ukrayincyam-ua')
 });
 
-bot.action('freeMedService_btn', async (ctx) => {
+/* bot.action('freeMedService_btn', async (ctx) => {
     await ctx.answerCbQuery();
-    await ctx.replyWithHTML(freeMedInfo.freeMedInfo, Markup.inlineKeyboard([
-        Markup.button.callback('Психологічна Допомога', "mentalHealth_btn"),
-        Markup.button.callback('Духовна, релігійна допомога', "godHelp_btn")
+    await ctx.replyWithHTML('Пуньк', Markup.inlineKeyboard([
+        [Markup.button.callback('ДИАБЕТ', "mentalHealth_btn"), Markup.button.callback('Інше', "godHelp_btn")],
+        [Markup.button.callback('СТОМАТОЛОГІЯ', "mentalHealth_btn"), Markup.button.callback('ДОПОМОГА ЖІНКАМ ТА ВАГІТНИМ', "godHelp_btn")],
+        [Markup.button.callback('Психологічна Допомога', "mentalHealth_btn")]
     ]));
-});
+}); */
 
-bot.action('mentalHealth_btn', async (ctx) => {
-    await ctx.answerCbQuery();
-    await ctx.replyWithHTML(freeMedInfo.mentalHelth);
-});
 
-bot.action('godHelp_btn', async (ctx) => {
-    await ctx.answerCbQuery();
-    await ctx.replyWithHTML(freeMedInfo.godHelp);
-});
 
 bot.action('pilgi_btn', async (ctx) => {
     await ctx.answerCbQuery();
-    await ctx.replyWithHTML(allowanceFinanceVar.infoAboutFinanceHelp);
+    await ctx.replyWithHTML(allowanceFinanceVar.infoAboutFinanceHelp,
+    {
+        parse_mode: 'HTML',
+        disable_web_page_preview: true,
+        ...Markup.inlineKeyboard([
+            [Markup.button.callback('Повернутися до меню', 'back_btn')]
+        ])
+        });
 });
 
 bot.action('freeStuff_btn', async (ctx) => {
+    currentPostFree = 0;
     await ctx.answerCbQuery();
-    await ctx.replyWithHTML(allowanceFinanceVar.freeTransport);
-    await ctx.replyWithHTML(allowanceFinanceVar.freeWorkConsultation);
-    await ctx.replyWithHTML(allowanceFinanceVar.freeTranslator);
-    await ctx.replyWithHTML(allowanceFinanceVar.freePrintout);
-    await ctx.replyWithHTML(allowanceFinanceVar.freeСommunication);
-    await ctx.replyWithHTML(allowanceFinanceVar.freeLegalAid);
-    await ctx.replyWithHTML(allowanceFinanceVar.freePatsStuff);
-    await ctx.replyWithHTML(allowanceFinanceVar.freeBeautyStauff);
-    await ctx.replyWithHTML(allowanceFinanceVar.freeMedOptica);
-    await ctx.replyWithHTML(allowanceFinanceVar.freeLessonsAndCourses);
-    await ctx.replyWithHTML(allowanceFinanceVar.freeForChildrenAndMothers);
-    await ctx.replyWithHTML(allowanceFinanceVar.freeKonsulska);
-    await ctx.replyWithHTML(allowanceFinanceVar.freeArtEvents);
+    await ctx.replyWithHTML(freeStuffMenu[currentPostFree], {
+        parse_mode: 'HTML',
+        disable_web_page_preview: true,
+        ...Markup.inlineKeyboard([
+          [Markup.button.callback(BACKWARD_BTN, 'back_btn'), Markup.button.callback(FORWARD_BTN, 'forward_btn')],
+          [Markup.button.callback('Повернутися до меню', 'back_btn')]
+        ])
+      }
+    );
 });
 
 // work
@@ -249,6 +241,86 @@ bot.action('lessonsforChildren_btn', async (ctx) => {
     await ctx.replyWithHTML(educationShcools.freeLessonsEducation2)
 });
 
+//=============================Navigation in Health Menu=====================
+
+//dental
+bot.action('dental_btn', async (ctx) => {
+    await ctx.answerCbQuery();
+    await ctx.editMessageText(freeMedInfo.dentist, {
+        parse_mode: 'HTML',
+        disable_web_page_preview: false, ...Markup.inlineKeyboard([
+            [Markup.button.callback(RETURN_BACK_TO_MENU, 'returnBack_btn')]
+        ])
+    });
+});
+
+//for pregnant and women
+bot.action('pregnantWomen_btn', async (ctx) => {
+    await ctx.answerCbQuery();
+    await ctx.editMessageText(freeMedInfo.forWomenAndPregnant, {
+        parse_mode: 'HTML',
+        disable_web_page_preview: true, ...Markup.inlineKeyboard([
+            [Markup.button.callback(RETURN_BACK_TO_MENU, 'returnBack_btn')]
+        ])
+    });
+});
+
+//mental health
+bot.action('mentalHealth_btn', async (ctx) => {
+    await ctx.answerCbQuery();
+    await ctx.editMessageText(freeMedInfo.mentalHelth, {
+        parse_mode: 'HTML',
+        disable_web_page_preview: true,
+        ...Markup.inlineKeyboard([
+            [Markup.button.callback(RETURN_BACK_TO_MENU, 'returnBack_btn')]
+        ])
+    });
+});
+
+//diabet
+bot.action('diabet_btn', async (ctx) => {
+    await ctx.answerCbQuery();
+    await ctx.editMessageText(freeMedInfo.diabetPost, {
+        parse_mode: 'HTML',
+        disable_web_page_preview: true,
+        ...Markup.inlineKeyboard([
+            [Markup.button.callback(RETURN_BACK_TO_MENU, 'returnBack_btn')]
+        ])
+    });
+});
+
+bot.action('anotherMed_btn', async (ctx) => {
+    await ctx.answerCbQuery();
+    await ctx.editMessageText(freeMedInfo.anotherMedInfo, {
+        parse_mode: 'HTML',
+        disable_web_page_preview: true,
+        ...Markup.inlineKeyboard([
+            [Markup.button.callback(RETURN_BACK_TO_MENU, 'returnBack_btn')]
+        ])
+    });
+});
+
+bot.action('covid_btn', async (ctx) => {
+    await ctx.answerCbQuery();
+    await ctx.editMessageText(freeMedInfo.corona, {
+        parse_mode: 'HTML',
+        disable_web_page_preview: true,
+        ...Markup.inlineKeyboard([
+            [Markup.button.callback(RETURN_BACK_TO_MENU, 'returnBack_btn')]
+        ])
+    });
+});
+
+
+//returning back to the main menu
+bot.action('returnBack_btn', async (ctx) => {
+    /* return infoAboutMedicineFunc(ctx); */
+    return await ctx.editMessageText(medInfo.aboutMedicine, {
+        parse_mode: 'HTML',
+        disable_web_page_preview: true,
+        ...Markup.inlineKeyboard(MENU_HEALTH)
+    })
+});
 
 
 //==============================Free Menu Staff===============================

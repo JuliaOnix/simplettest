@@ -341,9 +341,24 @@ bot.action('recHelpLook_btn', async (ctx) => {
         disable_web_page_preview: true, 
         ...Markup.inlineKeyboard(
             [
+                [Markup.button.callback('Індивідуальна зайнятість', 'individualWorker_btn'), Markup.button.callback('Сайти для поиска работы', 'sitesofwork_btn')],
                 [Markup.button.callback(RETURN_BACK_TO_WORK, 'backToTheWorkMenu_btn')],
             ]
         )})
+});
+
+//Individual Worker 
+
+bot.action('individualWorker_btn', async (ctx) => {
+    await ctx.editMessageText(workInfo.individualWorkerPost, {
+        parse_mode: "HTML",
+        disable_web_page_preview: true, 
+        ...Markup.inlineKeyboard(
+            [
+                [Markup.button.callback(RETURN_BACK_TO_WORK, 'backToTheWorkMenu_btn')],
+            ]
+        )
+    })
 });
 
 //show post with sites

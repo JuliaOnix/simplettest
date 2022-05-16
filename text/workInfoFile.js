@@ -155,6 +155,33 @@ https://lrkm.lrv.lt/uploads/lrkm/documents/files/Informacija%20apie%20idarbinimo
 
 `
 
+const individualWorkerPost = `
+Працювати самостійно за ліцензією на підприємницьку діяльність або індивідуальну зайнятість. 
+Документи видає Державна податкова інспекція.
+
+Жителі України вже можуть розпочати роботу чи самозайнятість у Литві. 
+ДПІ видає підприємницькі свідоцтва або реєструє свідоцтво про індивідуальну діяльність всім громадянам України, 
+які бажають це зробити та перебувають на обліку в Департаменті міграції, 
+членам їхніх сімей та особам без громадянства, які проживають в Україні, 
+які виїхали з України до Литви внаслідок військових дій з боку російських військ. 
+Федерація. Послуги STI доступні після прибуття в підрозділи обслуговування, 
+для відвідування необхідна попередня реєстрація через систему реєстрації STI, 
+а якщо це неможливо зробити онлайн, час прибуття можна зарезервувати за телефоном 
+
++370 5 2191 777.
+
+<b>Інформація про визнання професійної кваліфікації та контакти для консультацій:</b>
+https://www.enterpriselithuania.com/en/information-want-work-lithuania/ 
+
+<b>Інформація ДПІ для самозайнятих осіб:</b> https://www.vmi.lt/evmi/informacia-dla-gromadan-ukraini?lang=uk 
+
+<b>Контакти Державної податкової інспекції:</b>
+www.vmi.lt
+Інформація: 1882 або +370 5 260 5060
+
+
+`
+
 const recommendationsForHowToWork = `
 <b>Як знайти роботу в Литві?</b>
 
@@ -178,6 +205,7 @@ Pеєстрація та додаткова інформація:
 +370 616 46 608 Šiauliai
 +370 607 54955 Marijampolė 
 
+
 <b>Пам’ятка служби зайнятості</b> <a href="https://drive.google.com/file/d/1fcpbBxYVuHFMKOrr3urnEl3jL9fC_Dsv/view?usp=sharing">Скачати</a> 
 
 <b>Поради щодо найму, написання резюме</b>				
@@ -199,6 +227,7 @@ academic.support@vdu.lt
 
 module.exports.basicInfoAboutWork = basicInfoAboutWork;
 module.exports.howToFindWork = howToFindWork;
+module.exports.individualWorkerPost = individualWorkerPost;
 module.exports.recommendationsForHowToWork = recommendationsForHowToWork;
 module.exports.vacationONGoogleDocs = vacationONGoogleDocs;
 module.exports.siteForLookForWork = siteForLookForWork;

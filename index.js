@@ -17,9 +17,9 @@ const token = process.env.BOT_TOKEN
 //menu in chatbot
 const mainMenu = 
 [
-    'По Прибутті В Литву', 'Корисні контакти', 'Пошук житла', 
-    'Гуманітарна Допомога',"Здоров'я", 'Фінанси, Пільги', 'Робота', 
-    'Діти', 'Безкоштовні Послуги', "Литовська мова", "Поширені питання"
+    '🛬 По Прибутті В Литву', '📞 Корисні контакти', '🔎 Пошук житла', 
+    '📦 Гуманітарна Допомога',"🩺 Здоров'я", '💵 Фінанси, Пільги', '🏭 Робота', 
+    '👶 Діти', '🆓 Безкоштовні Послуги', "🇱🇹 Литовська мова", "❓ Поширені питання"
 ];
 
 //menu with free thing/stuff/services
@@ -71,17 +71,17 @@ bot.command('start', async (ctx) => {
 
 //listening to, HEARS
 
-bot.hears('По Прибутті В Литву', async (ctx) => mainInfoAboutRefugee(ctx));
-bot.hears('Пошук житла', async (ctx) => mainMenuFunctionsFile.lookforanApartment(ctx));
-bot.hears("Здоров'я", async (ctx) => infoAboutMedicineFunc(ctx));
-bot.hears('Гуманітарна Допомога', async (ctx) => humanitarianAidFunc(ctx));
-bot.hears('Корисні контакти', async (ctx) => mainMenuFunctionsFile.usefulContacts(ctx));
-bot.hears('Фінанси, Пільги', async (ctx) => allowanceFinanceFunc(ctx));
-bot.hears('Безкоштовні Послуги', async (ctx) => freeStuffForUkraineFunc(ctx, currentPostFree));
-bot.hears('Робота', async (ctx) => workinLitva(ctx));
-bot.hears('Діти', async (ctx) => educationAndSportFunc(ctx));
-bot.hears('Литовська мова', async (ctx) => mainMenuFunctionsFile.language(ctx));
-bot.hears('Поширені питання', async (ctx) => mainMenuFunctionsFile.questionOften(ctx));
+bot.hears(mainMenu[0], async (ctx) => mainInfoAboutRefugee(ctx));
+bot.hears(mainMenu[1], async (ctx) => mainMenuFunctionsFile.usefulContacts(ctx));
+bot.hears(mainMenu[2], async (ctx) => mainMenuFunctionsFile.lookforanApartment(ctx));
+bot.hears(mainMenu[3], async (ctx) => humanitarianAidFunc(ctx));
+bot.hears(mainMenu[4], async (ctx) => infoAboutMedicineFunc(ctx));
+bot.hears(mainMenu[5], async (ctx) => allowanceFinanceFunc(ctx));
+bot.hears(mainMenu[6], async (ctx) => workinLitva(ctx));
+bot.hears(mainMenu[7], async (ctx) => educationAndSportFunc(ctx));
+bot.hears(mainMenu[8], async (ctx) => freeStuffForUkraineFunc(ctx, currentPostFree));
+bot.hears(mainMenu[9], async (ctx) => mainMenuFunctionsFile.language(ctx));
+bot.hears(mainMenu[10], async (ctx) => mainMenuFunctionsFile.questionOften(ctx));
 
 //Functions
 

@@ -17,7 +17,7 @@ const token = process.env.BOT_TOKEN
 //menu in chatbot
 const mainMenu = 
 [
-    '🛬 По Прибутті В Литву', '📞 Корисні контакти', '🔎 Пошук житла', 
+    '🛬 По Прибутті', '📞 Корисні контакти', '🔎 Пошук житла', 
     '📦 Гуманітарна Допомога',"🩺 Здоров'я", '💵 Фінанси, Пільги', '🏭 Робота', 
     '👶 Діти', '🆓 Безкоштовні Послуги', "🇱🇹 Литовська мова", "❓ Поширені питання"
 ];
@@ -36,6 +36,7 @@ const BACKWARD_BTN = `⬅️ Попередня сторінка`;
 const RETURN_BACK_TO_MENU = "🔙 Повернутися до «Здоров'я»";
 const RETURN_BACK_TO_FINANCE = '🔙 Повернутися до «Фінанси, Пільги»';
 const RETURN_BACK_TO_WORK = '🔙 Повернутися до «Робота»';
+const RETURN_BACK_TO_FIRST = '🔙 Повернутися до «По Прибутті»';
 
 const MENU_HEALTH = [
     [Markup.button.callback('Стоматологія 🦷', "dental_btn"), Markup.button.callback('Жінкам 🤰🏻', "pregnantWomen_btn")],
@@ -102,10 +103,14 @@ function startBot(ctx) {
 
 //main info for people, who came right now and look for info what they have to do.
 function mainInfoAboutRefugee(ctx) {
-    ctx.replyWithHTML(mytext.firstVisit, Markup.inlineKeyboard([
-        Markup.button.callback("Контакти", 'btn_usefulContacts'),
-        Markup.button.callback("Адреси реєстраційних центрів", 'btn_addresses')
-    ]));
+    ctx.replyWithHTML(mytext.firstVisit, {
+        parse_mode: "HTML", 
+        disable_web_page_preview: true,
+        ...Markup.inlineKeyboard([
+            Markup.button.callback("Контакти", 'btn_usefulContacts'),
+            Markup.button.callback("Адреси реєстраційних центрів", 'btn_addresses')
+        ])
+    });
 }
 
 //show info about med insurance
@@ -158,31 +163,14 @@ function freeStuffForUkraineFunc(ctx) {
 
 //Actions
 
-bot.action('btn_usefulContacts', async (ctx) => {
-    await ctx.answerCbQuery();
-    await ctx.replyWithHTML(contacts.usefulContacts);
-});
 
-bot.action('btn_addresses', async (ctx) => {
-    await ctx.answerCbQuery();
-    await ctx.replyWithHTML(contacts.address);
-});
+
+
 
 bot.action('btn_anotherCities', async (ctx) => {
     await ctx.answerCbQuery();
     ctx.reply('https://www.redcross.lt/kontakti-z-organizaciyami-yaki-nadayut-gumanitarnu-dopomogu-ukrayincyam-ua')
 });
-
-/* bot.action('freeMedService_btn', async (ctx) => {
-    await ctx.answerCbQuery();
-    await ctx.replyWithHTML('Пуньк', Markup.inlineKeyboard([
-        [Markup.button.callback('ДИАБЕТ', "mentalHealth_btn"), Markup.button.callback('Інше', "godHelp_btn")],
-        [Markup.button.callback('СТОМАТОЛОГІЯ', "mentalHealth_btn"), Markup.button.callback('ДОПОМОГА ЖІНКАМ ТА ВАГІТНИМ', "godHelp_btn")],
-        [Markup.button.callback('Психологічна Допомога', "mentalHealth_btn")]
-    ]));
-}); */
-
-
 
 bot.action('pilgi_btn', async (ctx) => {
     await ctx.answerCbQuery();
@@ -238,8 +226,45 @@ bot.action('lessonsforChildren_btn', async (ctx) => {
     await ctx.replyWithHTML(educationShcools.freeLessonsEducation1)
     await ctx.replyWithHTML(educationShcools.freeLessonsEducation2)
 });
+//SECTION First Visit Block
 
-//=============================Navigation in Health Menu=====================
+bot.action('btn_usefulContacts', async (ctx) => {
+    await ctx.answerCbQuery();
+    await ctx.editMessageText(contacts.usefulContacts, {
+        parse_mode: "HTML",
+        disable_web_page_preview: true,
+        ...Markup.inlineKeyboard([
+            [Markup.button.callback(RETURN_BACK_TO_FIRST, 'returnBackFirst_btn')]
+        ])
+    });
+});
+
+bot.action('btn_addresses', async (ctx) => {
+    await ctx.answerCbQuery();
+    await ctx.editMessageText(contacts.address, {
+        parse_mode: "HTML",
+        disable_web_page_preview: true,
+        ...Markup.inlineKeyboard([
+            [Markup.button.callback(RETURN_BACK_TO_FIRST, 'returnBackFirst_btn')]
+        ])
+    });
+});
+
+//return to the main menu button
+bot.action('returnBackFirst_btn', async (ctx) => {
+    return await ctx.editMessageText(mytext.firstVisit, {
+        parse_mode: "HTML",
+        disable_web_page_preview: true, 
+        ...Markup.inlineKeyboard(
+            [
+                [Markup.button.callback("Контакти", 'btn_usefulContacts'),
+                Markup.button.callback("Адреси реєстраційних центрів", 'btn_addresses')]
+            ]
+        )
+    });
+});
+
+//SECTION Health Menu Block
 
 //dental
 bot.action('dental_btn', async (ctx) => {

@@ -40,6 +40,12 @@ const MENU_HEALTH = [
     [Markup.button.callback('Діабет', "diabet_btn"), Markup.button.callback('COVID-19 🦠', "covid_btn"), Markup.button.callback('Інше', "anotherMed_btn")]
 ];
 
+const MENU_EDUCATION = [
+    [Markup.button.callback('Дошкільне виховання', 'preschool_btn'), Markup.button.callback('Художні школи', 'artschools_btn')],
+    [Markup.button.callback('Професійне навчання', 'profEduc_btn'),  Markup.button.callback("Вища освіта (університети)", "univer_btn")],
+    [Markup.button.callback('Для спортсменів', 'sportEduc_btn'),     Markup.button.callback('Гуртки, уроки, дозвілля', 'lessonsforChildren_btn')]
+];
+
 const bot = new Telegraf(token);
 let currentPostFree;
 
@@ -124,13 +130,7 @@ function workinLitva(ctx) {
 
 //show block about education and sport for children also
 function educationAndSportFunc(ctx) {
-    ctx.replyWithHTML(educationShcools.generalInfoAboutSchool, Markup.inlineKeyboard(
-        [
-            [Markup.button.callback('Дошкільне виховання', 'preschool_btn'), Markup.button.callback('Художні школи', 'artschools_btn')],
-            [Markup.button.callback('Професійне навчання', 'profEduc_btn'),  Markup.button.callback("Вища освіта (університети)", "univer_btn")],
-            [Markup.button.callback('Для спортсменів', 'sportEduc_btn'),     Markup.button.callback('Гуртки, уроки, дозвілля', 'lessonsforChildren_btn')]
-        ]
-    ));
+    ctx.replyWithHTML(educationShcools.generalInfoAboutSchool, Markup.inlineKeyboard(MENU_EDUCATION));
 }
 
 //freeStuff

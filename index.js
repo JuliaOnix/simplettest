@@ -34,6 +34,8 @@ const freeStuffMenu =
 const FORWARD_BTN = `Наступна сторінка ➡️`;
 const BACKWARD_BTN = `⬅️ Попередня сторінка`;
 const RETURN_BACK_TO_MENU = "🔙 Повернутися до «Здоров'я»";
+const RETURN_BACK_TO_FINANCE = '🔙 Повернутися до «Фінанси, Пільги»';
+
 const MENU_HEALTH = [
     [Markup.button.callback('Стоматологія 🦷', "dental_btn"), Markup.button.callback('Жінкам 🤰🏻', "pregnantWomen_btn")],
     [Markup.button.callback('Психологічна Допомога', "mentalHealth_btn")],
@@ -44,6 +46,13 @@ const MENU_EDUCATION = [
     [Markup.button.callback('Дошкільне виховання', 'preschool_btn'), Markup.button.callback('Художні школи', 'artschools_btn')],
     [Markup.button.callback('Професійне навчання', 'profEduc_btn'),  Markup.button.callback("Вища освіта (університети)", "univer_btn")],
     [Markup.button.callback('Для спортсменів', 'sportEduc_btn'),     Markup.button.callback('Гуртки, уроки, дозвілля', 'lessonsforChildren_btn')]
+];
+
+const MENU_BUTTONS = [
+    [
+        Markup.button.callback(BACKWARD_BTN, 'back_btn'),
+        Markup.button.callback(FORWARD_BTN, 'forward_btn')
+    ]
 ];
 
 const bot = new Telegraf(token);
@@ -115,8 +124,7 @@ function humanitarianAidFunc(ctx) {
 //show menu about finance
 function allowanceFinanceFunc(ctx) {
     ctx.replyWithHTML(allowanceFinanceVar.infoAboutBanks, Markup.inlineKeyboard([
-        Markup.button.callback('Пільги та пільги, на які ви маєте право', 'pilgi_btn'),
-        Markup.button.callback('Безкоштовні фінансові послуги', 'freeStuff_btn')
+        Markup.button.callback('Пільги, на які ви маєте право', 'pilgi_btn'),
     ]));
 }
 
@@ -178,12 +186,12 @@ bot.action('btn_anotherCities', async (ctx) => {
 
 bot.action('pilgi_btn', async (ctx) => {
     await ctx.answerCbQuery();
-    await ctx.replyWithHTML(allowanceFinanceVar.infoAboutFinanceHelp,
+    await ctx.editMessageText(allowanceFinanceVar.infoAboutFinanceHelp,
     {
         parse_mode: 'HTML',
         disable_web_page_preview: true,
         ...Markup.inlineKeyboard([
-            [Markup.button.callback('Повернутися до меню', 'back_btn')]
+            [Markup.button.callback(RETURN_BACK_TO_FINANCE, 'backToFinance_btn')]
         ])
         });
 });
@@ -191,12 +199,12 @@ bot.action('pilgi_btn', async (ctx) => {
 bot.action('freeStuff_btn', async (ctx) => {
     currentPostFree = 0;
     await ctx.answerCbQuery();
-    await ctx.replyWithHTML(freeStuffMenu[currentPostFree], {
+    await ctx.editMessageText(freeStuffMenu[currentPostFree], {
         parse_mode: 'HTML',
         disable_web_page_preview: true,
         ...Markup.inlineKeyboard([
           [Markup.button.callback(BACKWARD_BTN, 'back_btn'), Markup.button.callback(FORWARD_BTN, 'forward_btn')],
-          [Markup.button.callback('Повернутися до меню', 'back_btn')]
+          [Markup.button.callback(RETURN_BACK_TO_FINANCE, 'backToFinance_btn')]
         ])
       }
     );
@@ -322,6 +330,18 @@ bot.action('returnBack_btn', async (ctx) => {
     })
 });
 
+//==============================Finance block menu============================
+
+bot.action('backToFinance_btn', async (ctx) => {
+    return await ctx.editMessageText(allowanceFinanceVar.infoAboutBanks, {
+        parse_mode: "HTML",
+        disable_web_page_preview: false,
+        ...Markup.inlineKeyboard([
+            Markup.button.callback('Пільги, на які ви маєте право', 'pilgi_btn')
+        ])
+    })
+});
+
 
 //==============================Free Menu Staff===============================
 
@@ -339,10 +359,7 @@ bot.action('forward_btn', async (ctx) => {
     return await ctx.editMessageText(freeStuffMenu[currentPostFree], {
         parse_mode: 'HTML',
         disable_web_page_preview: true,
-        ...Markup.inlineKeyboard([
-            Markup.button.callback(BACKWARD_BTN, 'back_btn'),
-            Markup.button.callback(FORWARD_BTN, 'forward_btn')
-        ])
+        ...Markup.inlineKeyboard(MENU_BUTTONS)
     })
 })
 
@@ -359,13 +376,9 @@ bot.action('back_btn', async (ctx) => {
     return await ctx.editMessageText(freeStuffMenu[currentPostFree], {
         parse_mode: 'HTML',
         disable_web_page_preview: true,
-        ...Markup.inlineKeyboard([
-            Markup.button.callback(BACKWARD_BTN, 'back_btn'),
-            Markup.button.callback(FORWARD_BTN, 'forward_btn')
-        ])
+        ...Markup.inlineKeyboard(MENU_BUTTONS)
     })
 })
-
 
 bot.launch();
 

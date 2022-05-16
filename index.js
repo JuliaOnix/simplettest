@@ -2,24 +2,40 @@ const { Telegraf, Markup } = require("telegraf");
 require("dotenv").config();
 const mytext = require('./text/text')
 const contacts = require('./text/contacts')
-const apartmentsinfo = require('./text/apartmentsinfo')
 const medInfo = require('./text/medicineInfo')
 const freeMedInfo = require('./text/freeMedServices')
 const humanInfo = require('./text/humanitarianAidText')
 const allowanceFinanceVar = require('./text/allowanceFinanceFile')
 const workInfo = require('./text/workInfoFile')
 const educationShcools = require('./text/educationAndSportInfo')
-const languageInfo = require('./text/languageLitovskiy')
-const questionInfo = require('./text/oftenAks')
+const mainMenuFunctionsFile = require('./functions/functionsMainMenu')
+/* const actionsFreeStuff = require('./functions/actionsFreeMenuStaff') */
 
 
 const token = process.env.BOT_TOKEN
 
 //menu in chatbot
-const mainMenu = ['По Прибутті В Литву', 'Корисні контакти', 'Пошук житла', 
-'Гуманітарна Допомога',"Здоров'я", 'Фінанси, Пільги', 'Робота', 'Діти', 'Безкоштовні Послуги', "Литовська мова", "Поширені питання"];
+const mainMenu = 
+[
+    'По Прибутті В Литву', 'Корисні контакти', 'Пошук житла', 
+    'Гуманітарна Допомога',"Здоров'я", 'Фінанси, Пільги', 'Робота', 
+    'Діти', 'Безкоштовні Послуги', "Литовська мова", "Поширені питання"
+];
+
+//menu with free thing/stuff/services
+const freeStuffMenu = 
+[
+    allowanceFinanceVar.freeTransport, allowanceFinanceVar.freeWorkConsultation, allowanceFinanceVar.freeTranslator,
+    allowanceFinanceVar.freePrintout, allowanceFinanceVar.freeСommunication, allowanceFinanceVar.freeLegalAid, allowanceFinanceVar.freePatsStuff, 
+    allowanceFinanceVar.freeBeautyStauff, allowanceFinanceVar.freeMedOptica, allowanceFinanceVar.freeLessonsAndCourses, allowanceFinanceVar.freeForChildrenAndMothers,
+    allowanceFinanceVar.freeKonsulska, allowanceFinanceVar.freeArtEvents
+];
+
+const FORWARD_BTN = `Наступна сторінка ➡️`;
+const BACKWARD_BTN = `⬅️ Попередня сторінка`
 
 const bot = new Telegraf(token);
+let currentPostFree;
 
 if (token === undefined) {
     throw new Error('BOT_TOKEN must be provided!')
@@ -35,16 +51,16 @@ bot.command('start', async (ctx) => {
 //listening to, HEARS
 
 bot.hears('По Прибутті В Литву', async (ctx) => mainInfoAboutRefugee(ctx));
-bot.hears('Пошук житла', async (ctx) => lookforanApartment(ctx));
+bot.hears('Пошук житла', async (ctx) => mainMenuFunctionsFile.lookforanApartment(ctx));
 bot.hears("Здоров'я", async (ctx) => infoAboutMedicineFunc(ctx));
 bot.hears('Гуманітарна Допомога', async (ctx) => humanitarianAidFunc(ctx));
-bot.hears('Корисні контакти', async (ctx) => usefulContactsFunc(ctx));
+bot.hears('Корисні контакти', async (ctx) => mainMenuFunctionsFile.usefulContacts(ctx));
 bot.hears('Фінанси, Пільги', async (ctx) => allowanceFinanceFunc(ctx));
-bot.hears('Безкоштовні Послуги', async (ctx) => freeStuffForUkraineFunc(ctx));
+bot.hears('Безкоштовні Послуги', async (ctx) => freeStuffForUkraineFunc(ctx, currentPostFree));
 bot.hears('Робота', async (ctx) => workinLitva(ctx));
 bot.hears('Діти', async (ctx) => educationAndSportFunc(ctx));
-bot.hears('Литовська мова', async (ctx) => languageFunc(ctx));
-bot.hears('Поширені питання', async (ctx) => questionOftenFunc(ctx));
+bot.hears('Литовська мова', async (ctx) => mainMenuFunctionsFile.language(ctx));
+bot.hears('Поширені питання', async (ctx) => mainMenuFunctionsFile.questionOften(ctx));
 
 //Functions
 
@@ -66,18 +82,6 @@ function mainInfoAboutRefugee(ctx) {
         Markup.button.callback("Контакти", 'btn_usefulContacts'),
         Markup.button.callback("Адреси реєстраційних центрів", 'btn_addresses')
     ]));
-}
-
-//useful contacts 
-function usefulContactsFunc(ctx) {
-    ctx.replyWithHTML(contacts.address);
-    ctx.replyWithHTML(contacts.usefulContacts);
-    ctx.replyWithHTML(contacts.medContacts);
-}
-
-//info how look for apartments
-function lookforanApartment(ctx) {
-    ctx.replyWithHTML(apartmentsinfo.sites); 
 }
 
 //show info about med insurance
@@ -123,31 +127,30 @@ function educationAndSportFunc(ctx) {
     ));
 }
 
-//about language, free lessons
-
-function languageFunc(ctx) {
-    ctx.replyWithHTML(languageInfo.sites)
-}
-
 //freeStuff
 function freeStuffForUkraineFunc(ctx) {
-    ctx.replyWithHTML(allowanceFinanceVar.freeTransport);
-    ctx.replyWithHTML(allowanceFinanceVar.freeWorkConsultation);
-    ctx.replyWithHTML(allowanceFinanceVar.freeTranslator);
-    ctx.replyWithHTML(allowanceFinanceVar.freePrintout);
-    ctx.replyWithHTML(allowanceFinanceVar.freeСommunication);
-    ctx.replyWithHTML(allowanceFinanceVar.freeLegalAid);
-    ctx.replyWithHTML(allowanceFinanceVar.freePatsStuff);
-    ctx.replyWithHTML(allowanceFinanceVar.freeBeautyStauff);
-    ctx.replyWithHTML(allowanceFinanceVar.freeMedOptica);
-    ctx.replyWithHTML(allowanceFinanceVar.freeLessonsAndCourses);
-    ctx.replyWithHTML(allowanceFinanceVar.freeForChildrenAndMothers);
-    ctx.replyWithHTML(allowanceFinanceVar.freeKonsulska);
-    ctx.replyWithHTML(allowanceFinanceVar.freeArtEvents);
-}
+    currentPostFree = 0;
 
-function questionOftenFunc(ctx) {
-    ctx.replyWithHTML(questionInfo.qAndA)
+    ctx.replyWithHTML(freeStuffMenu[currentPostFree], {
+        parse_mode: 'HTML',
+        disable_web_page_preview: true,
+        ...Markup.inlineKeyboard([
+          Markup.button.callback(BACKWARD_BTN, 'back_btn'),
+          Markup.button.callback(FORWARD_BTN, 'forward_btn')
+        ])
+      }
+        
+        /* Markup.inlineKeyboard(
+        [
+            [Markup.button.callback('ДЛЯ ЖІНОК та ДІТЯМИ', 'womenStuffFree_btn'), Markup.button.callback('КОНСУЛЬТАЦІЇ З ПРАЦІ', 'consultFree_btn')],
+            [Markup.button.callback('ПОСЛУГИ ПЕРЕКЛАДАЧА', 'tranFree_btn'), Markup.button.callback('ДРУК', 'printFree_btn')],
+            [Markup.button.callback('КОМУНІКАЦІЯ', 'communFree_btn'), Markup.button.callback('ЮРИДИЧНІ ПОСЛУГИ', 'jurFree_btn')],
+            [Markup.button.callback('Для домашніх тварин', 'petFree_btn'), Markup.button.callback('Послуги', 'serviceFree_btn')],
+            [Markup.button.callback('ОПТИКА', 'glassesFree_btn'), Markup.button.callback('КУРСИ, ЛЕКЦІЇ', 'coursesFree_btn')],
+            [Markup.button.callback('МИСТЕЦЬКІ ПОДІЇ', 'artStuffFree_btn'), Markup.button.callback('КОНСУЛЬСЬКА ДОПОМОГА', 'konsulFree_btn')],
+        ]
+        ) */
+    );
 }
 
 //Actions
@@ -248,7 +251,48 @@ bot.action('lessonsforChildren_btn', async (ctx) => {
 
 
 
+//==============================Free Menu Staff===============================
 
+//next page
+bot.action('forward_btn', async (ctx) => {
+
+    if (currentPostFree === freeStuffMenu.length-1) {
+        currentPostFree = 0;
+    } 
+    else {
+        currentPostFree++;
+    }
+
+    await ctx.answerCbQuery();
+    return await ctx.editMessageText(freeStuffMenu[currentPostFree], {
+        parse_mode: 'HTML',
+        disable_web_page_preview: true,
+        ...Markup.inlineKeyboard([
+            Markup.button.callback(BACKWARD_BTN, 'back_btn'),
+            Markup.button.callback(FORWARD_BTN, 'forward_btn')
+        ])
+    })
+})
+
+//back
+bot.action('back_btn', async (ctx) => {
+    if (currentPostFree === 0) {
+        currentPostFree = freeStuffMenu.length-1
+    }
+    else {
+        currentPostFree--;
+    }
+
+    await ctx.answerCbQuery();
+    return await ctx.editMessageText(freeStuffMenu[currentPostFree], {
+        parse_mode: 'HTML',
+        disable_web_page_preview: true,
+        ...Markup.inlineKeyboard([
+            Markup.button.callback(BACKWARD_BTN, 'back_btn'),
+            Markup.button.callback(FORWARD_BTN, 'forward_btn')
+        ])
+    })
+})
 
 
 bot.launch();

@@ -25,28 +25,7 @@ https://www.vdi.lt/PdfUploads/ukr.pdf
 `
 
 const howToFindWork = `
-1 Зареєструватися в службі зайнятості
-2 Знайдіть роботу самостійно.
-3 Працювати самостійно на підставі ліцензії на підприємницьку діяльність або індивідуальну зайнятість
 
-Служба зайнятості готова прийняти жителів України в Литві
-
-Pеєстрація та додаткова інформація:
-Служба зайнятості https://uzt.lt/ua/  
-Інформація російською мовою: +370 661 10885 
-Загальна інформація 1883 
-
-Регіональні відділи:
-+370 658 26 755 Vilnius
-+370 374 09 882 Kaunas
-+370 672 28 204 Jonava
-+370 672 98 949 Alytus
-+370 658 24 346 Klaipėda
-+370 610 38 727 Panevėžys
-+370 616 46 608 Šiauliai
-+370 607 54955 Marijampolė 
-
-Пам’ятка служби зайнятості https://drive.google.com/file/d/1fcpbBxYVuHFMKOrr3urnEl3jL9fC_Dsv/view?usp=sharing 
 
 `
 
@@ -177,6 +156,30 @@ https://lrkm.lrv.lt/uploads/lrkm/documents/files/Informacija%20apie%20idarbinimo
 `
 
 const recommendationsForHowToWork = `
+<b>Як знайти роботу в Литві?</b>
+
+▪️ Зареєструватися в службі зайнятості
+▪️ Знайдіть роботу самостійно.
+▪️ Працювати самостійно на підставі ліцензії на підприємницьку діяльність або індивідуальну зайнятість
+
+<b>Служба зайнятості готова прийняти жителів України в Литві</b>
+Pеєстрація та додаткова інформація:
+Служба зайнятості https://uzt.lt/ua/  
+Інформація російською мовою: +370 661 10885 
+Загальна інформація 1883 
+
+<b>Регіональні відділи:</b>
++370 658 26 755 Vilnius
++370 374 09 882 Kaunas
++370 672 28 204 Jonava
++370 672 98 949 Alytus
++370 658 24 346 Klaipėda
++370 610 38 727 Panevėžys
++370 616 46 608 Šiauliai
++370 607 54955 Marijampolė 
+
+<b>Пам’ятка служби зайнятості</b> <a href="https://drive.google.com/file/d/1fcpbBxYVuHFMKOrr3urnEl3jL9fC_Dsv/view?usp=sharing">Скачати</a> 
+
 <b>Поради щодо найму, написання резюме</b>				
 Laisva Kėdė	
 https://laisvakede.lt/blogas/f/job-search-for-ukrainians-recommendations-lt-en-ru 	

@@ -35,6 +35,7 @@ const FORWARD_BTN = `Наступна сторінка ➡️`;
 const BACKWARD_BTN = `⬅️ Попередня сторінка`;
 const RETURN_BACK_TO_MENU = "🔙 Повернутися до «Здоров'я»";
 const RETURN_BACK_TO_FINANCE = '🔙 Повернутися до «Фінанси, Пільги»';
+const RETURN_BACK_TO_WORK = '🔙 Повернутися до «Робота»';
 
 const MENU_HEALTH = [
     [Markup.button.callback('Стоматологія 🦷', "dental_btn"), Markup.button.callback('Жінкам 🤰🏻', "pregnantWomen_btn")],
@@ -49,11 +50,13 @@ const MENU_EDUCATION = [
 ];
 
 const MENU_BUTTONS = [
-    [
-        Markup.button.callback(BACKWARD_BTN, 'back_btn'),
-        Markup.button.callback(FORWARD_BTN, 'forward_btn')
-    ]
+    [Markup.button.callback(BACKWARD_BTN, 'back_btn'), Markup.button.callback(FORWARD_BTN, 'forward_btn')]
 ];
+
+const MENU_ABOUT_WORK = [
+    [Markup.button.callback('Рекомендации/Помощь по поиску работы', 'recHelpLook_btn')],
+    [Markup.button.callback('Сайти для поиска работы', 'sitesofwork_btn'), Markup.button.callback('Вакансии', 'vacations_btn')]
+]
 
 const bot = new Telegraf(token);
 let currentPostFree;
@@ -130,10 +133,7 @@ function allowanceFinanceFunc(ctx) {
 
 //show work posts
 function workinLitva(ctx) {
-    ctx.replyWithHTML(workInfo.basicInfoAboutWork, Markup.inlineKeyboard([
-        Markup.button.callback('Як знайти роботу?', 'howtowork_btn'),
-        Markup.button.callback('Сайти та оголошення', 'sitesofwork_btn'),
-    ]))
+    ctx.replyWithHTML(workInfo.basicInfoAboutWork, Markup.inlineKeyboard(MENU_ABOUT_WORK))
 }
 
 //show block about education and sport for children also
@@ -208,16 +208,6 @@ bot.action('freeStuff_btn', async (ctx) => {
         ])
       }
     );
-});
-
-// work
-bot.action('howtowork_btn', async (ctx) => {
-    await ctx.replyWithHTML(workInfo.howToFindWork);
-});
-
-bot.action('sitesofwork_btn', async (ctx) => {
-    await ctx.replyWithHTML(workInfo.sitesforworkpart1);
-    await ctx.replyWithHTML(workInfo.sitesforworkpart2);
 });
 
 //Education
@@ -342,6 +332,52 @@ bot.action('backToFinance_btn', async (ctx) => {
     })
 });
 
+//==============================WORK BLOCK MENU===================================
+
+// work
+bot.action('recHelpLook_btn', async (ctx) => {
+    await ctx.editMessageText(workInfo.recommendationsForHowToWork, {
+        parse_mode: "HTML",
+        disable_web_page_preview: true, 
+        ...Markup.inlineKeyboard(
+            [
+                [Markup.button.callback(RETURN_BACK_TO_WORK, 'backToTheWorkMenu_btn')],
+            ]
+        )})
+});
+
+//show post with sites
+bot.action('sitesofwork_btn', async (ctx) => {
+    await ctx.answerCbQuery();
+    await ctx.editMessageText(workInfo.siteForLookForWork, {
+        parse_mode: "HTML",
+        disable_web_page_preview: true,
+        ...Markup.inlineKeyboard([
+            [Markup.button.callback(RETURN_BACK_TO_WORK, 'backToTheWorkMenu_btn')]
+        ])
+    });
+});
+
+bot.action('vacations_btn', async (ctx) => {
+    await ctx.answerCbQuery();
+    await ctx.editMessageText(workInfo.vacationONGoogleDocs, {
+        parse_mode: "HTML",
+        disable_web_page_preview: true,
+        ...Markup.inlineKeyboard([
+            [Markup.button.callback(RETURN_BACK_TO_WORK, 'backToTheWorkMenu_btn')]
+        ])
+    });
+});
+
+//back to the main menu
+bot.action('backToTheWorkMenu_btn', async (ctx) => {
+    await ctx.answerCbQuery();
+    await ctx.editMessageText(workInfo.basicInfoAboutWork, {
+        parse_mode: "HTML",
+        disable_web_page_preview: false,
+        ...Markup.inlineKeyboard(MENU_ABOUT_WORK)
+    });
+});
 
 //==============================Free Menu Staff===============================
 

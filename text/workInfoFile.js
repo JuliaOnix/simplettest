@@ -1,20 +1,27 @@
 const basicInfoAboutWork = `
-Ви можете почати працювати або займатися самостійною діяльністю:
-Якщо у вас є біометричний паспорт, ви можете негайно почати працювати або займатися самостійною діяльністю. Вам не потрібен дозвіл на роботу;
-Якщо у вас немає біометричного паспорта, ви зможете почати працювати або займатися самостійною діяльністю після реєстрації в міграційному відділі чи центрі реєстрації. Вам не потрібен дозвіл на роботу.
-Після реєстрації в Департаменті міграції ви можете одразу влаштуватися на роботу, не чекаючи дозволу на тимчасове проживання (LLG).
-Українці, які подали заяву про надання притулку в Литовській Республіці, мають право працювати з дати реєстрації в Литовській міграційній інформаційній системі.
-Для тих, хто хоче найняти українців, не потрібно буде звертатися до служби зайнятості для отримання дозволу на роботу та/або рішення про придатність до роботи.
+<b>Ви можете почати працювати або займатися самостійною діяльністю:</b>
+▪️ Якщо у вас <u>є біометричний паспорт</u>, ви можете негайно почати працювати або займатися самостійною діяльністю. Вам не потрібен дозвіл на роботу; 
+▪️ Якщо у вас <u>немає біометричного паспорта</u>, ви зможете почати працювати або займатися самостійною діяльністю <b>після</b> реєстрації в міграційному відділі
+чи центрі реєстрації. Вам не потрібен дозвіл на роботу.
 
-Вебінар російською мовою про працевлаштування, охорону здоров'я, соціальні гарантії та освіту для  дітей в Литві:
-https://www.youtube.com/watch?v=neijMI6xKng 
+Після реєстрації в Департаменті міграції ви можете одразу влаштуватися на роботу,
+не чекаючи дозволу на тимчасове проживання (LLG).
 
-Знати свої права! Інформація щодо інспекції праці для українців:
+Українці, які подали заяву про надання притулку в Литовській Республіці, 
+мають право працювати з дати реєстрації в Литовській міграційній інформаційній системі.
+
+Для тих, хто хоче найняти українців, не потрібно буде звертатися до служби зайнятості для 
+отримання дозволу на роботу та/або рішення про придатність до роботи.
+
+<b>Вебінар російською мовою про працевлаштування, охорону здоров'я, соціальні гарантії та освіту для  дітей в Литві:</b>
+<a href="https://www.youtube.com/watch?v=neijMI6xKng">Вебінар</a> 
+
+<b>Знати свої права! Інформація щодо інспекції праці для українців:</b>
 https://www.vdi.lt/Forms/Tekstas1.aspx?Tekstai_ID=3601 
 https://www.vdi.lt/PdfUploads/ukr.pdf 
 
-Увага! Остерігайтеся експлуатації! 
-Завжди існує ризик експлуатації та насильства на роботі. Більше інформації – у документі «Увага! Остерігайтеся експлуатації!»
+<b>Увага! Остерігайтеся експлуатації! </b>
+Завжди існує ризик експлуатації та насильства на роботі. Більше інформації – <a href="https://docs.google.com/document/d/1cuqYAQA3YYNlKbg0MRyVG1Qhr6PctL1XBWQjht2RYBc/edit">у документі</a>
 `
 
 const howToFindWork = `
@@ -43,163 +50,152 @@ Pеєстрація та додаткова інформація:
 
 `
 
-const sitesforworkpart1 = `
-Поради щодо найму, написання резюме				
-Laisva Kėdė	
-https://laisvakede.lt/blogas/f/job-search-for-ukrainians-recommendations-lt-en-ru 	
+const siteForLookForWork = `
+<b>SCOBO</b>	
+https://www.scobo.lt	
+Платформа для реєстрації компаній, які працюють українцями. 
+На платформі вже зареєструвалися понад 200 компаній. 
+Різні професії.	
+Ви залишите свій контакт на сторінці	
 
-Рекомендації, як поводитися на ринку праці 	
-+370 675 28083
-jevgenija@laisvakede.lt
+<b>CV online</b>	
+Онлайн-платформа вакансії	
+Спілкування з роботодавцями відбувається онлайн
+https://cvonline.lt/lt/	
 
-Socialinis pokytis	
-https://www.facebook.com/socpokytis/posts/416717343557309	
+<b>Cv.lt</b>	
+Онлайн-платформа вакансії	
+Спілкування з роботодавцями відбувається онлайн	
+https://www.cv.lt/	
 
-Консультації з питань працевлаштування, посередництво при працевлаштуванні 
-+37060439060 (RU)
-+37060438869 (EN)
-socialinispokytis@gmail.com
+<b>CV Market</b>	
+Онлайн-платформа вакансії	
+Спілкування з роботодавцями відбувається онлайн	
+https://www.cvmarket.lt 	
 
-Gamedev	
-https://t.me/ukranian_gamedev_in_lt	
+<b>CV Bankas</b>	
+Онлайн-платформа вакансії	
+Спілкування з роботодавцями відбувається онлайн	
+https://www.cvbankas.lt/
 
-Для професіоналів ігрової індустрії. Telegram-чат, у якому фахівець допомагає українцям скласти резюме та портфоліо за литовськими зразками. (2D / 3D художники, UI / UX, програмісти ігор)	
-онлайн спілкування	
-
-Платформи пошуку роботи				
+<b>Платформи пошуку роботи</b>				
 https://asgaliu.lt/
 www.yamozhu.lt
 www.yamozhu.com	
-Сайт призначений для українських біженців, які бажають надавати свої послуги	
+Сайт призначений для українських біженців, які бажають надавати свої послуги
 
-Employment Service	
-https://uzt.lt 
+<b>Alliance for Recruitment</b>	
+Онлайн-платформа вакансії	
+Спілкування з роботодавцями відбувається онлайн	
+https://www.afr.lt/ru/predlozheniya-o-rabote
 
+<b>Quick Start Lithuania</b>	
+https://quickstartlithuania.com/	
+
+<b>Онлайн-платформа вакансії</b>	
+https://www.instagram.com/joboffersforukrainians/
+
+<b>Employment Service</b>	
 Державна служба зайнятості	
+Виберіть у верхньому правому куті „Darbo paieška“ („Пошук роботи“) і в жовтій таблиці 
+„Greita paieška“ („Швидкий пошук“) поставте прапорець „Ukrainiečiams“ („для українців“)
 https://uzt.lt/ 
 Info in russian: 
 +370 661 10885
 General info 1883 
 Email: info@uzt.lt
 
-Виберіть у верхньому правому куті „Darbo paieška“ („Пошук роботи“) і в жовтій таблиці „Greita paieška“ („Швидкий пошук“) поставте прапорець „Ukrainiečiams“ („для українців“)
-
-Alliance for Recruitment	
-https://www.afr.lt/en	
-Онлайн-платформа вакансії	
-Спілкування з роботодавцями відбувається онлайн	
-
-Quick Start Lithuania	
-https://quickstartlithuania.com/	
-
-Онлайн-платформа вакансії	
-https://www.instagram.com/joboffersforukrainians/
-
-Building Bridges	
-https://buildingbridges.lt/building-bridges-ukraine/	
+<b>Building Bridges</b>	
+https://buildingbridges.lt/positions/	
 пропозиції роботи для людей похилого віку 	
 info@buildingbridges.lt 
 +370 621 61 074	
 
-Unicorns.lt	
-https://unicorns.lt/en/jobs	
+<b>Unicorns.lt</b>	
 Оголошення про роботу в дуже популярних стартапах „Vinted“, „Tesonet“, „KiloHealth“, 
 „Hostinger“, „Bored Panda“, „Omnisend“, „Tech zity“,  „PVcase“, „Trafi“, 
 „TransferGo“, „Whatagraph“.
-Подати заявку можна на сторінці	
+Подати заявку можна на сторінці	- https://unicorns.lt/en/jobs	
 
-Список для дизайнерів	<a href='https://docs.google.com/spreadsheets/d/1qmkDV0osQvafAsN36pMM0F1u7Bn9fTpaNkCK-RJk8KY/htmlview#gid=0'>docs.google.com</a>
+<b>Inspired</b> 	
+Комунікаційне агентство	
+https://inspired.lt/darbo-skelbimai/ 
 
+<b>Gamedev Camp</b>	
+https://gamedev.camp/ukraine 	
+роботи в ігровій індустрії 	
+team@gamedev.camp	
+`
 
-Компанії в Литві приймають працівників з України	
+const vacationONGoogleDocs =   `
+Список для дизайнерів <a href='https://docs.google.com/spreadsheets/d/1qmkDV0osQvafAsN36pMM0F1u7Bn9fTpaNkCK-RJk8KY/htmlview#gid=0'>docs.google.com</a>
 
-Пропозиції роботи компаній Вільнюса	
+<b>Пропозиції роботи компаній Вільнюса</b>
 <a href='https://docs.google.com/spreadsheets/d/1Rs_Z3ukNii_u8MgV6lwLbg_wtXUt33jx6SjRVO2K8Sg/edit#gid=0'>docs.google.com</a>	
-Робота в компаніях Вільнюса	Контакти є в документі	
+Робота в компаніях Вільнюса	Контакти є в документі
 
-Список компаній. 
-Реклама та спілкування	
+<b>Реклама та спілкування</b>	
 https://docs.google.com/spreadsheets/d/1X_QblcTh8NQvI-upUKu6XelkbzqeolqFSIKiImxAXhg/edit#gid=0 	
 Список компаній, які наймають українців для роботи в рекламі та комунікації
 
-Найм українських талантів: 
-
-кіно і телеіндустрія	
-
-https://docs.google.com/spreadsheets/d/1jsj58fFxuM2Ufplz25OjfrLSy4lz_mzI5OuwDAjgxgA/edit#gid=0
+<b>Кіно і телеіндустрія</b>	
 Список організацій, які наймають українців для роботи в кіно та телевізійній індустрії
+https://docs.google.com/spreadsheets/d/1jsj58fFxuM2Ufplz25OjfrLSy4lz_mzI5OuwDAjgxgA/edit#gid=0
 
-Салон фортепіано „Organum“	
-https://www.facebook.com/FortepijonuSalonasOrganum/ `
-  
-const sitesforworkpart2 = `
-https://www.facebook.com/FortepijonuSalonasOrganum/posts/5161731997180590
-Шукаємо професійних виконавців класичної музики з України!  
-Якщо ви виконавець класичної музики та біженець з війни, зв’яжіться з нами. 	
+<b>Салон фортепіано „Organum“</b>	
+https://www.facebook.com/FortepijonuSalonasOrganum/
+Шукаємо професійних виконавців класичної музики з України!
+Якщо ви виконавець класичної музики та біженець з війни, зв’яжіться з нами. 
+https://www.facebook.com/FortepijonuSalonasOrganum/posts/5161731997180590	
 julija.sadaunykaite@gmail.com
 infokoncertas@gmail.com 
 +370 698 37221
 info@organum.lt
 
-Logopedijos centras „Papūga“ Логопедичний центр „Papūga“	
-http://www.geraslogopedas.lt/ 
-https://www.facebook.com/geraslogopedas/photos/a.470570837061630/1105945790190795/
+<b>Logopedijos centras „Papūga“ Логопедичний центр „Papūga“</b>
 Логопедичний центр "Папуга" запрошує фахівців з України: 
 спеціальних педагогів, 
 логопедів, 
 ерготерапевтів.	
+http://www.geraslogopedas.lt/ 
+https://www.facebook.com/geraslogopedas/photos/a.470570837061630/1105945790190795/	
 geraslogopedas@gmail.com 
 +370 686 92380
 
-Lithuanian IT community helps Ukrainian IT community 			
-https://sites.google.com/view/relocation-help-in-lithuania/?fbclid=IwAR2WzGGw7cXbafoNuL5hL0_VtYANuMkAUDLoXHba7PxThtF3tGWd-k-M7JY	
+<b>Lithuanian IT community helps Ukrainian IT community</b> 			
+<a href="https://sites.google.com/view/relocation-help-in-lithuania/?fbclid=IwAR2WzGGw7cXbafoNuL5hL0_VtYANuMkAUDLoXHba7PxThtF3tGWd-k-M7JY">sites.google.com</a>	
 
-Inspired 	
-https://inspired.lt/darbo-skelbimai/  	
-Комунікаційне агентство		
+<b>Литовський національний театр опери та балету</b>	 
+Якщо ви танцюрист, оркестрант чи співак, зверніться до Литовського національного театру опери та балету.
+http://www.opera.lt/ 		
+jurgita.norvaisiene@opera.lt
 
-Gamedev Camp	
-https://gamedev.camp/ukraine 	
-роботи в ігровій індустрії 	
-team@gamedev.camp	
-
-Vytauto didžiojo universitetas
-https://www.vdu.lt/en/support-to-ua/ 	
-Навчання, проживання, стипендії, кар’єра, мовні курси	
-academic.support@vdu.lt	
-
-Литовський національний театр опери та балету	 
-http://www.opera.lt/ 	
-Якщо ви танцюрист, оркестрант чи співак, зверніться до Литовського національного театру опери та балету.	
-jurgita.norvaisiene@opera.lt	
-
-Національна філармонія, Державний симфонічний оркестр, Ансамбль танцю «Литва»	
-https://lrkm.lrv.lt/uploads/lrkm/documents/files/Informacija%20apie%20idarbinimo%20galimybes-UA.pdf	 
+<b>Національна філармонія, Державний симфонічний оркестр, Ансамбль танцю «Литва»</b>
 Пропозиції роботи для художників	Інформація в документі	
+https://lrkm.lrv.lt/uploads/lrkm/documents/files/Informacija%20apie%20idarbinimo%20galimybes-UA.pdf	 
 
-SCOBO	www.scobo.lt	
-Платформа для реєстрації компаній, які працюють українцями. На платформі вже зареєструвалися понад 200 компаній. Різні професії.	
-Ви залишите свій контакт на сторінці	
+`
 
-CV online	https://cvonline.lt/lt/	
-Онлайн-платформа вакансії	Спілкування з роботодавцями відбувається онлайн
+const recommendationsForHowToWork = `
+<b>Поради щодо найму, написання резюме</b>				
+Laisva Kėdė	
+https://laisvakede.lt/blogas/f/job-search-for-ukrainians-recommendations-lt-en-ru 	
 
-Cv.lt	
-https://www.cv.lt/	Онлайн-платформа вакансії	
-Спілкування з роботодавцями відбувається онлайн	
+<b>Socialinis pokytis</b>	
+https://www.facebook.com/socpokytis/posts/416717343557309	
+Консультації з питань працевлаштування, посередництво при працевлаштуванні
++37060439060 (RU)
++37060438869 (EN)
+socialinispokytis@gmail.com
 
-CV Market	
-https://www.cvmarket.lt 	
-Онлайн-платформа вакансії	
-Спілкування з роботодавцями відбувається онлайн	
-
-CV Bankas	
-https://www.cvbankas.lt/	
-Онлайн-платформа вакансії	
-Спілкування з роботодавцями відбувається онлайн	
+<b>Vytauto didžiojo universitetas</b>
+Навчання, проживання, стипендії, кар’єра, мовні курси
+https://www.vdu.lt/en/support-to-ua/ 		
+academic.support@vdu.lt	
 `
 
 module.exports.basicInfoAboutWork = basicInfoAboutWork;
 module.exports.howToFindWork = howToFindWork;
-module.exports.sitesforworkpart1 = sitesforworkpart1;
-module.exports.sitesforworkpart2 = sitesforworkpart2;
+module.exports.recommendationsForHowToWork = recommendationsForHowToWork;
+module.exports.vacationONGoogleDocs = vacationONGoogleDocs;
+module.exports.siteForLookForWork = siteForLookForWork;

@@ -16,7 +16,7 @@ const RETURN_BACK_TO_HUMANAID_MENU = Markup.button.callback('🔙 Поверну
 const MENU_HEALTH = [
     [Markup.button.callback('Стоматологія 🦷', "dental_btn"), Markup.button.callback('Жінкам 🤰🏻', "pregnantWomen_btn")],
     [Markup.button.callback('Психологічна Допомога', "mentalHealth_btn")],
-    [Markup.button.callback('Діабет', "diabet_btn"), Markup.button.callback('COVID-19 🦠', "covid_btn"), Markup.button.url('Інше', "anotherMed_btn")]
+    [Markup.button.callback('Діабет', "diabet_btn"), Markup.button.callback('COVID-19 🦠', "covid_btn"), Markup.button.callback('Інше', "anotherMed_btn")]
 ];
 
 //menu for group lessons

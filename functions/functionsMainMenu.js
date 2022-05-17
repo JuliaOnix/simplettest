@@ -11,7 +11,8 @@ const sitesPost = require('../text/sitesWithServices')
 async function showPostWithSites(ctx) {
     await ctx.replyWithHTML(sitesPost.sites, {
         parse_mode: 'HTML',
-        disable_web_page_preview: true
+        disable_web_page_preview: true, 
+        ...Markup.inlineKeyboard(constans.MENU_BUTTONS_SITES)
     });
 }
 
@@ -25,6 +26,7 @@ async function infoAboutMedicineFunc(ctx) {
 }
 
 async function writeToOwnerOfTelegram(ctx) {
+    await ctx.answerCbQuery();
     await ctx.replyWithSticker('CAACAgIAAxkBAAIFw2KEGHzNOLXl_cyqMeGtm58IyDnsAAJwEwAC611ASNIumawc0J4fJAQ');
     await ctx.replyWithHTML("Если у вас возникла проблема по использованию бота или у вас есть идеи по улучшение, напишите ➡️ <a href='https://t.me/IndependentRiver'>сюда</a>", {
         parse_mode: "HTML", 

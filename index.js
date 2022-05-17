@@ -10,6 +10,7 @@ const workInfo = require('./text/workInfoFile')
 const educationShcools = require('./text/educationAndSportInfo')
 const mainMenuFunctionsFile = require('./functions/functionsMainMenu')
 const constans = require('./functions/fileCostants')
+const sitesInfo = require('./text/sitesWithServices')
 
 
 const token = process.env.BOT_TOKEN
@@ -687,6 +688,35 @@ bot.action('return_to_human_aid_menu_btn', async (ctx) => {
         ...Markup.inlineKeyboard(constans.MENU_WITH_CITIES_OF_HUMAN_AID)
     })
 });
+
+// ANCHOR Sites Block
+
+bot.action("telegramChannels_btn", async (ctx) => {
+    await ctx.answerCbQuery();
+    return await ctx.editMessageText(sitesInfo.telegramChannelsList, {
+        parse_mode: 'HTML',
+        disable_web_page_preview: true,
+        ...Markup.inlineKeyboard([constans.RETURN_BACK_TO_SITES])
+    })
+})
+
+bot.action("facebookGroups_btn", async (ctx) => {
+    await ctx.answerCbQuery();
+    return await ctx.editMessageText(sitesInfo.facebookGroupsText, {
+        parse_mode: 'HTML',
+        disable_web_page_preview: true,
+        ...Markup.inlineKeyboard([constans.RETURN_BACK_TO_SITES])
+    })
+})
+
+bot.action('return_to_sites_block_btn', async (ctx) => {
+    await ctx.answerCbQuery();
+    return await ctx.editMessageText(sitesInfo.sites, {
+        parse_mode: 'HTML',
+        disable_web_page_preview: true,
+        ...Markup.inlineKeyboard(constans.MENU_BUTTONS_SITES)
+    })
+})
 
 
 /* //next page

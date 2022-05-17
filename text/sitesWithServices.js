@@ -1,4 +1,3 @@
-
 const sites = `
 <b>КАТАЛОГ МЕДИЦИНСКИХ УСЛУГ</b> 
 (АПТЕКИ, ПОЛИКЛИННИКИ и т. д.):
@@ -53,5 +52,73 @@ https://eavalyne.lt
 https://danija.lt
 https://este.lt
 https://famclub.lt
+
+<b>Вот тут можно купить флаг Украины:</b>
+<a href="https://brandus.lt/pirkti-internetu/veliavos/valstybiu-veliavos">https://brandus.lt</a>
+<a href="https://www.akabaltic.lt/veliavu-gamyba/ukrainos-veliavos.html">https://www.akabaltic.lt</a>
+<a href="https://koalaprint.lt/produktai/veliavu-gamyba/ukrainos-veliavos/">https://koalaprint.lt</a>
+<a href="https://flagmanas.lt/ukrainos-atributika/">https://flagmanas.lt</a>
+`
+
+const telegramChannelsList = `
+<b>Украинцы в Литве</b> - https://t.me/ukrainpatriot
+
+<b>Новости из Литвы</b> - https://t.me/rudelfi
+
+<b>Новости что происходит в Литве</b> - https://t.me/rradiolt
+
+<b>Vilnius Girls</b>👑 (Группа для девушек из Вильнюса) - https://t.me/VilniusGirls 
+
+<b>Украинцы в Паланге</b> - https://t.me/+Q6KPSibr39hlOGUy
+` 
+
+const facebookGroupsText = `
+<b>Українці у Литві / Украинцы в Литве / Ukrainiečiai Lietuvoje</b>
+https://www.facebook.com/groups/2294077994171869
+
+<b>Русскоязычные девушки Вильнюса</b> 
+https://www.facebook.com/groups/2639955882956165
+
+<b>Группы Вильнюса, где отдают мебель и другие б/у вещи</b> 
+• Free your Stuff VILNIUS / Atiduotuvė
+https://www.facebook.com/groups/1822607451305797
+Vilniuje atiduodu už šokoladą arba kavą
+https://www.facebook.com/groups/402245120175026
+Free atiduodu, dovanoju Vilnius
+https://www.facebook.com/groups/496838900815085
+Atiduotuve Vilnius / Free your stuff
+https://www.facebook.com/groups/130415577697665
+Dovanoju, atiduodu. VILNIUS
+https://www.facebook.com/groups/648801559074232
+Барахолка в Литве
+https://www.facebook.com/groups/116329859740519
+
+<b>Отдам даром(группы в fb):</b>
+Каунас
+https://www.facebook.com/groups/777531836529525
+Клайпеда
+https://www.facebook.com/groups/668172780250851
+Общая
+https://www.facebook.com/groups/714686082617374
+Общая
+https://www.facebook.com/groups/dovanuoj
+
+ 💅🏻💇🏻‍♀️ <b>Ищут моделей:</b>
+По всей Литве
+https://www.facebook.com/groups/485814969203661)
+По всей Литве
+https://www.facebook.com/groups/390641094460378
+По всей Литве
+https://www.facebook.com/groups/2323366677989432
+Каунас
+https://www.facebook.com/groups/976573235815146
+Вильнюс
+http://facebook.com/groups/249255388815100
+Вильнюс 
+https://www.facebook.com/groups/320430144999724
+Шяуляй
+https://www.facebook.com/groups/4263308243700099
 `
 module.exports.sites = sites;
+module.exports.facebookGroupsText = facebookGroupsText;
+module.exports.telegramChannelsList = telegramChannelsList;

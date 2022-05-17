@@ -11,6 +11,8 @@ const RETURN_BACK_TO_FIRST = '🔙 Повернутися до «По Прибу
 const RETURN_BACK_TO_FREE_STUFF = Markup.button.callback('🔙 Повернутися до «Безкоштовні Послуги»', "return_to_free_stuff_btn");
 const RETURN_BACK_TO_GROUPLESSONS_EDUCATION = '🔙 Повернутися до «ГУРТКИ, ЛЕКЦІЇ, УРОКИ»';
 const RETURN_BACK_TO_HUMANAID_MENU = Markup.button.callback('🔙 Повернутися до «Гуманітарна Допомога»', "return_to_human_aid_menu_btn");
+const RETURN_BACK_TO_SITES = Markup.button.callback('🔙 Повернутися до «Каталог сайтів»', "return_to_sites_block_btn");
+
 
 //menu for health block 
 const MENU_HEALTH = [
@@ -65,7 +67,14 @@ const MENU_BUTTONS = [
     [Markup.button.callback(BACKWARD_BTN, 'back_btn'), Markup.button.callback(FORWARD_BTN, 'forward_btn')]
 ];
 
+const MENU_BUTTONS_SITES = [
+    [Markup.button.callback('Телеграм канали', 'telegramChannels_btn'), Markup.button.callback('Facebook групи', 'facebookGroups_btn')]
+]
+
+
 module.exports.MENU_HEALTH = MENU_HEALTH;
+module.exports.RETURN_BACK_TO_SITES = RETURN_BACK_TO_SITES;
+module.exports.MENU_BUTTONS_SITES = MENU_BUTTONS_SITES;
 module.exports.MENU_WITH_CITIES_OF_HUMAN_AID = MENU_WITH_CITIES_OF_HUMAN_AID;
 module.exports.LIST_TEXT_OF_FREE_STUFF = LIST_TEXT_OF_FREE_STUFF;
 module.exports.MENU_FREE_STUFF = MENU_FREE_STUFF;

@@ -48,7 +48,7 @@ https://smsm.lrv.lt/uploads/smsm/documents/files/Ukrain%20Koordinatori%C5%B3%20s
 `
 
 const artSchoolsContacts = `
-Художні школи
+<b>Художні школи</b>
 
 <u>Vilnius Nacionalinė M. K. Čiurlionio menų mokykla
 T. Kosciuškos</u>
@@ -203,7 +203,7 @@ const sportPlaces = `
 
 `
 
-const freeLessonsEducation1 = `
+const helpInThings = `
 <b>ПІДТРИМКА В РЕЧАХ</b>
 
 <u>Підтримка в Литві</u>	
@@ -236,6 +236,9 @@ informacija@savethechildren.org
 +370 526 10815	
 Робочі години 
 I - V 8.30 -17.30
+`
+
+const groupsLections = `
 					
 <b>ГУРТКИ, ЛЕКЦІЇ, УРОКИ</b>	
 
@@ -243,31 +246,12 @@ I - V 8.30 -17.30
 Муніципалітет Вільнюса склав список неформальної освіти	Контакти є в документі
 <a href="https://docs.google.com/document/d/1GvsgKB6oyPGMLqsA59lAOpwKPROUmdrlmYFTrgDv-fU/edit">https://docs.google.com</a> 	
 
-<u>Фортепиано</u>
-Giedre Daugeliene	
-https://www.facebook.com/giedre.daugeliene	
-Я преподаватель фортепиано, говорю по-русски, немного по-английски. Может быть, есть украинские дети, которые раньше занимались музыкой. Я могла бы научить тех, кто хочет играть на фортепиано. Бесплатно. 	
-+370 600 14394 Вильнюс (Vilnius)
-райони: Pavilnys, Naujininkai	
-
-<u>Motus šokio mokykla  Школа танцю Мотус</u>
-http://www.motus.lt/ 
-
-https://www.facebook.com/Motussokiomokykla/ 	
-Безкоштовні танці для сімей з дітьми
-P. Vileišio g. 18N-401, Vilnius.
-info@motus.lt  
-(LT) +37065097071
-(RU) +37065593299
-
 <u>Lingua Lituanica</u>	
 https://lingualit.lt/lt/naujienos/nemokamas-lietuviu-kalbos-vaiku-kursas-ukrainieciams/ 
 Безкоштовний курс литовської мови для дітей українських біженців. При реєстрації на курс необхідно пред’явити реєстраційну картку в міграційному відділі.	
 Регистрация здесь - <a href="https://docs.google.com/forms/d/e/1FAIpQLSccTfafGuu5rZAavsqjujBday2QJoPK5grfimNQtW6bESDdBA/viewform">Тут</a>
 Заняття проводитимуться в групах за адресою Gedimino pr. 26, Vilnius
-`
 
-const freeLessonsEducation2 = `
 <u>Vilniaus Universitetas | Вільнюський університет</u>	
 https://www.flf.vu.lt/naujienos/bendros-naujienos/5316-kursai	
 
@@ -275,12 +259,6 @@ https://www.flf.vu.lt/naujienos/bendros-naujienos/5316-kursai
 rita.vickiene@flf.vu.lt
 A.Sun Dolls Art. Happily Imperfect Dolls	
 https://www.facebook.com/auma108 
-
-<u>Творческий кружок</u>
-https://www.facebook.com/events/1404774319972665/?ref=newsfeed
-Каждый четверг проведу творческий кружок для детей от 7 лет!
-Будем лепить брошки, куколки, вазочки, пасхальных зайчиков и другие прелести.
-Регистрация +37069941640 Аудра
 
 <u>„Ažuolų vila“ „Дубова вілла“</u>	
 https://www.facebook.com/azuoluvila	
@@ -305,10 +283,7 @@ ukraina@tukstantmeciovaikai.lt
 
 <u>Workshops for kids</u>
 https://www.facebook.com/ira.branitskaya  
-<a href="https://docs.google.com/forms/d/e/1FAIpQLSexhM_y501u62R9o44iMMqW8QUZslkya2by_8k4LffB34KOXw/viewform">docs.google.com</a>  
-
-<u>Різноманітні заняття для дітей, емоційна підтримка</u>
-https://www.facebook.com/ira.branitskaya 
+<a href="https://docs.google.com/forms/d/e/1FAIpQLSexhM_y501u62R9o44iMMqW8QUZslkya2by_8k4LffB34KOXw/viewform">docs.google.com</a>   
 
 <u>Baltijos Cirkas Балтійський цирк</u>	
 https://www.facebook.com/ira.branitskaya   
@@ -420,7 +395,8 @@ okela@inbox.ru
 
 <u>Lietuvos vaikų ir jaunimo centras</u>	  
 https://lvjc.lt/  
-Безплатні гуртки для дітей з українських сімей	Реєстраційна форма - <a href='https://lvjc.lt/naujiena/nemokami-bureliai-ukrainos-seimu-vaikams/?utm_source=newsletter&utm_medium=email&utm_campaign=nemokamas_seminaras_tevams_ir_pagalba_ukrainieciams&utm_term=2022-03-14'>тут</a>
+Бескоштовні гуртки для дітей з українських сімей	
+Реєстраційна форма - <a href='https://lvjc.lt/naujiena/nemokami-bureliai-ukrainos-seimu-vaikams/?utm_source=newsletter&utm_medium=email&utm_campaign=nemokamas_seminaras_tevams_ir_pagalba_ukrainieciams&utm_term=2022-03-14'>тут</a>
 `
 
 const artfree = `
@@ -438,15 +414,42 @@ http://www.keistuoliai.lt/
 https://tinadance.lt/ 	
 Різноманітні стилістичні естрадні танці, табори	
 https://tinadance.lt/kontaktai/	
+
+<u>Творческий кружок</u>
+https://www.facebook.com/events/1404774319972665/?ref=newsfeed
+Каждый четверг проведу творческий кружок для детей от 7 лет!
+Будем лепить брошки, куколки, вазочки, пасхальных зайчиков и другие прелести.
+Регистрация +37069941640 Аудра
+
+<u>Фортепиано</u>
+Giedre Daugeliene	
+https://www.facebook.com/giedre.daugeliene	
+Я преподаватель фортепиано, говорю по-русски, немного по-английски. Может быть, есть украинские дети, которые раньше занимались музыкой. Я могла бы научить тех, кто хочет играть на фортепиано. Бесплатно. 	
++370 600 14394 Вильнюс (Vilnius)
+райони: Pavilnys, Naujininkai	
+
+<u>Motus šokio mokykla  Школа танцю Мотус</u>
+http://www.motus.lt/ 
+
+https://www.facebook.com/Motussokiomokykla/ 	
+Безкоштовні танці для сімей з дітьми
+P. Vileišio g. 18N-401, Vilnius.
+info@motus.lt  
+(LT) +37065097071
+(RU) +37065593299
+
+<u>Різноманітні заняття для дітей, емоційна підтримка</u>
+https://www.facebook.com/ira.branitskaya
+
 `
 
 module.exports.preschool = preschool;
 module.exports.artfree = artfree;
 module.exports.sportfree = sportfree;
-module.exports.freeLessonsEducation2 = freeLessonsEducation2;
-module.exports.freeLessonsEducation1 = freeLessonsEducation1;
+module.exports.helpInThings = helpInThings;
 module.exports.sportPlaces = sportPlaces;
 module.exports.universities = universities;
+module.exports.groupsLections = groupsLections;
 module.exports.profEducation = profEducation;
 module.exports.artSchoolsContacts = artSchoolsContacts;
 module.exports.generalInfoAboutSchool = generalInfoAboutSchool;

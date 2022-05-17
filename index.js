@@ -14,12 +14,14 @@ const mainMenuFunctionsFile = require('./functions/functionsMainMenu')
 
 const token = process.env.BOT_TOKEN
 
+//SECTION CONST
+
 //menu in chatbot
 const mainMenu = 
 [
     '🛬 По Прибутті', '📞 Корисні контакти', '🔎 Пошук житла', 
     '📦 Гуманітарна Допомога',"🩺 Здоров'я", '💵 Фінанси, Пільги', '🏭 Робота', 
-    '👶 Діти', '🆓 Безкоштовні Послуги', "🇱🇹 Литовська мова", "❓ Поширені питання"
+    '🏫 Навчання', '🆓 Безкоштовні Послуги', "🇱🇹 Литовська мова", "❓ Поширені питання"
 ];
 
 //menu with free thing/stuff/services
@@ -37,6 +39,8 @@ const RETURN_BACK_TO_MENU = "🔙 Повернутися до «Здоров'я�
 const RETURN_BACK_TO_FINANCE = '🔙 Повернутися до «Фінанси, Пільги»';
 const RETURN_BACK_TO_WORK = '🔙 Повернутися до «Робота»';
 const RETURN_BACK_TO_FIRST = '🔙 Повернутися до «По Прибутті»';
+const RETURN_BACK_TO_EDUCATION = '🔙 Повернутися до «Навчання»';
+const RETURN_BACK_TO_GROUPLESSONS_EDUCATION = '🔙 Повернутися до «ГУРТКИ, ЛЕКЦІЇ, УРОКИ»';
 
 const MENU_HEALTH = [
     [Markup.button.callback('Стоматологія 🦷', "dental_btn"), Markup.button.callback('Жінкам 🤰🏻', "pregnantWomen_btn")],
@@ -59,6 +63,12 @@ const MENU_ABOUT_WORK = [
     [Markup.button.callback('Сайти для поиска работы', 'sitesofwork_btn'), Markup.button.callback('Вакансии', 'vacations_btn')]
 ]
 
+const MENU_ABOUT_EXTRACURRICULARS = [
+    [Markup.button.callback('МИСТЕЦТВО, ТЕАТР', 'artANDTeatr_btn'), Markup.button.callback('СПОРТ', 'sportLessons_btn')],
+    [Markup.button.callback('УРОКИ', 'lections_btn'), Markup.button.callback('ПІДТРИМКА В РЕЧАХ', 'helpFromEduc_btn')],
+    [Markup.button.callback(RETURN_BACK_TO_EDUCATION, 'returnBackEducation_btn')],
+]
+
 const bot = new Telegraf(token);
 let currentPostFree;
 
@@ -76,7 +86,7 @@ bot.command('start', async (ctx) => {
 //listening to, HEARS
 
 bot.hears(mainMenu[0], async (ctx) => mainInfoAboutRefugee(ctx));
-bot.hears(mainMenu[1], async (ctx) => mainMenuFunctionsFile.usefulContacts(ctx));
+bot.hears(mainMenu[1], (ctx) => mainMenuFunctionsFile.usefulContacts(ctx));
 bot.hears(mainMenu[2], async (ctx) => mainMenuFunctionsFile.lookforanApartment(ctx));
 bot.hears(mainMenu[3], async (ctx) => humanitarianAidFunc(ctx));
 bot.hears(mainMenu[4], async (ctx) => infoAboutMedicineFunc(ctx));
@@ -101,18 +111,6 @@ function startBot(ctx) {
     ]).oneTime().resize());
 }
 
-//main info for people, who came right now and look for info what they have to do.
-function mainInfoAboutRefugee(ctx) {
-    ctx.replyWithHTML(mytext.firstVisit, {
-        parse_mode: "HTML", 
-        disable_web_page_preview: true,
-        ...Markup.inlineKeyboard([
-            Markup.button.callback("Контакти", 'btn_usefulContacts'),
-            Markup.button.callback("Адреси реєстраційних центрів", 'btn_addresses')
-        ])
-    });
-}
-
 //show info about med insurance
 function infoAboutMedicineFunc(ctx) {
     ctx.replyWithHTML(medInfo.aboutMedicine, {
@@ -129,104 +127,166 @@ function humanitarianAidFunc(ctx) {
     ]));
 }
 
-//show menu about finance
-function allowanceFinanceFunc(ctx) {
-    ctx.replyWithHTML(allowanceFinanceVar.infoAboutBanks, Markup.inlineKeyboard([
-        Markup.button.callback('Пільги, на які ви маєте право', 'pilgi_btn'),
-    ]));
-}
+//Actions
+bot.action('btn_anotherCities', async (ctx) => {
+    await ctx.answerCbQuery();
+    ctx.reply('https://www.redcross.lt/kontakti-z-organizaciyami-yaki-nadayut-gumanitarnu-dopomogu-ukrayincyam-ua')
+});
 
-//show work posts
-function workinLitva(ctx) {
-    ctx.replyWithHTML(workInfo.basicInfoAboutWork, Markup.inlineKeyboard(MENU_ABOUT_WORK))
-}
+//SECTION Education
 
 //show block about education and sport for children also
 function educationAndSportFunc(ctx) {
     ctx.replyWithHTML(educationShcools.generalInfoAboutSchool, Markup.inlineKeyboard(MENU_EDUCATION));
 }
 
-//freeStuff
-function freeStuffForUkraineFunc(ctx) {
-    currentPostFree = 0;
-
-    ctx.replyWithHTML(freeStuffMenu[currentPostFree], {
-        parse_mode: 'HTML',
-        disable_web_page_preview: true,
-        ...Markup.inlineKeyboard([
-          Markup.button.callback(BACKWARD_BTN, 'back_btn'),
-          Markup.button.callback(FORWARD_BTN, 'forward_btn')
-        ])
-      }
-    );
-}
-
-//Actions
-
-
-
-
-
-bot.action('btn_anotherCities', async (ctx) => {
-    await ctx.answerCbQuery();
-    ctx.reply('https://www.redcross.lt/kontakti-z-organizaciyami-yaki-nadayut-gumanitarnu-dopomogu-ukrayincyam-ua')
-});
-
-bot.action('pilgi_btn', async (ctx) => {
-    await ctx.answerCbQuery();
-    await ctx.editMessageText(allowanceFinanceVar.infoAboutFinanceHelp,
-    {
-        parse_mode: 'HTML',
-        disable_web_page_preview: true,
-        ...Markup.inlineKeyboard([
-            [Markup.button.callback(RETURN_BACK_TO_FINANCE, 'backToFinance_btn')]
-        ])
-        });
-});
-
-bot.action('freeStuff_btn', async (ctx) => {
-    currentPostFree = 0;
-    await ctx.answerCbQuery();
-    await ctx.editMessageText(freeStuffMenu[currentPostFree], {
-        parse_mode: 'HTML',
-        disable_web_page_preview: true,
-        ...Markup.inlineKeyboard([
-          [Markup.button.callback(BACKWARD_BTN, 'back_btn'), Markup.button.callback(FORWARD_BTN, 'forward_btn')],
-          [Markup.button.callback(RETURN_BACK_TO_FINANCE, 'backToFinance_btn')]
-        ])
-      }
-    );
-});
-
-//Education
-
 bot.action('preschool_btn', async (ctx) => {
-    await ctx.replyWithHTML(educationShcools.preschool)
+    await ctx.answerCbQuery();
+    await ctx.editMessageText(educationShcools.preschool, {
+        parse_mode: "HTML",
+        disable_web_page_preview: true,
+        ...Markup.inlineKeyboard([
+            [Markup.button.callback(RETURN_BACK_TO_EDUCATION, 'returnBackEducation_btn')]
+        ])
+    })
 });
 
 bot.action('artschools_btn', async (ctx) => {
-    await ctx.replyWithHTML(educationShcools.artSchoolsContacts)
+    await ctx.answerCbQuery();
+    await ctx.editMessageText(educationShcools.artSchoolsContacts, {
+        parse_mode: "HTML",
+        disable_web_page_preview: true,
+        ...Markup.inlineKeyboard([
+            [Markup.button.callback(RETURN_BACK_TO_EDUCATION, 'returnBackEducation_btn')]
+        ])
+    })
 });
 
 bot.action('profEduc_btn', async (ctx) => {
-    await ctx.replyWithHTML(educationShcools.profEducation)
+    await ctx.answerCbQuery();
+    await ctx.editMessageText(educationShcools.profEducation, 
+    {
+        parse_mode: "HTML",
+        disable_web_page_preview: true,
+        ...Markup.inlineKeyboard([
+            [Markup.button.callback(RETURN_BACK_TO_EDUCATION, 'returnBackEducation_btn')]
+        ])
+    })
 });
 
 bot.action('univer_btn', async (ctx) => {
-    await ctx.replyWithHTML(educationShcools.universities)
+    await ctx.answerCbQuery();
+    await ctx.editMessageText(educationShcools.universities, {
+        parse_mode: "HTML",
+        disable_web_page_preview: true,
+        ...Markup.inlineKeyboard([
+            [Markup.button.callback(RETURN_BACK_TO_EDUCATION, 'returnBackEducation_btn')]
+        ])
+    })
 });
 
 bot.action('sportEduc_btn', async (ctx) => {
-    await ctx.replyWithHTML(educationShcools.sportPlaces)
+    await ctx.answerCbQuery();
+    await ctx.editMessageText(educationShcools.sportPlaces, {
+        parse_mode: "HTML",
+        disable_web_page_preview: true,
+        ...Markup.inlineKeyboard([
+            [Markup.button.callback(RETURN_BACK_TO_EDUCATION, 'returnBackEducation_btn')]
+        ])
+    })
 });
 
 bot.action('lessonsforChildren_btn', async (ctx) => {
-    await ctx.replyWithHTML(educationShcools.artfree)
-    await ctx.replyWithHTML(educationShcools.sportfree)
-    await ctx.replyWithHTML(educationShcools.freeLessonsEducation1)
-    await ctx.replyWithHTML(educationShcools.freeLessonsEducation2)
+    await ctx.answerCbQuery();
+    await ctx.editMessageText('ГУРТКИ, ЛЕКЦІЇ, УРОКИ', {
+        parse_mode: "HTML",
+        disable_web_page_preview: true,
+        ...Markup.inlineKeyboard(MENU_ABOUT_EXTRACURRICULARS)
+    }); 
 });
+
+//show post about extracurriculars 
+//Art and teatr block
+bot.action('artANDTeatr_btn', async (ctx) => {
+    await ctx.answerCbQuery();
+    await ctx.editMessageText(educationShcools.artfree, {
+        parse_mode: "HTML", 
+        disable_web_page_preview: true,
+        ...Markup.inlineKeyboard([
+            [Markup.button.callback(RETURN_BACK_TO_GROUPLESSONS_EDUCATION, 'return_back_In_GroupMenu_btn')]
+        ])
+    })
+})
+
+//sport 
+bot.action('sportLessons_btn', async (ctx) => {
+    await ctx.answerCbQuery();
+    await ctx.editMessageText(educationShcools.sportfree, {
+        parse_mode: "HTML", 
+        disable_web_page_preview: true,
+        ...Markup.inlineKeyboard([
+            [Markup.button.callback(RETURN_BACK_TO_GROUPLESSONS_EDUCATION, 'return_back_In_GroupMenu_btn')]
+        ])
+    })
+})
+
+//lection
+bot.action('lections_btn', async (ctx) => {
+    await ctx.answerCbQuery();
+    await ctx.editMessageText(educationShcools.groupsLections, {
+        parse_mode: "HTML", 
+        disable_web_page_preview: true,
+        ...Markup.inlineKeyboard([
+            [Markup.button.callback(RETURN_BACK_TO_GROUPLESSONS_EDUCATION, 'return_back_In_GroupMenu_btn')]
+        ])
+    })
+})
+
+//help for children
+bot.action('helpFromEduc_btn', async (ctx) => {
+    await ctx.answerCbQuery();
+    await ctx.editMessageText(educationShcools.helpInThings, {
+        parse_mode: "HTML", 
+        disable_web_page_preview: true,
+        ...Markup.inlineKeyboard([
+            [Markup.button.callback(RETURN_BACK_TO_GROUPLESSONS_EDUCATION, 'return_back_In_GroupMenu_btn')]
+        ])
+    })
+})
+
+//return to choosing type of free groups
+bot.action('return_back_In_GroupMenu_btn', async (ctx) => {
+    await ctx.answerCbQuery();
+    await ctx.editMessageText('ГУРТКИ, ЛЕКЦІЇ, УРОКИ', {
+        parse_mode: "HTML", 
+        disable_web_page_preview: true,
+        ...Markup.inlineKeyboard(MENU_ABOUT_EXTRACURRICULARS)
+    });
+});
+
+//return back to manu education
+bot.action('returnBackEducation_btn', async (ctx) => {
+    await ctx.answerCbQuery();
+    await ctx.editMessageText(educationShcools.generalInfoAboutSchool, {
+        parse_mode: "HTML", 
+        disable_web_page_preview: false,
+        ...Markup.inlineKeyboard(MENU_EDUCATION)
+    })
+})
+
 //SECTION First Visit Block
+
+//main info for people, who came right now and look for info what they have to do.
+function mainInfoAboutRefugee(ctx) {
+    ctx.replyWithHTML(mytext.firstVisit, {
+        parse_mode: "HTML", 
+        disable_web_page_preview: true,
+        ...Markup.inlineKeyboard([
+            Markup.button.callback("Контакти", 'btn_usefulContacts'),
+            Markup.button.callback("Адреси реєстраційних центрів", 'btn_addresses')
+        ])
+    });
+}
 
 bot.action('btn_usefulContacts', async (ctx) => {
     await ctx.answerCbQuery();
@@ -252,6 +312,7 @@ bot.action('btn_addresses', async (ctx) => {
 
 //return to the main menu button
 bot.action('returnBackFirst_btn', async (ctx) => {
+    await ctx.answerCbQuery();
     return await ctx.editMessageText(mytext.firstVisit, {
         parse_mode: "HTML",
         disable_web_page_preview: true, 
@@ -338,6 +399,7 @@ bot.action('covid_btn', async (ctx) => {
 //returning back to the main menu
 bot.action('returnBack_btn', async (ctx) => {
     /* return infoAboutMedicineFunc(ctx); */
+    await ctx.answerCbQuery();
     return await ctx.editMessageText(medInfo.aboutMedicine, {
         parse_mode: 'HTML',
         disable_web_page_preview: true,
@@ -345,9 +407,42 @@ bot.action('returnBack_btn', async (ctx) => {
     })
 });
 
-//==============================Finance block menu============================
+//SECTION FINANCE BLOCK
+//show menu about finance
+function allowanceFinanceFunc(ctx) {
+    ctx.replyWithHTML(allowanceFinanceVar.infoAboutBanks, Markup.inlineKeyboard([
+        Markup.button.callback('Пільги, на які ви маєте право', 'pilgi_btn'),
+    ]));
+}
+
+bot.action('pilgi_btn', async (ctx) => {
+    await ctx.answerCbQuery();
+    await ctx.editMessageText(allowanceFinanceVar.infoAboutFinanceHelp,
+    {
+        parse_mode: 'HTML',
+        disable_web_page_preview: true,
+        ...Markup.inlineKeyboard([
+            [Markup.button.callback(RETURN_BACK_TO_FINANCE, 'backToFinance_btn')]
+        ])
+        });
+});
+
+bot.action('freeStuff_btn', async (ctx) => {
+    currentPostFree = 0;
+    await ctx.answerCbQuery();
+    await ctx.editMessageText(freeStuffMenu[currentPostFree], {
+        parse_mode: 'HTML',
+        disable_web_page_preview: true,
+        ...Markup.inlineKeyboard([
+          [Markup.button.callback(BACKWARD_BTN, 'back_btn'), Markup.button.callback(FORWARD_BTN, 'forward_btn')],
+          [Markup.button.callback(RETURN_BACK_TO_FINANCE, 'backToFinance_btn')]
+        ])
+      }
+    );
+});
 
 bot.action('backToFinance_btn', async (ctx) => {
+    await ctx.answerCbQuery();
     return await ctx.editMessageText(allowanceFinanceVar.infoAboutBanks, {
         parse_mode: "HTML",
         disable_web_page_preview: false,
@@ -357,10 +452,16 @@ bot.action('backToFinance_btn', async (ctx) => {
     })
 });
 
-//==============================WORK BLOCK MENU===================================
+//SECTION WORK BLOCK
+
+//show work posts
+function workinLitva(ctx) {
+    ctx.replyWithHTML(workInfo.basicInfoAboutWork, Markup.inlineKeyboard(MENU_ABOUT_WORK))
+}
 
 // work
 bot.action('recHelpLook_btn', async (ctx) => {
+    await ctx.answerCbQuery();
     await ctx.editMessageText(workInfo.recommendationsForHowToWork, {
         parse_mode: "HTML",
         disable_web_page_preview: true, 
@@ -375,6 +476,7 @@ bot.action('recHelpLook_btn', async (ctx) => {
 //Individual Worker 
 
 bot.action('individualWorker_btn', async (ctx) => {
+    await ctx.answerCbQuery();
     await ctx.editMessageText(workInfo.individualWorkerPost, {
         parse_mode: "HTML",
         disable_web_page_preview: true, 
@@ -419,7 +521,22 @@ bot.action('backToTheWorkMenu_btn', async (ctx) => {
     });
 });
 
-//==============================Free Menu Staff===============================
+//SECTION Free Stuff
+
+//freeStuff
+function freeStuffForUkraineFunc(ctx) {
+    currentPostFree = 0;
+
+    ctx.replyWithHTML(freeStuffMenu[currentPostFree], {
+        parse_mode: 'HTML',
+        disable_web_page_preview: true,
+        ...Markup.inlineKeyboard([
+          Markup.button.callback(BACKWARD_BTN, 'back_btn'),
+          Markup.button.callback(FORWARD_BTN, 'forward_btn')
+        ])
+      }
+    );
+}
 
 //next page
 bot.action('forward_btn', async (ctx) => {

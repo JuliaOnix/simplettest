@@ -4,14 +4,12 @@ const languageInfo = require('../text/languageLitovskiy')
 const questionInfo = require('../text/oftenAks')
 
 //useful contacts 
-function usefulContacts(ctx) {
-    ctx.replyWithHTML(contacts.address);
-    ctx.replyWithHTML(contacts.usefulContacts);
-    ctx.replyWithHTML(contacts.medContacts);
+async function usefulContacts(ctx) {
+    let string = contacts.address + contacts.usefulContacts + contacts.medContacts;
+    return ctx.replyWithHTML(string);
 }
 
 //about language, free lessons
-
 function language(ctx) {
     ctx.replyWithHTML(languageInfo.sites)
 }

@@ -37,7 +37,6 @@ if (token === undefined) {
     throw new Error('BOT_TOKEN must be provided!')
 }
 
-
 //here is started bot
 bot.command('start', async (ctx) => {
     return startBot(ctx);
@@ -464,24 +463,168 @@ bot.action('backToTheWorkMenu_btn', async (ctx) => {
     });
 });
 
+
+
 //SECTION Free Stuff
 
 //freeStuff
 function freeStuffForUkraineFunc(ctx) {
-    currentPostFree = 0;
-
-    ctx.replyWithHTML(freeStuffMenu[currentPostFree], {
+    ctx.replyWithHTML("Вибери тему, яка тебе цікавить", {
         parse_mode: 'HTML',
         disable_web_page_preview: true,
-        ...Markup.inlineKeyboard([
-          Markup.button.callback(constans.BACKWARD_BTN, 'back_btn'),
-          Markup.button.callback(constans.FORWARD_BTN, 'forward_btn')
-        ])
-      }
-    );
+        ...Markup.inlineKeyboard(constans.MENU_FREE_STUFF)
+    })
 }
 
-//next page
+
+
+//sport button
+bot.action('freeSport_btn', async (ctx) => {
+    await ctx.answerCbQuery();
+    return await ctx.editMessageText(constans.LIST_TEXT_OF_FREE_STUFF[0], {
+        parse_mode: 'HTML',
+        disable_web_page_preview: true,
+        ...Markup.inlineKeyboard([constans.RETURN_BACK_TO_FREE_STUFF])
+    })
+})
+
+//transport button
+bot.action('freeTransport_btn', async (ctx) => {
+    await ctx.answerCbQuery();
+    return await ctx.editMessageText(constans.LIST_TEXT_OF_FREE_STUFF[1], {
+        parse_mode: 'HTML',
+        disable_web_page_preview: true,
+        ...Markup.inlineKeyboard([constans.RETURN_BACK_TO_FREE_STUFF])
+    })
+})
+
+//mother children button
+bot.action('freeForMothers_btn', async (ctx) => {
+    await ctx.answerCbQuery();
+    return await ctx.editMessageText(constans.LIST_TEXT_OF_FREE_STUFF[2], {
+        parse_mode: 'HTML',
+        disable_web_page_preview: true,
+        ...Markup.inlineKeyboard([constans.RETURN_BACK_TO_FREE_STUFF])
+    })
+})
+
+//freeConsulHelp_btn button
+bot.action('freeConsulHelp_btn', async (ctx) => {
+    await ctx.answerCbQuery();
+    return await ctx.editMessageText(constans.LIST_TEXT_OF_FREE_STUFF[3], {
+        parse_mode: 'HTML',
+        disable_web_page_preview: true,
+        ...Markup.inlineKeyboard([constans.RETURN_BACK_TO_FREE_STUFF])
+    })
+})
+
+//freeConsulHelp_btn button
+bot.action('freeArtEvents_btn', async (ctx) => {
+    await ctx.answerCbQuery();
+    return await ctx.editMessageText(constans.LIST_TEXT_OF_FREE_STUFF[4], {
+        parse_mode: 'HTML',
+        disable_web_page_preview: true,
+        ...Markup.inlineKeyboard([constans.RETURN_BACK_TO_FREE_STUFF])
+    })
+})
+
+//freeConsulHelp_btn button
+bot.action('freeConsultationWork_btn', async (ctx) => {
+    await ctx.answerCbQuery();
+    return await ctx.editMessageText(constans.LIST_TEXT_OF_FREE_STUFF[5], {
+        parse_mode: 'HTML',
+        disable_web_page_preview: true,
+        ...Markup.inlineKeyboard([constans.RETURN_BACK_TO_FREE_STUFF])
+    })
+})
+
+//freeConsulHelp_btn button
+bot.action('freeTranslate_btn', async (ctx) => {
+    await ctx.answerCbQuery();
+    return await ctx.editMessageText(constans.LIST_TEXT_OF_FREE_STUFF[6], {
+        parse_mode: 'HTML',
+        disable_web_page_preview: true,
+        ...Markup.inlineKeyboard([constans.RETURN_BACK_TO_FREE_STUFF])
+    })
+})
+
+bot.action('freePrint_btn', async (ctx) => {
+    await ctx.answerCbQuery();
+    return await ctx.editMessageText(constans.LIST_TEXT_OF_FREE_STUFF[7], {
+        parse_mode: 'HTML',
+        disable_web_page_preview: true,
+        ...Markup.inlineKeyboard([constans.RETURN_BACK_TO_FREE_STUFF])
+    })
+})
+
+bot.action('freeInternet_btn', async (ctx) => {
+    await ctx.answerCbQuery();
+    return await ctx.editMessageText(constans.LIST_TEXT_OF_FREE_STUFF[8], {
+        parse_mode: 'HTML',
+        disable_web_page_preview: true,
+        ...Markup.inlineKeyboard([constans.RETURN_BACK_TO_FREE_STUFF])
+    })
+})
+
+bot.action('freeLegal_btn', async (ctx) => {
+    await ctx.answerCbQuery();
+    return await ctx.editMessageText(constans.LIST_TEXT_OF_FREE_STUFF[9], {
+        parse_mode: 'HTML',
+        disable_web_page_preview: true,
+        ...Markup.inlineKeyboard([constans.RETURN_BACK_TO_FREE_STUFF])
+    })
+})
+
+bot.action('freePetStuff_btn', async (ctx) => {
+    await ctx.answerCbQuery();
+    return await ctx.editMessageText(constans.LIST_TEXT_OF_FREE_STUFF[10], {
+        parse_mode: 'HTML',
+        disable_web_page_preview: true,
+        ...Markup.inlineKeyboard([constans.RETURN_BACK_TO_FREE_STUFF])
+    })
+})
+
+bot.action('freeBeautyStuff_btn', async (ctx) => {
+    await ctx.answerCbQuery();
+    return await ctx.editMessageText(constans.LIST_TEXT_OF_FREE_STUFF[11], {
+        parse_mode: 'HTML',
+        disable_web_page_preview: true,
+        ...Markup.inlineKeyboard([constans.RETURN_BACK_TO_FREE_STUFF])
+    })
+})
+
+bot.action('freeOptica_btn', async (ctx) => {
+    await ctx.answerCbQuery();
+    return await ctx.editMessageText(constans.LIST_TEXT_OF_FREE_STUFF[12], {
+        parse_mode: 'HTML',
+        disable_web_page_preview: true,
+        ...Markup.inlineKeyboard([constans.RETURN_BACK_TO_FREE_STUFF])
+    })
+})
+
+bot.action('freeCourses_btn', async (ctx) => {
+    await ctx.answerCbQuery();
+    return await ctx.editMessageText(constans.LIST_TEXT_OF_FREE_STUFF[13], {
+        parse_mode: 'HTML',
+        disable_web_page_preview: true,
+        ...Markup.inlineKeyboard([constans.RETURN_BACK_TO_FREE_STUFF])
+    })
+})
+
+
+
+//return button 
+bot.action('return_to_free_stuff_btn', async (ctx) => {
+    await ctx.answerCbQuery();
+    return await ctx.editMessageText("Вибери тему, яка тебе цікавить", {
+        parse_mode: 'HTML',
+        disable_web_page_preview: true,
+        ...Markup.inlineKeyboard(constans.MENU_FREE_STUFF)
+    })
+});
+
+
+/* //next page
 bot.action('forward_btn', async (ctx) => {
 
     if (currentPostFree === freeStuffMenu.length-1) {
@@ -514,7 +657,7 @@ bot.action('back_btn', async (ctx) => {
         disable_web_page_preview: true,
         ...Markup.inlineKeyboard(constans.MENU_BUTTONS)
     })
-})
+}) */
 
 bot.launch();
 

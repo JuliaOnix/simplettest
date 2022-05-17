@@ -15,7 +15,6 @@ async function showPostWithSites(ctx) {
     });
 }
 
-
 //show info about med insurance
 async function infoAboutMedicineFunc(ctx) {
     await ctx.replyWithHTML(medInfo.aboutMedicine, {
@@ -27,9 +26,7 @@ async function infoAboutMedicineFunc(ctx) {
 
 //show info about humanitarianAid
 async function humanitarianAidFunc(ctx) {
-    await ctx.replyWithHTML(humanInfo.humanAid, Markup.inlineKeyboard([
-        Markup.button.callback("Інші міста", 'btn_anotherCities')
-    ]));
+    await ctx.replyWithHTML(humanInfo.humanAid, Markup.inlineKeyboard(constans.MENU_WITH_CITIES_OF_HUMAN_AID));
 }
 
 //useful contacts 
@@ -44,13 +41,13 @@ function language(ctx) {
 }
 
 //info how look for apartments
-function lookforanApartment(ctx) {
-    ctx.replyWithHTML(apartmentsinfo.sites); 
+async function lookforanApartment(ctx) {
+    await ctx.replyWithHTML(apartmentsinfo.sites); 
 }
 
 //FAQ
-function questionOften(ctx) {
-    ctx.replyWithHTML(questionInfo.qAndA)
+async function questionOften(ctx) {
+    await ctx.replyWithHTML(questionInfo.qAndA)
 }
 
 module.exports.usefulContacts = usefulContacts;

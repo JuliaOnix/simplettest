@@ -4,6 +4,7 @@ const mytext = require('./text/text')
 const contacts = require('./text/contacts')
 const medInfo = require('./text/medicineInfo')
 const freeMedInfo = require('./text/freeMedServices')
+const humanAidInfo = require('./text/humanitarianAidText')
 const allowanceFinanceVar = require('./text/allowanceFinanceFile')
 const workInfo = require('./text/workInfoFile')
 const educationShcools = require('./text/educationAndSportInfo')
@@ -44,17 +45,17 @@ bot.command('start', async (ctx) => {
 });
 //listening to, HEARS
 
-bot.hears(mainMenu[0], async (ctx) => mainInfoAboutRefugee(ctx));
+bot.hears(mainMenu[0], (ctx) => mainInfoAboutRefugee(ctx));
 bot.hears(mainMenu[1], (ctx) => mainMenuFunctionsFile.usefulContacts(ctx));
-bot.hears(mainMenu[2], async (ctx) => mainMenuFunctionsFile.lookforanApartment(ctx));
-bot.hears(mainMenu[3], async (ctx) => mainMenuFunctionsFile.humanitarianAidFunc(ctx));
-bot.hears(mainMenu[4], async (ctx) => mainMenuFunctionsFile.infoAboutMedicineFunc(ctx));
-bot.hears(mainMenu[5], async (ctx) => allowanceFinanceFunc(ctx));
-bot.hears(mainMenu[6], async (ctx) => workinLitva(ctx));
-bot.hears(mainMenu[7], async (ctx) => educationAndSportFunc(ctx));
-bot.hears(mainMenu[8], async (ctx) => freeStuffForUkraineFunc(ctx, currentPostFree));
-bot.hears(mainMenu[9], async (ctx) => mainMenuFunctionsFile.language(ctx));
-bot.hears(mainMenu[10], async (ctx) => mainMenuFunctionsFile.questionOften(ctx));
+bot.hears(mainMenu[2], (ctx) => mainMenuFunctionsFile.lookforanApartment(ctx));
+bot.hears(mainMenu[3], (ctx) => mainMenuFunctionsFile.humanitarianAidFunc(ctx));
+bot.hears(mainMenu[4], (ctx) => mainMenuFunctionsFile.infoAboutMedicineFunc(ctx));
+bot.hears(mainMenu[5], (ctx) => allowanceFinanceFunc(ctx));
+bot.hears(mainMenu[6], (ctx) => workinLitva(ctx));
+bot.hears(mainMenu[7], (ctx) => educationAndSportFunc(ctx));
+bot.hears(mainMenu[8], (ctx) => freeStuffForUkraineFunc(ctx, currentPostFree));
+bot.hears(mainMenu[9], (ctx) => mainMenuFunctionsFile.language(ctx));
+bot.hears(mainMenu[10], (ctx) => mainMenuFunctionsFile.questionOften(ctx));
 bot.hears(mainMenu[11], (ctx) => mainMenuFunctionsFile.showPostWithSites(ctx));
 
 //Functions
@@ -71,17 +72,17 @@ function startBot(ctx) {
     ]).oneTime().resize());
 }
 
-//Actions
+/* //Actions
 bot.action('btn_anotherCities', async (ctx) => {
     await ctx.answerCbQuery();
     ctx.reply('https://www.redcross.lt/kontakti-z-organizaciyami-yaki-nadayut-gumanitarnu-dopomogu-ukrayincyam-ua')
-});
+}); */
 
-//SECTION Education
+//ANCHOR Education
 
 //show block about education and sport for children also
-function educationAndSportFunc(ctx) {
-    ctx.replyWithHTML(educationShcools.generalInfoAboutSchool, Markup.inlineKeyboard(constans.MENU_EDUCATION));
+async function educationAndSportFunc(ctx) {
+    await ctx.replyWithHTML(educationShcools.generalInfoAboutSchool, Markup.inlineKeyboard(constans.MENU_EDUCATION));
 }
 
 bot.action('preschool_btn', async (ctx) => {
@@ -218,11 +219,11 @@ bot.action('returnBackEducation_btn', async (ctx) => {
     })
 })
 
-//SECTION First Visit Block
+//ANCHOR First Visit Block
 
 //main info for people, who came right now and look for info what they have to do.
-function mainInfoAboutRefugee(ctx) {
-    ctx.replyWithHTML(mytext.firstVisit, {
+async function mainInfoAboutRefugee(ctx) {
+    await ctx.replyWithHTML(mytext.firstVisit, {
         parse_mode: "HTML", 
         disable_web_page_preview: true,
         ...Markup.inlineKeyboard([
@@ -269,7 +270,7 @@ bot.action('returnBackFirst_btn', async (ctx) => {
     });
 });
 
-//SECTION Health Menu Block
+//ANCHOR Health Menu Block
 
 //dental
 bot.action('dental_btn', async (ctx) => {
@@ -351,10 +352,10 @@ bot.action('returnBack_btn', async (ctx) => {
     })
 });
 
-//SECTION FINANCE BLOCK
+//ANCHORFINANCE BLOCK
 //show menu about finance
-function allowanceFinanceFunc(ctx) {
-    ctx.replyWithHTML(allowanceFinanceVar.infoAboutBanks, Markup.inlineKeyboard([
+async function allowanceFinanceFunc(ctx) {
+    await ctx.replyWithHTML(allowanceFinanceVar.infoAboutBanks, Markup.inlineKeyboard([
         Markup.button.callback('Пільги, на які ви маєте право', 'pilgi_btn'),
     ]));
 }
@@ -396,11 +397,11 @@ bot.action('backToFinance_btn', async (ctx) => {
     })
 });
 
-//SECTION WORK BLOCK
+//ANCHOR WORK BLOCK
 
 //show work posts
-function workinLitva(ctx) {
-    ctx.replyWithHTML(workInfo.basicInfoAboutWork, Markup.inlineKeyboard(constans.MENU_ABOUT_WORK))
+async function workinLitva(ctx) {
+    await ctx.replyWithHTML(workInfo.basicInfoAboutWork, Markup.inlineKeyboard(constans.MENU_ABOUT_WORK))
 }
 
 // work
@@ -467,11 +468,11 @@ bot.action('backToTheWorkMenu_btn', async (ctx) => {
 
 
 
-//SECTION Free Stuff
+//ANCHOR Free Stuff
 
 //freeStuff
-function freeStuffForUkraineFunc(ctx) {
-    ctx.replyWithHTML("Вибери тему, яка тебе цікавить", {
+async function freeStuffForUkraineFunc(ctx) {
+    await ctx.replyWithHTML("Вибери тему, яка тебе цікавить", {
         parse_mode: 'HTML',
         disable_web_page_preview: true,
         ...Markup.inlineKeyboard(constans.MENU_FREE_STUFF)
@@ -622,6 +623,66 @@ bot.action('return_to_free_stuff_btn', async (ctx) => {
         parse_mode: 'HTML',
         disable_web_page_preview: true,
         ...Markup.inlineKeyboard(constans.MENU_FREE_STUFF)
+    })
+});
+
+//ANCHOR Humanitarium Aid
+//kaunas
+bot.action('kaunas_humanAid_btn', async (ctx) => {
+    await ctx.answerCbQuery();
+    return await ctx.editMessageText(humanAidInfo.kaunasText, {
+        parse_mode: 'HTML',
+        disable_web_page_preview: true,
+        ...Markup.inlineKeyboard([constans.RETURN_BACK_TO_HUMANAID_MENU])
+    })
+});
+
+//klaypeda
+bot.action('klaipeda_humanAid_btn', async (ctx) => {
+    await ctx.answerCbQuery();
+    return await ctx.editMessageText(humanAidInfo.klaipedaText, {
+        parse_mode: 'HTML',
+        disable_web_page_preview: true,
+        ...Markup.inlineKeyboard([constans.RETURN_BACK_TO_HUMANAID_MENU])
+    })
+});
+
+//alitus
+bot.action('alitus_humanAid_btn', async (ctx) => {
+    await ctx.answerCbQuery();
+    return await ctx.editMessageText(humanAidInfo.alitusText, {
+        parse_mode: 'HTML',
+        disable_web_page_preview: true,
+        ...Markup.inlineKeyboard([constans.RETURN_BACK_TO_HUMANAID_MENU])
+    })
+});
+
+//shaulyay
+bot.action('shaulyay_humanAid_btn', async (ctx) => {
+    await ctx.answerCbQuery();
+    return await ctx.editMessageText(humanAidInfo.shaulyayText, {
+        parse_mode: 'HTML',
+        disable_web_page_preview: true,
+        ...Markup.inlineKeyboard([constans.RETURN_BACK_TO_HUMANAID_MENU])
+    })
+});
+
+//panesvezhis
+bot.action('panevezis_humanAid_btn', async (ctx) => {
+    await ctx.answerCbQuery();
+    return await ctx.editMessageText(humanAidInfo.panesvezhisText, {
+        parse_mode: 'HTML',
+        disable_web_page_preview: true,
+        ...Markup.inlineKeyboard([constans.RETURN_BACK_TO_HUMANAID_MENU])
+    })
+});
+
+bot.action('return_to_human_aid_menu_btn', async (ctx) => {
+    await ctx.answerCbQuery();
+    return await ctx.editMessageText(humanAidInfo.humanAid, {
+        parse_mode: 'HTML',
+        disable_web_page_preview: true,
+        ...Markup.inlineKeyboard(constans.MENU_WITH_CITIES_OF_HUMAN_AID)
     })
 });
 

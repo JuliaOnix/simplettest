@@ -9,23 +9,18 @@ const humanAid = `
 I-VII 9.00 - 18.00     
  +370 5 251 41 73
 erika@motherhood.is
-
 <u>Адреса:</u>
 VILNIUS:  <a href="https://goo.gl/maps/obXLqv8qrMwLwa256">J. Balčikonio str. 3</a>
 Technopolis Будинок БЕТА (BETA), 4 поверх.
-
-KAUNAS: <a href="https://goo.gl/maps/rApv3Gp5DQ1qWnpNA">Savanorių Prospektas 271, Каунас</a>
-
 <u>Сайт</u> - https://www.motherhoodissexy.com/misloveparama
+
 <b>Координаційний центр волонтерів Карітас</b>
 освіти, охорони здоров'я,  пошуку роботи, психологічної, гуманітарної допомоги
 <u>Контакти та робочі години</u>
 I - VII 9.00–19.00
 +370 679 19 084
-
 <u>Адреса:</u> 
 <a href="https://goo.gl/maps/eSfD5tJQ9XfhPyFFA">Pilies str. 7, Vilnius</a>
-
 <u>Сайт:</u> 
 https://vilnius.caritas.lt/pagalba-ukrainieciams/
 
@@ -35,10 +30,8 @@ https://vilnius.caritas.lt/pagalba-ukrainieciams/
 I - V 10.00–17.00
 +370 679 19 084 
 kulturunamai@vilnius.caritas.lt
-
 <u>Адреса:</u>
 <a href="https://goo.gl/maps/9rUoKkMZQgsuB6sh6">Kalvarijų g. 39, Vilnius</a>
-
 <u>Сайт:</u>
 https://vilnius.caritas.lt/pagalba-ukrainieciams/
 
@@ -47,10 +40,8 @@ https://vilnius.caritas.lt/pagalba-ukrainieciams/
 <u>Контакти та робочі години</u>
 I - V 9.00–17.00, VI 10.00–15.00
 +370 655 02 288  
-
 <u>Адреса:</u>
 <a href="https://goo.gl/maps/CyJSLQDUrUCqgigd8">M. K. Paco g. 4 Vilnius</a>
-
 <u>Сайт:</u>
 https://vilnius.caritas.lt/pagalba-ukrainieciams/
 
@@ -61,10 +52,8 @@ https://vilnius.caritas.lt/pagalba-ukrainieciams/
 +370 659 71598
 info@redcross.lt
 vilnius@redcross.lt
-
 <u>Адреса:</u>
 <a href="https://goo.gl/maps/keSQaLZzouF3XEqu5">Juozapavičiaus g.10 A, Vilnius</a>
-
 <u>Сайт:</u>
 www.redcross.lt 
 
@@ -75,10 +64,8 @@ www.redcross.lt
 irena.andrijevskaja@savethechildren.org
 informacija@savethechildren.org
 +370 526 10815
-
 <u>Адреса:</u>
 <a href="https://goo.gl/maps/QScMnxJ95fmNUwFN9">Vilniaus g. 39/Klaipėdos g. 6</a>, Vilnius
-
 <u>Сайт:</u>
 https://gelbekitvaikus.lt/ 
 
@@ -89,10 +76,8 @@ https://gelbekitvaikus.lt/
 milda@maistobankas.lt
 +370 686 44244
 info@maistobankas.lt
-
 <u>Адреса:</u>
 <a href="https://goo.gl/maps/nHed9L4BhbJw4YfR8">Vytenio g. 54, Vilnius</a>
-
 <u>Сайт:</u>
 https://www.maistobankas.lt/ 
 
@@ -124,7 +109,10 @@ daiva.urbone@savethechildren.org.
 тел. +37066943609
 eл. п. irena.judzentyte@maistobankas.lt    
 
-<u>Алiтус</u>
+*/
+
+const alitusText = `
+<b>Алiтус</b>
 
 <u>Литовський Червоний Хрест філія міста Алітус (гуманітарна допомога)</u>
 <u>Адреса:</u> Ligoninės g. 3-19, 
@@ -139,6 +127,9 @@ tatjana.gumauskiene@savethechildren.org
 <b>Харчовий банк (продовольча допомога)</b>
 тел. +37067951812
 eл. п. karolina@maistobankas.lt   
+`
+
+/*
 
 <b>Алітуський район</b>
 
@@ -326,9 +317,9 @@ renatavensloviene@gmail.com
 тел. +37067951812
 eл. п. karolina@maistobankas.lt
 `
-
-const partThreeHumanAid = `
-<u>Каунас</u>
+*/
+const kaunasText = `
+<b>Каунас</b>
 
 Литовський Червоний Хрест філія міста Каунас (гуманітарна допомога)
 <u>Адреса:</u> Statybininkų g. 12
@@ -348,7 +339,9 @@ roma4n@yahoo.com
 <u>Харчовий банк (продовольча допомога)</u>
 тел. +37067951812
 eл. п. karolina@maistobankas.lt
+`
 
+/*
 <b>Казлу Руда</b>
 
 <u>Мальтійці (гуманітарна допомога)</u>
@@ -402,6 +395,9 @@ ausra.vaidotiene@maltieciai.lt
 тел. +37064609404
 eл. п. justina@maistobankas.lt
 
+*/
+
+const klaipedaText = `
 <b>Клайпеда</b>
 
 <u>Литовський Червоний Хрест філія міста Клайпеда  (гуманітарна допомога)</u>
@@ -417,6 +413,9 @@ vaikai.liberi@gmail.com
 <u>Харчовий банк (продовольча допомога)</u>
 Taikos g. 66A, тел. +370 669 43597 
 eл. п. irena.judzentyte@maistobankas.lt;
+
+`
+/*
 
 <b>Клайпедський райо</b>н
 
@@ -591,6 +590,9 @@ ausraliustroviene@gmail.com
 тел. +37066943608
 eл. п. irena.judzentyte@maistobankas.lt
 
+*/
+
+const panesvezhisText = `
 <b>Паневєжіс</b>
 
 Литовський Червоний Хрест філія міста Паневєжіс (гуманітарна допомога)
@@ -607,6 +609,9 @@ Ukraina.viltiesarka@gmail.com
 Kranto g. 36.
 тел. +370 646 09404
 eл. п. justina@maistobankas.lt
+`
+
+/*
 
 <b>Панeвєжський район</b>
 
@@ -784,6 +789,10 @@ Jurateblinsturbaite4@gmail.com
 тел. +37066551443
 eл. п. marija@maistobankas.lt
 
+*/
+
+const shaulyayText = `
+
 <b>Шяуляй</b>
 
 Литовський Червоний Хрест філія міста Шауляй (гуманітарна допомога)
@@ -800,6 +809,10 @@ siauliuvdc@gmail.com
 Pramonės g. 26
 тел. +370 684 66 536
 eл. п. aurelija.paulauskiene@maistobankas.lt;
+
+`
+
+/*
 
 <b>Шiлальський район</b>
 
@@ -1003,3 +1016,8 @@ eл. п. info@maistobankas.lt
 
 
 module.exports.humanAid = humanAid;
+module.exports.kaunasText = kaunasText;
+module.exports.alitusText = alitusText;
+module.exports.shaulyayText = shaulyayText;
+module.exports.panesvezhisText = panesvezhisText;
+module.exports.klaipedaText = klaipedaText;

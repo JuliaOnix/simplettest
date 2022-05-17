@@ -19,6 +19,7 @@ const mainMenu =
     '🛬 По Прибутті', '📞 Корисні контакти', '🔎 Пошук житла', 
     '📦 Гуманітарна Допомога',"🩺 Здоров'я", '💵 Фінанси, Пільги', '🏭 Робота', 
     '🏫 Навчання', '🆓 Безкоштовні Послуги', "🇱🇹 Литовська мова", "❓ Часті запитання", 
+    '📡 Каталог сайтів'
 ];
 
 //menu with free thing/stuff/services
@@ -54,6 +55,7 @@ bot.hears(mainMenu[7], async (ctx) => educationAndSportFunc(ctx));
 bot.hears(mainMenu[8], async (ctx) => freeStuffForUkraineFunc(ctx, currentPostFree));
 bot.hears(mainMenu[9], async (ctx) => mainMenuFunctionsFile.language(ctx));
 bot.hears(mainMenu[10], async (ctx) => mainMenuFunctionsFile.questionOften(ctx));
+bot.hears(mainMenu[11], (ctx) => mainMenuFunctionsFile.showPostWithSites(ctx));
 
 //Functions
 
@@ -62,10 +64,10 @@ function startBot(ctx) {
     ctx.reply('Вибери тему, яка тебе цікавить', Markup
     .keyboard([
         [mainMenu[0]],
-        [mainMenu[1], mainMenu[2]], // Row1 with 2 buttons
-        [mainMenu[3], mainMenu[4]], // Row2 with 2 buttons
-        [mainMenu[5], mainMenu[6], mainMenu[7]], // Row3 with 3 buttons
-        [mainMenu[8], mainMenu[9], mainMenu[10]]
+        [mainMenu[1], mainMenu[2], mainMenu[6]], // Row1 with 2 buttons
+        [mainMenu[4], mainMenu[3], mainMenu[5]], // Row2 with 2 buttons
+        [mainMenu[8], mainMenu[7], mainMenu[9]], // Row3 with 3 buttons
+        [mainMenu[11], mainMenu[10]]
     ]).oneTime().resize());
 }
 

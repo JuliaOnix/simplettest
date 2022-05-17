@@ -6,6 +6,14 @@ const questionInfo = require('../text/oftenAks')
 const constans = require('../functions/fileCostants')
 const medInfo = require('../text/medicineInfo')
 const humanInfo = require('../text/humanitarianAidText')
+const sitesPost = require('../text/sitesWithServices')
+
+async function showPostWithSites(ctx) {
+    await ctx.replyWithHTML(sitesPost.sites, {
+        parse_mode: 'HTML',
+        disable_web_page_preview: true
+    });
+}
 
 
 //show info about med insurance
@@ -50,4 +58,5 @@ module.exports.infoAboutMedicineFunc = infoAboutMedicineFunc;
 module.exports.humanitarianAidFunc = humanitarianAidFunc;
 module.exports.lookforanApartment = lookforanApartment;
 module.exports.language = language;
+module.exports.showPostWithSites = showPostWithSites;
 module.exports.questionOften = questionOften;

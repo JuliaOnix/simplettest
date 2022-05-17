@@ -30,7 +30,7 @@ const freeStuffMenu =
     allowanceFinanceVar.freeTransport, allowanceFinanceVar.freeWorkConsultation, allowanceFinanceVar.freeTranslator,
     allowanceFinanceVar.freePrintout, allowanceFinanceVar.freeСommunication, allowanceFinanceVar.freeLegalAid, allowanceFinanceVar.freePatsStuff, 
     allowanceFinanceVar.freeBeautyStauff, allowanceFinanceVar.freeMedOptica, allowanceFinanceVar.freeLessonsAndCourses, allowanceFinanceVar.freeForChildrenAndMothers,
-    allowanceFinanceVar.freeKonsulska, allowanceFinanceVar.freeArtEvents
+    allowanceFinanceVar.freeKonsulska, allowanceFinanceVar.freeArtEvents, allowanceFinanceVar.freeSport
 ];
 
 const FORWARD_BTN = `Наступна сторінка ➡️`;
@@ -81,8 +81,6 @@ if (token === undefined) {
 bot.command('start', async (ctx) => {
     return startBot(ctx);
 });
-
-
 //listening to, HEARS
 
 bot.hears(mainMenu[0], async (ctx) => mainInfoAboutRefugee(ctx));
@@ -577,3 +575,7 @@ bot.launch();
 
 process.once('SIGINT', () => bot.stop('SIGINT'));
 process.once('SIGTERM', () => bot.stop('SIGTERM'));
+
+
+
+

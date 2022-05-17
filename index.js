@@ -4,17 +4,14 @@ const mytext = require('./text/text')
 const contacts = require('./text/contacts')
 const medInfo = require('./text/medicineInfo')
 const freeMedInfo = require('./text/freeMedServices')
-const humanInfo = require('./text/humanitarianAidText')
 const allowanceFinanceVar = require('./text/allowanceFinanceFile')
 const workInfo = require('./text/workInfoFile')
 const educationShcools = require('./text/educationAndSportInfo')
 const mainMenuFunctionsFile = require('./functions/functionsMainMenu')
-/* const actionsFreeStuff = require('./functions/actionsFreeMenuStaff') */
+const constans = require('./functions/fileCostants')
 
 
 const token = process.env.BOT_TOKEN
-
-//SECTION CONST
 
 //menu in chatbot
 const mainMenu = 
@@ -33,42 +30,6 @@ const freeStuffMenu =
     allowanceFinanceVar.freeKonsulska, allowanceFinanceVar.freeArtEvents, allowanceFinanceVar.freeSport
 ];
 
-const FORWARD_BTN = `Наступна сторінка ➡️`;
-const BACKWARD_BTN = `⬅️ Попередня сторінка`;
-const RETURN_BACK_TO_MENU = "🔙 Повернутися до «Здоров'я»";
-const RETURN_BACK_TO_FINANCE = '🔙 Повернутися до «Фінанси, Пільги»';
-const RETURN_BACK_TO_WORK = '🔙 Повернутися до «Робота»';
-const RETURN_BACK_TO_FIRST = '🔙 Повернутися до «По Прибутті»';
-const RETURN_BACK_TO_EDUCATION = '🔙 Повернутися до «Навчання»';
-const RETURN_BACK_TO_GROUPLESSONS_EDUCATION = '🔙 Повернутися до «ГУРТКИ, ЛЕКЦІЇ, УРОКИ»';
-
-const MENU_HEALTH = [
-    [Markup.button.callback('Стоматологія 🦷', "dental_btn"), Markup.button.callback('Жінкам 🤰🏻', "pregnantWomen_btn")],
-    [Markup.button.callback('Психологічна Допомога', "mentalHealth_btn")],
-    [Markup.button.callback('Діабет', "diabet_btn"), Markup.button.callback('COVID-19 🦠', "covid_btn"), Markup.button.callback('Інше', "anotherMed_btn")]
-];
-
-const MENU_EDUCATION = [
-    [Markup.button.callback('Дошкільне виховання', 'preschool_btn'), Markup.button.callback('Художні школи', 'artschools_btn')],
-    [Markup.button.callback('Професійне навчання', 'profEduc_btn'),  Markup.button.callback("Вища освіта (університети)", "univer_btn")],
-    [Markup.button.callback('Для спортсменів', 'sportEduc_btn'),     Markup.button.callback('Гуртки, уроки, дозвілля', 'lessonsforChildren_btn')]
-];
-
-const MENU_BUTTONS = [
-    [Markup.button.callback(BACKWARD_BTN, 'back_btn'), Markup.button.callback(FORWARD_BTN, 'forward_btn')]
-];
-
-const MENU_ABOUT_WORK = [
-    [Markup.button.callback('Рекомендации/Помощь по поиску работы', 'recHelpLook_btn')],
-    [Markup.button.callback('Сайти для поиска работы', 'sitesofwork_btn'), Markup.button.callback('Вакансии', 'vacations_btn')]
-]
-
-const MENU_ABOUT_EXTRACURRICULARS = [
-    [Markup.button.callback('МИСТЕЦТВО, ТЕАТР', 'artANDTeatr_btn'), Markup.button.callback('СПОРТ', 'sportLessons_btn')],
-    [Markup.button.callback('УРОКИ', 'lections_btn'), Markup.button.callback('ПІДТРИМКА В РЕЧАХ', 'helpFromEduc_btn')],
-    [Markup.button.callback(RETURN_BACK_TO_EDUCATION, 'returnBackEducation_btn')],
-]
-
 const bot = new Telegraf(token);
 let currentPostFree;
 
@@ -86,8 +47,8 @@ bot.command('start', async (ctx) => {
 bot.hears(mainMenu[0], async (ctx) => mainInfoAboutRefugee(ctx));
 bot.hears(mainMenu[1], (ctx) => mainMenuFunctionsFile.usefulContacts(ctx));
 bot.hears(mainMenu[2], async (ctx) => mainMenuFunctionsFile.lookforanApartment(ctx));
-bot.hears(mainMenu[3], async (ctx) => humanitarianAidFunc(ctx));
-bot.hears(mainMenu[4], async (ctx) => infoAboutMedicineFunc(ctx));
+bot.hears(mainMenu[3], async (ctx) => mainMenuFunctionsFile.humanitarianAidFunc(ctx));
+bot.hears(mainMenu[4], async (ctx) => mainMenuFunctionsFile.infoAboutMedicineFunc(ctx));
 bot.hears(mainMenu[5], async (ctx) => allowanceFinanceFunc(ctx));
 bot.hears(mainMenu[6], async (ctx) => workinLitva(ctx));
 bot.hears(mainMenu[7], async (ctx) => educationAndSportFunc(ctx));
@@ -109,22 +70,6 @@ function startBot(ctx) {
     ]).oneTime().resize());
 }
 
-//show info about med insurance
-function infoAboutMedicineFunc(ctx) {
-    ctx.replyWithHTML(medInfo.aboutMedicine, {
-        parse_mode: 'HTML',
-        disable_web_page_preview: true,
-        ...Markup.inlineKeyboard(MENU_HEALTH)
-    });
-}
-
-//show info about humanitarianAid
-function humanitarianAidFunc(ctx) {
-    ctx.replyWithHTML(humanInfo.humanAid, Markup.inlineKeyboard([
-        Markup.button.callback("Інші міста", 'btn_anotherCities')
-    ]));
-}
-
 //Actions
 bot.action('btn_anotherCities', async (ctx) => {
     await ctx.answerCbQuery();
@@ -135,7 +80,7 @@ bot.action('btn_anotherCities', async (ctx) => {
 
 //show block about education and sport for children also
 function educationAndSportFunc(ctx) {
-    ctx.replyWithHTML(educationShcools.generalInfoAboutSchool, Markup.inlineKeyboard(MENU_EDUCATION));
+    ctx.replyWithHTML(educationShcools.generalInfoAboutSchool, Markup.inlineKeyboard(constans.MENU_EDUCATION));
 }
 
 bot.action('preschool_btn', async (ctx) => {
@@ -144,7 +89,7 @@ bot.action('preschool_btn', async (ctx) => {
         parse_mode: "HTML",
         disable_web_page_preview: true,
         ...Markup.inlineKeyboard([
-            [Markup.button.callback(RETURN_BACK_TO_EDUCATION, 'returnBackEducation_btn')]
+            [Markup.button.callback(constans.RETURN_BACK_TO_EDUCATION, 'returnBackEducation_btn')]
         ])
     })
 });
@@ -155,7 +100,7 @@ bot.action('artschools_btn', async (ctx) => {
         parse_mode: "HTML",
         disable_web_page_preview: true,
         ...Markup.inlineKeyboard([
-            [Markup.button.callback(RETURN_BACK_TO_EDUCATION, 'returnBackEducation_btn')]
+            [Markup.button.callback(constans.RETURN_BACK_TO_EDUCATION, 'returnBackEducation_btn')]
         ])
     })
 });
@@ -167,7 +112,7 @@ bot.action('profEduc_btn', async (ctx) => {
         parse_mode: "HTML",
         disable_web_page_preview: true,
         ...Markup.inlineKeyboard([
-            [Markup.button.callback(RETURN_BACK_TO_EDUCATION, 'returnBackEducation_btn')]
+            [Markup.button.callback(constans.RETURN_BACK_TO_EDUCATION, 'returnBackEducation_btn')]
         ])
     })
 });
@@ -178,7 +123,7 @@ bot.action('univer_btn', async (ctx) => {
         parse_mode: "HTML",
         disable_web_page_preview: true,
         ...Markup.inlineKeyboard([
-            [Markup.button.callback(RETURN_BACK_TO_EDUCATION, 'returnBackEducation_btn')]
+            [Markup.button.callback(constans.RETURN_BACK_TO_EDUCATION, 'returnBackEducation_btn')]
         ])
     })
 });
@@ -189,7 +134,7 @@ bot.action('sportEduc_btn', async (ctx) => {
         parse_mode: "HTML",
         disable_web_page_preview: true,
         ...Markup.inlineKeyboard([
-            [Markup.button.callback(RETURN_BACK_TO_EDUCATION, 'returnBackEducation_btn')]
+            [Markup.button.callback(constans.RETURN_BACK_TO_EDUCATION, 'returnBackEducation_btn')]
         ])
     })
 });
@@ -199,7 +144,7 @@ bot.action('lessonsforChildren_btn', async (ctx) => {
     await ctx.editMessageText('ГУРТКИ, ЛЕКЦІЇ, УРОКИ', {
         parse_mode: "HTML",
         disable_web_page_preview: true,
-        ...Markup.inlineKeyboard(MENU_ABOUT_EXTRACURRICULARS)
+        ...Markup.inlineKeyboard(constans.MENU_ABOUT_EXTRACURRICULARS)
     }); 
 });
 
@@ -211,7 +156,7 @@ bot.action('artANDTeatr_btn', async (ctx) => {
         parse_mode: "HTML", 
         disable_web_page_preview: true,
         ...Markup.inlineKeyboard([
-            [Markup.button.callback(RETURN_BACK_TO_GROUPLESSONS_EDUCATION, 'return_back_In_GroupMenu_btn')]
+            [Markup.button.callback(constans.RETURN_BACK_TO_GROUPLESSONS_EDUCATION, 'return_back_In_GroupMenu_btn')]
         ])
     })
 })
@@ -223,7 +168,7 @@ bot.action('sportLessons_btn', async (ctx) => {
         parse_mode: "HTML", 
         disable_web_page_preview: true,
         ...Markup.inlineKeyboard([
-            [Markup.button.callback(RETURN_BACK_TO_GROUPLESSONS_EDUCATION, 'return_back_In_GroupMenu_btn')]
+            [Markup.button.callback(constans.RETURN_BACK_TO_GROUPLESSONS_EDUCATION, 'return_back_In_GroupMenu_btn')]
         ])
     })
 })
@@ -235,7 +180,7 @@ bot.action('lections_btn', async (ctx) => {
         parse_mode: "HTML", 
         disable_web_page_preview: true,
         ...Markup.inlineKeyboard([
-            [Markup.button.callback(RETURN_BACK_TO_GROUPLESSONS_EDUCATION, 'return_back_In_GroupMenu_btn')]
+            [Markup.button.callback(constans.RETURN_BACK_TO_GROUPLESSONS_EDUCATION, 'return_back_In_GroupMenu_btn')]
         ])
     })
 })
@@ -247,7 +192,7 @@ bot.action('helpFromEduc_btn', async (ctx) => {
         parse_mode: "HTML", 
         disable_web_page_preview: true,
         ...Markup.inlineKeyboard([
-            [Markup.button.callback(RETURN_BACK_TO_GROUPLESSONS_EDUCATION, 'return_back_In_GroupMenu_btn')]
+            [Markup.button.callback(constans.RETURN_BACK_TO_GROUPLESSONS_EDUCATION, 'return_back_In_GroupMenu_btn')]
         ])
     })
 })
@@ -258,7 +203,7 @@ bot.action('return_back_In_GroupMenu_btn', async (ctx) => {
     await ctx.editMessageText('ГУРТКИ, ЛЕКЦІЇ, УРОКИ', {
         parse_mode: "HTML", 
         disable_web_page_preview: true,
-        ...Markup.inlineKeyboard(MENU_ABOUT_EXTRACURRICULARS)
+        ...Markup.inlineKeyboard(constans.MENU_ABOUT_EXTRACURRICULARS)
     });
 });
 
@@ -268,7 +213,7 @@ bot.action('returnBackEducation_btn', async (ctx) => {
     await ctx.editMessageText(educationShcools.generalInfoAboutSchool, {
         parse_mode: "HTML", 
         disable_web_page_preview: false,
-        ...Markup.inlineKeyboard(MENU_EDUCATION)
+        ...Markup.inlineKeyboard(constans.MENU_EDUCATION)
     })
 })
 
@@ -292,7 +237,7 @@ bot.action('btn_usefulContacts', async (ctx) => {
         parse_mode: "HTML",
         disable_web_page_preview: true,
         ...Markup.inlineKeyboard([
-            [Markup.button.callback(RETURN_BACK_TO_FIRST, 'returnBackFirst_btn')]
+            [Markup.button.callback(constans.RETURN_BACK_TO_FIRST, 'returnBackFirst_btn')]
         ])
     });
 });
@@ -303,7 +248,7 @@ bot.action('btn_addresses', async (ctx) => {
         parse_mode: "HTML",
         disable_web_page_preview: true,
         ...Markup.inlineKeyboard([
-            [Markup.button.callback(RETURN_BACK_TO_FIRST, 'returnBackFirst_btn')]
+            [Markup.button.callback(constans.RETURN_BACK_TO_FIRST, 'returnBackFirst_btn')]
         ])
     });
 });
@@ -331,7 +276,7 @@ bot.action('dental_btn', async (ctx) => {
     await ctx.editMessageText(freeMedInfo.dentist, {
         parse_mode: 'HTML',
         disable_web_page_preview: false, ...Markup.inlineKeyboard([
-            [Markup.button.callback(RETURN_BACK_TO_MENU, 'returnBack_btn')]
+            [Markup.button.callback(constans.RETURN_BACK_TO_MENU, 'returnBack_btn')]
         ])
     });
 });
@@ -342,7 +287,7 @@ bot.action('pregnantWomen_btn', async (ctx) => {
     await ctx.editMessageText(freeMedInfo.forWomenAndPregnant, {
         parse_mode: 'HTML',
         disable_web_page_preview: true, ...Markup.inlineKeyboard([
-            [Markup.button.callback(RETURN_BACK_TO_MENU, 'returnBack_btn')]
+            [Markup.button.callback(constans.RETURN_BACK_TO_MENU, 'returnBack_btn')]
         ])
     });
 });
@@ -354,7 +299,7 @@ bot.action('mentalHealth_btn', async (ctx) => {
         parse_mode: 'HTML',
         disable_web_page_preview: true,
         ...Markup.inlineKeyboard([
-            [Markup.button.callback(RETURN_BACK_TO_MENU, 'returnBack_btn')]
+            [Markup.button.callback(constans.RETURN_BACK_TO_MENU, 'returnBack_btn')]
         ])
     });
 });
@@ -366,7 +311,7 @@ bot.action('diabet_btn', async (ctx) => {
         parse_mode: 'HTML',
         disable_web_page_preview: true,
         ...Markup.inlineKeyboard([
-            [Markup.button.callback(RETURN_BACK_TO_MENU, 'returnBack_btn')]
+            [Markup.button.callback(constans.RETURN_BACK_TO_MENU, 'returnBack_btn')]
         ])
     });
 });
@@ -377,7 +322,7 @@ bot.action('anotherMed_btn', async (ctx) => {
         parse_mode: 'HTML',
         disable_web_page_preview: true,
         ...Markup.inlineKeyboard([
-            [Markup.button.callback(RETURN_BACK_TO_MENU, 'returnBack_btn')]
+            [Markup.button.callback(constans.RETURN_BACK_TO_MENU, 'returnBack_btn')]
         ])
     });
 });
@@ -388,7 +333,7 @@ bot.action('covid_btn', async (ctx) => {
         parse_mode: 'HTML',
         disable_web_page_preview: true,
         ...Markup.inlineKeyboard([
-            [Markup.button.callback(RETURN_BACK_TO_MENU, 'returnBack_btn')]
+            [Markup.button.callback(constans.RETURN_BACK_TO_MENU, 'returnBack_btn')]
         ])
     });
 });
@@ -401,7 +346,7 @@ bot.action('returnBack_btn', async (ctx) => {
     return await ctx.editMessageText(medInfo.aboutMedicine, {
         parse_mode: 'HTML',
         disable_web_page_preview: true,
-        ...Markup.inlineKeyboard(MENU_HEALTH)
+        ...Markup.inlineKeyboard(constans.MENU_HEALTH)
     })
 });
 
@@ -420,7 +365,7 @@ bot.action('pilgi_btn', async (ctx) => {
         parse_mode: 'HTML',
         disable_web_page_preview: true,
         ...Markup.inlineKeyboard([
-            [Markup.button.callback(RETURN_BACK_TO_FINANCE, 'backToFinance_btn')]
+            [Markup.button.callback(constans.RETURN_BACK_TO_FINANCE, 'backToFinance_btn')]
         ])
         });
 });
@@ -432,8 +377,8 @@ bot.action('freeStuff_btn', async (ctx) => {
         parse_mode: 'HTML',
         disable_web_page_preview: true,
         ...Markup.inlineKeyboard([
-          [Markup.button.callback(BACKWARD_BTN, 'back_btn'), Markup.button.callback(FORWARD_BTN, 'forward_btn')],
-          [Markup.button.callback(RETURN_BACK_TO_FINANCE, 'backToFinance_btn')]
+          [Markup.button.callback(constans.BACKWARD_BTN, 'back_btn'), Markup.button.callback(constans.FORWARD_BTN, 'forward_btn')],
+          [Markup.button.callback(constans.RETURN_BACK_TO_FINANCE, 'backToFinance_btn')]
         ])
       }
     );
@@ -454,7 +399,7 @@ bot.action('backToFinance_btn', async (ctx) => {
 
 //show work posts
 function workinLitva(ctx) {
-    ctx.replyWithHTML(workInfo.basicInfoAboutWork, Markup.inlineKeyboard(MENU_ABOUT_WORK))
+    ctx.replyWithHTML(workInfo.basicInfoAboutWork, Markup.inlineKeyboard(constans.MENU_ABOUT_WORK))
 }
 
 // work
@@ -466,7 +411,7 @@ bot.action('recHelpLook_btn', async (ctx) => {
         ...Markup.inlineKeyboard(
             [
                 [Markup.button.callback('Індивідуальна зайнятість', 'individualWorker_btn'), Markup.button.callback('Сайти для поиска работы', 'sitesofwork_btn')],
-                [Markup.button.callback(RETURN_BACK_TO_WORK, 'backToTheWorkMenu_btn')],
+                [Markup.button.callback(constans.RETURN_BACK_TO_WORK, 'backToTheWorkMenu_btn')],
             ]
         )})
 });
@@ -480,7 +425,7 @@ bot.action('individualWorker_btn', async (ctx) => {
         disable_web_page_preview: true, 
         ...Markup.inlineKeyboard(
             [
-                [Markup.button.callback(RETURN_BACK_TO_WORK, 'backToTheWorkMenu_btn')],
+                [Markup.button.callback(constans.RETURN_BACK_TO_WORK, 'backToTheWorkMenu_btn')],
             ]
         )
     })
@@ -493,7 +438,7 @@ bot.action('sitesofwork_btn', async (ctx) => {
         parse_mode: "HTML",
         disable_web_page_preview: true,
         ...Markup.inlineKeyboard([
-            [Markup.button.callback(RETURN_BACK_TO_WORK, 'backToTheWorkMenu_btn')]
+            [Markup.button.callback(constans.RETURN_BACK_TO_WORK, 'backToTheWorkMenu_btn')]
         ])
     });
 });
@@ -504,7 +449,7 @@ bot.action('vacations_btn', async (ctx) => {
         parse_mode: "HTML",
         disable_web_page_preview: true,
         ...Markup.inlineKeyboard([
-            [Markup.button.callback(RETURN_BACK_TO_WORK, 'backToTheWorkMenu_btn')]
+            [Markup.button.callback(constans.RETURN_BACK_TO_WORK, 'backToTheWorkMenu_btn')]
         ])
     });
 });
@@ -515,7 +460,7 @@ bot.action('backToTheWorkMenu_btn', async (ctx) => {
     await ctx.editMessageText(workInfo.basicInfoAboutWork, {
         parse_mode: "HTML",
         disable_web_page_preview: false,
-        ...Markup.inlineKeyboard(MENU_ABOUT_WORK)
+        ...Markup.inlineKeyboard(constans.MENU_ABOUT_WORK)
     });
 });
 
@@ -529,8 +474,8 @@ function freeStuffForUkraineFunc(ctx) {
         parse_mode: 'HTML',
         disable_web_page_preview: true,
         ...Markup.inlineKeyboard([
-          Markup.button.callback(BACKWARD_BTN, 'back_btn'),
-          Markup.button.callback(FORWARD_BTN, 'forward_btn')
+          Markup.button.callback(constans.BACKWARD_BTN, 'back_btn'),
+          Markup.button.callback(constans.FORWARD_BTN, 'forward_btn')
         ])
       }
     );
@@ -550,7 +495,7 @@ bot.action('forward_btn', async (ctx) => {
     return await ctx.editMessageText(freeStuffMenu[currentPostFree], {
         parse_mode: 'HTML',
         disable_web_page_preview: true,
-        ...Markup.inlineKeyboard(MENU_BUTTONS)
+        ...Markup.inlineKeyboard(constans.MENU_BUTTONS)
     })
 })
 
@@ -567,7 +512,7 @@ bot.action('back_btn', async (ctx) => {
     return await ctx.editMessageText(freeStuffMenu[currentPostFree], {
         parse_mode: 'HTML',
         disable_web_page_preview: true,
-        ...Markup.inlineKeyboard(MENU_BUTTONS)
+        ...Markup.inlineKeyboard(constans.MENU_BUTTONS)
     })
 })
 

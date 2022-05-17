@@ -299,13 +299,9 @@ Laisvės al. 34, <u>Kaunas</u>
 <b>Oгляд зору, коригувальні окуляри, контактні лінзи</b>	
 <u>Vilnius Kaunas Klaipėda Šiauliai Panevėžys Mažeikiai Palanga</u>
 VISION EXPRESS	https://www.visionexpress.lt/akcijos/socialine-iniciatyva-isvien-su-ukrainos-zmonemis/ 
-OPTIO	https://optio.lt/akcijos/mes-isvien-su-ukrainos-zmonemis/ 	
+OPTIO	https://optio.lt/akcijos/mes-isvien-su-ukrainos-zmonemis/ 
 
-<b>ТОВАРІ ВІД ЦУКРОВОГО ДИАБЕТУ</b>				
-insulinas, adatėlės, diagnostines juostelės Інсулін, голки, діагностичні смужки		
-https://www.facebook.com/diabetoIQ.smalsuciai/ 	По всій Литві	
-+370 605 03265 (Ina Juotkienė)
-ina@dia-iq.lt"
+<u>Update:</u> С  апреля за пол цены можно купить линзы
 `
 
 const freeLessonsAndCourses = `
@@ -530,6 +526,13 @@ const freeSport = `
 (там баня, басейн,баня, спортзал)
 
 Для отримання безкоштовного членства в будь-якій країні, будь ласка, звертайтесь за адресою електронної пошти: hello@lemongym.lt, звертайтесь за телефоном: 19193 або до адміністрації будь-якого спортивного клубу Impuls and Lemon.
+
+<b>Посещения аквапарка Бесплатна для Украинцев.</b>
+https://www.vandensparkas.lt/ru/
+
+<u>Update:</u> только со скидкой 50%. Бесплатно было до 1 мая
+
+
 `
 
 module.exports.financeHelpAfterGotVNG = financeHelpAfterGotVNG;

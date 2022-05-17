@@ -24,6 +24,14 @@ async function infoAboutMedicineFunc(ctx) {
     });
 }
 
+async function writeToOwnerOfTelegram(ctx) {
+    await ctx.replyWithSticker('CAACAgIAAxkBAAIFw2KEGHzNOLXl_cyqMeGtm58IyDnsAAJwEwAC611ASNIumawc0J4fJAQ');
+    await ctx.replyWithHTML("Если у вас возникла проблема по использованию бота или у вас есть идеи по улучшение, напишите ➡️ <a href='https://t.me/IndependentRiver'>сюда</a>", {
+        parse_mode: "HTML", 
+        disable_web_page_preview: true
+    });
+}
+
 //show info about humanitarianAid
 async function humanitarianAidFunc(ctx) {
     await ctx.replyWithHTML(humanInfo.humanAid, Markup.inlineKeyboard(constans.MENU_WITH_CITIES_OF_HUMAN_AID));
@@ -55,5 +63,6 @@ module.exports.infoAboutMedicineFunc = infoAboutMedicineFunc;
 module.exports.humanitarianAidFunc = humanitarianAidFunc;
 module.exports.lookforanApartment = lookforanApartment;
 module.exports.language = language;
+module.exports.writeToOwnerOfTelegram = writeToOwnerOfTelegram;
 module.exports.showPostWithSites = showPostWithSites;
 module.exports.questionOften = questionOften;

@@ -20,7 +20,7 @@ const mainMenu =
     '🛬 По Прибутті', '📞 Корисні контакти', '🔎 Пошук житла', 
     '📦 Гуманітарна Допомога',"🩺 Здоров'я", '💵 Фінанси, Пільги', '🏭 Робота', 
     '🏫 Навчання', '🆓 Безкоштовні Послуги', "🇱🇹 Литовська мова", "❓ Часті запитання", 
-    '📡 Каталог сайтів'
+    '📡 Каталог сайтів', 'Написать разработчику'
 ];
 
 //menu with free thing/stuff/services
@@ -44,7 +44,6 @@ bot.command('start', async (ctx) => {
     return startBot(ctx);
 });
 //listening to, HEARS
-
 bot.hears(mainMenu[0], (ctx) => mainInfoAboutRefugee(ctx));
 bot.hears(mainMenu[1], (ctx) => mainMenuFunctionsFile.usefulContacts(ctx));
 bot.hears(mainMenu[2], (ctx) => mainMenuFunctionsFile.lookforanApartment(ctx));
@@ -57,8 +56,10 @@ bot.hears(mainMenu[8], (ctx) => freeStuffForUkraineFunc(ctx, currentPostFree));
 bot.hears(mainMenu[9], (ctx) => mainMenuFunctionsFile.language(ctx));
 bot.hears(mainMenu[10], (ctx) => mainMenuFunctionsFile.questionOften(ctx));
 bot.hears(mainMenu[11], (ctx) => mainMenuFunctionsFile.showPostWithSites(ctx));
+bot.hears(mainMenu[12], (ctx) => mainMenuFunctionsFile.writeToOwnerOfTelegram(ctx));
 
 //Functions
+
 
 //at the begining
 function startBot(ctx) {
@@ -68,7 +69,7 @@ function startBot(ctx) {
         [mainMenu[1], mainMenu[2], mainMenu[6]], // Row1 with 2 buttons
         [mainMenu[4], mainMenu[3], mainMenu[5]], // Row2 with 2 buttons
         [mainMenu[8], mainMenu[7], mainMenu[9]], // Row3 with 3 buttons
-        [mainMenu[11], mainMenu[10]]
+        [mainMenu[11], mainMenu[10], mainMenu[12]]
     ]).oneTime().resize());
 }
 
@@ -98,6 +99,7 @@ bot.action('preschool_btn', async (ctx) => {
 
 bot.action('artschools_btn', async (ctx) => {
     await ctx.answerCbQuery();
+    //ctx.replyWithSticker
     await ctx.editMessageText(educationShcools.artSchoolsContacts, {
         parse_mode: "HTML",
         disable_web_page_preview: true,

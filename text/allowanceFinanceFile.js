@@ -150,6 +150,10 @@ const freeTransport = `
 Безкоштовний транспорт, Алітус		 https://www.stops.lt/alytus
 
 Корабель	Smiltynės Perkėla	https://www.keltas.lt/ 	Klaipėda, Smiltynė	
+
+Безкоштовний автобус від посольства Литви у Львові до міста Алітус у Литві.
+З Алітуса до Вільнюса волонтери допомагають дістатися.
+<a href="https://docs.google.com/forms/d/e/1FAIpQLSdfMbnW86fPuy3TMPAZsFYvc4wgXFAnGvDuXMRMiTAB-ASHGA/viewform">docs.google.com/forms</a>
 `
 const freeWorkConsultation = `
 <b>КОНСУЛЬТАЦІЇ З ПРАЦІ</b>		

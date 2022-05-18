@@ -26,7 +26,6 @@ async function infoAboutMedicineFunc(ctx) {
 }
 
 async function writeToOwnerOfTelegram(ctx) {
-    await ctx.answerCbQuery();
     await ctx.replyWithSticker('CAACAgIAAxkBAAIFw2KEGHzNOLXl_cyqMeGtm58IyDnsAAJwEwAC611ASNIumawc0J4fJAQ');
     await ctx.replyWithHTML("Если у вас возникла проблема по использованию бота или у вас есть идеи по улучшение, напишите ➡️ <a href='https://t.me/IndependentRiver'>сюда</a>", {
         parse_mode: "HTML", 

@@ -71,7 +71,8 @@ function startBot(ctx) {
         [mainMenu[4], mainMenu[3], mainMenu[5]], // Row2 with 2 buttons
         [mainMenu[8], mainMenu[7], mainMenu[9]], // Row3 with 3 buttons
         [mainMenu[11], mainMenu[10], mainMenu[12]]
-    ]).oneTime().resize());
+    ]
+    ));
 }
 
 /* //Actions
@@ -445,6 +446,7 @@ bot.action('sitesofwork_btn', async (ctx) => {
         ...Markup.inlineKeyboard([
             [Markup.button.callback(constans.RETURN_BACK_TO_WORK, 'backToTheWorkMenu_btn')]
         ])
+        
     });
 });
 

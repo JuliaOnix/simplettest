@@ -21,7 +21,7 @@ async function infoAboutMedicineFunc(ctx) {
     await ctx.replyWithHTML(medInfo.aboutMedicine, {
         parse_mode: 'HTML',
         disable_web_page_preview: true,
-        ...Markup.inlineKeyboard(constans.MENU_HEALTH)
+        ...Markup.inlineKeyboard(constans.MENU_HEALTH).oneTime(true)
     });
 }
 

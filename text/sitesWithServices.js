@@ -63,7 +63,7 @@ https://famclub.lt
 <a href="https://koalaprint.lt/produktai/veliavu-gamyba/ukrainos-veliavos/">https://koalaprint.lt</a>
 <a href="https://flagmanas.lt/ukrainos-atributika/">https://flagmanas.lt</a>
 
-Сайты с новостями:
+<b>Сайты с новостями:</b>
 https://www.delfi.lt/ru/
 https://rusradio.lt/
 https://www.lrt.lt/ru/novosti
@@ -128,6 +128,10 @@ http://facebook.com/groups/249255388815100
 https://www.facebook.com/groups/320430144999724
 Шяуляй
 https://www.facebook.com/groups/4263308243700099
+`
+
+const instagramPages = `
+
 `
 module.exports.sites = sites;
 module.exports.facebookGroupsText = facebookGroupsText;

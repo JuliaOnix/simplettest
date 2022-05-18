@@ -62,6 +62,12 @@ https://famclub.lt
 <a href="https://www.akabaltic.lt/veliavu-gamyba/ukrainos-veliavos.html">https://www.akabaltic.lt</a>
 <a href="https://koalaprint.lt/produktai/veliavu-gamyba/ukrainos-veliavos/">https://koalaprint.lt</a>
 <a href="https://flagmanas.lt/ukrainos-atributika/">https://flagmanas.lt</a>
+
+Сайты с новостями:
+https://www.delfi.lt/ru/
+https://rusradio.lt/
+https://www.lrt.lt/ru/novosti
+
 `
 
 const telegramChannelsList = `

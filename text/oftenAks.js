@@ -1,7 +1,4 @@
 const qAndA = `
-Відповіді практично на всі запитання
-https://www.renkuosilietuva.lt/ru/informacia-dla-grazdan-ukrainy/
-
 Реєстраційний центр у Вільнюсі за адресою Mintes g.3
 Це гімназія, де обладнали зал для реєстрації українців.
 Реєструєтеся, робите фото та відбитки пальців для посвідки на проживання.
@@ -38,6 +35,12 @@ Blindžių g. 24A
 Після отримання пластикового посвідки можна подавати
 заяву у центрі самоврядування Вільнюса
 (Konstitucijos pr. 3, Вільнюського району Rinktinės g. 50) на допомогу дітям до 18 років у розмірі 73 євро на місяць.
+
+<b>Сайти на якіх зібрано багато актуальної інформації для українських біженців.</b>
+https://akrolesta.art/ua
+https://ukraina.vilnius.lt
+https://helpua.lt/
+https://www.renkuosilietuva.lt/ru/informacia-dla-grazdan-ukrainy/
 `
 
 module.exports.qAndA = qAndA;

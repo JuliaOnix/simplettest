@@ -86,6 +86,9 @@ const facebookGroupsText = `
 <b>Українці у Литві / Украинцы в Литве / Ukrainiečiai Lietuvoje</b>
 https://www.facebook.com/groups/2294077994171869
 
+<b>Українські діти у Литві - Ukrainos vaikai Lietuvoje</b>
+https://www.facebook.com/groups/5046154952110242
+
 <b>Русскоязычные девушки Вильнюса</b> 
 https://www.facebook.com/groups/2639955882956165
 

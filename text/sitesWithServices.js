@@ -67,7 +67,7 @@ https://famclub.lt
 https://www.delfi.lt/ru/
 https://rusradio.lt/
 https://www.lrt.lt/ru/novosti
-
+https://www.govilnius.lt/visit-vilnius
 `
 
 const telegramChannelsList = `

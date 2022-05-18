@@ -8,6 +8,10 @@ https://eurovaistine.lt
 https://camelia.lt
 https://benu.lt
 
+<b>Записаться на Beauty-услуги</b>
+Удобно бронировать разные услуги красоты
+https://www.treatwell.lt/
+
 <b>ДОСТАВКА ЕДЫ/ПРОДУКТОВ НА ДОМ</b>
 Готовая еда/ресторанные блюда:
 https://food.bolt.eu

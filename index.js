@@ -416,7 +416,7 @@ bot.action('recHelpLook_btn', async (ctx) => {
         disable_web_page_preview: true, 
         ...Markup.inlineKeyboard(
             [
-                [Markup.button.callback('Індивідуальна зайнятість', 'individualWorker_btn'), Markup.button.callback('Сайти для поиска работы', 'sitesofwork_btn')],
+                [Markup.button.callback('Індивідуальна зайнятість', 'individualWorker_btn'), Markup.button.callback('Сайти для пошуку роботиашч', 'sitesofwork_btn')],
                 [Markup.button.callback(constans.RETURN_BACK_TO_WORK, 'backToTheWorkMenu_btn')],
             ]
         )})

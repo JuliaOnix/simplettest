@@ -92,6 +92,33 @@ https://www.facebook.com/groups/5046154952110242
 <b>Шахи / Україна - Šachmatai / Ukraina</b>
 <a href="https://www.facebook.com/%D0%A8%D0%B0%D1%85%D0%B8-%D0%A3%D0%BA%D1%80%D0%B0%D1%97%D0%BD%D0%B0-%C5%A0achmatai-Ukraina-104103198962485">https://www.facebook.com/</a>
 
+<b>Допомога українським родинам </b>
+https://www.facebook.com/groups/868903884507780/ 
+
+<b>Українці в Каунасі </b>
+https://www.facebook.com/groups/356243299713614/ 
+
+<b>Допомога народу України </b>
+https://www.facebook.com/groups/286679646911263/ 
+
+<b>Українки в Литві:  </b>
+https://www.facebook.com/groups/901162937247328/ 
+
+<b>Литва допомагає Україні  </b>
+https://www.facebook.com/groups/3112002959126318/ 
+
+<b>Група українці ЛТ  </b>
+https://www.facebook.com/groups/2294077994171869 
+
+<b>Допомога для українців, Клайпеда</b> 
+https://www.facebook.com/groups/371063444546375/posts/375909924061727/ 
+
+<b>Купую в українців у LT: </b>
+https://www.facebook.com/groups/668743400840858/ 
+
+<b>Українці в Литві, м.Маріямполе: </b>
+https://www.facebook.com/groups/413914537172259/
+
 <b>Русскоязычные девушки Вильнюса</b> 
 https://www.facebook.com/groups/2639955882956165
 

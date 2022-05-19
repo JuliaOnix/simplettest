@@ -30,8 +30,8 @@ const MENU_ABOUT_EXTRACURRICULARS = [
 
 //menu for work block
 const MENU_ABOUT_WORK = [
-    [Markup.button.callback('Рекомендации/Помощь по поиску работы', 'recHelpLook_btn')],
-    [Markup.button.callback('Сайти для поиска работы', 'sitesofwork_btn'), Markup.button.callback('Вакансии', 'vacations_btn')]
+    [Markup.button.callback('Рекомендації / Допомога з пошуку роботи', 'recHelpLook_btn')],
+    [Markup.button.callback('Сайти для пошуку роботи', 'sitesofwork_btn'), Markup.button.callback('Вакансії', 'vacations_btn')]
 ]
 
 //menu for education block

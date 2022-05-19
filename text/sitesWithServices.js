@@ -89,6 +89,9 @@ https://www.facebook.com/groups/2294077994171869
 <b>Українські діти у Литві - Ukrainos vaikai Lietuvoje</b>
 https://www.facebook.com/groups/5046154952110242
 
+<b>Шахи / Україна - Šachmatai / Ukraina</b>
+<a href="https://www.facebook.com/%D0%A8%D0%B0%D1%85%D0%B8-%D0%A3%D0%BA%D1%80%D0%B0%D1%97%D0%BD%D0%B0-%C5%A0achmatai-Ukraina-104103198962485"></a>
+
 <b>Русскоязычные девушки Вильнюса</b> 
 https://www.facebook.com/groups/2639955882956165
 

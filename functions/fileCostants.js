@@ -49,6 +49,7 @@ const MENU_FREE_STUFF = [
     [Markup.button.callback('🌐 Інтернет, Комунікація', 'freeInternet_btn'),     Markup.button.callback('🏢 Юридичні послуги', 'freeLegal_btn')],   
     [Markup.button.callback('🐈 Для домашніх тварин', 'freePetStuff_btn'),     Markup.button.callback('💅🏻 Послуги краси', 'freeBeautyStuff_btn')],   
     [Markup.button.callback('👓 Оптика', 'freeOptica_btn'),     Markup.button.callback('🎨 Курси, ЛекціЇ', 'freeCourses_btn')],   
+    [Markup.button.callback('🛋 Мебель', 'freeSofa_btn')],   
 ]
 
 const MENU_WITH_CITIES_OF_HUMAN_AID = [
@@ -60,7 +61,7 @@ const MENU_WITH_CITIES_OF_HUMAN_AID = [
 const LIST_TEXT_OF_FREE_STUFF = [financeText.freeSport, financeText.freeTransport, financeText.freeForChildrenAndMothers,
 financeText.freeKonsulska, financeText.freeArtEvents, financeText.freeWorkConsultation, financeText.freeTranslator, financeText.freePrintout,
 financeText.freeСommunication, financeText.freeLegalAid, financeText.freePatsStuff, financeText.freeBeautyStauff, financeText.freeMedOptica,
-financeText.freeLessonsAndCourses]
+financeText.freeLessonsAndCourses, financeText.freeSofa]
 
 //menu buttons for free block
 const MENU_BUTTONS = [

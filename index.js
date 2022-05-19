@@ -610,6 +610,15 @@ bot.action('freeOptica_btn', async (ctx) => {
     })
 })
 
+bot.action('freeSofa_btn', async (ctx) => {
+    await ctx.answerCbQuery();
+    return await ctx.editMessageText(constans.LIST_TEXT_OF_FREE_STUFF[14], {
+        parse_mode: 'HTML',
+        disable_web_page_preview: true,
+        ...Markup.inlineKeyboard([constans.RETURN_BACK_TO_FREE_STUFF])
+    })
+})
+
 bot.action('freeCourses_btn', async (ctx) => {
     await ctx.answerCbQuery();
     return await ctx.editMessageText(constans.LIST_TEXT_OF_FREE_STUFF[13], {

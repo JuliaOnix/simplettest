@@ -80,9 +80,18 @@ const telegramChannelsList = `
 <b>Vilnius Girls</b>👑 (Группа для девушек из Вильнюса) - https://t.me/VilniusGirls 
 
 <b>Украинцы в Паланге</b> - https://t.me/+Q6KPSibr39hlOGUy
+
+<b>Чат - Беларусы Вільні</b> - https://t.me/belarusVLN
+
+<b>Vilnius Market</b> - https://t.me/vilniusmarket
+
+<b>Бесплатные Фотосессии. Вильнюс</b> - https://t.me/freePhotosChannel
 ` 
 
 const facebookGroupsText = `
+<b>Ukrainos Ambasada Lietuvoje / Посольство України в Литві</b>
+https://www.facebook.com/ukr.embassy.Lithuania/
+
 <b>Українці у Литві / Украинцы в Литве / Ukrainiečiai Lietuvoje</b>
 https://www.facebook.com/groups/2294077994171869
 

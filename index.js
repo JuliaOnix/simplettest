@@ -42,6 +42,7 @@ if (token === undefined) {
 
 //here is started bot
 bot.command('start', async (ctx) => {
+    console.log(`${ctx.chat.id} ${ctx.from.username} started bot`)
     return startBot(ctx);
 });
 //listening to, HEARS
@@ -58,6 +59,9 @@ bot.hears(mainMenu[9], (ctx) => mainMenuFunctionsFile.language(ctx));
 bot.hears(mainMenu[10], (ctx) => mainMenuFunctionsFile.questionOften(ctx));
 bot.hears(mainMenu[11], (ctx) => mainMenuFunctionsFile.showPostWithSites(ctx));
 bot.hears(mainMenu[12], (ctx) => mainMenuFunctionsFile.writeToOwnerOfTelegram(ctx));
+bot.on("message", (ctx) => {
+    console.log(ctx.message.sticker);
+})
 
 //Functions
 
@@ -227,6 +231,7 @@ bot.action('returnBackEducation_btn', async (ctx) => {
 
 //main info for people, who came right now and look for info what they have to do.
 async function mainInfoAboutRefugee(ctx) {
+    console.log(`${ctx.from.username} ${ctx} main info about refugee`)
     await ctx.replyWithHTML(mytext.firstVisit, {
         parse_mode: "HTML", 
         disable_web_page_preview: true,

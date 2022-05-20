@@ -89,10 +89,12 @@ bot.action('btn_anotherCities', async (ctx) => {
 
 //show block about education and sport for children also
 async function educationAndSportFunc(ctx) {
+    console.log(`${ctx.from.username} ${ctx.message.text} choosed`)
     await ctx.replyWithHTML(educationShcools.generalInfoAboutSchool, Markup.inlineKeyboard(constans.MENU_EDUCATION));
 }
 
 bot.action('preschool_btn', async (ctx) => {
+    console.log(`${ctx.from.username} preschool_btn choosed`)
     await ctx.answerCbQuery();
     await ctx.editMessageText(educationShcools.preschool, {
         parse_mode: "HTML",
@@ -104,6 +106,7 @@ bot.action('preschool_btn', async (ctx) => {
 });
 
 bot.action('artschools_btn', async (ctx) => {
+    console.log(`${ctx.from.username} artschools_btn choosed`)
     await ctx.answerCbQuery();
     //ctx.replyWithSticker
     await ctx.editMessageText(educationShcools.artSchoolsContacts, {
@@ -116,6 +119,7 @@ bot.action('artschools_btn', async (ctx) => {
 });
 
 bot.action('profEduc_btn', async (ctx) => {
+    console.log(`${ctx.from.username} profEduc_btn choosed`)
     await ctx.answerCbQuery();
     await ctx.editMessageText(educationShcools.profEducation, 
     {
@@ -128,6 +132,7 @@ bot.action('profEduc_btn', async (ctx) => {
 });
 
 bot.action('univer_btn', async (ctx) => {
+    console.log(`${ctx.from.username} univer_btn choosed`)
     await ctx.answerCbQuery();
     await ctx.editMessageText(educationShcools.universities, {
         parse_mode: "HTML",
@@ -139,6 +144,7 @@ bot.action('univer_btn', async (ctx) => {
 });
 
 bot.action('sportEduc_btn', async (ctx) => {
+    console.log(`${ctx.from.username} sportEduc_btn choosed`)
     await ctx.answerCbQuery();
     await ctx.editMessageText(educationShcools.sportPlaces, {
         parse_mode: "HTML",
@@ -150,6 +156,7 @@ bot.action('sportEduc_btn', async (ctx) => {
 });
 
 bot.action('lessonsforChildren_btn', async (ctx) => {
+    console.log(`${ctx.from.username} lessonsforChildren_btn choosed`)
     await ctx.answerCbQuery();
     await ctx.editMessageText('ГУРТКИ, ЛЕКЦІЇ, УРОКИ', {
         parse_mode: "HTML",
@@ -161,6 +168,7 @@ bot.action('lessonsforChildren_btn', async (ctx) => {
 //show post about extracurriculars 
 //Art and teatr block
 bot.action('artANDTeatr_btn', async (ctx) => {
+    console.log(`${ctx.from.username} artANDTeatr_btn choosed`)
     await ctx.answerCbQuery();
     await ctx.editMessageText(educationShcools.artfree, {
         parse_mode: "HTML", 
@@ -173,6 +181,7 @@ bot.action('artANDTeatr_btn', async (ctx) => {
 
 //sport 
 bot.action('sportLessons_btn', async (ctx) => {
+    console.log(`${ctx.from.username} sportLessons_btn choosed`)
     await ctx.answerCbQuery();
     await ctx.editMessageText(educationShcools.sportfree, {
         parse_mode: "HTML", 
@@ -185,6 +194,7 @@ bot.action('sportLessons_btn', async (ctx) => {
 
 //lection
 bot.action('lections_btn', async (ctx) => {
+    console.log(`${ctx.from.username} lections_btn choosed`)
     await ctx.answerCbQuery();
     await ctx.editMessageText(educationShcools.groupsLections, {
         parse_mode: "HTML", 
@@ -197,6 +207,7 @@ bot.action('lections_btn', async (ctx) => {
 
 //help for children
 bot.action('helpFromEduc_btn', async (ctx) => {
+    console.log(`${ctx.from.username} lections_btn choosed`)
     await ctx.answerCbQuery();
     await ctx.editMessageText(educationShcools.helpInThings, {
         parse_mode: "HTML", 
@@ -209,6 +220,7 @@ bot.action('helpFromEduc_btn', async (ctx) => {
 
 //return to choosing type of free groups
 bot.action('return_back_In_GroupMenu_btn', async (ctx) => {
+    console.log(`${ctx.from.username} return_back_In_GroupMenu_btn`)
     await ctx.answerCbQuery();
     await ctx.editMessageText('ГУРТКИ, ЛЕКЦІЇ, УРОКИ', {
         parse_mode: "HTML", 
@@ -219,6 +231,7 @@ bot.action('return_back_In_GroupMenu_btn', async (ctx) => {
 
 //return back to manu education
 bot.action('returnBackEducation_btn', async (ctx) => {
+    console.log(`${ctx.from.username} returnBackEducation_btn`)
     await ctx.answerCbQuery();
     await ctx.editMessageText(educationShcools.generalInfoAboutSchool, {
         parse_mode: "HTML", 
@@ -231,7 +244,7 @@ bot.action('returnBackEducation_btn', async (ctx) => {
 
 //main info for people, who came right now and look for info what they have to do.
 async function mainInfoAboutRefugee(ctx) {
-    console.log(`${ctx.from.username} ${ctx} main info about refugee`)
+    console.log(`${ctx.from.username} main info about refugee`)
     await ctx.replyWithHTML(mytext.firstVisit, {
         parse_mode: "HTML", 
         disable_web_page_preview: true,
@@ -243,6 +256,7 @@ async function mainInfoAboutRefugee(ctx) {
 }
 
 bot.action('btn_usefulContacts', async (ctx) => {
+    console.log(`${ctx.from.username} btn_useful Contacts`)
     await ctx.answerCbQuery();
     await ctx.editMessageText(contacts.usefulContacts, {
         parse_mode: "HTML",
@@ -254,6 +268,7 @@ bot.action('btn_usefulContacts', async (ctx) => {
 });
 
 bot.action('btn_addresses', async (ctx) => {
+    console.log(`${ctx.from.username} btn_useful Contacts`)
     await ctx.answerCbQuery();
     await ctx.editMessageText(contacts.address, {
         parse_mode: "HTML",

@@ -9,7 +9,7 @@ const humanInfo = require('../text/humanitarianAidText')
 const sitesPost = require('../text/sitesWithServices')
 
 async function showPostWithSites(ctx) {
-    console.log(`${ctx.from.username} Show post with sites`)
+    console.log(`${ctx.from.username} ${ctx.message.text} choosed`)
     await ctx.replyWithHTML(sitesPost.sites, {
         parse_mode: 'HTML',
         disable_web_page_preview: true, 
@@ -19,6 +19,7 @@ async function showPostWithSites(ctx) {
 
 //show info about med insurance
 async function infoAboutMedicineFunc(ctx) {
+    console.log(`${ctx.from.username} ${ctx.message.text} choosed`)
     await ctx.replyWithHTML(medInfo.aboutMedicine, {
         parse_mode: 'HTML',
         disable_web_page_preview: true,
@@ -27,6 +28,7 @@ async function infoAboutMedicineFunc(ctx) {
 }
 
 async function writeToOwnerOfTelegram(ctx) {
+    console.log(`${ctx.from.username} ${ctx.message.text} choosed`)
     await ctx.replyWithSticker('CAACAgIAAxkBAAIH2mKHkobggkZ52R3V5MqPuA87854qAAJvAAPb234AAZlbUKh7k4B0JAQ');
     await ctx.replyWithHTML("Якщо у вас виникла проблема з використанням бота/є ідея щодо покращення бота/додати інформацію до бота, напишіть ➡️ <a href='https://t.me/IndependentRiver'>моя сторінка</a>", {
         parse_mode: "HTML", 
@@ -36,27 +38,32 @@ async function writeToOwnerOfTelegram(ctx) {
 
 //show info about humanitarianAid
 async function humanitarianAidFunc(ctx) {
+    console.log(`${ctx.from.username} ${ctx.message.text} choosed`)
     await ctx.replyWithHTML(humanInfo.humanAid, Markup.inlineKeyboard(constans.MENU_WITH_CITIES_OF_HUMAN_AID));
 }
 
 //useful contacts 
 async function usefulContacts(ctx) {
+    console.log(`${ctx.from.username} ${ctx.message.text} choosed`)
     let string = contacts.address + contacts.usefulContacts + contacts.medContacts;
     return ctx.replyWithHTML(string);
 }
 
 //about language, free lessons
 function language(ctx) {
+    console.log(`${ctx.from.username} ${ctx.message.text} choosed`)
     ctx.replyWithHTML(languageInfo.sites)
 }
 
 //info how look for apartments
 async function lookforanApartment(ctx) {
+    console.log(`${ctx.from.username} ${ctx.message.text} choosed`)
     await ctx.replyWithHTML(apartmentsinfo.sites); 
 }
 
 //FAQ
 async function questionOften(ctx) {
+    console.log(`${ctx.from.username} ${ctx.message.text} choosed`)
     await ctx.replyWithHTML(questionInfo.qAndA)
 }
 

@@ -13,6 +13,21 @@ const RETURN_BACK_TO_GROUPLESSONS_EDUCATION = '🔙 Повернутися до 
 const RETURN_BACK_TO_HUMANAID_MENU = Markup.button.callback('🔙 Повернутися до «Гуманітарна Допомога»', "return_to_human_aid_menu_btn");
 const RETURN_BACK_TO_SITES = Markup.button.callback('🔙 Повернутися до «Каталог сайтів»', "return_to_sites_block_btn");
 
+//menu in chatbot
+const MAIN_MENU_NAMES = 
+[
+    '🛬 По Прибутті', '📞 Корисні контакти', '🔎 Пошук житла', 
+    '📦 Гуманітарна Допомога',"🩺 Здоров'я", '💵 Фінанси, Пільги', '🏭 Робота', 
+    '🏫 Навчання', '🆓 Безкоштовні Послуги', "🇱🇹 Литва", 
+    '📡 Каталог сайтів', 'Написати розробнику'
+];
+
+const MAIN_MENU_ARRAY = [[MAIN_MENU_NAMES[0]],
+[MAIN_MENU_NAMES[1], MAIN_MENU_NAMES[2], MAIN_MENU_NAMES[6]],
+[MAIN_MENU_NAMES[4], MAIN_MENU_NAMES[3], MAIN_MENU_NAMES[5]],
+[MAIN_MENU_NAMES[8], MAIN_MENU_NAMES[7], MAIN_MENU_NAMES[9]],
+[MAIN_MENU_NAMES[10],MAIN_MENU_NAMES[11]]]
+
 
 //menu for health block 
 const MENU_HEALTH = [
@@ -74,6 +89,8 @@ const MENU_BUTTONS_SITES = [
 ]
 
 
+module.exports.MAIN_MENU_ARRAY = MAIN_MENU_ARRAY;
+module.exports.MAIN_MENU_NAMES = MAIN_MENU_NAMES;
 module.exports.MENU_HEALTH = MENU_HEALTH;
 module.exports.RETURN_BACK_TO_SITES = RETURN_BACK_TO_SITES;
 module.exports.MENU_BUTTONS_SITES = MENU_BUTTONS_SITES;

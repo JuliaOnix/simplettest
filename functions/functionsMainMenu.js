@@ -1,8 +1,6 @@
 const { Telegraf, Markup } = require("telegraf");
 const contacts = require('../text/contacts')
 const apartmentsinfo = require('../text/apartmentsinfo')
-const languageInfo = require('../text/languageLitovskiy')
-const questionInfo = require('../text/oftenAks')
 const constans = require('../functions/fileCostants')
 const medInfo = require('../text/medicineInfo')
 const humanInfo = require('../text/humanitarianAidText')
@@ -50,19 +48,12 @@ async function usefulContacts(ctx) {
     return ctx.replyWithHTML(string);
 }
 
-/* //about language, free lessons
-function language(ctx) {
-    console.log(`${ctx.from.username} ${ctx.message.text} choosed`)
-    ctx.replyWithHTML(languageInfo.sites)
-} */
-
 //info how look for apartments
 async function lookforanApartment(ctx) {
     console.log(`${ctx.from.username} ${ctx.message.text} choosed`)
     await ctx.replyWithHTML(apartmentsinfo.sites); 
 }
 
-//TODO text with litva
 //About Lithuania
 async function aboutLithuaniaFunc(ctx) {
     console.log(`${ctx.from.username} ${ctx.message.text} choosed`)

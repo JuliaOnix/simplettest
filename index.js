@@ -18,15 +18,6 @@ const aboutLithuania = require('./text/aboutLithuania')
 
 const token = process.env.BOT_TOKEN
 
-//menu in chatbot
-const mainMenu = 
-[
-    '🛬 По Прибутті', '📞 Корисні контакти', '🔎 Пошук житла', 
-    '📦 Гуманітарна Допомога',"🩺 Здоров'я", '💵 Фінанси, Пільги', '🏭 Робота', 
-    '🏫 Навчання', '🆓 Безкоштовні Послуги', "🇱🇹 Литовська мова", "🇱🇹 Литва", 
-    '📡 Каталог сайтів', 'Написати розробнику'
-];
-
 //menu with free thing/stuff/services
 const freeStuffMenu = 
 [
@@ -48,32 +39,25 @@ bot.command('start', async (ctx) => {
     console.log(`${ctx.chat.id} ${ctx.from.username} started bot`)
     return startBot(ctx);
 });
+
+//NOTE here I am refactoring code
 //listening to, HEARS
-bot.hears(mainMenu[0], (ctx) => mainInfoAboutRefugee(ctx));
-bot.hears(mainMenu[1], (ctx) => mainMenuFunctionsFile.usefulContacts(ctx));
-bot.hears(mainMenu[2], (ctx) => mainMenuFunctionsFile.lookforanApartment(ctx));
-bot.hears(mainMenu[3], (ctx) => mainMenuFunctionsFile.humanitarianAidFunc(ctx));
-bot.hears(mainMenu[4], (ctx) => mainMenuFunctionsFile.infoAboutMedicineFunc(ctx));
-bot.hears(mainMenu[5], (ctx) => allowanceFinanceFunc(ctx));
-bot.hears(mainMenu[6], (ctx) => workinLitva(ctx));
-bot.hears(mainMenu[7], (ctx) => educationAndSportFunc(ctx));
-bot.hears(mainMenu[8], (ctx) => freeStuffForUkraineFunc(ctx, currentPostFree));
-//bot.hears(mainMenu[9], (ctx) => mainMenuFunctionsFile.language(ctx));
-bot.hears(mainMenu[10], (ctx) => mainMenuFunctionsFile.aboutLithuaniaFunc(ctx));
-bot.hears(mainMenu[11], (ctx) => mainMenuFunctionsFile.showPostWithSites(ctx));
-bot.hears(mainMenu[12], (ctx) => mainMenuFunctionsFile.writeToOwnerOfTelegram(ctx));
+bot.hears(constans.MAIN_MENU_NAMES[0], (ctx) => mainInfoAboutRefugee(ctx));
+bot.hears(constans.MAIN_MENU_NAMES[1], (ctx) => mainMenuFunctionsFile.usefulContacts(ctx));
+bot.hears(constans.MAIN_MENU_NAMES[2], (ctx) => mainMenuFunctionsFile.lookforanApartment(ctx));
+bot.hears(constans.MAIN_MENU_NAMES[3], (ctx) => mainMenuFunctionsFile.humanitarianAidFunc(ctx));
+bot.hears(constans.MAIN_MENU_NAMES[4], (ctx) => mainMenuFunctionsFile.infoAboutMedicineFunc(ctx));
+bot.hears(constans.MAIN_MENU_NAMES[5], (ctx) => allowanceFinanceFunc(ctx));
+bot.hears(constans.MAIN_MENU_NAMES[6], (ctx) => workinLitva(ctx));
+bot.hears(constans.MAIN_MENU_NAMES[7], (ctx) => educationAndSportFunc(ctx));
+bot.hears(constans.MAIN_MENU_NAMES[8], (ctx) => freeStuffForUkraineFunc(ctx, currentPostFree));
+bot.hears(constans.MAIN_MENU_NAMES[9], (ctx) => mainMenuFunctionsFile.aboutLithuaniaFunc(ctx));
+bot.hears(constans.MAIN_MENU_NAMES[10], (ctx) => mainMenuFunctionsFile.showPostWithSites(ctx));
+bot.hears(constans.MAIN_MENU_NAMES[11], (ctx) => mainMenuFunctionsFile.writeToOwnerOfTelegram(ctx));
 bot.on("text",  async (ctx) => {
     console.log(ctx.message.text);
     await ctx.replyWithSticker("CAACAgIAAxkBAAIIYmKIImnuHqG87U8il4x-rxL0VR_oAAL5FAACRgjQSALifIoIRnMCJAQ")
-    await ctx.replyWithHTML("Такої команди немає. Тицяй на кнопки 🙂", Markup.keyboard(
-    [
-        [mainMenu[0]],
-        [mainMenu[1], mainMenu[2], mainMenu[6]], // Row1 with 2 buttons
-        [mainMenu[4], mainMenu[3], mainMenu[5]], // Row2 with 2 buttons
-        [mainMenu[8], mainMenu[7], mainMenu[9]], // Row3 with 3 buttons
-        [mainMenu[11], mainMenu[10], mainMenu[12]]
-    ]
-    ))
+    await ctx.replyWithHTML("Такої команди немає. Тицяй на кнопки 🙂", Markup.keyboard(constans.MAIN_MENU_ARRAY))
 })
 
 bot.on("message", (ctx) => {
@@ -84,22 +68,9 @@ bot.on("message", (ctx) => {
 
 //at the begining
 function startBot(ctx) {
-    ctx.reply('Вибери тему, яка тебе цікавить', Markup
-    .keyboard([
-        [mainMenu[0]],
-        [mainMenu[1], mainMenu[2], mainMenu[6]], // Row1 with 2 buttons
-        [mainMenu[4], mainMenu[3], mainMenu[5]], // Row2 with 2 buttons
-        [mainMenu[8], mainMenu[7], mainMenu[9]], // Row3 with 3 buttons
-        [mainMenu[11], mainMenu[10], mainMenu[12]]
-    ]
-    ));
+    ctx.reply('Обери тему, яка тебе цікавить', Markup
+    .keyboard(constans.MAIN_MENU_ARRAY));
 }
-
-/* //Actions
-bot.action('btn_anotherCities', async (ctx) => {
-    await ctx.answerCbQuery();
-    ctx.reply('https://www.redcross.lt/kontakti-z-organizaciyami-yaki-nadayut-gumanitarnu-dopomogu-ukrayincyam-ua')
-}); */
 
 //ANCHOR Education
 
@@ -532,7 +503,7 @@ bot.action('backToTheWorkMenu_btn', async (ctx) => {
 //freeStuff
 async function freeStuffForUkraineFunc(ctx) {
     console.log(`${ctx.from.username} freeStuffForUkraineFunc choosed`)
-    await ctx.replyWithHTML("Вибери тему, яка тебе цікавить", {
+    await ctx.replyWithHTML("Обери тему, яка тебе цікавить", {
         parse_mode: 'HTML',
         disable_web_page_preview: true,
         ...Markup.inlineKeyboard(constans.MENU_FREE_STUFF)
@@ -704,7 +675,7 @@ bot.action('freeCourses_btn', async (ctx) => {
 bot.action('return_to_free_stuff_btn', async (ctx) => {
     console.log(ctx.from.first_name, ctx.from.username + 'return_to_free_stuff_btn')
     await ctx.answerCbQuery();
-    return await ctx.editMessageText("Вибери тему, яка тебе цікавить", {
+    return await ctx.editMessageText("Обери тему, яка тебе цікавить", {
         parse_mode: 'HTML',
         disable_web_page_preview: true,
         ...Markup.inlineKeyboard(constans.MENU_FREE_STUFF)

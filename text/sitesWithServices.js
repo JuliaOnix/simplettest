@@ -74,15 +74,38 @@ const telegramChannelsList = `
 <b>Украинцы в Литве</b>
 https://t.me/ukrainpatriot
 
-<b>Украинцы в Паланге</b>
+<b>Вільнюс. Ми з України</b>
+https://t.me/vilnius_ukr
+
+<b>Українці KAUNAS</b>
+https://t.me/zustrichiiznayomsvavkaunasi
+
+<b>Українці в Клайпеді</b>
+https://t.me/ukraincivklaipedi
+
+<b>Укринці в Паланзі</b>
 https://t.me/+Q6KPSibr39hlOGUy
 
 <b>АБФ в Литве</b>
 Волонтёрская инициатива для беларусов_к и украинцев_ок, живущих в Вильнюсе!
 https://t.me/abflithuania
 
-<b>📍ВильнюсЧат × Литва</b>
+<b>Мама в Вильнюсе</b>
+https://t.me/mamavilnius
+
+<b>ВильнюсЧат × Литва</b>
 https://t.me/vilnius_lithuania
+
+<b>Vilnius Girls</b>
+(Группа для девушек из Вильнюса)
+https://t.me/VilniusGirls 
+
+<b>Нужный справочник Вильнюс</b>
+Справочник по услугам
+https://t.me/spravkavilnius
+
+<b>Vilnius Market</b>
+https://t.me/vilniusmarket
 
 <b>Чат - Беларусы Вільні</b>
 https://t.me/belarusVLN
@@ -92,13 +115,6 @@ https://t.me/rudelfi
 
 <b>Новости Литвы</b>
 https://t.me/rradiolt
-
-<b>Vilnius Girls</b>👑 
-(Группа для девушек из Вильнюса)
-https://t.me/VilniusGirls 
-
-<b>Vilnius Market</b>
-https://t.me/vilniusmarket
 
 <b>Бесплатные Фотосессии. Вильнюс</b>
 https://t.me/freePhotosChannel

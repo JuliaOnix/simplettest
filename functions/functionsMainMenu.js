@@ -12,6 +12,16 @@ const messageFromDeveloper = `Якщо у вас виникла проблема
 
 <b>Важлива інформація</b>: Частіше перезапускайте бота за допомогою /start. Для оновлення контенту :)`
 
+const SOURSES = `<b>Джерела інформації:</b>
+<a href="https://akrolesta.art/ua/spravochnik.html?fbclid=IwAR15iIfGIiVtFKCmbU1P2qW0lzTXf0jvMkp7fcjV38qjf_amHmMMCmTzHJg">https://akrolesta.art/ua</a>
+
+https://ukraina.vilnius.lt
+
+https://helpua.lt/
+
+https://www.renkuosilietuva.lt/ru/informacia-dla-grazdan-ukrainy/
+`
+
 async function showPostWithSites(ctx) {
     console.log(`${ctx.from.username} ${ctx.message.text} choosed`)
     await ctx.replyWithHTML(sitesPost.sites, {
@@ -38,6 +48,7 @@ async function writeToOwnerOfTelegram(ctx) {
         parse_mode: "HTML", 
         disable_web_page_preview: true
     });
+    await ctx.replyWithHTML(SOURSES)
 }
 
 //show info about humanitarianAid

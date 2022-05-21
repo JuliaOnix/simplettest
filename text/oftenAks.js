@@ -2,7 +2,7 @@ const qAndA = `
 <b>Сайти на якіх зібрано багато актуальної інформації для українських біженців.</b>
 
 <b>Довідники</b>
-https://akrolesta.art/ua
+<a href="https://akrolesta.art/ua/spravochnik.html?fbclid=IwAR15iIfGIiVtFKCmbU1P2qW0lzTXf0jvMkp7fcjV38qjf_amHmMMCmTzHJg">https://akrolesta.art/ua</a>
 
 https://ukraina.vilnius.lt
 

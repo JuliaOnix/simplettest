@@ -88,7 +88,6 @@ const MENU_BUTTONS_SITES = [
     [Markup.button.callback('Instagram канали', 'instagramGroups_btn'), Markup.button.callback('Телеграм канали', 'telegramChannels_btn')]
 ]
 
-
 module.exports.MAIN_MENU_ARRAY = MAIN_MENU_ARRAY;
 module.exports.MAIN_MENU_NAMES = MAIN_MENU_NAMES;
 module.exports.MENU_HEALTH = MENU_HEALTH;

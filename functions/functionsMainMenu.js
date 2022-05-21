@@ -8,7 +8,9 @@ const sitesPost = require('../text/sitesWithServices')
 const aboutLithuania = require('../text/aboutLithuania')
 
 
-const messageFromDeveloper = "Якщо у вас виникла проблема з використанням бота/є ідея щодо покращення бота/додати інформацію до бота, напишіть ➡️ <a href='https://t.me/IndependentRiver'>моя сторінка</a>. <b>Важлива інформація</b>: Частіше перезапускайте бота за допомогою /start. Для оновлення контенту :)"
+const messageFromDeveloper = `Якщо у вас виникла проблема з використанням бота/є ідея щодо покращення бота/додати інформацію до бота, напишіть ➡️ <a href='https://t.me/IndependentRiver'>моя сторінка</a>. 
+
+<b>Важлива інформація</b>: Частіше перезапускайте бота за допомогою /start. Для оновлення контенту :)`
 
 async function showPostWithSites(ctx) {
     console.log(`${ctx.from.username} ${ctx.message.text} choosed`)

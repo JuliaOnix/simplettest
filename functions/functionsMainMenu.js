@@ -10,7 +10,7 @@ const aboutLithuania = require('../text/aboutLithuania')
 
 const messageFromDeveloper = `Якщо у вас виникла проблема з використанням бота/є ідея щодо покращення бота/додати інформацію до бота, напишіть ➡️ <a href='https://t.me/IndependentRiver'>моя сторінка</a>. 
 
-<b>Важлива інформація</b>: Частіше перезапускайте бота за допомогою /start. Для оновлення контенту :)`
+<b>Рекомендація</b>: Частіше перезапускайте бота за допомогою /start для оновлення контенту :)`
 
 const SOURSES = `<b>Джерела інформації:</b>
 <a href="https://akrolesta.art/ua/spravochnik.html">https://akrolesta.art/ua</a>
@@ -61,7 +61,10 @@ async function humanitarianAidFunc(ctx) {
 async function usefulContacts(ctx) {
     console.log(`${ctx.from.username} ${ctx.message.text} choosed`)
     let string = contacts.address + contacts.usefulContacts + contacts.medContacts;
-    return ctx.replyWithHTML(string);
+    return ctx.replyWithHTML(string, {
+        parse_mode: "HTML", 
+        disable_web_page_preview: true
+    });
 }
 
 //info how look for apartments

@@ -17,11 +17,12 @@ const basicInfoAboutWork = `
 <a href="https://www.youtube.com/watch?v=neijMI6xKng">Вебінар</a> 
 
 <b>Знати свої права! Інформація щодо інспекції праці для українців:</b>
-https://www.vdi.lt/Forms/Tekstas1.aspx?Tekstai_ID=3601 
-https://www.vdi.lt/PdfUploads/ukr.pdf 
+<a href="https://www.vdi.lt/Forms/Tekstas1.aspx?Tekstai_ID=3601">Сайт</a> 
+<a href="https://www.vdi.lt/PdfUploads/ukr.pdf">Скачати пам'ятку</a> 
 
-<b>Увага! Остерігайтеся експлуатації! </b>
-Завжди існує ризик експлуатації та насильства на роботі. Більше інформації – <a href="https://docs.google.com/document/d/1cuqYAQA3YYNlKbg0MRyVG1Qhr6PctL1XBWQjht2RYBc/edit">у документі</a>
+<b>Увага! Остерігайтеся експлуатації!</b>
+Завжди існує ризик експлуатації та насильства на роботі. 
+Більше інформації – <a href="https://docs.google.com/document/d/1cuqYAQA3YYNlKbg0MRyVG1Qhr6PctL1XBWQjht2RYBc/edit">у документі</a>
 `
 
 const howToFindWork = `
@@ -79,16 +80,15 @@ https://www.instagram.com/joboffersforukrainians/
 Виберіть у верхньому правому куті „Darbo paieška“ („Пошук роботи“) і в жовтій таблиці 
 „Greita paieška“ („Швидкий пошук“) поставте прапорець „Ukrainiečiams“ („для українців“)
 https://uzt.lt/ 
-Info in russian: 
-+370 661 10885
-General info 1883 
+RU: +37066110885
+Загальна інформація 1883 
 Email: info@uzt.lt
 
 <b>Building Bridges</b>	
 https://buildingbridges.lt/positions/	
 пропозиції роботи для людей похилого віку 	
 info@buildingbridges.lt 
-+370 621 61 074	
++37062161074	
 
 <b>Unicorns.lt</b>	
 Оголошення про роботу в дуже популярних стартапах „Vinted“, „Tesonet“, „KiloHealth“, 
@@ -119,7 +119,7 @@ https://docs.google.com/spreadsheets/d/1X_QblcTh8NQvI-upUKu6XelkbzqeolqFSIKiImxA
 
 <b>Кіно і телеіндустрія</b>	
 Список організацій, які наймають українців для роботи в кіно та телевізійній індустрії
-https://docs.google.com/spreadsheets/d/1jsj58fFxuM2Ufplz25OjfrLSy4lz_mzI5OuwDAjgxgA/edit#gid=0
+<a href="https://docs.google.com/spreadsheets/d/1jsj58fFxuM2Ufplz25OjfrLSy4lz_mzI5OuwDAjgxgA/edit#gid=0">https://docs.google.com/spreadsheets/</a>
 
 <b>Салон фортепіано „Organum“</b>	
 https://www.facebook.com/FortepijonuSalonasOrganum/
@@ -128,7 +128,7 @@ https://www.facebook.com/FortepijonuSalonasOrganum/
 https://www.facebook.com/FortepijonuSalonasOrganum/posts/5161731997180590	
 julija.sadaunykaite@gmail.com
 infokoncertas@gmail.com 
-+370 698 37221
++37069837221
 info@organum.lt
 
 <b>Logopedijos centras „Papūga“ Логопедичний центр „Papūga“</b>
@@ -139,7 +139,7 @@ info@organum.lt
 http://www.geraslogopedas.lt/ 
 https://www.facebook.com/geraslogopedas/photos/a.470570837061630/1105945790190795/	
 geraslogopedas@gmail.com 
-+370 686 92380
++37068692380
 
 <b>Lithuanian IT community helps Ukrainian IT community</b> 			
 <a href="https://sites.google.com/view/relocation-help-in-lithuania/?fbclid=IwAR2WzGGw7cXbafoNuL5hL0_VtYANuMkAUDLoXHba7PxThtF3tGWd-k-M7JY">sites.google.com</a>	
@@ -156,7 +156,7 @@ https://lrkm.lrv.lt/uploads/lrkm/documents/files/Informacija%20apie%20idarbinimo
 <b>Kauno klinikos</b>		
 https://www.facebook.com/kaunoklinikos/posts/3214763742097051	
 LT	
-Kaunas	Eivenių g. 2, Kaunas	
+<a href="https://goo.gl/maps/z2VEHdnyrRBwFNMT7">Eivenių g. 2, Kaunas</a>	
 med@kaunoklinikos.lt; 
 +37067106871			
 Каунаські клініки готові прийняти на роботу українців, які рятуються від війни.
@@ -184,7 +184,7 @@ const individualWorkerPost = `
 для відвідування необхідна попередня реєстрація через систему реєстрації STI, 
 а якщо це неможливо зробити онлайн, час прибуття можна зарезервувати за телефоном 
 
-+370 5 2191 777.
++37052191777.
 
 <b>Інформація про визнання професійної кваліфікації та контакти для консультацій:</b>
 https://www.enterpriselithuania.com/en/information-want-work-lithuania/ 
@@ -193,14 +193,11 @@ https://www.enterpriselithuania.com/en/information-want-work-lithuania/
 
 <b>Контакти Державної податкової інспекції:</b>
 www.vmi.lt
-Інформація: 1882 або +370 5 260 5060
-
-
+Інформація: 1882 або +37052605060
 `
 
 const recommendationsForHowToWork = `
 <b>Як знайти роботу в Литві?</b>
-
 ▪️ Зареєструватися в службі зайнятості
 ▪️ Знайдіть роботу самостійно.
 ▪️ Працювати самостійно на підставі ліцензії на підприємницьку діяльність або індивідуальну зайнятість
@@ -212,15 +209,14 @@ Pеєстрація та додаткова інформація:
 Загальна інформація 1883 
 
 <b>Регіональні відділи:</b>
-+370 658 26 755 Vilnius
-+370 374 09 882 Kaunas
-+370 672 28 204 Jonava
-+370 672 98 949 Alytus
-+370 658 24 346 Klaipėda
-+370 610 38 727 Panevėžys
-+370 616 46 608 Šiauliai
-+370 607 54955 Marijampolė 
-
++37065826755 Vilnius
++37037409882 Kaunas
++37067228204 Jonava
++37067298949 Alytus
++37065824346 Klaipėda
++37061038727 Panevėžys
++37061646608 Šiauliai
++37060754955 Marijampolė 
 
 <b>Пам’ятка служби зайнятості</b> <a href="https://drive.google.com/file/d/1fcpbBxYVuHFMKOrr3urnEl3jL9fC_Dsv/view?usp=sharing">Скачати</a> 
 

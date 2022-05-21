@@ -1,38 +1,39 @@
 const usefulContacts = `
 <b>Міграційна гаряча лінія</b> LT, EN, RU (7.30-21 щодня)
-+370 5 271 7112
++37052717112
 
 <b>Гаряча лінія проживання 24/7</b>
-+370 677 22222
++37067722222
 stipruskartu.lt
 
 <b>Лінія гуманітарної допомоги 24/7</b>
-+370 684 98 688
++37068498688
 redcross.lt
 caritas.lt
 maltieciai.lt
 
 <b>Посольство України в Литві</b>
-+370 5 212 1536
++37052121536
 `
 
 const address = `
 <b>Адреси реєстраційних центрів:</b>
+<u>Натисніть на кнопку, відкриється карта з маршрутом</u>
 
 <b>Vilnius / Вільнюс</b>
-Minties g. 3
+<a href="https://goo.gl/maps/3dSpQhvuCZ1AFHAC6">Minties g. 3</a>
 
 <b>Kaunas / Каунас</b>
-Vytauto pr. 79
+<a href="https://goo.gl/maps/TiqYSWToy2eP3yXK8">Vytauto pr. 79</a>
 
 <b>Klaipėda / Клайпеда</b>
-Paryžiaus Komunos g. 16A
+<a href="https://goo.gl/maps/1sHhp6PfwSU11CxZ7">Paryžiaus Komunos g. 16A</a>
 
 <b>Alytus / Алітус</b>
-Pramonės g. 1B
+<a href="https://goo.gl/maps/E81SY91BgvYRwzY68">Pramonės g. 1B</a>
 
 <b>Panevėžys / Паневежис </b>
-Vienybės aikštė 38
+<a href="https://goo.gl/maps/93c5HJsaPzx4M77UA">Vienybės aikštė 38</a>
 `
 
 const medContacts = `
@@ -40,12 +41,12 @@ const medContacts = `
 112
 
 <b>Інформація про медичні послуги:</b>
-+370 5 232 2222,
++37052322222,
 на сайті https://ligoniukasa.lrv.lt/en/
 
 <b>Вакцинація проти COVID-19: </b> 
 тел. 1808, 
-з нелитовського номера +370 660 11808, 
+з нелитовського номера +37066011808, 
 в Інтернеті https://koronastop.lrv.lt/ru/
 `
 

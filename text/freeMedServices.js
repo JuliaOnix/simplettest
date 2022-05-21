@@ -1,23 +1,23 @@
 const dentist = `
 <b>Палата стоматологів</b>	
-По всій Литві
+Бескоштовна допомога <b>по всій Литві</b>. Відкривайте сайт та шукайте своє місто.
 <a href='https://odontologurumai.lt/lt/apie-rumus/naujienos/1859-%C4%AFstaigos,-teikian%C4%8Dios-nemokam%C4%85-b%C5%ABtin%C4%85j%C4%85-pagalb%C4%85-nukent%C4%97jusiems-nuo-karo-ukrainoje?fbclid=IwAR21wXYqP57jnXihE7H2v39jUzVbbMyMnPn6VFbx6LvBWccD0cxomBz0l4M'>Посилання на сайт, шукайте своє місто</a>
 
 <b>Parko odontologijos klinika</b>	
 Стоматологічна допомога
 <a href="https://www.facebook.com/parkoodontologai/posts/467077825153207">Пост у фейсбуці</a>	
 LT; EN	
-Kaunas	S. Žukausko g. 2B-54, Kaunas.	
-📞 +370 691 31 718
+<a href="https://goo.gl/maps/1uGaoEq4ryBLW3Y87">S. Žukausko g. 2B-54</a>, Kaunas.	
+📞 +37069131718
 Вся невідкладна стоматологічна допомога для українських біженців є безкоштовною. Зв'яжіться за телефоном.
 
 <b>AVE VITA клініка </b>
 <a href="https://www.facebook.com/avevitaklinika/posts/7417398908272002">Пост у фейсбуці</a>
 Стоматологічна допомога 
 LT; EN; RU 
-Lietuva Kovo 11 - osios g. 22 (Girstupio "IKI" торговий центр) Kaunas 📞 
-+370 372 25 577;
-📞+370 677 76 075;
+<a href="https://goo.gl/maps/TMehx8kZ18LPPDnWA">Kovo 11 - osios g. 22</a> (Girstupio "IKI" торговий центр) Kaunas
+📞 +37037225577
+📞 +37067776075
 📧 info@avevitaklinika.lt Невідкладна стоматологічна допомога
 Консультації сімейних лікарів та педіатрів
 Психологічна допомога – консультації психологів для дітей та дорослих.
@@ -37,100 +37,100 @@ const forWomenAndPregnant = `
 Для жінок. Психологічна допомога, тести на вагітність, екстрена контрацепція 
 (у Литві продається без рецепта лікаря), інформація, інтерв'ю з людьми зі схожим досвідом.
 листівка: <a href='https://drive.google.com/file/d/1HExyTYM8kypN_dsvWZ_FzJIIUmmUm_aD/view?usp=sharing'>Скачати</a>
-https://www.facebook.com/LygiaiAsociacija 
-http://en.tja.lt/	
+🌐 https://www.facebook.com/LygiaiAsociacija 
+🌐 http://en.tja.lt/	
 можете писати RU UA EN	
-Kaunas, Vilnius, online 	
-info@lygiai.org 
-+37069060563 whatsapp, viber, telegram (надсилати повідомлення)
+Каунас, Вільнюс, online 	
+📧 info@lygiai.org 
+📞 +37069060563 whatsapp, viber, telegram (надсилати повідомлення)
 
 <b>Neplanuotas nėštumas</b>	
 Допомога жінкам. Консультації щодо незапланованої вагітності
-https://neplanuotasnestumas.lt/en/
-https://www.facebook.com/neplanuotasnestumas/photos/a.646091678774289/5174033419313403/
+🌐 https://neplanuotasnestumas.lt/en/
+<a href="https://www.facebook.com/neplanuotasnestumas/photos/a.646091678774289/5174033419313403/">Пост у Фейсбуці</a>
 RU	online	
 
 <b>Дула</b> - <a href='https://drive.google.com/file/d/1lN2Nmh9VBh6k0ymlf7W0x9fwvAgXNPFP/view?fbclid=IwAR0bTo-6Qtj8N2NfIhb_beqFKTwVtVFXrFn44LBxjvQwOfAuS8p06uRzfow '>Контакти</a>	
 Підготовка до пологів, допомога під час і після пологів	
 EN HEBR RU PL DE IT UA	
-Vilnius Kaunas Panevėžys Molėtai Klaipėda Palanga Kretinga Gargždai Utena Zarasai Alytus	
-+37069060563
+Вільнюс Каунас Паневежис Молетай Клайпеда Паланга Кретинга Гаргждай Утена Зарасай Алітус	
+📞 +37069060563
 
 <b>Vaisingumo klinika</b>
 Безкоштовні консультації та огляди громадян України. 
 Гінекологічні та урологічні огляди, догляд за вагітними.
-https://vaisingumas.lt/  
-https://www.facebook.com/VaisingumoKlinika/ 	
+🌐 https://vaisingumas.lt/  
+🌐 https://www.facebook.com/VaisingumoKlinika/ 	
 LT RU EN	
-Vilnius Kaunas Klaipėda	
+Вільнюс Каунас Клайпеда	
 whatsapp, viber, telegram (надсилати повідомлення)
 
 <b>Ingos Gruzdienės medicinos centras Медичний центр Інги Груздієне</b>	
 Надаються послуги таких лікарів: акушер-гінеколог, ендокринолог, алерголог- клінічний імунолог, рентгенолог-ехоскопіст. 
 Медичний центр безкоштовно надасть усі послуги та необхідні обстеження всім громадянам україни.
-www.gruzdienesklinika.lt 	
-LT RU 	Klaipėda	
-+37061001710  
-https://gruzdienesklinika.lt/kontaktai/ 
+🌐 www.gruzdienesklinika.lt 	
+LT RU 	Клайпеда	
+📞 +37061001710  
+🌐 https://gruzdienesklinika.lt/kontaktai/ 
 
 <b>Hormodernus - endokrinologijos diagnostikos ir gydymo centras</b>
 Ендокринологічний лікувально-діагностичний центр		
-https://www.facebook.com/Hormodernus/posts/484414583267132	
-Здоровье	
-LT	Kaunas	Tolminkiemio g. 1a, Kaunas	📞 
-+370 696 97 979			
+🌐 <a href="https://www.facebook.com/Hormodernus/posts/484414583267132">Сторінка у фейсбуці</a>		
+📍 Каунас	<a href="https://goo.gl/maps/cTzQZU372PvudqqE7">Tolminkiemio g. 1a</a>
+📞 +37069697979			
 Вагітних консультуватимуть акушери-гінекологи вищого рівня:
 ми проведемо всі обов'язкові аналізи крові та УЗД плода за рахунок клініки
 
 <b>Kaniterapinės pagalbos centras</b> 
-https://www.facebook.com/Kaniterapin%C4%97s-pagalbos-centras-738735996179897 
+<a href="https://www.facebook.com/Kaniterapin%C4%97s-pagalbos-centras-738735996179897">Сторінка у фейсбуці</a> 
 Реабілітація 
 LT; EN; UK 
-Kaunas Rotušės 21 
+📍 Каунас <a href="https://goo.gl/maps/gSkPyVT6oXPJVEyL7">Rotušės 21</a> 
 📞 +37068712180 (Iveta) Trečiadieniais, 
 18.00 – 19.30 
 Центр канаркової терапії запрошує на заняття українських дітей. 
-Група – 7 дітей. Реєстрація: https://forms.gle/aiWZL4nw8G8mm3X69
+Група – 7 дітей. 
+Реєстрація: https://forms.gle/aiWZL4nw8G8mm3X69
 `
 
 const diabetPost = `
 <b>ТОВАРІ ВІД ЦУКРОВОГО ДИАБЕТУ</b>						
-Diabeto IQ	- <a href='https://lrv.lt/uploads/main/documents/files/UA.pdf'>Листивка</a> 
-https://www.facebook.com/diabetoIQ.smalsuciai/
+Diabeto IQ	- <a href='https://lrv.lt/uploads/main/documents/files/UA.pdf'>Пам'ятка</a> 
+🌐 https://www.facebook.com/diabetoIQ.smalsuciai/
 інсулін, голки, діагностичні смужки	
 По всій Литві	
-+370 605 03265 (Ina Juotkienė)
+📞 +37060503265 (Ina Juotkienė)
 ina@dia-iq.lt
 `
 
 const anotherMedInfo = `										
 <b>ЛІКАРІ ОНЛАЙН	</b>				
-TahiCare	https://www.tahicare.com/ukraine 	
+🌐 TahiCare	https://www.tahicare.com/ukraine 	
 Безкоштовні телемедичні консультації	
-international		
-contact@tahicare.com 
+📧 international		
+📧 contact@tahicare.com 
 
 <b>BIOFIRST klinika</b>
-https://bit.ly/3CRxhFH
+🌐 https://bit.ly/3CRxhFH
 LT; EN; RU
-Kaunas Studentg g. 37, Kaunas
-SPEC tel +37061020442 Jūratė.
-arba el. paštu jurate@bioklinika.lt
+📍 <a href="https://goo.gl/maps/aEKA7mnmN4bu1CV58">Studentg g. 37, Kaunas</a>
+📞 SPEC tel +37061020442 Jūratė.
+📧 arba el. paštu jurate@bioklinika.lt
 I – V 9.00 – 20.00 val.
 VI 9.00 – 15.00 val.
 VII не працює
 У відповідь на війну в Україні команда лікарів клініки BIOFIRST
 запускає безкоштовну медичну консультацію для військових
 біженців:
-https://bit.ly/3CRxhFH - ми намагатимемося допомогти!
 Висип у дітей, загострення ЛОР або кардіологічних станів у дорослих,
-алергія та ін. Ми небайдужі і наш проект поки що не має дати закінчення.
+алергія та ін. Поки що не має дати закінчення.
 						
 <b>МАСАЖ, РЕАБІЛІТАЦІЯ	</b>					
 Liutauras Zubė	
-https://www.facebook.com/masazuotojasliutauraszube 	розслабляючий і лікувальний масаж	
-RU UA	Klaipėda	
-+370 647 61147 
+https://www.facebook.com/masazuotojasliutauraszube 	
+розслабляючий і лікувальний масаж	
+RU UA	Клайпеда	
++37064761147 
 
 Якщо у вас немає можливості вільно пересуватися містом (маленькі діти, проблеми зі здоров'ям),
 можна звернутися до волонтерів, які додому привезуть речі першої необхідності (харчування, засоби гігієни)
@@ -147,41 +147,41 @@ https://pagalbasau.lt/ukraina/
 Допомога кризових психологів. 
 RU	
 Jaunimo Linija	
-https://www.jaunimolinija.lt/en/	
+🌐 https://www.jaunimolinija.lt/en/	
 емоційна підтримка	
-телефон	RU	1809	
+📞 телефон	RU	1809	
 I - V 8.00 - 21.00                   
 VI, VII 12.00 - 15.00 
 
 <b>Sidabrinė linija</b>	
-https://www.sidabrinelinija.lt/	
+🌐 https://www.sidabrinelinija.lt/	
 емоційна підтримка літніх людей	телефон	
-RU	+370 800 80020	
+📞 RU	+37080080020	
 I–V 8.00–22.00; 
 VI-VII 11.00-19.00
 
 <b>Міграційний інформаційний центр „Renkuosi Lietuvą“</b>		
 психологічна допомога	
 online		
-реєстрація: psichologas@iom.int 
+🌐 реєстрація: psichologas@iom.int 
 
 <b>4P Centras</b>	
-https://4pcentras.com/initiative-for-ukrainians/	
+🌐 https://4pcentras.com/initiative-for-ukrainians/	
 психологічна допомога	контакт, online	RU, EN	реєстрація відбувається на сторінці	
 
 <b>Giedrė Mateikienė</b>		
 емоційна підтримка жінок у групах	
 контакт	RU 	
-реєстрація: giedre.mateikiene@gmail.com 
-+370 686 77516                
-+370 664 08314
+🌐 реєстрація: giedre.mateikiene@gmail.com 
+📞 +37068677516                
+📞 +37066408314
 V 15.00 - 17.00
 
 <b>Linija „Doverija“</b>	
-https://www.klausau.lt/	
+🌐 https://www.klausau.lt/	
 емоційна підтримка молоді	
 телефон	RU	
-+370 800 77 277
+📞 +37080077277
 кожен день  16.00 – 19.00
 
 <b>Чоловіча лінія</b>	

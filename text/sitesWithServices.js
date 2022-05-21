@@ -90,7 +90,7 @@ https://t.me/belarusVLN
 <b>Новости Литвы</b>
 https://t.me/rudelfi
 
-<b>Новости Литве</b>
+<b>Новости Литвы</b>
 https://t.me/rradiolt
 
 <b>Vilnius Girls</b>👑 

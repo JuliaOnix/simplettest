@@ -36,11 +36,9 @@ https://skytech.lt
 https://kilobaitas.lt
 https://varle.lt
 
-<b>АВТОМОБИЛИ (покупка-продажа):</b>
+<b>АВТОМОБІЛІ (купівля-продаж):</b>
 https://ru.autoplius.lt/
 https://ru.autogidas.lt/
-
-<b>АВТОМОБІЛІ (купівля-продаж):</b>
 https://alio.lt/
 https://skelbiu.lt/
 

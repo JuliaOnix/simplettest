@@ -114,8 +114,8 @@ const anotherMedInfo = `
 🌐 https://bit.ly/3CRxhFH
 LT; EN; RU
 📍 <a href="https://goo.gl/maps/aEKA7mnmN4bu1CV58">Studentg g. 37, Kaunas</a>
-📞 SPEC tel +37061020442 Jūratė.
-📧 arba el. paštu jurate@bioklinika.lt
+📞 +37061020442 Jūratė.
+📧 jurate@bioklinika.lt
 I – V 9.00 – 20.00 val.
 VI 9.00 – 15.00 val.
 VII не працює
@@ -127,19 +127,19 @@ VII не працює
 						
 <b>МАСАЖ, РЕАБІЛІТАЦІЯ	</b>					
 Liutauras Zubė	
-https://www.facebook.com/masazuotojasliutauraszube 	
+<a href="https://www.facebook.com/masazuotojasliutauraszube">Сторінка у фейсбуці</a> 	
 розслабляючий і лікувальний масаж	
 RU UA	Клайпеда	
-+37064761147 
+📞 +37064761147 
 
 Якщо у вас немає можливості вільно пересуватися містом (маленькі діти, проблеми зі здоров'ям),
 можна звернутися до волонтерів, які додому привезуть речі першої необхідності (харчування, засоби гігієни)
-https://forms.gle/P3Z2CBagxg2qLahd8
+🌐 https://forms.gle/P3Z2CBagxg2qLahd8
 `
 
 const mentalHelth = `
 <b>Помощь пострадавшим от войны в Украине</b>	
-https://pagalbasau.lt/ukraina/	
+🌐 https://pagalbasau.lt/ukraina/	
 
 <b>Психологічна допомога дорослим</b>, підліткам, дітям. Відеоконсультації, консультації жестовою мовою. 
 Індивідуальні та групові зустрічі з психологами. 
@@ -149,7 +149,8 @@ RU
 Jaunimo Linija	
 🌐 https://www.jaunimolinija.lt/en/	
 емоційна підтримка	
-📞 телефон	RU	1809	
+RU	
+📞 1809	
 I - V 8.00 - 21.00                   
 VI, VII 12.00 - 15.00 
 
@@ -171,11 +172,10 @@ online
 
 <b>Giedrė Mateikienė</b>		
 емоційна підтримка жінок у групах	
-контакт	RU 	
+RU 	
 🌐 реєстрація: giedre.mateikiene@gmail.com 
 📞 +37068677516                
 📞 +37066408314
-V 15.00 - 17.00
 
 <b>Linija „Doverija“</b>	
 🌐 https://www.klausau.lt/	
@@ -185,64 +185,69 @@ V 15.00 - 17.00
 кожен день  16.00 – 19.00
 
 <b>Чоловіча лінія</b>	
-https://www.vyrulinija.lt/	
+🌐 https://www.vyrulinija.lt/	
 емоційна підтримка чоловіків	
 телефон, листи	RU EN	
-info@vyrulinija.lt 	
+📧 info@vyrulinija.lt 	
 I–V 10.00–14.00
 
 <b>Центр антикризового управління</b>	
 https://krizesiveikimas.lt/ 	
 психологічна допомога, мобільні бригади	контакт
-online	RU	+370 640 51555	
+online	RU	
+📞+37064051555	
 I-V 16.00 - 20.00, 
 VI 12.00-16.00
 
 <b>J. Matulaičio соціальний центр</b>	
-https://www.matulaiciosc.lt/	
+🌐 https://www.matulaiciosc.lt/	
 психологічна допомога	контакт	
-RU	+370 5 246 1772,  +370 659 05051	
+RU	
+📞 +37052461772 
+📞 +37065905051	
 I-V 9.00–17.00
 Асоціація „Kraujas“	
-https://kraujas.lt/ 	
-для онкологічних хворих та родичів, допомога психолога	online	RU EN PL	 
+🌐 https://kraujas.lt/ 	
+для онкологічних хворих та родичів, допомога психолога	
+online	RU EN PL	 
 реєстрація https://kraujas.lt/veiklos/individualios-psichologo-konsultacijos/
 
 <b>Республіканський центр хвороб залежності</b>	
-https://www.rplc.lt/ 	
+🌐 https://www.rplc.lt/ 	
 залежні розлади, психологи, психіатри	контакт	
-RU	реєстрація +370 5 213 7808, 
-registratura@rplc.lt  	
+RU	
+реєстрація +37052137808
 I-V 7.00 – 18.00
+📧 registratura@rplc.lt  	
 
 <b>Вільнюський міський центр психічного здоров'я</b>		
 консультації психолога, психіатра, стаціонарне лікування	
 online	RU EN	
-+37052625569, 
-info@vasaros.lt	
+📞 +37052625569, 
+📧 info@vasaros.lt	
 
 <b>Мій лікар</b>	
-https://www.manodaktaras.lt/klinika/psichologine-pagalba-ukrainos-zmonems/2405 	
+🌐 https://www.manodaktaras.lt/klinika/psichologine-pagalba-ukrainos-zmonems/2405 	
 психологічна допомога		
 
 <b>Samopomich</b>	
-https://www.samopomi.ch/ 	self test	online	EN RU UA
+🌐 https://www.samopomi.ch/ 	self test	online	EN RU UA
 
 <b>PsyHelpforUA</b>	
-https://www.psyhelpforua.eu/ 	
+🌐 https://www.psyhelpforua.eu/ 	
 психологічна допомога	online	EN RU
 
 <b>Ukraine Psy Help</b>	
-https://www.facebook.com/UkrainePsyHelp/ 	
+🌐 https://www.facebook.com/UkrainePsyHelp/ 	
 психологічна допомога в зоні бойових дій	
 skype: UkrainePsyHelp	
-RU 	ukrainepsyhelp@gmail.com	
+📧 RU 	ukrainepsyhelp@gmail.com	
 
 <b>Мобільний додаток „Midletic“</b>	
-https://www.mindletic.com/	
+🌐 https://www.mindletic.com/	
 Для бізнесу. Запобігає емоційному дисбалансу у ваших співробітників	
 online 24/7	EN	
-info@mindletic.com, 
+📧 info@mindletic.com, 
 LinkedIn: Virgilijus Pajujis	
 
 <b>Asociacija „Lygiai“</b>
@@ -251,16 +256,16 @@ https://www.facebook.com/LygiaiAsociacija http://en.tja.lt
 Для жінок. Психологічна допомога, тести на вагітність, екстрена контрацепція (у Литві продається без рецепта лікаря), інформація, інтерв'ю з людьми зі схожим досвідом.	
 Kaunas, Vilnius, online	
 можете писати RU, UA, EN
-info@lygiai.org  
-+37069060563 whatsapp, viber, telegram (надсилати повідомлення)	
+📧 info@lygiai.org  
+📞 +37069060563 whatsapp, viber, telegram (надсилати повідомлення)	
 
 <b>Lietuvos kurčiųjų draugija Литовське товариство глухих</b>
-http://www.lkd.lt/kurtiesiems-nemokama-psichologine-pagalba-gestu-kalba	
+🌐 http://www.lkd.lt/kurtiesiems-nemokama-psichologine-pagalba-gestu-kalba	
 психологічна допомога мовоюжестів 	
 контакт, online		
 Ел.адреси для реєстрації на консультації 
-luk.donata@gmail.com
-vilmanark@gmail.com
+📧 luk.donata@gmail.com
+📧 vilmanark@gmail.com
 Skype: LKD.psichologas	
 `
 module.exports.mentalHelth = mentalHelth;

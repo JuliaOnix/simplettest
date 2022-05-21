@@ -107,7 +107,7 @@ team@gamedev.camp
 `
 
 const vacationONGoogleDocs =   `
-Список для дизайнерів <a href='https://docs.google.com/spreadsheets/d/1qmkDV0osQvafAsN36pMM0F1u7Bn9fTpaNkCK-RJk8KY/htmlview#gid=0'>docs.google.com</a>
+<b>Список для дизайнерів</b> <a href='https://docs.google.com/spreadsheets/d/1qmkDV0osQvafAsN36pMM0F1u7Bn9fTpaNkCK-RJk8KY/htmlview#gid=0'>docs.google.com</a>
 
 <b>Пропозиції роботи компаній Вільнюса</b>
 <a href='https://docs.google.com/spreadsheets/d/1Rs_Z3ukNii_u8MgV6lwLbg_wtXUt33jx6SjRVO2K8Sg/edit#gid=0'>docs.google.com</a>	

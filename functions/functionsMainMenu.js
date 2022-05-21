@@ -7,6 +7,9 @@ const humanInfo = require('../text/humanitarianAidText')
 const sitesPost = require('../text/sitesWithServices')
 const aboutLithuania = require('../text/aboutLithuania')
 
+
+const messageFromDeveloper = "Якщо у вас виникла проблема з використанням бота/є ідея щодо покращення бота/додати інформацію до бота, напишіть ➡️ <a href='https://t.me/IndependentRiver'>моя сторінка</a>. <b>Важлива інформація</b>: Частіше перезапускайте бота за допомогою /start. Для оновлення контенту :)"
+
 async function showPostWithSites(ctx) {
     console.log(`${ctx.from.username} ${ctx.message.text} choosed`)
     await ctx.replyWithHTML(sitesPost.sites, {
@@ -29,7 +32,7 @@ async function infoAboutMedicineFunc(ctx) {
 async function writeToOwnerOfTelegram(ctx) {
     console.log(`${ctx.from.username} ${ctx.message.text} choosed`)
     await ctx.replyWithSticker('CAACAgIAAxkBAAIH2mKHkobggkZ52R3V5MqPuA87854qAAJvAAPb234AAZlbUKh7k4B0JAQ');
-    await ctx.replyWithHTML("Якщо у вас виникла проблема з використанням бота/є ідея щодо покращення бота/додати інформацію до бота, напишіть ➡️ <a href='https://t.me/IndependentRiver'>моя сторінка</a>", {
+    await ctx.replyWithHTML(messageFromDeveloper, {
         parse_mode: "HTML", 
         disable_web_page_preview: true
     });

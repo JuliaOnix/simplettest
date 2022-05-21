@@ -305,24 +305,24 @@ VI 10:00-16:00
 `
 const freeBeautyStauff = `								
 <b>Стрижки чоловічі, жіночі, дитячі</b>			
-Pamėnkalnio g. 5 Vilnius	
-+370 684 45873
+📍 <a href='https://goo.gl/maps/YRrNxDJVEnhT46ZK6'>Pamėnkalnio g. 5 Vilnius</a>	
+📞 +37068445873
 
 <b>Майстер Аушра</b>	
 https://www.facebook.com/greenassalonas 
-http://greenassalonas.lt/ 	
-Pylimo gatvė 35, Vilnius	
-sgreenas@gmail.com 
-info@greenassalonas.lt  
-+370 626 14205
+🌐 http://greenassalonas.lt/ 	
+📍 <a href="https://goo.gl/maps/fceZuDmctiCj7xKw7">Pylimo gatvė 35, Vilnius</a>	
+📧 sgreenas@gmail.com 
+📧 info@greenassalonas.lt  
+📞 +37062614205
 
 <b>Irena Baubinienė</b>
 https://www.instagram.com/kosmetologe_irena/		
 LT; RU; UK	
-Vilnius	Viršuliškių g. 33	
-info@jusukosmetologe.lt; 
-+370 698 754 89;
-+370 671 163 18	
+📍 <a href="https://goo.gl/maps/VfyygvQJnpTbRste6">Vilnius	Viršuliškių g. 33</a>	
+📧 info@jusukosmetologe.lt; 
+📞 +370698754 89;
+📞 +370671163 18	
 I-V 10:00-20:00		
 Ірена може безкоштовно приймати мешканців України,
 якщо проблеми зі шкірою (чутливість шкіри, почервоніння тощо)
@@ -330,48 +330,48 @@ I-V 10:00-20:00
 
 <b>Kirpėja Rasa</b>
 LT; RU	
-Kaunas	Veiverių g. 45 A, Aleksotas	
+📍 <a href="https://goo.gl/maps/EQmM7X8Yn8gupCGc8">Kaunas	Veiverių g. 45 A</a>
+Aleksotas	
 📞+37061412029.			
-Перукар Раса може безкоштовно поголити українських дітей.
-Додаткова інформація за тел.
+Перукар Раса може безкоштовно підстригти дітей
 
 <b>Narkus Clinic</b>		
 дерматолог
-https://www.facebook.com/narkusclinic/posts/984788752423513
+<a href="https://www.facebook.com/narkusclinic/posts/984788752423513">Пост у фейсбуці</a>
 LT
-Каунас Uosio g. 42, Kaunas
-info@narkusclinic.lt;
-(8-616) 44119
-Ми вирішили запропонувати посильну фінансову допомогу, тому доктор Гедре [дерматолог]
-прийматиме громадян України на безкоштовні консультації
+📍 <a href="https://goo.gl/maps/zo5xEhA5Stv6yvk1A">Каунас Uosio g. 42</a>
+📧 info@narkusclinic.lt;
+📞 (8-616) 44119
+Доктор Гедре [дерматолог] прийматиме громадян України на безкоштовні консультації.
 `
 
 const freeMedOptica = `
 <b>ОПТИКА</b>				
-Коригувальні окуляри	Fielmann Vilnius Kaunas 
+Fielmann Vilnius Kaunas
+Коригувальні окуляри	 
 <a href='https://drive.google.com/file/d/1nRanELAQxkbcVniREcu8NQvWnLlRJU4q/view?usp=sharing'>drive.google.com - флаер</a>
-Šiauliai Klaipėda Panevėžys	https://www.fielmann.lt/kontaktai 
+Шяуляй Клайпеда Паневежис 
+🌐 https://www.fielmann.lt/kontaktai 
 
-<b>Optikos pasaulis</b>
-Здоровье	
+<b>Optikos pasaulis</b>	
 LT; EN; RU	
 Lietuva	
-https://www.optikospasaulis.lt/optika-lt				
+🌐 https://www.optikospasaulis.lt/optika-lt				
 Безкоштовні окуляри та консультація лікаря.
-Подати український паспорт та дозвіл на проживання у Литві з гуманітарних міркувань
+Показати український паспорт та дозвіл на проживання у Литві з гуманітарних міркувань
 
 <b>Послуги окуліста для дітей та батьків</b>	
 REGA	Rega.lt 
-Gedimino pr. 49, <u>Vilnius </u>
-+370 5 270 98 87
-+370 606 05 416 
+<a href="https://goo.gl/maps/6N1cNbGknUAsZcuS7">Gedimino pr. 49,</a> <u>Vilnius </u>
+📞 +37052709887
+📞 +37060605416 
 
-Laisvės al. 34, <u>Kaunas</u>
-+370 37 42 44 42
-+370 606 05 414
+<a href="https://goo.gl/maps/HEA1BuyWTVNhs3YY9">Laisvės al. 34</a> <u>Kaunas</u>
+📞 +37037424442
+📞 +37060605414
 
 <b>Oгляд зору, коригувальні окуляри, контактні лінзи</b>	
-<u>Vilnius Kaunas Klaipėda Šiauliai Panevėžys Mažeikiai Palanga</u>
+<u>Вільнюс Каунас Клайпеда Шяуляй Паневежис Мажейкяй Паланга</u>
 VISION EXPRESS	https://www.visionexpress.lt/akcijos/socialine-iniciatyva-isvien-su-ukrainos-zmonemis/ 
 OPTIO	https://optio.lt/akcijos/mes-isvien-su-ukrainos-zmonemis/ 
 
@@ -390,39 +390,43 @@ donata.sabliniene@vilnius.lt
 <u>Безкоштовні онлайн-курси основ литовської мови</u>	
 Daiva Dijokevičienė	<a href='https://www.facebook.com/daiva.dijokeviciene/?show_switched_toast=0&show_invite_to_follow=0&show_switched_tooltip=0&show_podcast_settings=0&show_community_transition=0&show_community_review_changes=0'>www.facebook.com/daiva.dijokeviciene</a>
 онлайн	
-Pеєстрація: lit.for.ukr@gmail.com   
+Pеєстрація: 
+📧 lit.for.ukr@gmail.com   
 
 <u>Вчителі литовської мови безкоштовно навчають українські сім’ї (дітей та дорослих)</u>	
-https://mokosi.lt 	
+🌐 https://mokosi.lt 	
 https://www.facebook.com/Mokosi.lt/photos/a.478404925514607/5117926904895696	
 онлайн	
-+370 611 11877 
-aidas@mokosi.lt 
+📞 +37061111877 
+📧 aidas@mokosi.lt 
 
-<u>Студенти та викладачі Вільнюського університету на волонтерських засадах організовують безкоштовні курси з англійської мови для початківців та запрошують реєструватися громадян України, які не мають жодних початкових знань цієї мови.</u>	
-Vilniaus Universitetas | Вільнюський університет 	
-https://www.flf.vu.lt/naujienos/bendros-naujienos/5316-kursai  	
+<u>Vilniaus Universitetas | Вільнюський університет </u>
+Студенти та викладачі Вільнюського університету на волонтерських засадах організовують безкоштовні курси з англійської мови для початківців та запрошують реєструватися громадян України, які не мають жодних початкових знань цієї мови.		
+🌐 https://www.flf.vu.lt/naujienos/bendros-naujienos/5316-kursai  	
 онлайн	
-rita.vickiene@flf.vu.lt
+📧 rita.vickiene@flf.vu.lt
 
-<u>Студенти та викладачі Вільнюського університету на волонтерських засадах організовують безкоштовні курси з англійської мови для початківців та запрошують реєструватися громадян України, які не мають жодних початкових знань цієї мови.</u>	
-„Vedlys mokesčių džiunglėse“ „Чарівник у податкових джунглях“	
-http://infikona.lt/ 
+<u>„Vedlys mokesčių džiunglėse“ „Чарівник у податкових джунглях“</u>
+Студенти та викладачі Вільнюського університету на волонтерських засадах організовують безкоштовні курси з англійської мови для початківців та запрошують реєструватися громадян України, які не мають жодних початкових знань цієї мови.
+🌐 http://infikona.lt/ 
 https://www.facebook.com/events/367584505257003/ 	
 онлайн, ZOOM	
-+370 612 96231 
+📞 +37061296231 
 РЕГИСТРАЦИЯ ЗДЕСЬ:  <a href='https://docs.google.com/forms/d/1l5oLsJ5EHl_F5L7WcKZ0zo7PRTsf6NbaSHk5Hojd-zs/viewform?edit_requested=true'>https://docs.google.com</a>
 
-<u>Безкоштовний дистанційний курс основ литовської мови (рівень A1)</u>
-При реєстрації на курс необхідно пред’явити <u>реєстраційну картку в міграційному відділі</u>.	
-Lingua Lituanica	https://www.lingualit.lt/	
+<u>Lingua Lituanica</u>
+Безкоштовний дистанційний курс основ литовської мови (рівень A1)
+При реєстрації на курс необхідно пред’явити <u>реєстраційну картку з міграційному відділі</u>.	
+🌐 https://www.lingualit.lt/	
 онлайн	<a href="https://docs.google.com/forms/d/e/1FAIpQLSdSfMufJaTKKwowajSxwtR7QhizydZGV1v5hNFNZXhwppgN_Q/viewform">Pеєстрація docs.google.com</a>
 
-<u>Безкоштовний курс литовської мови для дітей українських біженців.</u> 
-При реєстрації на курс необхідно пред’явити <u>реєстраційну картку в міграційному відділі.</u>	
-Lingua Lituanica	<a href="https://lingualit.lt/lt/naujienos/nemokamas-lietuviu-kalbos-vaiku-kursas-ukrainieciams/">https://lingualit.lt</a>
+<u>Lingua Lituanica</u> 
+Безкоштовний курс литовської мови для дітей українських біженців.
+При реєстрації на курс необхідно пред’явити <u>реєстраційну картку в міграційному відділі.
+<a href="https://lingualit.lt/lt/naujienos/nemokamas-lietuviu-kalbos-vaiku-kursas-ukrainieciams/">https://lingualit.lt</a>
 
-LINGUA LITUANICA, Gedimino pr. 26, Vilnius	
+LINGUA LITUANICA
+Gedimino pr. 26, Vilnius	
 Регистрация здесь: <a href='https://docs.google.com/forms/d/e/1FAIpQLSccTfafGuu5rZAavsqjujBday2QJoPK5grfimNQtW6bESDdBA/viewform'>docs.google.com/forms</a>
 
 <u>Я преподаватель фортепиано</u>, говорю по-русски, немного по-английски. Может быть, есть украинские дети, которые раньше занимались музыкой. 
@@ -430,17 +434,16 @@ LINGUA LITUANICA, Gedimino pr. 26, Vilnius
 Giedre Daugeliene	https://www.facebook.com/giedre.daugeliene	
 Вильнюс (Vilnius), 
 райони: Pavilnys, Naujininkai	
-+370 600 14394
++37060014394
 
-<u>Навчання, психологічна допомога, мовні курси, різноманітна допомога	</u>
-VDU Užsienio kalbų institutas VDU Інститут іноземних мов
+<u>VDU Užsienio kalbų institutas VDU Інститут іноземних мов</u>
+Навчання, психологічна допомога, мовні курси, різноманітна допомога	
 https://www.vdu.lt/lt/ 
-
 Kaunas, Vilnius
- online	
- +370 37 327845 
- uki@vdu.lt  
- Онлайн реєстрація на мовні курси: <a href='https://www.vdu.lt/lt/vdu-parama-ukrainos-akademinei-bendruomenei/?fbclid=IwAR3TPqgyCCTtViRD8ILY7o1jawTL6fHSN7B6pb0ow6R3nGo8bJTssGaggh0 '>www.vdu.lt</a>
+online	
+📞 +37037327845 
+📧 uki@vdu.lt  
+Онлайн реєстрація на мовні курси: <a href='https://www.vdu.lt/lt/vdu-parama-ukrainos-akademinei-bendruomenei/?fbclid=IwAR3TPqgyCCTtViRD8ILY7o1jawTL6fHSN7B6pb0ow6R3nGo8bJTssGaggh0 '>www.vdu.lt</a>
 `
 
 const freeForChildrenAndMothers = `

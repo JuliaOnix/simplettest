@@ -52,7 +52,7 @@ RU	online
 
 <b>Дула</b> - <a href='https://drive.google.com/file/d/1lN2Nmh9VBh6k0ymlf7W0x9fwvAgXNPFP/view?fbclid=IwAR0bTo-6Qtj8N2NfIhb_beqFKTwVtVFXrFn44LBxjvQwOfAuS8p06uRzfow '>Контакти</a>	
 Підготовка до пологів, допомога під час і після пологів	
-EN HEBR RU PL DE IT UA	
+EN HE BR RU PL DE IT UA	
 Вільнюс Каунас Паневежис Молетай Клайпеда Паланга Кретинга Гаргждай Утена Зарасай Алітус	
 📞 +37069060563
 

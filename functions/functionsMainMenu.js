@@ -13,7 +13,7 @@ const messageFromDeveloper = `Якщо у вас виникла проблема
 <b>Важлива інформація</b>: Частіше перезапускайте бота за допомогою /start. Для оновлення контенту :)`
 
 const SOURSES = `<b>Джерела інформації:</b>
-<a href="https://akrolesta.art/ua/spravochnik.html?fbclid=IwAR15iIfGIiVtFKCmbU1P2qW0lzTXf0jvMkp7fcjV38qjf_amHmMMCmTzHJg">https://akrolesta.art/ua</a>
+<a href="https://akrolesta.art/ua/spravochnik.html">https://akrolesta.art/ua</a>
 
 https://ukraina.vilnius.lt
 

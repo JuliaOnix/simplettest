@@ -11,6 +11,7 @@ const educationShcools = require('./text/educationAndSportInfo')
 const mainMenuFunctionsFile = require('./functions/functionsMainMenu')
 const constans = require('./functions/fileCostants')
 const sitesInfo = require('./text/sitesWithServices')
+const sitesKatalog = require('./text/oftenAks')
 
 
 const token = process.env.BOT_TOKEN
@@ -59,12 +60,25 @@ bot.hears(mainMenu[9], (ctx) => mainMenuFunctionsFile.language(ctx));
 bot.hears(mainMenu[10], (ctx) => mainMenuFunctionsFile.questionOften(ctx));
 bot.hears(mainMenu[11], (ctx) => mainMenuFunctionsFile.showPostWithSites(ctx));
 bot.hears(mainMenu[12], (ctx) => mainMenuFunctionsFile.writeToOwnerOfTelegram(ctx));
+bot.on("text",  async (ctx) => {
+    console.log(ctx.message.text);
+    await ctx.replyWithSticker("CAACAgIAAxkBAAIIYmKIImnuHqG87U8il4x-rxL0VR_oAAL5FAACRgjQSALifIoIRnMCJAQ")
+    await ctx.replyWithHTML("Такої команди немає. Тицяй на кнопки 🙂", Markup.keyboard(
+    [
+        [mainMenu[0]],
+        [mainMenu[1], mainMenu[2], mainMenu[6]], // Row1 with 2 buttons
+        [mainMenu[4], mainMenu[3], mainMenu[5]], // Row2 with 2 buttons
+        [mainMenu[8], mainMenu[7], mainMenu[9]], // Row3 with 3 buttons
+        [mainMenu[11], mainMenu[10], mainMenu[12]]
+    ]
+    ))
+})
+
 bot.on("message", (ctx) => {
     console.log(ctx.message.sticker);
 })
 
 //Functions
-
 
 //at the begining
 function startBot(ctx) {
@@ -268,7 +282,7 @@ bot.action('btn_usefulContacts', async (ctx) => {
 });
 
 bot.action('btn_addresses', async (ctx) => {
-    console.log(`${ctx.from.username} btn_useful Contacts`)
+    console.log(`${ctx.from.username} btn_addresses choosed`)
     await ctx.answerCbQuery();
     await ctx.editMessageText(contacts.address, {
         parse_mode: "HTML",
@@ -281,6 +295,7 @@ bot.action('btn_addresses', async (ctx) => {
 
 //return to the main menu button
 bot.action('returnBackFirst_btn', async (ctx) => {
+    console.log(`${ctx.from.username} returnBackFirst_btn choosed`)
     await ctx.answerCbQuery();
     return await ctx.editMessageText(mytext.firstVisit, {
         parse_mode: "HTML",
@@ -298,6 +313,7 @@ bot.action('returnBackFirst_btn', async (ctx) => {
 
 //dental
 bot.action('dental_btn', async (ctx) => {
+    console.log(`${ctx.from.username} dental_btn choosed`)
     await ctx.answerCbQuery();
     await ctx.editMessageText(freeMedInfo.dentist, {
         parse_mode: 'HTML',
@@ -309,6 +325,7 @@ bot.action('dental_btn', async (ctx) => {
 
 //for pregnant and women
 bot.action('pregnantWomen_btn', async (ctx) => {
+    console.log(`${ctx.from.username} pregnantWomen_btn choosed`)
     await ctx.answerCbQuery();
     await ctx.editMessageText(freeMedInfo.forWomenAndPregnant, {
         parse_mode: 'HTML',
@@ -320,6 +337,7 @@ bot.action('pregnantWomen_btn', async (ctx) => {
 
 //mental health
 bot.action('mentalHealth_btn', async (ctx) => {
+    console.log(`${ctx.from.username} mentalHealth_btn choosed`)
     await ctx.answerCbQuery();
     await ctx.editMessageText(freeMedInfo.mentalHelth, {
         parse_mode: 'HTML',
@@ -332,6 +350,7 @@ bot.action('mentalHealth_btn', async (ctx) => {
 
 //diabet
 bot.action('diabet_btn', async (ctx) => {
+    console.log(`${ctx.from.username} diabet_btn choosed`)
     await ctx.answerCbQuery();
     await ctx.editMessageText(freeMedInfo.diabetPost, {
         parse_mode: 'HTML',
@@ -343,6 +362,7 @@ bot.action('diabet_btn', async (ctx) => {
 });
 
 bot.action('anotherMed_btn', async (ctx) => {
+    console.log(`${ctx.from.username} anotherMed_btn choosed`)
     await ctx.answerCbQuery();
     await ctx.editMessageText(freeMedInfo.anotherMedInfo, {
         parse_mode: 'HTML',
@@ -354,6 +374,7 @@ bot.action('anotherMed_btn', async (ctx) => {
 });
 
 bot.action('covid_btn', async (ctx) => {
+    console.log(`${ctx.from.username} covid_btn choosed`)
     await ctx.answerCbQuery();
     await ctx.editMessageText(freeMedInfo.corona, {
         parse_mode: 'HTML',
@@ -367,6 +388,7 @@ bot.action('covid_btn', async (ctx) => {
 
 //returning back to the main menu
 bot.action('returnBack_btn', async (ctx) => {
+    console.log(`${ctx.from.username} returnBack_btn choosed`)
     /* return infoAboutMedicineFunc(ctx); */
     await ctx.answerCbQuery();
     return await ctx.editMessageText(medInfo.aboutMedicine, {
@@ -379,12 +401,14 @@ bot.action('returnBack_btn', async (ctx) => {
 //ANCHORFINANCE BLOCK
 //show menu about finance
 async function allowanceFinanceFunc(ctx) {
+    console.log(`${ctx.from.username} allowanceFinanceFunc choosed`)
     await ctx.replyWithHTML(allowanceFinanceVar.infoAboutBanks, Markup.inlineKeyboard([
         Markup.button.callback('Пільги, на які ви маєте право', 'pilgi_btn'),
     ]));
 }
 
 bot.action('pilgi_btn', async (ctx) => {
+    console.log(`${ctx.from.username} pilgi_btn choosed`)
     await ctx.answerCbQuery();
     await ctx.editMessageText(allowanceFinanceVar.infoAboutFinanceHelp,
     {
@@ -397,6 +421,7 @@ bot.action('pilgi_btn', async (ctx) => {
 });
 
 bot.action('freeStuff_btn', async (ctx) => {
+    console.log(`${ctx.from.username} freeStuff_btn choosed`)
     currentPostFree = 0;
     await ctx.answerCbQuery();
     await ctx.editMessageText(freeStuffMenu[currentPostFree], {
@@ -411,6 +436,7 @@ bot.action('freeStuff_btn', async (ctx) => {
 });
 
 bot.action('backToFinance_btn', async (ctx) => {
+    console.log(`${ctx.from.username} backToFinance_btn choosed`)
     await ctx.answerCbQuery();
     return await ctx.editMessageText(allowanceFinanceVar.infoAboutBanks, {
         parse_mode: "HTML",
@@ -425,11 +451,13 @@ bot.action('backToFinance_btn', async (ctx) => {
 
 //show work posts
 async function workinLitva(ctx) {
+    console.log(`${ctx.from.username} workinLitva choosed`)
     await ctx.replyWithHTML(workInfo.basicInfoAboutWork, Markup.inlineKeyboard(constans.MENU_ABOUT_WORK))
 }
 
 // work
 bot.action('recHelpLook_btn', async (ctx) => {
+    console.log(`${ctx.from.username} recHelpLook_btn choosed`)
     await ctx.answerCbQuery();
     await ctx.editMessageText(workInfo.recommendationsForHowToWork, {
         parse_mode: "HTML",
@@ -445,6 +473,7 @@ bot.action('recHelpLook_btn', async (ctx) => {
 //Individual Worker 
 
 bot.action('individualWorker_btn', async (ctx) => {
+    console.log(`${ctx.from.username} individualWorker_btn choosed`)
     await ctx.answerCbQuery();
     await ctx.editMessageText(workInfo.individualWorkerPost, {
         parse_mode: "HTML",
@@ -459,6 +488,7 @@ bot.action('individualWorker_btn', async (ctx) => {
 
 //show post with sites
 bot.action('sitesofwork_btn', async (ctx) => {
+    console.log(`${ctx.from.username} sitesofwork_btn choosed`)
     await ctx.answerCbQuery();
     await ctx.editMessageText(workInfo.siteForLookForWork, {
         parse_mode: "HTML",
@@ -471,6 +501,7 @@ bot.action('sitesofwork_btn', async (ctx) => {
 });
 
 bot.action('vacations_btn', async (ctx) => {
+    console.log(`${ctx.from.username} vacations_btn choosed`)
     await ctx.answerCbQuery();
     await ctx.editMessageText(workInfo.vacationONGoogleDocs, {
         parse_mode: "HTML",
@@ -483,6 +514,7 @@ bot.action('vacations_btn', async (ctx) => {
 
 //back to the main menu
 bot.action('backToTheWorkMenu_btn', async (ctx) => {
+    console.log(`${ctx.from.username} backToTheWorkMenu_btn choosed`)
     await ctx.answerCbQuery();
     await ctx.editMessageText(workInfo.basicInfoAboutWork, {
         parse_mode: "HTML",
@@ -497,6 +529,7 @@ bot.action('backToTheWorkMenu_btn', async (ctx) => {
 
 //freeStuff
 async function freeStuffForUkraineFunc(ctx) {
+    console.log(`${ctx.from.username} freeStuffForUkraineFunc choosed`)
     await ctx.replyWithHTML("Вибери тему, яка тебе цікавить", {
         parse_mode: 'HTML',
         disable_web_page_preview: true,
@@ -734,6 +767,24 @@ bot.action("telegramChannels_btn", async (ctx) => {
 bot.action("facebookGroups_btn", async (ctx) => {
     await ctx.answerCbQuery();
     return await ctx.editMessageText(sitesInfo.facebookGroupsText, {
+        parse_mode: 'HTML',
+        disable_web_page_preview: true,
+        ...Markup.inlineKeyboard([constans.RETURN_BACK_TO_SITES])
+    })
+})
+
+bot.action("instagramGroups_btn", async (ctx) => {
+    await ctx.answerCbQuery();
+    return await ctx.editMessageText(sitesInfo.instagramPages, {
+        parse_mode: 'HTML',
+        disable_web_page_preview: true,
+        ...Markup.inlineKeyboard([constans.RETURN_BACK_TO_SITES])
+    })
+})
+
+bot.action("dovidnuku_btn", async (ctx) => {
+    await ctx.answerCbQuery();
+    return await ctx.editMessageText(sitesKatalog.qAndA, {
         parse_mode: 'HTML',
         disable_web_page_preview: true,
         ...Markup.inlineKeyboard([constans.RETURN_BACK_TO_SITES])

@@ -69,7 +69,8 @@ const MENU_BUTTONS = [
 ];
 
 const MENU_BUTTONS_SITES = [
-    [Markup.button.callback('Телеграм канали', 'telegramChannels_btn'), Markup.button.callback('Facebook групи', 'facebookGroups_btn')]
+    [Markup.button.callback('Сайти довідники', 'dovidnuku_btn'), Markup.button.callback('Facebook групи', 'facebookGroups_btn')],
+    [Markup.button.callback('Instagram канали', 'instagramGroups_btn'), Markup.button.callback('Телеграм канали', 'telegramChannels_btn')]
 ]
 
 

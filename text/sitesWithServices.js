@@ -1,37 +1,37 @@
 const sites = `
-<b>КАТАЛОГ МЕДИЦИНСКИХ УСЛУГ</b> 
+<b>КАТАЛОГ МЕДИЧНИХ ПОСЛУГ</b> 
 (АПТЕКИ, ПОЛИКЛИННИКИ и т. д.):
 https://www.medicina.lt/ru/veiklos
 
-<b>ЗАКАЗ ЛЕКАРСТВ ОНЛАЙН</b> (нерецептурные)
+<b>ЗАМОВЛЕННЯ ЛІКІВ ОНЛАЙН</b> (нерецептурные)
 https://eurovaistine.lt
 https://camelia.lt
 https://benu.lt
 
-<b>Записаться на Beauty-услуги</b>
-Удобно бронировать разные услуги красоты
+<b>ЗАПИСАТИСЯ НА BEAUTY-ПОСЛУГИ</b>
+Зручно бронювати різноманітні послуги краси
 https://www.treatwell.lt/
 
-<b>ДОСТАВКА ЕДЫ/ПРОДУКТОВ НА ДОМ</b>
-Готовая еда/ресторанные блюда:
+<b>ДОСТАВКА ЇЖИ/ПРОДУКТІВ</b>
+Готові страви/ресторанні страви:
 https://food.bolt.eu
 https://wolt.com/ru
-Магазинные продукты:
+Магазинні продукти:
 https://barbora.lt
 https://lastmile.lt
 https://www.rimi.lt/e-parduotuve/ru
 
-<b>ФИЗИЧЕСКИЕ (НЕ ОНЛАЙН) МАГАЗИНЫ ЭЛЕКТРОНИКИ И БЫТОВОЙ ТЕХНИКИ</b>
+<b>ФІЗИЧНІ (НЕ ОНЛАЙН) МАГАЗИНИ ЕЛЕКТРОНІКИ І ПОБУТОВОЇ ТЕХНІКИ</b>
 https://topocentras.lt 
 https://elektromartk.lt 
 https://euronics.lt
 
-<b>УНИВЕРСАЛЬНЫЕ ОНЛАЙН-МАГАЗИНЫ (по типу амазона, но только литовские):</b>
+<b>УНІВЕРСАЛЬНІ ОНЛАЙН-МАГАЗИНИ (на кшталт амазону, але тільки литовські):</b>
 https://pigu.lt/ru/
 https://varle.lt/
 https://rde.lt/home/ru/
 
-<b>КОМПЬЮТЕРНАЯ ТЕХНИКА ОНЛАЙН-МАГАЗИНЫ:</b>
+<b>КОМП'ЮТЕРНА ТЕХНІКА ОНЛАЙН-МАГАЗИНИ:</b>
 https://skytech.lt
 https://kilobaitas.lt
 https://varle.lt
@@ -40,30 +40,30 @@ https://varle.lt
 https://ru.autoplius.lt/
 https://ru.autogidas.lt/
 
-<b>ОБЩИЕ ПОРТАЛЫ ОБЪЯВЛЕНИЙ</b>
+<b>АВТОМОБІЛІ (купівля-продаж):</b>
 https://alio.lt/
 https://skelbiu.lt/
 
-<b>ОДЕЖДА ОНЛАЙН МАГАЗИНЫ</b>
+<b>ОДЯГ ОНЛАЙН МАГАЗИНИ</b>
 https://aboutyou.lt
 https://asos.com
 https://zalando.lt
 https://vinted.lt
 
-<b>ОНЛАЙН МАГАЗИНЫ ОБУВИ</b>
+<b>ОНЛАЙН МАГАЗИНИ ВЗУТТЯ</b>
 https://sizeer.lt
 https://eavalyne.lt
 https://danija.lt
 https://este.lt
 https://famclub.lt
 
-<b>Вот тут можно купить флаг Украины:</b>
+<b>Ось тут можна купити прапор України:</b>
 <a href="https://brandus.lt/pirkti-internetu/veliavos/valstybiu-veliavos">https://brandus.lt</a>
 <a href="https://www.akabaltic.lt/veliavu-gamyba/ukrainos-veliavos.html">https://www.akabaltic.lt</a>
 <a href="https://koalaprint.lt/produktai/veliavu-gamyba/ukrainos-veliavos/">https://koalaprint.lt</a>
 <a href="https://flagmanas.lt/ukrainos-atributika/">https://flagmanas.lt</a>
 
-<b>Сайты с новостями:</b>
+<b>Сайти з новинами:</b>
 https://www.delfi.lt/ru/
 https://rusradio.lt/
 https://www.lrt.lt/ru/novosti
@@ -71,21 +71,37 @@ https://www.govilnius.lt/visit-vilnius
 `
 
 const telegramChannelsList = `
-<b>Украинцы в Литве</b> - https://t.me/ukrainpatriot
+<b>Украинцы в Литве</b>
+https://t.me/ukrainpatriot
 
-<b>Новости из Литвы</b> - https://t.me/rudelfi
+<b>Украинцы в Паланге</b>
+https://t.me/+Q6KPSibr39hlOGUy
 
-<b>Новости что происходит в Литве</b> - https://t.me/rradiolt
+<b>АБФ в Литве</b>
+Волонтёрская инициатива для беларусов_к и украинцев_ок, живущих в Вильнюсе!
+https://t.me/abflithuania
 
-<b>Vilnius Girls</b>👑 (Группа для девушек из Вильнюса) - https://t.me/VilniusGirls 
+<b>📍ВильнюсЧат × Литва</b>
+https://t.me/vilnius_lithuania
 
-<b>Украинцы в Паланге</b> - https://t.me/+Q6KPSibr39hlOGUy
+<b>Чат - Беларусы Вільні</b>
+https://t.me/belarusVLN
 
-<b>Чат - Беларусы Вільні</b> - https://t.me/belarusVLN
+<b>Новости Литвы</b>
+https://t.me/rudelfi
 
-<b>Vilnius Market</b> - https://t.me/vilniusmarket
+<b>Новости Литве</b>
+https://t.me/rradiolt
 
-<b>Бесплатные Фотосессии. Вильнюс</b> - https://t.me/freePhotosChannel
+<b>Vilnius Girls</b>👑 
+(Группа для девушек из Вильнюса)
+https://t.me/VilniusGirls 
+
+<b>Vilnius Market</b>
+https://t.me/vilniusmarket
+
+<b>Бесплатные Фотосессии. Вильнюс</b>
+https://t.me/freePhotosChannel
 ` 
 
 const facebookGroupsText = `
@@ -132,7 +148,7 @@ https://www.facebook.com/groups/413914537172259/
 https://www.facebook.com/groups/2639955882956165
 
 <b>Группы Вильнюса, где отдают мебель и другие б/у вещи</b> 
-• Free your Stuff VILNIUS / Atiduotuvė
+Free your Stuff VILNIUS / Atiduotuvė
 https://www.facebook.com/groups/1822607451305797
 Vilniuje atiduodu už šokoladą arba kavą
 https://www.facebook.com/groups/402245120175026
@@ -150,14 +166,14 @@ https://www.facebook.com/groups/116329859740519
 https://www.facebook.com/groups/777531836529525
 Клайпеда
 https://www.facebook.com/groups/668172780250851
-Общая
+По всей Литве
 https://www.facebook.com/groups/714686082617374
-Общая
+По всей Литве
 https://www.facebook.com/groups/dovanuoj
 
- 💅🏻💇🏻‍♀️ <b>Ищут моделей:</b>
+💅🏻💇🏻‍♀️ <b>Ищут моделей:</b>
 По всей Литве
-https://www.facebook.com/groups/485814969203661)
+https://www.facebook.com/groups/485814969203661
 По всей Литве
 https://www.facebook.com/groups/390641094460378
 По всей Литве
@@ -173,8 +189,15 @@ https://www.facebook.com/groups/4263308243700099
 `
 
 const instagramPages = `
-
+<b>GoVilnius</b> 
+Новини, фотографії Вільнюса
+<a href='https://instagram.com/govilnius?igshid=YmMyMTA2M2Y='>https://instagram.com/govilnius</a>
 `
 module.exports.sites = sites;
 module.exports.facebookGroupsText = facebookGroupsText;
 module.exports.telegramChannelsList = telegramChannelsList;
+module.exports.instagramPages = instagramPages;
+
+
+
+

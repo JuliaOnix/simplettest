@@ -386,7 +386,7 @@ Laisvės al. 34, <u>Kaunas</u>
 VISION EXPRESS	https://www.visionexpress.lt/akcijos/socialine-iniciatyva-isvien-su-ukrainos-zmonemis/ 
 OPTIO	https://optio.lt/akcijos/mes-isvien-su-ukrainos-zmonemis/ 
 
-<u>Update:</u> С  апреля за пол цены можно купить линзы
+<u>Update:</u> Линзи після квітня не безкоштовні, але є знижка 50%
 `
 
 const freeLessonsAndCourses = `

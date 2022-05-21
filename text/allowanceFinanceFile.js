@@ -422,7 +422,7 @@ https://www.facebook.com/events/367584505257003/
 
 <u>Lingua Lituanica</u> 
 Безкоштовний курс литовської мови для дітей українських біженців.
-При реєстрації на курс необхідно пред’явити <u>реєстраційну картку в міграційному відділі.
+При реєстрації на курс необхідно пред’явити реєстраційну картку в міграційному відділі.
 <a href="https://lingualit.lt/lt/naujienos/nemokamas-lietuviu-kalbos-vaiku-kursas-ukrainieciams/">https://lingualit.lt</a>
 
 LINGUA LITUANICA
@@ -503,8 +503,8 @@ I-V 10-17
 Ми з радістю приймемо безкоштовно грати українських дітей
 до 6 років у нашу ігрову кімнату робочі дні з 10:00 до 17:00
 
-Vaikų edukacinis pramogų centras CurioCity		
-https://curiocity.lt/
+<b>Vaikų edukacinis pramogų centras CurioCity</b>		
+🌐 https://curiocity.lt/
 LT; EN; RU	
 Prekybos ir laisvalaikio centras MEGA, Islandijos pl. 32, Kaunas	
 📞 +37068833202
@@ -526,27 +526,22 @@ https://www.facebook.com/anisiia.novykova.7
 https://www.facebook.com/ConsulBlandis/photos/a.627105647640794/1611836052501077/  
 
 онлайн	"Представник консула в екстреній ситуації" - Иванник Олег Михайлович
-+380 (67) 821 13 53
-ivannykom@gmail.com
+📞 +380678211353
+📧 ivannykom@gmail.com
 
 Онисія Новикова
-+380 (67) 8114724 (український);
-+44 7937 963922 (закордонний)"
+📞 +380678114724 (український);
+📞 +447937963922 (закордонний)"
 Допомога почесного консула України. 
-
-Інформація, проживання	
-Zivile Balandyte	
-https://www.facebook.com/zivile.blandyte 
-
-https://www.facebook.com/photo?fbid=5003746562982073&set=ecnf.100000403362352
 `
 
 const freeArtEvents = `
 <b>Šilutės F. Bajoraičio viešoji biblioteka</b> 
-www.silutevb.lt 
+Шилуте
+🌐 www.silutevb.lt 
 LT; EN; RU
-Šilutė Tilžės g. 10 
-Tel. +370 441 77137 
+📍 <a href="https://goo.gl/maps/dzFvy9mBPnEygraCA">Šilutė Tilžės g. 10</a>
+📞 +37044177137 
 II-V 9.00-18.00 
 Запрошуємо українців відвідати Публічну бібліотеку імені 
 Ф. Байорайтіса Шилуте. Бібліотекарі видадуть вам читацький сертифікат. 
@@ -557,118 +552,98 @@ II-V 9.00-18.00
 ● у фондах бібліотеки зберігаються різні настільні та інтерактивні ігри та книги (російською, німецькою, англійською мовами).
 
 <b>Lietuvos rusų dramos teatras</b>
+Вільнюс
 RU	
-Vilnius	Jono Basanavičiaus g. 13	
-administracija@rusudrama.lt			
+📍 <a href="https://goo.gl/maps/H8mxtLR9d4KEsoPLA">Jono Basanavičiaus g. 13</a>	
+📧 administracija@rusudrama.lt			
 Безкоштовні вистави, реєстрація електронною поштою. поштою
 
-<b>Кінофестиваль „Kino Pavasaris</b>	
-Безкоштовні фільми в кінотеатрах. Українські субтитри.
-
 <b>CINAMON kino teatras</b>		
-https://cinamonkino.com/mega/lt	
+🌐 https://cinamonkino.com/mega/lt	
 LT; EN; RU	
-Kaunas	Islandijos pl. 32	
-mega@cinamonkino.com	
-Antradieniais 15:40 val.		
+📍 <a href="https://goo.gl/maps/wGSEkzNs5u9qxgJK8">Каунас Islandijos pl. 32</a>	
+📧 mega@cinamonkino.com	
+По вівторках о 15:40		
 Щовівторка в кінотеатрі CINAMON проходять покази різних
 мультфільмів українською мовою.
 
-<b>FORUM CINEMAS VINGIS</b> 
-адреса https://goo.gl/maps/2e6fetqQ17UuRJVy8
-04.01 / 14.15 val. / Forum Cinemas Vingis, 5 зал / „Drakonas ir strazdanotoji gražuolė“
-04.03 / 14.25 val.  / Forum Cinemas Vingis, 8 зал /  „Mažytė mama“
-
-
-<b>FORUM CINEMAS KAUNAS</b>
-<a href='https://goo.gl/maps/TzeKvDfTNszqapbP9'>Aдреса</a>
-04.02 / 11 val. / Forum Cinemas Kaune, 2 зал / „Drakonas ir strazdanotoji gražuolė“
-04.02 / 13.40 val. / Forum Cinemas Kaune, 2 зал /  „Mažytė mama“"
-https://kinopavasaris.lt/en/standwithukraine-en	
-Vilnius Kaunas	
-Інформація про фільм за телефоном 
-+370 52644764 (будні 10:00 - 18:00)
-
 <b>AP galerija	Безкоштовні художні виставки</b>	  
-https://www.apgalerija.lt/renginiai	
-Vilnius	
-vilma@apgalerija.lt​
-+370 616 19201​
-Polocko g. 10, Vilnius, Užupis
+🌐 https://www.apgalerija.lt/renginiai	
+Вільнюс		
+📧 vilma@apgalerija.lt​
+📞 +37061619201​
+📍 <a href="https://goo.gl/maps/sdEyJRDhZ5xAyALn9">Polocko g. 10, Vilnius, Užupis</a>
 
 <b>Kaunas Камерний театр</b>
 Безкоштовні вистави для дітей та дорослих, емоційна допомога
-https://www.kamerinisteatras.lt/naujienos/emocine-pagalba-ukrainieciams/	
-Kaunas	
-+370 612 62 226
+🌐 https://www.kamerinisteatras.lt/naujienos/emocine-pagalba-ukrainieciams/	
+Каунас	
+📞 +37061262226
 II - V 17.00 - 20.00, 
 VI - VII 17.00-21.00
-kasa@kamerinisteatras.lt
+📧 kasa@kamerinisteatras.lt
 
 <b>Kauno lėlių teatras Каунаський театр ляльок</b>
 Щиро запрошуємо громадян України безкоштовно відвідувати наші театральні вистави.	
-http://www.kaunoleles.lt/  
-https://www.facebook.com/kauno.valstybinis.leliu.teatras/
+<a href="https://www.facebook.com/kauno.valstybinis.leliu.teatras/">Сторінка у фейсбуці</a>
 Реєстрація: 
-+370 37 221691, 
-+370 620 74242; 
-kasa@kaunoleles.lt 
-Репертуар
-http://www.kaunoleles.lt/445/"
+📞 +37037221691
+📞 +37062074242
+📧 kasa@kaunoleles.lt 
+🌐 http://www.kaunoleles.lt/445/
 
 <b>„VILNIAUS ETNINĖS KULTŪROS CENTRAS“ „ВІЛЬНЮСЬКИЙ ЦЕНТР ЕТНІЧНОЇ КУЛЬТУРИ“</b>	
 Творчі майстер-класи для дітей та дорослих.
 виготовляти гончарні вироби, в’язати та допоможемо освоїти інші традиційні ремесла.	
-https://www.facebook.com/VilniausEtninesKulturosCentras/photos/a.447187831470/10158430233776471/
-Vilnius	
-info@etno.lt 
-http://www.etno.lt/ 
+<a href="https://www.facebook.com/VilniausEtninesKulturosCentras/photos/a.447187831470/10158430233776471/">Сторінка у фейсбуці</a>
+Вільнюс	
+📧 info@etno.lt 
+🌐 http://www.etno.lt/ 
 
 <b>Keistuolių teatras</b>
 Виступи та концерти безкоштовно
-http://www.keistuoliai.lt/ 	Vilnius	
-Реєстрація:
+http://www.keistuoliai.lt/
+Вільнюс		
+<u>Реєстрація:</u>
 1) Литовською: https://forms.gle/zmj7o8VKxAH8hHz87  
 2) Українською: https://forms.gle/5eo8hTjZeLweExnm9    
-+370 5 242 4585
+📞 +37052424585
 
 <b>Šv. Kristoforo kamerinis orkestras Камерний оркестр Крістофера</b>	
 Безкоштовні концерти, робота для музикантів	
-https://www.facebook.com/svkristoforo 
-http://www.kristoforas.lt/ 	
-Vilnius	
-info@kristoforas.lt 
+<a href="https://www.facebook.com/svkristoforo">Сторінка у фейсбуці</a>
+🌐 http://www.kristoforas.lt/ 	
+Вільнюс	
+📧 info@kristoforas.lt 
 
 <b>Miesto laboratorija Міська лабораторія</b>	
 Місце для зустрічей. Мистецькі заходи, концерти, нетворкінг.
 http://www.miestolaboratorija.lt/ 
-<a href='https://www.facebook.com/events/339673008112191/?ref=newsfeed'>Місце для зустрічі</a>	
-Vilnius	
-https://www.facebook.com/miestolaboratorija 
-+370 614 35692
-labas@miestolaboratorija.lt
+<a href='https://www.facebook.com/events/339673008112191/?ref=newsfeed'>Сторінка у фейсбуці</a>	
+Вільнюс	
+📞 +37061435692
+📧 labas@miestolaboratorija.lt
 
 <b>Kauno Tado Ivanausko zoologijos muziejus </b>
 Каунаський зоологічний музей імені Тадаса Іванаускаса	
-https://www.facebook.com/ZoologijosMuziejus/posts/4811058032296133	
-Культура, розваги	
+https://www.facebook.com/ZoologijosMuziejus/posts/4811058032296133		
 LT; EN	
-Kaunas	Laisvės al. 106, Kaunas	📞 
-+370 372 00 292;
+📍 <a href="https://goo.gl/maps/huoaFgVL1kFQjNLf7">Kaunas Laisvės al. 106</a>
+📞 +37037200292
 📧 info@zoomuziejus.lt	II-VII 10:00 - 18:00		
 безкоштовно при пред'явленні документа, що засвідчує особу.
 
 <b>Kūryba - tai laisvė</b>
-https://fb.me/e/389uuFU5I
+<a href="https://fb.me/e/389uuFU5I">Сторінка у фейсбуці</a>
 для дітей
 LT; EN; UK
-Kaunas Šv. Gertrūdos g. 58
-📞+370 602 84 532
+📍 <a href="https://goo.gl/maps/djAAXWv2J3RSerX96">Kaunas Šv. Gertrūdos g. 58</a>
+📞+37060284532
 По четвергах 16.00 – 17.30
 Під час кожної зустрічі діти виконуватимуть різні завдання,
 знайомитися з різними техніками малювання, покращувати свої знання про себе та мистецтво.
 Батьки також можуть взяти участь у заняттях.
-Реєстрація: https://forms.gle/PyNffbASDTVQPZFA8
+<u>Реєстрація:</u> https://forms.gle/PyNffbASDTVQPZFA8
 `
 
 const freeSport = `
@@ -689,15 +664,13 @@ const freeSport = `
 Для отримання безкоштовного членства в будь-якій країні, будь ласка, звертайтесь за адресою електронної пошти: hello@lemongym.lt, звертайтесь за телефоном: 19193 або до адміністрації будь-якого спортивного клубу Impuls and Lemon.
 
 <b>Pilates house</b>		
-https://www.facebook.com/Pilates.house.Lietuva/posts/3124216017851487
 LT; RU	
-Kaunas	Smalininkų g. 2, Kaunas	
-Facebook повідомлення
+📍 <a href="https://goo.gl/maps/LueV8hvgzRTjXPPV6">Kaunas	Smalininkų g. 2</a>	
 PilatesHouse запрошує громадян України займатись спортом безкоштовно.
 Ми розуміємо, що це надзвичайно важкий час, але фізична активність з
 професійним доглядом - це один із способів знизити стрес і покращити фізичне та
 психологічне самопочуття.
-Зареєструйтесь на тренування - повідомлення PilatesHouse у Facebook.
+<u>Зареєструйтесь на тренування</u> - <a href="https://www.facebook.com/Pilates.house.Lietuva/posts/3124216017851487">повідомлення PilatesHouse у Facebook.</a>
 
 
 <b>Посещения аквапарка Бесплатна для Украинцев.</b>
@@ -708,10 +681,10 @@ https://www.vandensparkas.lt/ru/
 
 const freeSofa = `
 <b>UAB Brandas</b>
-https://sofalovakedestalas.lt/index.php
+🌐 https://sofalovakedestalas.lt/index.php
 Мебель
 LT; RU; UK	
-Kaunas	Drobės g. 29				
+📍 <a href="https://goo.gl/maps/FxhvkrebzgXhTV3Q8">Kaunas	Drobės g. 29</a>				
 Для українців, які врятувалися від війни, ми по можливості вибираємо найнеобхідніші меблі з того, що є на складі.
 `
 

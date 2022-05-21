@@ -7,6 +7,7 @@ const constans = require('../functions/fileCostants')
 const medInfo = require('../text/medicineInfo')
 const humanInfo = require('../text/humanitarianAidText')
 const sitesPost = require('../text/sitesWithServices')
+const aboutLithuania = require('../text/aboutLithuania')
 
 async function showPostWithSites(ctx) {
     console.log(`${ctx.from.username} ${ctx.message.text} choosed`)
@@ -49,11 +50,11 @@ async function usefulContacts(ctx) {
     return ctx.replyWithHTML(string);
 }
 
-//about language, free lessons
+/* //about language, free lessons
 function language(ctx) {
     console.log(`${ctx.from.username} ${ctx.message.text} choosed`)
     ctx.replyWithHTML(languageInfo.sites)
-}
+} */
 
 //info how look for apartments
 async function lookforanApartment(ctx) {
@@ -61,17 +62,23 @@ async function lookforanApartment(ctx) {
     await ctx.replyWithHTML(apartmentsinfo.sites); 
 }
 
-//FAQ
-async function questionOften(ctx) {
+//TODO text with litva
+//About Lithuania
+async function aboutLithuaniaFunc(ctx) {
     console.log(`${ctx.from.username} ${ctx.message.text} choosed`)
-    await ctx.replyWithHTML(questionInfo.qAndA)
+    await ctx.replyWithHTML(aboutLithuania.post, {
+        parse_mode: "HTML",
+        disable_web_page_preview: true,
+        ...Markup.inlineKeyboard([
+            [Markup.button.callback("Сайти, де можна вивчати литовську", "language_btn")]
+        ])
+    })
 }
 
 module.exports.usefulContacts = usefulContacts;
 module.exports.infoAboutMedicineFunc = infoAboutMedicineFunc;
 module.exports.humanitarianAidFunc = humanitarianAidFunc;
 module.exports.lookforanApartment = lookforanApartment;
-module.exports.language = language;
 module.exports.writeToOwnerOfTelegram = writeToOwnerOfTelegram;
 module.exports.showPostWithSites = showPostWithSites;
-module.exports.questionOften = questionOften;
+module.exports.aboutLithuaniaFunc = aboutLithuaniaFunc;

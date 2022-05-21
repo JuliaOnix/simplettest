@@ -12,6 +12,8 @@ const mainMenuFunctionsFile = require('./functions/functionsMainMenu')
 const constans = require('./functions/fileCostants')
 const sitesInfo = require('./text/sitesWithServices')
 const sitesKatalog = require('./text/oftenAks')
+const language = require('./text/languageLitovskiy')
+const aboutLithuania = require('./text/aboutLithuania')
 
 
 const token = process.env.BOT_TOKEN
@@ -21,7 +23,7 @@ const mainMenu =
 [
     '🛬 По Прибутті', '📞 Корисні контакти', '🔎 Пошук житла', 
     '📦 Гуманітарна Допомога',"🩺 Здоров'я", '💵 Фінанси, Пільги', '🏭 Робота', 
-    '🏫 Навчання', '🆓 Безкоштовні Послуги', "🇱🇹 Литовська мова", "❓ Часті запитання", 
+    '🏫 Навчання', '🆓 Безкоштовні Послуги', "🇱🇹 Литовська мова", "🇱🇹 Литва", 
     '📡 Каталог сайтів', 'Написати розробнику'
 ];
 
@@ -56,8 +58,8 @@ bot.hears(mainMenu[5], (ctx) => allowanceFinanceFunc(ctx));
 bot.hears(mainMenu[6], (ctx) => workinLitva(ctx));
 bot.hears(mainMenu[7], (ctx) => educationAndSportFunc(ctx));
 bot.hears(mainMenu[8], (ctx) => freeStuffForUkraineFunc(ctx, currentPostFree));
-bot.hears(mainMenu[9], (ctx) => mainMenuFunctionsFile.language(ctx));
-bot.hears(mainMenu[10], (ctx) => mainMenuFunctionsFile.questionOften(ctx));
+//bot.hears(mainMenu[9], (ctx) => mainMenuFunctionsFile.language(ctx));
+bot.hears(mainMenu[10], (ctx) => mainMenuFunctionsFile.aboutLithuaniaFunc(ctx));
 bot.hears(mainMenu[11], (ctx) => mainMenuFunctionsFile.showPostWithSites(ctx));
 bot.hears(mainMenu[12], (ctx) => mainMenuFunctionsFile.writeToOwnerOfTelegram(ctx));
 bot.on("text",  async (ctx) => {
@@ -541,6 +543,7 @@ async function freeStuffForUkraineFunc(ctx) {
 
 //sport button
 bot.action('freeSport_btn', async (ctx) => {
+    console.log(ctx.from.first_name, ctx.from.username + 'freeSport_btn')
     await ctx.answerCbQuery();
     return await ctx.editMessageText(constans.LIST_TEXT_OF_FREE_STUFF[0], {
         parse_mode: 'HTML',
@@ -551,6 +554,7 @@ bot.action('freeSport_btn', async (ctx) => {
 
 //transport button
 bot.action('freeTransport_btn', async (ctx) => {
+    console.log(ctx.from.first_name, ctx.from.username + 'freeTransport_btn')
     await ctx.answerCbQuery();
     return await ctx.editMessageText(constans.LIST_TEXT_OF_FREE_STUFF[1], {
         parse_mode: 'HTML',
@@ -561,6 +565,7 @@ bot.action('freeTransport_btn', async (ctx) => {
 
 //mother children button
 bot.action('freeForMothers_btn', async (ctx) => {
+    console.log(ctx.from.first_name, ctx.from.username + 'freeForMothers_btn')
     await ctx.answerCbQuery();
     return await ctx.editMessageText(constans.LIST_TEXT_OF_FREE_STUFF[2], {
         parse_mode: 'HTML',
@@ -571,6 +576,7 @@ bot.action('freeForMothers_btn', async (ctx) => {
 
 //freeConsulHelp_btn button
 bot.action('freeConsulHelp_btn', async (ctx) => {
+    console.log(ctx.from.first_name, ctx.from.username + 'freeConsulHelp_btn')
     await ctx.answerCbQuery();
     return await ctx.editMessageText(constans.LIST_TEXT_OF_FREE_STUFF[3], {
         parse_mode: 'HTML',
@@ -581,6 +587,7 @@ bot.action('freeConsulHelp_btn', async (ctx) => {
 
 //freeConsulHelp_btn button
 bot.action('freeArtEvents_btn', async (ctx) => {
+    console.log(ctx.from.first_name, ctx.from.username + 'freeArtEvents_btn')
     await ctx.answerCbQuery();
     return await ctx.editMessageText(constans.LIST_TEXT_OF_FREE_STUFF[4], {
         parse_mode: 'HTML',
@@ -591,6 +598,7 @@ bot.action('freeArtEvents_btn', async (ctx) => {
 
 //freeConsulHelp_btn button
 bot.action('freeConsultationWork_btn', async (ctx) => {
+    console.log(ctx.from.first_name, ctx.from.username + 'freeConsultationWork_btn')
     await ctx.answerCbQuery();
     return await ctx.editMessageText(constans.LIST_TEXT_OF_FREE_STUFF[5], {
         parse_mode: 'HTML',
@@ -601,6 +609,7 @@ bot.action('freeConsultationWork_btn', async (ctx) => {
 
 //freeConsulHelp_btn button
 bot.action('freeTranslate_btn', async (ctx) => {
+    console.log(ctx.from.first_name, ctx.from.username + 'freeTranslate_btn')
     await ctx.answerCbQuery();
     return await ctx.editMessageText(constans.LIST_TEXT_OF_FREE_STUFF[6], {
         parse_mode: 'HTML',
@@ -610,6 +619,7 @@ bot.action('freeTranslate_btn', async (ctx) => {
 })
 
 bot.action('freePrint_btn', async (ctx) => {
+    console.log(ctx.from.first_name, ctx.from.username + 'freePrint_btn')
     await ctx.answerCbQuery();
     return await ctx.editMessageText(constans.LIST_TEXT_OF_FREE_STUFF[7], {
         parse_mode: 'HTML',
@@ -619,6 +629,7 @@ bot.action('freePrint_btn', async (ctx) => {
 })
 
 bot.action('freeInternet_btn', async (ctx) => {
+    console.log(ctx.from.first_name, ctx.from.username + 'freeInternet_btn')
     await ctx.answerCbQuery();
     return await ctx.editMessageText(constans.LIST_TEXT_OF_FREE_STUFF[8], {
         parse_mode: 'HTML',
@@ -628,6 +639,7 @@ bot.action('freeInternet_btn', async (ctx) => {
 })
 
 bot.action('freeLegal_btn', async (ctx) => {
+    console.log(ctx.from.first_name, ctx.from.username + 'freeLegal_btn')
     await ctx.answerCbQuery();
     return await ctx.editMessageText(constans.LIST_TEXT_OF_FREE_STUFF[9], {
         parse_mode: 'HTML',
@@ -637,6 +649,7 @@ bot.action('freeLegal_btn', async (ctx) => {
 })
 
 bot.action('freePetStuff_btn', async (ctx) => {
+    console.log(ctx.from.first_name, ctx.from.username + 'freePetStuff_btn')
     await ctx.answerCbQuery();
     return await ctx.editMessageText(constans.LIST_TEXT_OF_FREE_STUFF[10], {
         parse_mode: 'HTML',
@@ -646,6 +659,7 @@ bot.action('freePetStuff_btn', async (ctx) => {
 })
 
 bot.action('freeBeautyStuff_btn', async (ctx) => {
+    console.log(ctx.from.first_name, ctx.from.username + 'freeBeautyStuff_btn')
     await ctx.answerCbQuery();
     return await ctx.editMessageText(constans.LIST_TEXT_OF_FREE_STUFF[11], {
         parse_mode: 'HTML',
@@ -655,6 +669,7 @@ bot.action('freeBeautyStuff_btn', async (ctx) => {
 })
 
 bot.action('freeOptica_btn', async (ctx) => {
+    console.log(ctx.from.first_name, ctx.from.username + 'freeOptica_btn')
     await ctx.answerCbQuery();
     return await ctx.editMessageText(constans.LIST_TEXT_OF_FREE_STUFF[12], {
         parse_mode: 'HTML',
@@ -664,6 +679,7 @@ bot.action('freeOptica_btn', async (ctx) => {
 })
 
 bot.action('freeSofa_btn', async (ctx) => {
+    console.log(ctx.from.first_name, ctx.from.username + 'freeSofa_btn')
     await ctx.answerCbQuery();
     return await ctx.editMessageText(constans.LIST_TEXT_OF_FREE_STUFF[14], {
         parse_mode: 'HTML',
@@ -673,6 +689,7 @@ bot.action('freeSofa_btn', async (ctx) => {
 })
 
 bot.action('freeCourses_btn', async (ctx) => {
+    console.log(ctx.from.first_name, ctx.from.username + 'freeCourses_btn')
     await ctx.answerCbQuery();
     return await ctx.editMessageText(constans.LIST_TEXT_OF_FREE_STUFF[13], {
         parse_mode: 'HTML',
@@ -685,6 +702,7 @@ bot.action('freeCourses_btn', async (ctx) => {
 
 //return button 
 bot.action('return_to_free_stuff_btn', async (ctx) => {
+    console.log(ctx.from.first_name, ctx.from.username + 'return_to_free_stuff_btn')
     await ctx.answerCbQuery();
     return await ctx.editMessageText("Вибери тему, яка тебе цікавить", {
         parse_mode: 'HTML',
@@ -696,6 +714,7 @@ bot.action('return_to_free_stuff_btn', async (ctx) => {
 //ANCHOR Humanitarium Aid
 //kaunas
 bot.action('kaunas_humanAid_btn', async (ctx) => {
+    console.log(ctx.from.first_name, ctx.from.username + 'kaunas_humanAid_btn')
     await ctx.answerCbQuery();
     return await ctx.editMessageText(humanAidInfo.kaunasText, {
         parse_mode: 'HTML',
@@ -706,6 +725,7 @@ bot.action('kaunas_humanAid_btn', async (ctx) => {
 
 //klaypeda
 bot.action('klaipeda_humanAid_btn', async (ctx) => {
+    console.log(ctx.from.first_name, ctx.from.username + 'klaipeda_humanAid_btn')
     await ctx.answerCbQuery();
     return await ctx.editMessageText(humanAidInfo.klaipedaText, {
         parse_mode: 'HTML',
@@ -716,6 +736,7 @@ bot.action('klaipeda_humanAid_btn', async (ctx) => {
 
 //alitus
 bot.action('alitus_humanAid_btn', async (ctx) => {
+    console.log(ctx.from.first_name, ctx.from.username + 'alitus_humanAid_btn')
     await ctx.answerCbQuery();
     return await ctx.editMessageText(humanAidInfo.alitusText, {
         parse_mode: 'HTML',
@@ -726,6 +747,7 @@ bot.action('alitus_humanAid_btn', async (ctx) => {
 
 //shaulyay
 bot.action('shaulyay_humanAid_btn', async (ctx) => {
+    console.log(ctx.from.first_name, ctx.from.username + 'shaulyay_humanAid_btn')
     await ctx.answerCbQuery();
     return await ctx.editMessageText(humanAidInfo.shaulyayText, {
         parse_mode: 'HTML',
@@ -736,6 +758,7 @@ bot.action('shaulyay_humanAid_btn', async (ctx) => {
 
 //panesvezhis
 bot.action('panevezis_humanAid_btn', async (ctx) => {
+    console.log(ctx.from.first_name, ctx.from.username + 'panevezis_humanAid_btn')
     await ctx.answerCbQuery();
     return await ctx.editMessageText(humanAidInfo.panesvezhisText, {
         parse_mode: 'HTML',
@@ -745,6 +768,7 @@ bot.action('panevezis_humanAid_btn', async (ctx) => {
 });
 
 bot.action('return_to_human_aid_menu_btn', async (ctx) => {
+    console.log(ctx.from.first_name, ctx.from.username + 'return_to_human_aid_menu_btn')
     await ctx.answerCbQuery();
     return await ctx.editMessageText(humanAidInfo.humanAid, {
         parse_mode: 'HTML',
@@ -756,6 +780,7 @@ bot.action('return_to_human_aid_menu_btn', async (ctx) => {
 // ANCHOR Sites Block
 
 bot.action("telegramChannels_btn", async (ctx) => {
+    console.log(ctx.from.first_name, ctx.from.username + "telegramChannels_btn")
     await ctx.answerCbQuery();
     return await ctx.editMessageText(sitesInfo.telegramChannelsList, {
         parse_mode: 'HTML',
@@ -765,6 +790,7 @@ bot.action("telegramChannels_btn", async (ctx) => {
 })
 
 bot.action("facebookGroups_btn", async (ctx) => {
+    console.log(ctx.from.first_name, ctx.from.username + "facebookGroups_btn")
     await ctx.answerCbQuery();
     return await ctx.editMessageText(sitesInfo.facebookGroupsText, {
         parse_mode: 'HTML',
@@ -774,6 +800,7 @@ bot.action("facebookGroups_btn", async (ctx) => {
 })
 
 bot.action("instagramGroups_btn", async (ctx) => {
+    console.log(ctx.from.first_name, ctx.from.username + "instagramGroups_btn")
     await ctx.answerCbQuery();
     return await ctx.editMessageText(sitesInfo.instagramPages, {
         parse_mode: 'HTML',
@@ -783,6 +810,7 @@ bot.action("instagramGroups_btn", async (ctx) => {
 })
 
 bot.action("dovidnuku_btn", async (ctx) => {
+    console.log(ctx.from.first_name, ctx.from.username + "dovidnuku_btn")
     await ctx.answerCbQuery();
     return await ctx.editMessageText(sitesKatalog.qAndA, {
         parse_mode: 'HTML',
@@ -792,6 +820,7 @@ bot.action("dovidnuku_btn", async (ctx) => {
 })
 
 bot.action('return_to_sites_block_btn', async (ctx) => {
+    console.log(ctx.from.first_name, ctx.from.username + "return_to_sites_block_btn")
     await ctx.answerCbQuery();
     return await ctx.editMessageText(sitesInfo.sites, {
         parse_mode: 'HTML',
@@ -799,6 +828,28 @@ bot.action('return_to_sites_block_btn', async (ctx) => {
         ...Markup.inlineKeyboard(constans.MENU_BUTTONS_SITES)
     })
 })
+
+
+bot.action("return_back_to_lithuania", async(ctx) => {
+    console.log(ctx.from.first_name, ctx.from.username + "return back To Lithuania")
+    await ctx.answerCbQuery();
+    return await ctx.editMessageText(aboutLithuania.post, {
+        parse_mode: 'HTML',
+        disable_web_page_preview: true,
+        ...Markup.inlineKeyboard(
+            [Markup.button.callback("Сайти, де можна вивчати литовську", "language_btn")]
+        )})
+});
+
+bot.action("language_btn", async(ctx) => {
+    console.log(ctx.from.first_name, ctx.from.username + "language_btn")
+    await ctx.answerCbQuery();
+    return await ctx.editMessageText(language.sites, {
+        parse_mode: 'HTML',
+        disable_web_page_preview: true, 
+        ...Markup.inlineKeyboard([Markup.button.callback("Назад", "return_back_to_lithuania")])
+    })
+});
 
 
 /* //next page

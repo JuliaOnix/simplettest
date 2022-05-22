@@ -80,7 +80,7 @@ async function educationAndSportFunc(ctx) {
     await ctx.replyWithHTML(educationShcools.generalInfoAboutSchool, Markup.inlineKeyboard(constans.MENU_EDUCATION));
 }
 
-bot.action('preschool_btn', async (ctx) => {
+/* bot.action('preschool_btn', async (ctx) => {
     console.log(`${ctx.from.username} preschool_btn choosed`)
     await ctx.answerCbQuery();
     await ctx.editMessageText(educationShcools.preschool, {
@@ -90,9 +90,9 @@ bot.action('preschool_btn', async (ctx) => {
             [Markup.button.callback(constans.RETURN_BACK_TO_EDUCATION, 'returnBackEducation_btn')]
         ])
     })
-});
+}); */
 
-bot.action('artschools_btn', async (ctx) => {
+/* bot.action('artschools_btn', async (ctx) => {
     console.log(`${ctx.from.username} artschools_btn choosed`)
     await ctx.answerCbQuery();
     //ctx.replyWithSticker
@@ -103,7 +103,7 @@ bot.action('artschools_btn', async (ctx) => {
             [Markup.button.callback(constans.RETURN_BACK_TO_EDUCATION, 'returnBackEducation_btn')]
         ])
     })
-});
+}); */
 
 bot.action('profEduc_btn', async (ctx) => {
     console.log(`${ctx.from.username} profEduc_btn choosed`)
@@ -547,7 +547,7 @@ bot.action('freeForMothers_btn', async (ctx) => {
 
 //freeConsulHelp_btn button
 bot.action('freeConsulHelp_btn', async (ctx) => {
-    console.log(ctx.from.first_name, ctx.from.username + 'freeConsulHelp_btn')
+    console.log(ctx.from.first_name, ctx.from.username + ' freeConsulHelp_btn')
     await ctx.answerCbQuery();
     return await ctx.editMessageText(constans.LIST_TEXT_OF_FREE_STUFF[3], {
         parse_mode: 'HTML',
@@ -558,18 +558,34 @@ bot.action('freeConsulHelp_btn', async (ctx) => {
 
 //freeConsulHelp_btn button
 bot.action('freeArtEvents_btn', async (ctx) => {
-    console.log(ctx.from.first_name, ctx.from.username + 'freeArtEvents_btn')
+    console.log(ctx.from.first_name, ctx.from.username + ' freeArtEvents_btn')
     await ctx.answerCbQuery();
     return await ctx.editMessageText(constans.LIST_TEXT_OF_FREE_STUFF[4], {
         parse_mode: 'HTML',
         disable_web_page_preview: true,
-        ...Markup.inlineKeyboard([constans.RETURN_BACK_TO_FREE_STUFF])
+        ...Markup.inlineKeyboard([
+            //[Markup.button.callback("Показати більше...", "show_more_art_btn")],
+            [constans.RETURN_BACK_TO_FREE_STUFF]
+        ])
     })
 })
 
+/* bot.action('show_more_art_btn', async (ctx) => {
+    console.log(ctx.from.first_name, ctx.from.username + ' freeArtEvents_btn')
+    await ctx.answerCbQuery();
+    return await ctx.editMessageText(constans.LIST_TEXT_OF_FREE_STUFF[4], {
+        parse_mode: 'HTML',
+        disable_web_page_preview: true,
+        ...Markup.inlineKeyboard([
+            [Markup.button.callback("Показати більше...", "show_more_art_btn")],
+            [constans.RETURN_BACK_TO_FREE_STUFF]
+        ])
+    })
+}) */
+
 //freeConsulHelp_btn button
 bot.action('freeConsultationWork_btn', async (ctx) => {
-    console.log(ctx.from.first_name, ctx.from.username + 'freeConsultationWork_btn')
+    console.log(ctx.from.first_name, ctx.from.username + ' freeConsultationWork_btn')
     await ctx.answerCbQuery();
     return await ctx.editMessageText(constans.LIST_TEXT_OF_FREE_STUFF[5], {
         parse_mode: 'HTML',
@@ -580,7 +596,7 @@ bot.action('freeConsultationWork_btn', async (ctx) => {
 
 //freeConsulHelp_btn button
 bot.action('freeTranslate_btn', async (ctx) => {
-    console.log(ctx.from.first_name, ctx.from.username + 'freeTranslate_btn')
+    console.log(ctx.from.first_name, ctx.from.username + ' freeTranslate_btn')
     await ctx.answerCbQuery();
     return await ctx.editMessageText(constans.LIST_TEXT_OF_FREE_STUFF[6], {
         parse_mode: 'HTML',
@@ -590,7 +606,7 @@ bot.action('freeTranslate_btn', async (ctx) => {
 })
 
 bot.action('freePrint_btn', async (ctx) => {
-    console.log(ctx.from.first_name, ctx.from.username + 'freePrint_btn')
+    console.log(ctx.from.first_name, ctx.from.username + ' freePrint_btn')
     await ctx.answerCbQuery();
     return await ctx.editMessageText(constans.LIST_TEXT_OF_FREE_STUFF[7], {
         parse_mode: 'HTML',
@@ -600,7 +616,7 @@ bot.action('freePrint_btn', async (ctx) => {
 })
 
 bot.action('freeInternet_btn', async (ctx) => {
-    console.log(ctx.from.first_name, ctx.from.username + 'freeInternet_btn')
+    console.log(ctx.from.first_name, ctx.from.username + ' freeInternet_btn')
     await ctx.answerCbQuery();
     return await ctx.editMessageText(constans.LIST_TEXT_OF_FREE_STUFF[8], {
         parse_mode: 'HTML',
@@ -610,7 +626,7 @@ bot.action('freeInternet_btn', async (ctx) => {
 })
 
 bot.action('freeLegal_btn', async (ctx) => {
-    console.log(ctx.from.first_name, ctx.from.username + 'freeLegal_btn')
+    console.log(ctx.from.first_name, ctx.from.username + ' freeLegal_btn')
     await ctx.answerCbQuery();
     return await ctx.editMessageText(constans.LIST_TEXT_OF_FREE_STUFF[9], {
         parse_mode: 'HTML',
@@ -620,7 +636,7 @@ bot.action('freeLegal_btn', async (ctx) => {
 })
 
 bot.action('freePetStuff_btn', async (ctx) => {
-    console.log(ctx.from.first_name, ctx.from.username + 'freePetStuff_btn')
+    console.log(ctx.from.first_name, ctx.from.username + ' freePetStuff_btn')
     await ctx.answerCbQuery();
     return await ctx.editMessageText(constans.LIST_TEXT_OF_FREE_STUFF[10], {
         parse_mode: 'HTML',
@@ -630,7 +646,7 @@ bot.action('freePetStuff_btn', async (ctx) => {
 })
 
 bot.action('freeBeautyStuff_btn', async (ctx) => {
-    console.log(ctx.from.first_name, ctx.from.username + 'freeBeautyStuff_btn')
+    console.log(ctx.from.first_name, ctx.from.username + ' freeBeautyStuff_btn')
     await ctx.answerCbQuery();
     return await ctx.editMessageText(constans.LIST_TEXT_OF_FREE_STUFF[11], {
         parse_mode: 'HTML',
@@ -640,7 +656,7 @@ bot.action('freeBeautyStuff_btn', async (ctx) => {
 })
 
 bot.action('freeOptica_btn', async (ctx) => {
-    console.log(ctx.from.first_name, ctx.from.username + 'freeOptica_btn')
+    console.log(ctx.from.first_name, ctx.from.username + ' freeOptica_btn')
     await ctx.answerCbQuery();
     return await ctx.editMessageText(constans.LIST_TEXT_OF_FREE_STUFF[12], {
         parse_mode: 'HTML',
@@ -650,7 +666,7 @@ bot.action('freeOptica_btn', async (ctx) => {
 })
 
 bot.action('freeSofa_btn', async (ctx) => {
-    console.log(ctx.from.first_name, ctx.from.username + 'freeSofa_btn')
+    console.log(ctx.from.first_name, ctx.from.username + ' freeSofa_btn')
     await ctx.answerCbQuery();
     return await ctx.editMessageText(constans.LIST_TEXT_OF_FREE_STUFF[14], {
         parse_mode: 'HTML',
@@ -660,12 +676,14 @@ bot.action('freeSofa_btn', async (ctx) => {
 })
 
 bot.action('freeCourses_btn', async (ctx) => {
-    console.log(ctx.from.first_name, ctx.from.username + 'freeCourses_btn')
+    console.log(ctx.from.first_name, ctx.from.username + ' freeCourses_btn')
     await ctx.answerCbQuery();
     return await ctx.editMessageText(constans.LIST_TEXT_OF_FREE_STUFF[13], {
         parse_mode: 'HTML',
         disable_web_page_preview: true,
-        ...Markup.inlineKeyboard([constans.RETURN_BACK_TO_FREE_STUFF])
+        ...Markup.inlineKeyboard([
+            [constans.RETURN_BACK_TO_FREE_STUFF],
+        ])
     })
 })
 

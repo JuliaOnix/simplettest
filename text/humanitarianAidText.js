@@ -1,4 +1,9 @@
 const humanAid = `
+<b>Підтримка в Литві</b>	
+Речі першої необхідності, іграшки та інші потреби дітей.
+<a href='https://docs.google.com/forms/d/e/1FAIpQLSeDC2Ja7fD0Pc8g80ggFMYW4uGzkl41tp301vVQUzjOb8bPcg/viewform'>Заповнити форму</a> 		
+
+<b>ВИЛЬНЮС</b>
 <b>MIS Love asociacija</b> 
 Підтримує родини з України, які перетнули литовський кордон. 
 Одяг, взуття, іграшки для дітей різного віку. 
@@ -7,89 +12,109 @@ const humanAid = `
 У вихідні дні є можливість самостійно забрати речі.
 <u>Контакти та робочі години</u>
 I-VII 9.00 - 18.00     
- +370 5 251 41 73
-erika@motherhood.is
-<u>Адреса:</u>
-VILNIUS:  <a href="https://goo.gl/maps/obXLqv8qrMwLwa256">J. Balčikonio str. 3</a>
+📞 +37052514173
+📧 erika@motherhood.is
+📍 Vilnius <a href="https://goo.gl/maps/obXLqv8qrMwLwa256">J. Balčikonio str. 3</a>
 Technopolis Будинок БЕТА (BETA), 4 поверх.
-<u>Сайт</u> - https://www.motherhoodissexy.com/misloveparama
+🌐 https://www.motherhoodissexy.com/misloveparama
 
 <b>Координаційний центр волонтерів Карітас</b>
 освіти, охорони здоров'я,  пошуку роботи, психологічної, гуманітарної допомоги
 <u>Контакти та робочі години</u>
 I - VII 9.00–19.00
-+370 679 19 084
-<u>Адреса:</u> 
-<a href="https://goo.gl/maps/eSfD5tJQ9XfhPyFFA">Pilies str. 7, Vilnius</a>
-<u>Сайт:</u> 
-https://vilnius.caritas.lt/pagalba-ukrainieciams/
+📞 +37067919084
+📍 Vilnius <a href="https://goo.gl/maps/eSfD5tJQ9XfhPyFFA">Pilies str. 7</a>
+🌐 https://vilnius.caritas.lt/pagalba-ukrainieciams/
 
 <b>Програма інтеграції іноземців Карітас</b>
 консультант, психолог, юрист, спеціаліст з працевлаштування, відшкодування витрат на ліки
 <u>Контакти та робочі години</u>
 I - V 10.00–17.00
-+370 679 19 084 
-kulturunamai@vilnius.caritas.lt
-<u>Адреса:</u>
-<a href="https://goo.gl/maps/9rUoKkMZQgsuB6sh6">Kalvarijų g. 39, Vilnius</a>
-<u>Сайт:</u>
-https://vilnius.caritas.lt/pagalba-ukrainieciams/
+📞 +37067919084 
+📧 kulturunamai@vilnius.caritas.lt
+📍 Vilnius <a href="https://goo.gl/maps/9rUoKkMZQgsuB6sh6">Kalvarijų g. 39</a>
+🌐 https://vilnius.caritas.lt/pagalba-ukrainieciams/
 
 <b>Соціальна служба Карітас</b>
 допомога з одягом, взуттям, постільною білизною, іграшками
 <u>Контакти та робочі години</u>
 I - V 9.00–17.00, VI 10.00–15.00
-+370 655 02 288  
-<u>Адреса:</u>
-<a href="https://goo.gl/maps/CyJSLQDUrUCqgigd8">M. K. Paco g. 4 Vilnius</a>
-<u>Сайт:</u>
-https://vilnius.caritas.lt/pagalba-ukrainieciams/
+📞 +37065502288  
+📍 Vilnius <a href="https://goo.gl/maps/CyJSLQDUrUCqgigd8">M. K. Paco g. 4</a>
+🌐 https://vilnius.caritas.lt/pagalba-ukrainieciams/
 
 <b>Vilnius Red Cross</b>
 психологічна, юридична, гуманітарна допомога
 <u>Контакти</u>
-+370 609 80 408
-+370 659 71598
-info@redcross.lt
-vilnius@redcross.lt
-<u>Адреса:</u>
-<a href="https://goo.gl/maps/keSQaLZzouF3XEqu5">Juozapavičiaus g.10 A, Vilnius</a>
-<u>Сайт:</u>
-www.redcross.lt 
+📞 +37060980408
+📞 +37065971598
+📧 info@redcross.lt
+📧 vilnius@redcross.lt
+📍 Vilnius <a href="https://goo.gl/maps/keSQaLZzouF3XEqu5">Juozapavičiaus g.10 A</a>
+🌐 www.redcross.lt 
 
 <b>Збережіть дітей</b>
 допомога дітям та вагітним жінкам
 <u>Контакти та робочі години</u>
 8.30 -17.30
-irena.andrijevskaja@savethechildren.org
-informacija@savethechildren.org
-+370 526 10815
-<u>Адреса:</u>
-<a href="https://goo.gl/maps/QScMnxJ95fmNUwFN9">Vilniaus g. 39/Klaipėdos g. 6</a>, Vilnius
-<u>Сайт:</u>
-https://gelbekitvaikus.lt/ 
+📧 irena.andrijevskaja@savethechildren.org
+📧 informacija@savethechildren.org
+📞 +37052610815
+📍 Vilnius<a href="https://goo.gl/maps/QScMnxJ95fmNUwFN9">Vilniaus g. 39/Klaipėdos g. 6</a>
+🌐 https://gelbekitvaikus.lt/ 
 
 <b>Банк їжі</b>
 продукти харчування
 <u>Контакти</u>
-+370 676 91 941
-milda@maistobankas.lt
-+370 686 44244
-info@maistobankas.lt
-<u>Адреса:</u>
-<a href="https://goo.gl/maps/nHed9L4BhbJw4YfR8">Vytenio g. 54, Vilnius</a>
-<u>Сайт:</u>
-https://www.maistobankas.lt/ 
-
+📞 +37067691941
+📞 +37068644244
+📧 milda@maistobankas.lt
+📧 info@maistobankas.lt
+📍 Vilnius <a href="https://goo.gl/maps/nHed9L4BhbJw4YfR8">Vytenio g. 54</a>
+🌐 https://www.maistobankas.lt/ 
 
 <b>Служба підтримки Мальтійського ордену</b>
 гуманітарна допомога, продовольчі посилки, медичні товари, супровід до житла
 <u>Контакти та робочі години</u>
 I–VII 08:00–20:00 
-+370 600 23 220
-info@maltieciai.lt 
-<u>Сайт:</u>
-www.maltieciai.lt 
+📞 +37060023220
+📧 info@maltieciai.lt 
+🌐 www.maltieciai.lt 
+
+<b>Якщо у вас немає можливості вільно пересуватися містом</b>
+(маленькі діти, проблеми зі здоров'ям), можна звернутися до волонтерів,
+які вам додому привезуть речі першої потреби (харчування, засоби гігієни)
+<u>Форма для запису</u>- https://forms.gle/P3Z2CBagxg2qLahd8
+
+<b>Речі, посуд, іграшки</b> можна взяти у волонтерів на складах.
+Обов'язково заздалегідь дізнайтесь у групах графік роботи.
+
+<b>Cклад Dapamoga</b>
+Це склад у замку. Посуд, ліжко, речі, іграшки.
+<u>Telegram-Група:</u> https://t.me/skladdapamoga
+Адреса складу Dapamoga, VšĮ: 
+📍 <a href="https://goo.gl/maps/chrNMmAmjZq18vB59">Savanoriu 134b</a> 
+Если вы на машине, то вводите адрес для навигации
+📍 <a href="https://goo.gl/maps/ZqwmaUWQYqYwvyKJ9">Naujoji Riovonių gatvė 10</a>
+
+<b>Офіс «Наш дім»</b>
+Дуже багато одягу та посуду.
+Якщо у вас виникнуть питання як дійти до складу, 
+напишіть в цій групі або зателефонуйте тим, 
+хто у цій групі пише повідомлення.
+Телефоном вас проведуть туди, куди потрібно.
+<u>Telegram-Група:</u> https://t.me/pobach_oh_by_lt
+<u>Telegram-Канал:</u> https://t.me/pobach_nd_lt
+📍 <a href="https://goo.gl/maps/wMtdkQAq7g1o21958">Aušros vartų 3</a>
+Вхід в арку зліва. До всіх шлагбаумів.  
+
+<b>СКЛАД RAZAM</b>
+Віртуальний склад, де люди пропонують те, що вони мають. Можна домовитись в індивідуальному порядку.
+<u>Telegram-Група:</u> https://t.me/virtualsklad
+📍 <a href="https://goo.gl/maps/VF8AhTjLYamEH9fE8">Vilniaus g 20 БелДом</a>
+
+<b>Фонд «Врятуємо дітей»</b>
+📍 <a href="https://goo.gl/maps/PKEePiiqHh4srUoJ6">Klaipedos 6</a> 	
 `
 
 /* const partOneHumanAid = `
@@ -113,20 +138,19 @@ eл. п. irena.judzentyte@maistobankas.lt
 
 const alitusText = `
 <b>Алiтус</b>
-
 <u>Литовський Червоний Хрест філія міста Алітус (гуманітарна допомога)</u>
-<u>Адреса:</u> Ligoninės g. 3-19, 
-тел. +370 62010150
-alytus@redcross.lt
+📍 <a href="https://goo.gl/maps/6b3Md6MCR2hyK8G19">Ligoninės g. 3-19</a> 
+📞 +37062010150
+📧 alytus@redcross.lt
 
 <b>"Врятуємо дітей" (для дітей та вагітних) </b>
-тел. +370 60476092
-tatjana.gumauskiene@savethechildren.org 
-адресa: Vilties g. 28A, Alytus
+📞 +37060476092
+📧 tatjana.gumauskiene@savethechildren.org 
+📍 <a href="https://goo.gl/maps/U4Bu13Pv13CJnkKV7">Vilties g. 28A</a>
 
 <b>Харчовий банк (продовольча допомога)</b>
-тел. +37067951812
-eл. п. karolina@maistobankas.lt   
+📞 +37067951812
+📧 karolina@maistobankas.lt   
 `
 
 /*
@@ -320,25 +344,19 @@ eл. п. karolina@maistobankas.lt
 */
 const kaunasText = `
 <b>Каунас</b>
+<u>Литовський Червоний Хрест філія міста Каунас</u>
+📍 <a href="https://goo.gl/maps/k7ta4WoTm34AomKbA">Statybininkų g. 12</a>
+📞 +37060286839
+📧 kaunas@redcross.lt
 
-Литовський Червоний Хрест філія міста Каунас (гуманітарна допомога)
-<u>Адреса:</u> Statybininkų g. 12
- Kaunas, +370 60286839, kaunas@redcross.lt
-
-"Врятуємо дітей" (для дітей та вагітних): тел. +370 611 62974, roma4n@yahoo.com; адресa:  Kranto al. 62, Kaunas, LT-45282
+<u>"Врятуємо дітей" (для дітей та вагітних)</u> 
+📞 +37061162974
+📧 roma4n@yahoo.com
+📍 <a href="https://goo.gl/maps/tqhUgDsnxYGYZ7A97">Kranto al. 62</a>
 
 <u>Харчовий банк (продовольча допомога)</u> 
-тел. +37067951812
-eл. п. karolina@maistobankas.lt
-
-<u>"Врятуємо дітей" (для дітей та вагітних)</u>
-тел. +370 611 62974
-roma4n@yahoo.com
-адресa: Kranto al. 62, Kaunas, LT-45282
-
-<u>Харчовий банк (продовольча допомога)</u>
-тел. +37067951812
-eл. п. karolina@maistobankas.lt
+📞 +37067951812
+📧 karolina@maistobankas.lt
 `
 
 /*
@@ -399,20 +417,19 @@ eл. п. justina@maistobankas.lt
 
 const klaipedaText = `
 <b>Клайпеда</b>
-
 <u>Литовський Червоний Хрест філія міста Клайпеда  (гуманітарна допомога)</u>
-<u>Адреса:</u> Paryžiaus Komunos g. 16A, Klaipėda
-+370 67568475
-klaipeda@redcross.lt
+📍 <a href="https://goo.gl/maps/kDWq9YkTJhwtEA9g8">Paryžiaus Komunos g. 16A, Klaipėda</a>
+📞 +37067568475
+📧 klaipeda@redcross.lt
 
 <u>"Врятуємо дітей" (для дітей та вагітних)</u>
-+370 69857207
-vaikai.liberi@gmail.com
-адресa: S. Šimkaus 17A, Klaipėda, LT-92124
+📞 +37069857207
+📧 vaikai.liberi@gmail.com
+📍 <a href="https://goo.gl/maps/FWgaDs7DJsKQbhsSA">S. Šimkaus 17A</a>
 
 <u>Харчовий банк (продовольча допомога)</u>
-Taikos g. 66A, тел. +370 669 43597 
-eл. п. irena.judzentyte@maistobankas.lt;
+📞 +37066943597 
+📧 irena.judzentyte@maistobankas.lt;
 
 `
 /*
@@ -594,21 +611,21 @@ eл. п. irena.judzentyte@maistobankas.lt
 
 const panesvezhisText = `
 <b>Паневєжіс</b>
+<u>Литовський Червоний Хрест філія міста Паневєжіс (гуманітарна допомога)</u>
+<a href="https://goo.gl/maps/5o9W4tjRXg9yiR969">Respublikos g. 38 (2 этаж)</a>
+📞 +37062695165
+📧 panevezys@redcross.lt
 
-Литовський Червоний Хрест філія міста Паневєжіс (гуманітарна допомога)
-<u>Адреса:</u> Respublikos g. 38 (2 этаж)
-+370 62695165
-panevezys@redcross.lt
+<u>ПАРТНЕР (для дітей та вагітних)</u>
+📍 <a href="https://goo.gl/maps/XAcz8F3goeXLSNiG6">Staniūnų g. 72C-111</a>
+📞 +37066345660
+📧 Ukraina.viltiesarka@gmail.com
 
-ПАРТНЕР (для дітей та вагітних)
-+3706 634 5660
-Ukraina.viltiesarka@gmail.com
-адресa: Staniūnų g. 72C-111.
 
-Харчовий банк (продовольча допомога)
-Kranto g. 36.
-тел. +370 646 09404
-eл. п. justina@maistobankas.lt
+<u>Харчовий банк (продовольча допомога)</u>
+📍 <a href="https://goo.gl/maps/oopk2PbfgFd7qkoM6">Kranto g. 36</a>
+📞 +37064609404
+📧 justina@maistobankas.lt
 `
 
 /*
@@ -794,22 +811,20 @@ eл. п. marija@maistobankas.lt
 const shaulyayText = `
 
 <b>Шяуляй</b>
+<u>Литовський Червоний Хрест філія міста Шауляй (гуманітарна допомога)</u>
+📞 +37060976158
+📧 siauliai@redcross.lt
+📍 <a href="https://goo.gl/maps/FiK4fcVvoH9HHQtE6">Vasario 16-osios g. 46 (3 этаж)</a>
 
-Литовський Червоний Хрест філія міста Шауляй (гуманітарна допомога)
-<u>Адреса:</u> Vasario 16-osios g. 46 (3 этаж)
-+370 60976158
-siauliai@redcross.lt
+<u>"Врятуємо дітей" (для дітей та вагітних)</u>
+📞 +37068694857
+📧 siauliuvdc@gmail.com
+📍 <a href="https://goo.gl/maps/jX8zL3u5nBxNMQgj6">Algirdo Juliaus Greimo 65b-27</a>
 
-"Врятуємо дітей" (для дітей та вагітних)
-+370 68694857
-siauliuvdc@gmail.com
-адресa: Algirdo Juliaus Greimo 65b-27, Šiauliai.
-
-Харчовий банк (продовольча допомога)
-Pramonės g. 26
-тел. +370 684 66 536
-eл. п. aurelija.paulauskiene@maistobankas.lt;
-
+<u>Харчовий банк (продовольча допомога)</u>
+📞 +37068466536
+📧 aurelija.paulauskiene@maistobankas.lt
+📍 <a href="https://goo.gl/maps/NLbR9jT3ADxVKhXJ7">Pramonės g. 26</a>
 `
 
 /*

@@ -1,13 +1,26 @@
-const preschool = `
-<b>Дошкільне виховання</b> 
 
-Ваших дітей приймуть на навчання в Литву. Якщо вони володіють лише українською та російською мовами, 
-то начальний процес буде адаптований. Навчання безкоштовне.
+const generalInfoAboutSchool = `
+Ваші діти будуть прийняті до шкіл у Литві навіть якщо вони володіють лише українською та російською мовами. 
+Дитина може почати навчатися вже зараз, 
+не чекаючи початку нового навчального року. 
+Новоприбулим учням нададуть всю необхідну допомогу.
 
-Щоб зарахувати дитину до дошкільного закладу, зверніться до координатора за місцем проживання:
+Фахівці оцінять, як краще інтегрувати дитину – чи відразу вчитися в одному класі з однолітками, 
+чи спочатку вивчати литовську мову в окремих групах. Протягом адаптаційного періоду фахівці 
+підготують умови для того, щоб дитина без стресу почала навчальний процес.
+
+При виборі школи слід враховувати, чи створені в цій школі групи для вивчення литовської мови.
+Якщо ви не хочете, щоб ваша дитина навчалася російською мовою, то в Литві є школи, де навчальний процес організований білоруською, польською та німецькою мовами.
+Навчання безкоштовне.
+
+Школи можуть приймати на навчання і реєструвати в Реєстрі учнів (у тому числі і дошкільнят), 
+які не мають дозволу на тимчасове проживання в Литві або національної візи. 
+
+<u>❕Щоб зарахувати дитину до дошкільного закладу, 
+зверніться до координатора за місцем проживання:</u>
 
 <b>Контакти координатора:</b>
-<a href='https://smsm.lrv.lt/uploads/smsm/documents/files/Ukrain%20Koordinatori%C5%B3%20savivaldyb%C4%97se%20kontaktai%20LT.pdf'>Скачати</a> 
+<a href='https://smsm.lrv.lt/uploads/smsm/documents/files/Ukrain%20Koordinatori%C5%B3%20savivaldyb%C4%97se%20kontaktai%20LT.pdf'>Скачати pdf з контактами</a> 
 
 <b>Інформація Міністерства з питань дошкільної освіти:</b> 
 <a href='https://smsm.lrv.lt/lt/informacija-del-karo-pabegeliu-is-ukrainos/ukrainieciu-vaiku-mokymas-navchannia-u-litvi-kudi-zvertatisia-education-in-lithuania-where-to-apply'>https://smsm.lrv.lt</a> 
@@ -23,31 +36,9 @@ https://smsm.lrv.lt/lt/informacija-del-karo-pabegeliu-is-ukrainos
 
 <b>Вебінар про зайнятість, охорону здоров'я, соціальні гарантії та освіту для дітей в Литві:</b>
 https://www.youtube.com/watch?v=neijMI6xKng 
-
 `
 
-const generalInfoAboutSchool = `
-Ваші діти будуть прийняті до шкіл у Литві. Дитина може почати навчатися вже зараз, 
-не чекаючи початку нового навчального року. Новоприбулим учням нададуть всю необхідну допомогу.
-
-Фахівці оцінять, як краще інтегрувати дитину – чи відразу вчитися в одному класі з однолітками, 
-чи спочатку вивчати литовську мову в окремих групах. Протягом адаптаційного періоду фахівці 
-підготують умови для того, щоб дитина без стресу почала навчальний процес.
-
-При виборі школи слід враховувати, чи створені в цій школі групи для вивчення литовської мови.
-Якщо ви не хочете, щоб ваша дитина навчалася російською мовою, то в Литві є школи, де навчальний процес організований білоруською, польською та німецькою мовами.
-Навчання безкоштовне.
-
-Школи можуть приймати на навчання і реєструвати в Реєстрі учнів (у тому числі і дошкільнят), 
-які не мають дозволу на тимчасове проживання в Литві або національної візи. 
-
-Всю інформацію вам нададуть координатори.
-Контакти координатора:
-https://smsm.lrv.lt/uploads/smsm/documents/files/Ukrain%20Koordinatori%C5%B3%20savivaldyb%C4%97se%20kontaktai%20LT.pdf 
-
-`
-
-const artSchoolsContacts = `
+/* const artSchoolsContacts = `
 <b>Художні школи</b>
 
 <u>Vilnius Nacionalinė M. K. Čiurlionio menų mokykla
@@ -127,7 +118,7 @@ Panevėžys
 Tel. (+370 45) 58 65 79, el. p.
 menumokykla@gmail.com
 <a href="https://www.menumokykla.panevezys.lm.lt/component/content/article/44-english">www.menumokykla.panevezys.lm.lt</a>
-`
+` */
 
 const profEducation = `
 <b>Професійне навчання</b>
@@ -139,7 +130,7 @@ const profEducation = `
 Якщо ви приїдете до Литви без документів про освіту, нічого страшного – школа зможе оцінити вашу підготовку 
 індивідуально та адаптувати навчальний план. За додатковою інформацією звертайтесь до координаторів:
 
-<a>Контакти координатора:</a>
+<b>Контакти координатора:</b>
 <a href="https://smsm.lrv.lt/uploads/smsm/documents/files/Ukrain%20Koordinatori%C5%B3%20savivaldyb%C4%97se%20kontaktai%20LT.pdf ">Скачати</a>
 
 <b>Список та контакти професійно-технічних навчальних закладів Литви</b>
@@ -150,7 +141,6 @@ https://profesinis.lamabpo.lt/programu-sarasas/
 
 Контакти міністерства для консультацій 
 <a hreef="https://smsm.lrv.lt/lt/informacija-del-karo-pabegeliu-is-ukrainos/smsm-ir-savivaldybiu-kontaktai-konsultacijoms-kontakti-dlia-konsultatsii-contacts-for-consultations">smsm.lrv.lt</a>
-
 `
 
 const universities = `
@@ -173,7 +163,7 @@ https://www.skvc.lt/default/en/60/apply/documentation_requirements
 <b>Контакти міністерства для консультацій</b> 
 <a href='https://smsm.lrv.lt/lt/informacija-del-karo-pabegeliu-is-ukrainos/smsm-ir-savivaldybiu-kontaktai-konsultacijoms-kontakti-dlia-konsultatsii-contacts-for-consultations'>smsm.lrv.lt</a>
 
-Часті запитання Міністерства освіти, науки та спорту 
+<b>Часті запитання Міністерства освіти, науки та спорту</b> 
 <a href='https://smsm.lrv.lt/lt/informacija-del-karo-pabegeliu-is-ukrainos/duk-pitannia-shcho-chasto-zadaiutsia-frequently-asked-questions'>smsm.lrv.lt</a>
 
 <b>Інформація від Вільнюського технічного університету:</b>
@@ -181,14 +171,11 @@ https://vilniustech.lt/support-ua/335265
 `
 
 const sportPlaces = `
-<b>ДЛЯ СПОРТСМЕНІВ</b>
-
 Ваші діти можуть продовжувати займатися спортом у Литві. 
 Інформацію про те, як це зробити, нададуть координатори.
 
 <b>Контакти координаторів:</b>
 <a href='https://smsm.lrv.lt/uploads/smsm/documents/files/kontaktai%20UA.pdf'>Скачати</a>  
-
 
 Якщо ви професійний спортсмен, ви можете продовжувати 
 займатися спортом і брати участь у змаганнях. 
@@ -199,18 +186,10 @@ const sportPlaces = `
 
 <b>Поширені запитання Міністерства освіти, науки та спорту:</b>
 <a href='https://smsm.lrv.lt/lt/informacija-del-karo-pabegeliu-is-ukrainos/duk-pitannia-shcho-chasto-zadaiutsia-frequently-asked-questions'>smsm.lrv.lt</a> 
-
-
 `
 
-const helpInThings = `
+/* const helpInThings = `
 <b>ПІДТРИМКА В РЕЧАХ</b>
-
-<u>Підтримка в Литві</u>	
-<a href='https://docs.google.com/forms/d/e/1FAIpQLSeDC2Ja7fD0Pc8g80ggFMYW4uGzkl41tp301vVQUzjOb8bPcg/viewform'>https://docs.google.com</a> 	
-Речі першої необхідності, іграшки та інші потреби дітей.	
-Онлайн профіль	
-
 <u>Соціальна служба Карітас</u>	
 https://vilnius.caritas.lt/pagalba-ukrainieciams/	
 допомога з одягом, взуттям, постільною білизною, іграшками	
@@ -236,243 +215,245 @@ informacija@savethechildren.org
 +370 526 10815	
 Робочі години 
 I - V 8.30 -17.30
-`
+` */
 
-const groupsLections = `
-					
-<b>ГУРТКИ, ЛЕКЦІЇ, УРОКИ</b>	
+const groupsLections = `		
+<b>Гуртки та діяльність у Вільнюсі</b>	
+Муніципалітет Вільнюса склав список неформальної освіти	
+Контакти є в документі
+<a href="https://docs.google.com/document/d/1GvsgKB6oyPGMLqsA59lAOpwKPROUmdrlmYFTrgDv-fU/edit">Документ</a> 	
 
-Гуртки та діяльність у Вільнюсі	
-Муніципалітет Вільнюса склав список неформальної освіти	Контакти є в документі
-<a href="https://docs.google.com/document/d/1GvsgKB6oyPGMLqsA59lAOpwKPROUmdrlmYFTrgDv-fU/edit">https://docs.google.com</a> 	
-
-<u>Lingua Lituanica</u>	
-https://lingualit.lt/lt/naujienos/nemokamas-lietuviu-kalbos-vaiku-kursas-ukrainieciams/ 
+<b>Lingua Lituanica</b>	
+🌐 https://lingualit.lt/lt/naujienos/nemokamas-lietuviu-kalbos-vaiku-kursas-ukrainieciams/ 
 Безкоштовний курс литовської мови для дітей українських біженців. При реєстрації на курс необхідно пред’явити реєстраційну картку в міграційному відділі.	
-Регистрация здесь - <a href="https://docs.google.com/forms/d/e/1FAIpQLSccTfafGuu5rZAavsqjujBday2QJoPK5grfimNQtW6bESDdBA/viewform">Тут</a>
-Заняття проводитимуться в групах за адресою Gedimino pr. 26, Vilnius
+<u>Регистрация здесь</u> - <a href="https://docs.google.com/forms/d/e/1FAIpQLSccTfafGuu5rZAavsqjujBday2QJoPK5grfimNQtW6bESDdBA/viewform">Тут</a>
+Заняття проводитимуться в групах 
+📍 Vilnius <a href="https://goo.gl/maps/geuiAcE5PpoMex8M7">Gedimino pr. 26</a> 
 
-<u>Vilniaus Universitetas | Вільнюський університет</u>	
-https://www.flf.vu.lt/naujienos/bendros-naujienos/5316-kursai	
-
+<b>Vilniaus Universitetas | Вільнюський університет</b>	
+🌐 https://www.flf.vu.lt/naujienos/bendros-naujienos/5316-kursai	
 Студенти та викладачі Вільнюського університету на волонтерських засадах організовують безкоштовні курси з англійської мови для початківців та запрошують реєструватися громадян України, які не мають жодних початкових знань цієї мови.	
-rita.vickiene@flf.vu.lt
-A.Sun Dolls Art. Happily Imperfect Dolls	
-https://www.facebook.com/auma108 
+📧 rita.vickiene@flf.vu.lt
 
-<u>„Ažuolų vila“ „Дубова вілла“</u>	
-https://www.facebook.com/azuoluvila	
+<b>„Ažuolų vila“ „Дубова вілла“</b>	
 Катання на конях, гойдалки	
 https://www.facebook.com/azuoluvila
 
-<u>Kauno lėlių teatras Каунаський театр ляльок</u>	
-http://www.kaunoleles.lt  
-https://www.facebook.com/kauno.valstybinis.leliu.teatras	
-Щиро запрошуємо громадян України безкоштовно відвідувати наші театральні вистави.	
-Реєстрація: +370 37 221691, +370 620 74242
-kasa@kaunoleles.lt  
+<b>Kauno lėlių teatras Каунаський театр ляльок</b>	
+Щиро запрошуємо громадян України безкоштовно відвідувати наші театральні вистави.
+🌐 http://www.kaunoleles.lt  
+https://www.facebook.com/kauno.valstybinis.leliu.teatras		
+Реєстрація: 
+📞 +37037221691
+📞 +37062074242
+📧 kasa@kaunoleles.lt  
 Репертуар
 http://www.kaunoleles.lt/445/
 
-<u>Ukrainiankids.lt</u>	
-https://ukrainiankids.lt/gurtky-dlya-ditey/	
-Гуртки для дітей та юнацтва.	
-+370 616 70503
-+370 604 03245
-ukraina@tukstantmeciovaikai.lt
+<b>Ukrainiankids.lt</b>	
+Гуртки для дітей
+🌐 https://ukrainiankids.lt/gurtky-dlya-ditey/		
+📞 +37061670503
+📞 +37060403245
+📧 ukraina@tukstantmeciovaikai.lt
 
-<u>Workshops for kids</u>
+<b>Workshops for kids</b>
 https://www.facebook.com/ira.branitskaya  
-<a href="https://docs.google.com/forms/d/e/1FAIpQLSexhM_y501u62R9o44iMMqW8QUZslkya2by_8k4LffB34KOXw/viewform">docs.google.com</a>   
+<a href="https://docs.google.com/forms/d/e/1FAIpQLSexhM_y501u62R9o44iMMqW8QUZslkya2by_8k4LffB34KOXw/viewform">Форма для реєстрації</a>   
 
-<u>Baltijos Cirkas Балтійський цирк</u>	
+<b>Baltijos Cirkas Балтійський цирк</b>	
 https://www.facebook.com/ira.branitskaya   
-<a href="https://docs.google.com/forms/d/e/1FAIpQLSexhM_y501u62R9o44iMMqW8QUZslkya2by_8k4LffB34KOXw/viewform">docs.google.com</a>  	
+<a href="https://docs.google.com/forms/d/e/1FAIpQLSexhM_y501u62R9o44iMMqW8QUZslkya2by_8k4LffB34KOXw/viewform">Форма для реєстрації</a>  	
 Сімейні заходи, майстер-класи в приміщенні Камерного цирку.	
-+370 670 16445 
+📞 +37067016445 
 https://www.facebook.com/ieva.variakojytereynshtrom 
 
-<u>Англійська та розмовна литовська</u>
-Лена Элтанг 	
-https://www.facebook.com/profile.php?id=100001739466370 	
+<b>Англійська та розмовна литовська</b>
+Лена Элтанг 	 	
 Я готова займатися з українськими дітьми, які не одразу знайдуть собі школу: англійська та розмовна литовська, безкоштовно. 	
-Пишіть на пошту lena.eltang@gmail.com або прямо Facebook.
+Пишіть на пошту 
+📧 lena.eltang@gmail.com 
+або прямо Facebook https://www.facebook.com/profile.php?id=100001739466370
 
-<u>Muzikos mokykla Ugnelė Музична школа Ugnelė</u>	
-http://www.ugnele.lt/  
-<a href="https://www.facebook.com/MuzikosMokyklaUgnele/photos/a.224420607664527/4544559605650584/">www.facebook.com/MuzikosMokyklaUgnele</a> 
-Уроки музики для дітей від 1 до 18 років, кабінети для вчителів музики з України, музичні інструменти	
+<b>Muzikos mokykla Ugnelė Музична школа Ugnelė</b>	
+Уроки музики для дітей від 1 до 18 років, кабінети для вчителів музики з України, музичні інструменти
+🌐 http://www.ugnele.lt/  
+<a href="https://www.facebook.com/MuzikosMokyklaUgnele/photos/a.224420607664527/4544559605650584/">Сторінка у Фесбуці</a> 	
 Реєстрація та додаткова інформація: 
-choras.ugnele@gmail.com, 
-+37062968060 (LT, EN), 
-+37065063423 (LT, RU)
+📧 choras.ugnele@gmail.com 
+📞 +37062968060 (LT, EN) 
+📞 +37065063423 (LT, RU)
 
-<u>„VILNIAUS ETNINĖS KULTŪROS CENTRAS“ „ВІЛЬНЮСЬКИЙ ЦЕНТР ЕТНІЧНОЇ КУЛЬТУРИ“</u>	
-http://www.etno.lt/
-https://www.facebook.com/VilniausEtninesKulturosCentras/photos/a.447187831470/10158430233776471/	
+<b>„VILNIAUS ETNINĖS KULTŪROS CENTRAS“ „ВІЛЬНЮСЬКИЙ ЦЕНТР ЕТНІЧНОЇ КУЛЬТУРИ“</b>
 Творчі майстер-класи для дітей та дорослих.
-Заняття для груп: ми з радістю навчимо вас лити свічки, виготовляти гончарні вироби, в’язати та освоїти інші традиційні ремесла.
-info@etno.lt 
-http://www.etno.lt/ 
+Заняття для груп: ми з радістю навчимо вас лити свічки, виготовляти гончарні вироби, в’язати та освоїти інші традиційні ремесла.	
+https://www.facebook.com/VilniausEtninesKulturosCentras/photos/a.447187831470/10158430233776471/	
+📧 info@etno.lt 
+🌐 http://www.etno.lt/ 
 
-<u>LLA Литовська асоціація видавців</u>	
-<a href="https://lla.lt/lt/naujienos/405-knygos-vaikams-ukrainieciu-kalba?fbclid=IwAR3EdO66DE6Vz2RomEHHRK9vVSAvcsGU9IsuRXszdBHpzpaWTL2QoIJugO8">lla.lt</a>	
+<b>LLA Литовська асоціація видавців</b>	
 Книги для дітей українською мовою, онлайн	
+🌐 <a href="https://lla.lt/lt/naujienos/405-knygos-vaikams-ukrainieciu-kalba?fbclid=IwAR3EdO66DE6Vz2RomEHHRK9vVSAvcsGU9IsuRXszdBHpzpaWTL2QoIJugO8">lla.lt</a>	
 
-<u>Lietuvos vaikų ir jaunimo centras Литовський дитячий та юнацький центр</u>	
-<a href="https://lvjc.lt/naujiena/nemokami-bureliai-ukrainos-seimu-vaikams/">lvjc.lt</a>	
-Гуртки для дітей та юнацтва	 Vilnius. 
-Реєстрація онлайн
+<b>Lietuvos vaikų ir jaunimo centras Литовський дитячий та юнацький центр</b>
+Гуртки для дітей
+📍 Vilnius	
+Реєстрація онлайн <a href="https://lvjc.lt/naujiena/nemokami-bureliai-ukrainos-seimu-vaikams/">на цьому сайті</a>	
 
-<u>Клайпедський центр дитячого дозвілля</u>	
-<a href="https://www.kvlc.lt/del-uzsienieciu-pasitraukusiu-is-ukrainos-priemimo-i-burelius/">www.kvlc.lt</a>
-Гуртки для дітей та юнацтва	Klaipėda
+<b>Клайпедський центр дитячого дозвілля</b>	
+Гуртки для дітей та юнацтва	
+📍 Klaipėda
+🌐 <a href="https://www.kvlc.lt/del-uzsienieciu-pasitraukusiu-is-ukrainos-priemimo-i-burelius/">www.kvlc.lt</a>
 `
 
 const sportfree = `
 <b>СПОРТ</b>		
-
 <u>„Geležinis vilkas“ футбольна академія</u>	
-http://futboloakademija.lt   
-https://www.facebook.com/GelezinisVilkasFA/posts/2842625746034712 	
-футбольні тренування для українських дітей	Vilnius. 
+футбольні тренування для українських дітей
+📍 Vilnius. 
 Тренер Альвідас Концевічус 
-+37068610466 
-alvydas@futboloakademija.lt 
+📞 +37068610466 
+📧 alvydas@futboloakademija.lt 
+https://www.facebook.com/GelezinisVilkasFA/posts/2842625746034712
+🌐 http://futboloakademija.lt
 
 <u>Futbolo klubas "Ataka" Футбольний клуб «Атака».</u>	
-https://www.fkataka.lt/	
 Усі футбольні тренування, придбання одягу, участь у змаганнях та таборах для українських дітей	
-+370 674 53049	
+📞 +37067453049	
+🌐 https://www.fkataka.lt/
 
 <u>VFM Fortūna	</u>
-http://fmfortunavilnius.lt/	
+🌐 http://fmfortunavilnius.lt/	
 Тренування з футболу для дітей від 4 до 12 років	
 Audrius Veikutis 
-+370 686 14272
-vfmfortuna@gmail.com
-Вільнюський повіт, райони Bukiškis, Pilaitė, Riešė, ""Fanų"" стадіон 
-(Linkmenų g. 8), Maišiagala
+📞 +37068614272
+📧 vfmfortuna@gmail.com
+📍 Vilnius 
+райони Bukiškis, Pilaitė, Riešė, ""Fanų"" стадіон 
 
 <u>Fk Margiris Vilnius	</u>
-http://Www.fkmargiris.lt https://www.facebook.com/Margirisfutbolomokykla/ 	
 Тренування в футбольній школі. Діти також будуть одягнені у спортивний одяг від Margiris.
-gediminas@fkmargiris.lt 
-+370 673 58515
-Vilnius
+🌐http://Www.fkmargiris.lt 
+https://www.facebook.com/Margirisfutbolomokykla/ 	
+📧 gediminas@fkmargiris.lt 
+📞 +37067358515
+📍 Vilnius
 
 <u>Карате для дітей від 5 до 15 років</u>
 Denis Balinskis	
 https://www.facebook.com/denis.balinskis	
 Підключайтеся через Facebook	
-Vilnius
+📍 Vilnius
 
 <u>Vilniaus Karate mokykla</u>
-https://www.facebook.com/vilniauskaratemokykla/	
 Тренування з карате
-<a href="https://www.facebook.com/vilniauskaratemokykla/photos/a.111265894625998/154338856985368/">www.facebook.com/vilniauskaratemokykla</a>	
-Vilnius, кілька районів
+https://www.facebook.com/vilniauskaratemokykla/	
+<a href="https://www.facebook.com/vilniauskaratemokykla/photos/a.111265894625998/154338856985368/">Пост у Фейсбуці</a>	
+📍 Vilnius, кілька районів
 
 <u>FULLGAZZ ACADEMY</u>	
-https://www.facebook.com/fullgazzacademy	
 Біг, легка атлетика, навчання для дітей та молоді від 4 до 14 років.
 Досвід не потрібен. Ми також допоможемо вам купити спортивний одяг.	
-fullgazzacademy@gmail.com 
-+370 615 33771	Vilnius
+https://www.facebook.com/fullgazzacademy	
+📧 fullgazzacademy@gmail.com 
+📞 +37061533771	
+📍 Vilnius
 
 <u>Вільнюський міський муніципалітет</u>	
-<a href='https://vilnius.lt/lt/2022/03/15/vilnius-ukrainieciu-vaikus-kviecia-i-nemokamas-treniruotes-sporto-mokyklose/?fbclid=IwAR3ZQgiOYCoPU7kVANsv6MtuEXViYTf88FQjavca7j36mr2J3ApYjBQoVO8'>vilnius.lt</a> 	
 Безкоштовні тренування в спортивних школах, 24 види спорту.	
 Зв'яжіться окремо зі спортивними школами	
-Vilnius
+🌐 <a href='https://vilnius.lt/lt/2022/03/15/vilnius-ukrainieciu-vaikus-kviecia-i-nemokamas-treniruotes-sporto-mokyklose/?fbclid=IwAR3ZQgiOYCoPU7kVANsv6MtuEXViYTf88FQjavca7j36mr2J3ApYjBQoVO8'>vilnius.lt</a> 	
+📍 Vilnius
 
 <u>Шахи для українських хлопців (8-14 років)</u>
 Міжнародний гросмейстер, багаторазовий чемпіон Литви Aleksey Domchev
 https://www.facebook.com/aleksej.domcev.7  
-Ссилка на пост - <a href='https://www.facebook.com/photo/?fbid=967225240821765&set=gm.3173150722931254'>Тут</a>  	
-okela@inbox.ru 
-+370 682 58788 	
+<a href='https://www.facebook.com/photo/?fbid=967225240821765&set=gm.3173150722931254'>Пост у Фейсбуці</a>  	
+📧 okela@inbox.ru 
+📞 +37068258788 	
 
-<u>Lietuvos vaikų ir jaunimo centras</u>	  
-https://lvjc.lt/  
-Бескоштовні гуртки для дітей з українських сімей	
-Реєстраційна форма - <a href='https://lvjc.lt/naujiena/nemokami-bureliai-ukrainos-seimu-vaikams/?utm_source=newsletter&utm_medium=email&utm_campaign=nemokamas_seminaras_tevams_ir_pagalba_ukrainieciams&utm_term=2022-03-14'>тут</a>
+<u>Lietuvos vaikų ir jaunimo centras</u>	
+Бескоштовні гуртки для дітей з українських сімей  
+🌐 https://lvjc.lt/  	
+<a href='https://lvjc.lt/naujiena/nemokami-bureliai-ukrainos-seimu-vaikams/?utm_source=newsletter&utm_medium=email&utm_campaign=nemokamas_seminaras_tevams_ir_pagalba_ukrainieciams&utm_term=2022-03-14'>Реєстраційна форма</a>
 `
 
 const artfree = `
-<b>МИСТЕЦТВО, ТЕАТР</b>	
+<b>Мережа кінотеатрів «Forum Cinemas»</b> 
+пропонує безкоштовні покази мультфільмів українською мовою
+📍 Вільнюс, Каунас, Клайпеда, Шяуляй
+🌐 https://www.forumcinemas.lt/ukraina
 
 <b>Keistuolių teatras</b>	
-http://www.keistuoliai.lt/ 	
+🌐 http://www.keistuoliai.lt/ 	
 Виступи та концерти безкоштовно	
 Реєстрація:
 1) Литовською: https://forms.gle/zmj7o8VKxAH8hHz87 
 2) Українською: https://forms.gle/5eo8hTjZeLweExnm9    
-+370 5 242 4585	
+📞 +37052424585	
 
 <b>Tina Dance</b>	
-https://tinadance.lt/ 	
+🌐 https://tinadance.lt/ 	
 Різноманітні стилістичні естрадні танці, табори	
-https://tinadance.lt/kontaktai/	
+🌐 https://tinadance.lt/kontaktai/	
 
 <b>Творческий кружок</b>
 https://www.facebook.com/events/1404774319972665/?ref=newsfeed
 Каждый четверг проведу творческий кружок для детей от 7 лет!
 Будем лепить брошки, куколки, вазочки, пасхальных зайчиков и другие прелести.
-Регистрация +37069941640 Аудра
+Регистрация 📞 +37069941640 Аудра
 
 <b>Фортепиано</b>
 Giedre Daugeliene	
 https://www.facebook.com/giedre.daugeliene	
 Я преподаватель фортепиано, говорю по-русски, немного по-английски. Может быть, есть украинские дети, которые раньше занимались музыкой. Я могла бы научить тех, кто хочет играть на фортепиано. Бесплатно. 	
-+37060014394 Вильнюс (Vilnius)
+📞 +37060014394 
+📍 Вільнюс
 райони: Pavilnys, Naujininkai	
 
 <b>Motus šokio mokykla  Школа танцю Мотус</b>
-http://www.motus.lt/ 
+🌐 http://www.motus.lt/ 
 
 https://www.facebook.com/Motussokiomokykla/ 	
 Безкоштовні танці для сімей з дітьми
-P. Vileišio g. 18N-401, Vilnius.
-info@motus.lt  
-(LT) +37065097071
-(RU) +37065593299
+📍 Vilnius <a href="https://goo.gl/maps/DvPMfJYicPKY4fnj7">P. Vileišio g. 18N-401</a>
+📧 info@motus.lt  
+📞 (LT) +37065097071
+📞 (RU) +37065593299
 
 <b>Різноманітні заняття для дітей, емоційна підтримка</b>
 https://www.facebook.com/ira.branitskaya
 
 <b>Kūryba - tai laisvė</b>
 https://fb.me/e/389uuFU5I
-для дітей
-LT; EN; UK
-Kaunas Šv. Gertrūdos g. 58
-📞+37060284532
-По четвергах 16.00 – 17.30
 На заняттях ми будемо малювати із заплющеними очима, використовувати гармонію кольорів,
 елементи музики та вивільняти свої думки та емоції.
 Під час кожної зустрічі діти виконуватимуть різні завдання,
 знайомитися з різними техніками малювання, покращувати свої знання про себе та мистецтво.
 Батьки також можуть взяти участь у заняттях.
+LT; EN; UK
+📍 Kaunas <a href="https://goo.gl/maps/EkThhJeVbPUwWbeF7">Šv. Gertrūdos g. 58</a>
+📞+37060284532
+По четвергах 16.00 – 17.30
 Реєстрація: https://forms.gle/PyNffbASDTVQPZFA8
 
 <b>Ігровий майданчик KarKarland'as</b>
-http://www.karkarlandas.lt/
-Культура, розваги
+🌐 http://www.karkarlandas.lt/
 LT; EN; RU
-Kaunas Šiaurės pr. 8D 
-+37060042030
+📍 Kaunas <a href="https://goo.gl/maps/1u8UPzzKramtd8h67">Šiaurės pr. 8D</a> 
+📞 +37060042030
 I-V 10-17
 Ми з радістю приймемо безкоштовно грати українських дітей
 до 6 років у нашу ігрову кімнату робочі дні з 10:00 до 17:00
 `
 
-module.exports.preschool = preschool;
+//module.exports.preschool = preschool;
 module.exports.artfree = artfree;
 module.exports.sportfree = sportfree;
-module.exports.helpInThings = helpInThings;
+//module.exports.helpInThings = helpInThings;
 module.exports.sportPlaces = sportPlaces;
 module.exports.universities = universities;
 module.exports.groupsLections = groupsLections;
 module.exports.profEducation = profEducation;
-module.exports.artSchoolsContacts = artSchoolsContacts;
+//module.exports.artSchoolsContacts = artSchoolsContacts;
 module.exports.generalInfoAboutSchool = generalInfoAboutSchool;

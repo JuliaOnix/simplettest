@@ -55,7 +55,7 @@ bot.hears(constans.MAIN_MENU_NAMES[9], (ctx) => mainMenuFunctionsFile.aboutLithu
 bot.hears(constans.MAIN_MENU_NAMES[10], (ctx) => mainMenuFunctionsFile.showPostWithSites(ctx));
 bot.hears(constans.MAIN_MENU_NAMES[11], (ctx) => mainMenuFunctionsFile.writeToOwnerOfTelegram(ctx));
 bot.on("text",  async (ctx) => {
-    console.log(ctx.message.text);
+    console.log(ctx.chat.id + " " + ctx.message.text);
     await ctx.replyWithSticker("CAACAgIAAxkBAAIIYmKIImnuHqG87U8il4x-rxL0VR_oAAL5FAACRgjQSALifIoIRnMCJAQ")
     await ctx.replyWithHTML("Такої команди немає. Тицяй на кнопки 🙂", Markup.keyboard(constans.MAIN_MENU_ARRAY))
 })

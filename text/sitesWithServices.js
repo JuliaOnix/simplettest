@@ -85,27 +85,35 @@ https://t.me/ukraincivklaipedi
 https://t.me/+Q6KPSibr39hlOGUy
 
 <b>АБФ в Литве</b>
-Волонтёрская инициатива для беларусов_к и украинцев_ок, живущих в Вильнюсе!
+(Канал волонтеров. Обучаюие мероприятия )
 https://t.me/abflithuania
 
 <b>Мама в Вильнюсе</b>
+(Чат для мамочек из Вильнюса)
 https://t.me/mamavilnius
 
 <b>ВильнюсЧат × Литва</b>
+(Чатик Вильнюса)
 https://t.me/vilnius_lithuania
 
 <b>Vilnius Girls</b>
 (Группа для девушек из Вильнюса)
 https://t.me/VilniusGirls 
 
+<b>Vilnius Pet’s Community</b>
+(Чат для тех, у кого есть питомцы)
+https://t.me/vilnius_dog
+
 <b>Нужный справочник Вильнюс</b>
-Справочник по услугам
+(Справочник по услугам)
 https://t.me/spravkavilnius
 
 <b>Vilnius Market</b>
+(Покупка/Продажа)
 https://t.me/vilniusmarket
 
 <b>Чат - Беларусы Вільні</b>
+(Чат беларусов в Литве)
 https://t.me/belarusVLN
 
 <b>Новости Литвы</b>

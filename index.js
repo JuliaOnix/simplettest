@@ -148,7 +148,7 @@ bot.action('lessonsforChildren_btn', async (ctx) => {
     await ctx.editMessageText('ГУРТКИ, ЛЕКЦІЇ, УРОКИ', {
         parse_mode: "HTML",
         disable_web_page_preview: true,
-        ...Markup.inlineKeyboard(constans.MENU_ABOUT_EXTRACURRICULARS)
+        ...Markup.inlineKeyboard(constans.MENU_ABOUT_EXTRACURRICULARS).resize()
     }); 
 });
 
@@ -510,8 +510,6 @@ async function freeStuffForUkraineFunc(ctx) {
     })
 }
 
-
-
 //sport button
 bot.action('freeSport_btn', async (ctx) => {
     console.log(ctx.from.first_name, ctx.from.username + 'freeSport_btn')
@@ -564,24 +562,23 @@ bot.action('freeArtEvents_btn', async (ctx) => {
         parse_mode: 'HTML',
         disable_web_page_preview: true,
         ...Markup.inlineKeyboard([
-            //[Markup.button.callback("Показати більше...", "show_more_art_btn")],
+            [Markup.button.callback("Показати більше...", "show_more_art_btn")],
             [constans.RETURN_BACK_TO_FREE_STUFF]
         ])
     })
 })
 
-/* bot.action('show_more_art_btn', async (ctx) => {
+bot.action('show_more_art_btn', async (ctx) => {
     console.log(ctx.from.first_name, ctx.from.username + ' freeArtEvents_btn')
     await ctx.answerCbQuery();
-    return await ctx.editMessageText(constans.LIST_TEXT_OF_FREE_STUFF[4], {
+    return await ctx.editMessageText(educationShcools.artfree, {
         parse_mode: 'HTML',
         disable_web_page_preview: true,
         ...Markup.inlineKeyboard([
-            [Markup.button.callback("Показати більше...", "show_more_art_btn")],
             [constans.RETURN_BACK_TO_FREE_STUFF]
         ])
     })
-}) */
+})
 
 //freeConsulHelp_btn button
 bot.action('freeConsultationWork_btn', async (ctx) => {

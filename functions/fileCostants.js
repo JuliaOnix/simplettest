@@ -9,7 +9,7 @@ const RETURN_BACK_TO_FINANCE = '🔙 Повернутися до «Фінанс�
 const RETURN_BACK_TO_WORK = '🔙 Повернутися до «Робота»';
 const RETURN_BACK_TO_FIRST = '🔙 Повернутися до «По Прибутті»';
 const RETURN_BACK_TO_FREE_STUFF = Markup.button.callback('🔙 Повернутися до «Безкоштовні Послуги»', "return_to_free_stuff_btn");
-const RETURN_BACK_TO_GROUPLESSONS_EDUCATION = '🔙 Повернутися до «ГУРТКИ, ЛЕКЦІЇ, УРОКИ»';
+const RETURN_BACK_TO_GROUPLESSONS_EDUCATION = '🔙 Повернутися до «Гуртки, ЛекціЇ, Уроки»';
 const RETURN_BACK_TO_HUMANAID_MENU = Markup.button.callback('🔙 Повернутися до «Гуманітарна Допомога»', "return_to_human_aid_menu_btn");
 const RETURN_BACK_TO_SITES = Markup.button.callback('🔙 Повернутися до «Каталог сайтів»', "return_to_sites_block_btn");
 
@@ -38,9 +38,9 @@ const MENU_HEALTH = [
 
 //menu for group lessons
 const MENU_ABOUT_EXTRACURRICULARS = [
-    [Markup.button.callback('МИСТЕЦТВО, ТЕАТР', 'artANDTeatr_btn'), Markup.button.callback('СПОРТ', 'sportLessons_btn')],
-    [Markup.button.callback('УРОКИ', 'lections_btn'), Markup.button.callback('ПІДТРИМКА В РЕЧАХ', 'helpFromEduc_btn')],
-    [Markup.button.callback(RETURN_BACK_TO_EDUCATION, 'returnBackEducation_btn')],
+    [Markup.button.callback('Мистецтво, театр', 'artANDTeatr_btn'), Markup.button.callback('Спорт', 'sportLessons_btn')],
+    [Markup.button.callback('Уроки', 'lections_btn')],
+    [Markup.button.callback("🔙 Повернутися до «Безкоштовні Послуги»", 'return_to_free_stuff_btn')],
 ]
 
 //menu for work block
@@ -52,7 +52,7 @@ const MENU_ABOUT_WORK = [
 //menu for education block
 const MENU_EDUCATION = [
     [Markup.button.callback('Професійне навчання', 'profEduc_btn'),  Markup.button.callback("Вища освіта (університети)", "univer_btn")],
-    [Markup.button.callback('Для спортсменів', 'sportEduc_btn'),     Markup.button.callback('Гуртки, уроки, дозвілля', 'lessonsforChildren_btn')]
+    [Markup.button.callback('Для спортсменів', 'sportEduc_btn')]
 ];
 
 const MENU_FREE_STUFF = [
@@ -63,7 +63,7 @@ const MENU_FREE_STUFF = [
     [Markup.button.callback('🌐 Інтернет, Комунікація', 'freeInternet_btn'),     Markup.button.callback('🏢 Юридичні послуги', 'freeLegal_btn')],   
     [Markup.button.callback('🐈 Для домашніх тварин', 'freePetStuff_btn'),     Markup.button.callback('💅🏻 Послуги краси', 'freeBeautyStuff_btn')],   
     [Markup.button.callback('👓 Оптика', 'freeOptica_btn'),     Markup.button.callback('🎨 Курси, ЛекціЇ', 'freeCourses_btn')],   
-    [Markup.button.callback('🛋 Мебель', 'freeSofa_btn')],   
+    [Markup.button.callback('🛋 Мебель', 'freeSofa_btn'), Markup.button.callback('Гуртки для дітей', 'lessonsforChildren_btn')],   
 ]
 
 const MENU_WITH_CITIES_OF_HUMAN_AID = [

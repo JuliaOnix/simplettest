@@ -22,6 +22,11 @@ const MAIN_MENU_NAMES =
     '📡 Каталог сайтів', 'Розробник'
 ];
 
+const MENU_REGISTRATION = [
+    [Markup.button.callback("Адреси реєстраційних центрів", 'btn_addresses')],
+    [Markup.button.callback("Відновлення документів", "recoverDocuments_BTN")],
+];
+
 const MAIN_MENU_ARRAY = [[MAIN_MENU_NAMES[0]],
 [MAIN_MENU_NAMES[1], MAIN_MENU_NAMES[2], MAIN_MENU_NAMES[6]],
 [MAIN_MENU_NAMES[4], MAIN_MENU_NAMES[3], MAIN_MENU_NAMES[5]],
@@ -90,6 +95,7 @@ const MENU_BUTTONS_SITES = [
 module.exports.MAIN_MENU_ARRAY = MAIN_MENU_ARRAY;
 module.exports.MAIN_MENU_NAMES = MAIN_MENU_NAMES;
 module.exports.MENU_HEALTH = MENU_HEALTH;
+module.exports.MENU_REGISTRATION = MENU_REGISTRATION;
 module.exports.RETURN_BACK_TO_SITES = RETURN_BACK_TO_SITES;
 module.exports.MENU_BUTTONS_SITES = MENU_BUTTONS_SITES;
 module.exports.MENU_WITH_CITIES_OF_HUMAN_AID = MENU_WITH_CITIES_OF_HUMAN_AID;

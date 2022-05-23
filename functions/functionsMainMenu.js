@@ -6,6 +6,7 @@ const medInfo = require('../text/medicineInfo')
 const humanInfo = require('../text/humanitarianAidText')
 const sitesPost = require('../text/sitesWithServices')
 const aboutLithuania = require('../text/aboutLithuania')
+const aboutDocuments = require('../text/newText/mainPage')
 
 
 const messageFromDeveloper = `Якщо у вас виникла проблема з використанням бота/є ідея щодо покращення бота/додати інформацію до бота, напишіть ➡️ <a href='https://t.me/IndependentRiver'>моя сторінка</a>. 
@@ -21,6 +22,15 @@ https://helpua.lt/
 
 https://www.renkuosilietuva.lt/ru/informacia-dla-grazdan-ukrainy/
 `
+// ANCHOR First button
+async function mainInfoAboutRefugee(ctx) {
+    console.log(`${ctx.from.username} main info about refugee`)
+    await ctx.replyWithHTML(aboutDocuments.registartion, {
+        parse_mode: "HTML", 
+        disable_web_page_preview: true,
+        ...Markup.inlineKeyboard(constans.MENU_REGISTRATION)
+    });
+}
 
 async function showPostWithSites(ctx) {
     console.log(`${ctx.from.username} ${ctx.message.text} choosed`)
@@ -86,6 +96,7 @@ async function aboutLithuaniaFunc(ctx) {
 }
 
 module.exports.usefulContacts = usefulContacts;
+module.exports.mainInfoAboutRefugee = mainInfoAboutRefugee;
 module.exports.infoAboutMedicineFunc = infoAboutMedicineFunc;
 module.exports.humanitarianAidFunc = humanitarianAidFunc;
 module.exports.lookforanApartment = lookforanApartment;

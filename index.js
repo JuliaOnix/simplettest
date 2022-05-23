@@ -15,6 +15,9 @@ const sitesKatalog = require('./text/oftenAks')
 const language = require('./text/languageLitovskiy')
 const aboutLithuania = require('./text/aboutLithuania')
 
+//NOTE обновленный текст
+const aboutDocuments = require('./text/newText/mainPage')
+
 
 const token = process.env.BOT_TOKEN
 
@@ -42,7 +45,7 @@ bot.command('start', async (ctx) => {
 
 //NOTE here I am refactoring code
 //listening to, HEARS
-bot.hears(constans.MAIN_MENU_NAMES[0], (ctx) => mainInfoAboutRefugee(ctx));
+bot.hears(constans.MAIN_MENU_NAMES[0], (ctx) => mainMenuFunctionsFile.mainInfoAboutRefugee(ctx));
 bot.hears(constans.MAIN_MENU_NAMES[1], (ctx) => mainMenuFunctionsFile.usefulContacts(ctx));
 bot.hears(constans.MAIN_MENU_NAMES[2], (ctx) => mainMenuFunctionsFile.lookforanApartment(ctx));
 bot.hears(constans.MAIN_MENU_NAMES[3], (ctx) => mainMenuFunctionsFile.humanitarianAidFunc(ctx));
@@ -229,18 +232,19 @@ bot.action('returnBackEducation_btn', async (ctx) => {
 
 //ANCHOR First Visit Block
 
-//main info for people, who came right now and look for info what they have to do.
-async function mainInfoAboutRefugee(ctx) {
-    console.log(`${ctx.from.username} main info about refugee`)
-    await ctx.replyWithHTML(mytext.firstVisit, {
-        parse_mode: "HTML", 
+//main info for people, who came right now and look for info what they have to do
+
+bot.action("recoverDocuments_BTN", async (ctx) => {
+    console.log(`${ctx.from.username} recoverDocuments_BTN`)
+    await ctx.answerCbQuery();
+    await ctx.editMessageText(aboutDocuments.recoverDocuments, {
+        parse_mode: "HTML",
         disable_web_page_preview: true,
         ...Markup.inlineKeyboard([
-            Markup.button.callback("Контакти", 'btn_usefulContacts'),
-            Markup.button.callback("Адреси реєстраційних центрів", 'btn_addresses')
+            [Markup.button.callback(constans.RETURN_BACK_TO_FIRST, 'returnBackFirst_btn')]
         ])
     });
-}
+})
 
 bot.action('btn_usefulContacts', async (ctx) => {
     console.log(`${ctx.from.username} btn_useful Contacts`)
@@ -270,15 +274,10 @@ bot.action('btn_addresses', async (ctx) => {
 bot.action('returnBackFirst_btn', async (ctx) => {
     console.log(`${ctx.from.username} returnBackFirst_btn choosed`)
     await ctx.answerCbQuery();
-    return await ctx.editMessageText(mytext.firstVisit, {
+    return await ctx.editMessageText(aboutDocuments.registartion, {
         parse_mode: "HTML",
         disable_web_page_preview: true, 
-        ...Markup.inlineKeyboard(
-            [
-                [Markup.button.callback("Контакти", 'btn_usefulContacts'),
-                Markup.button.callback("Адреси реєстраційних центрів", 'btn_addresses')]
-            ]
-        )
+        ...Markup.inlineKeyboard(constans.MENU_REGISTRATION)
     });
 });
 

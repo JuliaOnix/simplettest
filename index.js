@@ -290,7 +290,7 @@ bot.action('dental_btn', async (ctx) => {
     await ctx.answerCbQuery();
     await ctx.editMessageText(freeMedInfo.dentist, {
         parse_mode: 'HTML',
-        disable_web_page_preview: false, ...Markup.inlineKeyboard([
+        disable_web_page_preview: true, ...Markup.inlineKeyboard([
             [Markup.button.callback(constans.RETURN_BACK_TO_MENU, 'returnBack_btn')]
         ])
     });

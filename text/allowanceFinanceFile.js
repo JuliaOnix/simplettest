@@ -26,7 +26,42 @@ const infoAboutBanks = `
 
 <b>Тут детальніше інформація для громадян України про фінансові послуги в Литві</b>
 <a href='https://www.lb.lt/en/ua-informatsiia-dlia-ghromadian-ukrayini-pro-finansovi-poslughi-v-litvi'>www.lb.lt</a>
+`
 
+const exchange_money = `
+<b>Andrius Tapinas & UAB Investicinis Auksas - Sidabras - Valiuta</b> 
+У цих точках гривні приймають за фіксованим курсом 40 гривень/євро.
+Максимальна сума обміну на особу становить 300 євро;
+Необхідно пред'явити документ
+🌐 Florinus.lt
+<a href="https://www.facebook.com/andrius.tapinas/posts/10225210419400809">Пост у фейсбуці</a>  
+
+I-V 09:00 - 18:00; VI 10:00 - 17:00.
+VII (Только в Вильнюсе и Каунасе): 10:00 - 17:00
+
+<u>Вільнюс:</u> 
+📍 <a href="https://goo.gl/maps/uw3TiW33WZumdK7R9">Šeimyniškių g. 24</a>
+
+<u>Вільнюс:</u> 
+📍 <a href="https://goo.gl/maps/FWqcuBSX2E5oeZHu9">Kareivių g. 2B</a>
+
+<u>Каунас:</u> 
+📍 <a href="https://goo.gl/maps/jZVeNuThwQJmne1X6">Kaunakiemio g. 40</a>
+
+<u>Каунас:</u> 
+📍 <a href="https://goo.gl/maps/QnW8Z4hacyeEP8tv6">Pramonės pr. 29</a> (PC Maxima II высоко)
+
+<u>Клайпеда:</u> 
+📍 <a href="https://goo.gl/maps/Wtoh8kGmK3TcoEma6">Skerdėjų g. 12</a>
+
+<u>Шяуляй:</u> 
+📍 <a href="https://goo.gl/maps/E5LYRd6fJqtpKKus7">Dvaro g. 64</a>
+
+<u>Паневежис:</u> 
+📍 <a href="https://goo.gl/maps/hpX2NEKHNssMZb1y9">Respublikos g. 28</a>
+
+<u>Алітус:</u> 
+📍 <a href="https://goo.gl/maps/29r3mqKSz81eBSgg8">Pulko g. 5</a>
 `
 
 const infoAboutFinanceHelp = `
@@ -732,4 +767,5 @@ module.exports.freeLessonsAndCourses = freeLessonsAndCourses;
 module.exports.freeForChildrenAndMothers = freeForChildrenAndMothers;
 module.exports.freeKonsulska = freeKonsulska;
 module.exports.freeSofa = freeSofa;
+module.exports.exchange_money = exchange_money;
 module.exports.freeArtEvents = freeArtEvents;

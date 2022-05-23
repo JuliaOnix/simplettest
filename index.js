@@ -376,7 +376,8 @@ bot.action('returnBack_btn', async (ctx) => {
 async function allowanceFinanceFunc(ctx) {
     console.log(`${ctx.from.username} allowanceFinanceFunc choosed`)
     await ctx.replyWithHTML(allowanceFinanceVar.infoAboutBanks, Markup.inlineKeyboard([
-        Markup.button.callback('Пільги, на які ви маєте право', 'pilgi_btn'),
+        [Markup.button.callback('Пільги, на які ви маєте право', 'pilgi_btn')],
+        [Markup.button.callback('Де обміняти гривні на евро', 'exchange_currency_btn')],
     ]));
 }
 
@@ -384,6 +385,19 @@ bot.action('pilgi_btn', async (ctx) => {
     console.log(`${ctx.from.username} pilgi_btn choosed`)
     await ctx.answerCbQuery();
     await ctx.editMessageText(allowanceFinanceVar.infoAboutFinanceHelp,
+    {
+        parse_mode: 'HTML',
+        disable_web_page_preview: true,
+        ...Markup.inlineKeyboard([
+            [Markup.button.callback(constans.RETURN_BACK_TO_FINANCE, 'backToFinance_btn')]
+        ])
+        });
+});
+
+bot.action('exchange_currency_btn', async (ctx) => {
+    console.log(`${ctx.from.username} currency_btn choosed`)
+    await ctx.answerCbQuery();
+    await ctx.editMessageText(allowanceFinanceVar.exchange_money,
     {
         parse_mode: 'HTML',
         disable_web_page_preview: true,
@@ -415,7 +429,8 @@ bot.action('backToFinance_btn', async (ctx) => {
         parse_mode: "HTML",
         disable_web_page_preview: false,
         ...Markup.inlineKeyboard([
-            Markup.button.callback('Пільги, на які ви маєте право', 'pilgi_btn')
+            [Markup.button.callback('Пільги, на які ви маєте право', 'pilgi_btn')],
+            [Markup.button.callback('Де обміняти гривні на евро', 'exchange_currency_btn')],
         ])
     })
 });

@@ -26,7 +26,7 @@ LT; EN; RU
 `
 
 const corona = `
-<b>Вакцинация от CORONA - Безкоштовна</b>
+<b>Вакцинація від CORONA-19 - Безкоштовна</b>
 <a href="https://koronastop.lrv.lt/ru/vaktsinatsiia">Тут основна інформація про вакцинацію</a>
 
 <b>Зареєструватися на вакцинацію</b> можна за номером <b>1808</b> або <a href='https://vakcina.myhybridlab.com/selfregister/vaccine'>ТУТ</a>

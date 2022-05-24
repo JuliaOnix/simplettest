@@ -84,6 +84,9 @@ https://t.me/ukraincivklaipedi
 <b>Укринці в Паланзі</b>
 https://t.me/+Q6KPSibr39hlOGUy
 
+<b>Доставка/перевозка людей/грузов в Украину и обратно</b>
+https://t.me/+JTp703gf23ViNmIy
+
 <b>АБФ в Литве</b>
 (Канал волонтеров. Обучаюие мероприятия )
 https://t.me/abflithuania

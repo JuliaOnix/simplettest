@@ -1,6 +1,8 @@
 const dentist = `
 <b>Палата стоматологів</b>	
+Екстрена стоматологічна допомога
 <a href="https://telegra.ph/V%D1%96lnyus-Stomatolog%D1%96ya-05-23">Список безкоштовних клінік у Вільнюсі</a>
+<a href="https://telegra.ph/Stomatol%D1%96ya-Kaunas-05-23">Список безкоштовних клінік у Каунасі</a>
 
 Бескоштовна допомога <b>по всій Литві</b>. Відкривайте сайт та шукайте своє місто.
 <a href='https://odontologurumai.lt/lt/apie-rumus/naujienos/1859-%C4%AFstaigos,-teikian%C4%8Dios-nemokam%C4%85-b%C5%ABtin%C4%85j%C4%85-pagalb%C4%85-nukent%C4%97jusiems-nuo-karo-ukrainoje?fbclid=IwAR21wXYqP57jnXihE7H2v39jUzVbbMyMnPn6VFbx6LvBWccD0cxomBz0l4M'>Посилання на сайт</a>
@@ -106,12 +108,6 @@ ina@dia-iq.lt
 `
 
 const anotherMedInfo = `										
-<b>ЛІКАРІ ОНЛАЙН	</b>				
-🌐 TahiCare	https://www.tahicare.com/ukraine 	
-Безкоштовні телемедичні консультації	
-📧 international		
-📧 contact@tahicare.com 
-
 <b>BIOFIRST klinika</b>
 🌐 https://bit.ly/3CRxhFH
 LT; EN; RU

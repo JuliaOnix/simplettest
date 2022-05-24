@@ -58,6 +58,9 @@ const siteForLookForWork = `
 Спілкування з роботодавцями відбувається онлайн	
 🌐 https://www.cvbankas.lt/
 
+<b>Mano darbas </b>
+🌐 http://manodarbas.lt/siulo-darba
+
 <b>Платформи пошуку роботи</b>		
 Сайт призначений для українських біженців, які бажають надавати свої послуги
 🌐 https://asgaliu.lt/uk/
@@ -224,6 +227,9 @@ Laisva Kėdė
 📞 +37060439060 (RU)
 📞 +37060438869 (EN)
 📧 socialinispokytis@gmail.com
+
+❕Якщо бажаєте дізнатися більше про роботу, 
+<a href="https://akrolesta.art/ua/spravochnik.html">«натисніть тут»</a>
 `
 
 module.exports.basicInfoAboutWork = basicInfoAboutWork;

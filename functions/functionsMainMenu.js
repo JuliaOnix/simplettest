@@ -7,19 +7,18 @@ const humanInfo = require('../text/humanitarianAidText')
 const sitesPost = require('../text/sitesWithServices')
 const aboutLithuania = require('../text/aboutLithuania')
 const aboutDocuments = require('../text/newText/mainPage')
+const aboutApartments = require('../text/newText/whereLive')
 
 
 const messageFromDeveloper = `Якщо у вас виникла проблема з використанням бота/є ідея щодо покращення бота/додати інформацію до бота, напишіть ➡️ <a href='https://t.me/IndependentRiver'>моя сторінка</a>. 
 
 <b>Рекомендація</b>: Частіше перезапускайте бота за допомогою /start для оновлення контенту :)`
 
-const SOURSES = `<b>Джерела інформації:</b>
+const SOURSES = `
+<b>Джерела інформації:</b>
 <a href="https://akrolesta.art/ua/spravochnik.html">https://akrolesta.art/ua</a>
-
 https://ukraina.vilnius.lt
-
 https://helpua.lt/
-
 https://www.renkuosilietuva.lt/ru/informacia-dla-grazdan-ukrainy/
 `
 // ANCHOR First button
@@ -47,7 +46,7 @@ async function infoAboutMedicineFunc(ctx) {
     await ctx.replyWithHTML(medInfo.aboutMedicine, {
         parse_mode: 'HTML',
         disable_web_page_preview: true,
-        ...Markup.inlineKeyboard(constans.MENU_HEALTH).oneTime(true)
+        ...Markup.inlineKeyboard(constans.MENU_HEALTH)
     });
 }
 
@@ -58,7 +57,10 @@ async function writeToOwnerOfTelegram(ctx) {
         parse_mode: "HTML", 
         disable_web_page_preview: true
     });
-    await ctx.replyWithHTML(SOURSES)
+    await ctx.replyWithHTML(SOURSES, {
+        parse_mode: "HTML", 
+        disable_web_page_preview: true
+    })
 }
 
 //show info about humanitarianAid
@@ -80,7 +82,11 @@ async function usefulContacts(ctx) {
 //info how look for apartments
 async function lookforanApartment(ctx) {
     console.log(`${ctx.from.username} ${ctx.message.text} choosed`)
-    await ctx.replyWithHTML(apartmentsinfo.sites); 
+    await ctx.replyWithHTML(aboutApartments.aboutApartmentsMainPage, {
+        parse_mode: "HTML",
+        disable_web_page_preview: true,
+        ...Markup.inlineKeyboard(constans.MENU_ABOUT_APARTMENTS)
+    }); 
 }
 
 //About Lithuania

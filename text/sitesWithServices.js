@@ -145,6 +145,9 @@ https://www.facebook.com/groups/868903884507780/
 <b>Українці в Каунасі </b>
 https://www.facebook.com/groups/356243299713614/ 
 
+</b>Українці в Укмерзі - Украинки и украинцы в Укмерге</b>
+https://www.facebook.com/groups/669398504323707
+
 <b>Допомога народу України </b>
 https://www.facebook.com/groups/286679646911263/ 
 

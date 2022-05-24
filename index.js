@@ -14,6 +14,7 @@ const sitesInfo = require('./text/sitesWithServices')
 const sitesKatalog = require('./text/oftenAks')
 const language = require('./text/languageLitovskiy')
 const aboutLithuania = require('./text/aboutLithuania')
+const apartmentsinfo = require('./text/newText/whereLive')
 
 //NOTE обновленный текст
 const aboutDocuments = require('./text/newText/mainPage')
@@ -40,6 +41,7 @@ if (token === undefined) {
 //here is started bot
 bot.command('start', async (ctx) => {
     console.log(`${ctx.chat.id} ${ctx.from.username} started bot`)
+    bot.telegram.sendMessage("2143667939", ` ${ctx.from.username} ${ctx.from.first_name} `)
     return startBot(ctx);
 });
 
@@ -59,7 +61,7 @@ bot.hears(constans.MAIN_MENU_NAMES[10], (ctx) => mainMenuFunctionsFile.showPostW
 bot.hears(constans.MAIN_MENU_NAMES[11], (ctx) => mainMenuFunctionsFile.writeToOwnerOfTelegram(ctx));
 bot.on("text",  async (ctx) => {
     console.log(ctx.chat.id + " " + ctx.message.text);
-    await ctx.replyWithSticker("CAACAgIAAxkBAAIIYmKIImnuHqG87U8il4x-rxL0VR_oAAL5FAACRgjQSALifIoIRnMCJAQ")
+    await ctx.replyWithSticker("CAACAgIAAxkBAAIO8WKMJUXwYGdfN8bTmI1-dyhCAAH1oQACYwAD29t-AAGMnQU950KD5yQE")
     await ctx.replyWithHTML("Такої команди немає. Тицяй на кнопки 🙂", Markup.keyboard(constans.MAIN_MENU_ARRAY))
 })
 
@@ -71,11 +73,21 @@ bot.on("message", (ctx) => {
 
 //at the begining
 function startBot(ctx) {
-    ctx.reply('Обери тему, яка тебе цікавить', Markup
+    ctx.reply(constans.GREETING, Markup
     .keyboard(constans.MAIN_MENU_ARRAY));
 }
 
 //ANCHOR Education
+
+bot.action('vilnius_humanAid_btn', async (ctx) => {
+    console.log(`${ctx.from.username} vilnius_humanAid_btn choosed`)
+    await ctx.answerCbQuery();
+    await ctx.editMessageText(humanAidInfo.vilniusHelp, {
+        parse_mode: "HTML",
+        disable_web_page_preview: true,
+        ...Markup.inlineKeyboard([constans.RETURN_BACK_TO_HUMANAID_MENU])
+    })
+})
 
 //show block about education and sport for children also
 async function educationAndSportFunc(ctx) {
@@ -267,6 +279,36 @@ bot.action('btn_addresses', async (ctx) => {
         ...Markup.inlineKeyboard([
             [Markup.button.callback(constans.RETURN_BACK_TO_FIRST, 'returnBackFirst_btn')]
         ])
+    });
+});
+
+bot.action('adresses_in_apartment', async (ctx) => {
+    console.log(`${ctx.from.username} btn_addresses in apart choosed`)
+    await ctx.answerCbQuery();
+    await ctx.editMessageText(contacts.address, {
+        parse_mode: "HTML",
+        disable_web_page_preview: true,
+        ...Markup.inlineKeyboard([constans.RETURN_BACK_LOOK_FOR_APART])
+    });
+});
+
+bot.action('lookforapartmants_BTN', async (ctx) => {
+    console.log(`${ctx.from.username} lookforapartmants_BTN choosed`)
+    await ctx.answerCbQuery();
+    await ctx.editMessageText(apartmentsinfo.sites, {
+        parse_mode: "HTML",
+        disable_web_page_preview: true,
+        ...Markup.inlineKeyboard([constans.RETURN_BACK_LOOK_FOR_APART])
+    });
+});
+
+bot.action("return_back_to_look_for_apart", async (ctx) => {
+    console.log(`${ctx.from.username} return_back_to_look_for_apart choosed`)
+    await ctx.answerCbQuery();
+    await ctx.editMessageText(apartmentsinfo.aboutApartmentsMainPage, {
+        parse_mode: "HTML",
+        disable_web_page_preview: true,
+        ...Markup.inlineKeyboard(constans.MENU_ABOUT_APARTMENTS)
     });
 });
 
@@ -517,7 +559,7 @@ bot.action('backToTheWorkMenu_btn', async (ctx) => {
 //freeStuff
 async function freeStuffForUkraineFunc(ctx) {
     console.log(`${ctx.from.username} freeStuffForUkraineFunc choosed`)
-    await ctx.replyWithHTML("Обери тему, яка тебе цікавить", {
+    await ctx.replyWithHTML("Оберіть тему, яка вас цікавить", {
         parse_mode: 'HTML',
         disable_web_page_preview: true,
         ...Markup.inlineKeyboard(constans.MENU_FREE_STUFF)
@@ -594,7 +636,7 @@ bot.action('show_more_art_btn', async (ctx) => {
     })
 })
 
-//freeConsulHelp_btn button
+/* //freeConsulHelp_btn button
 bot.action('freeConsultationWork_btn', async (ctx) => {
     console.log(ctx.from.first_name, ctx.from.username + ' freeConsultationWork_btn')
     await ctx.answerCbQuery();
@@ -603,7 +645,7 @@ bot.action('freeConsultationWork_btn', async (ctx) => {
         disable_web_page_preview: true,
         ...Markup.inlineKeyboard([constans.RETURN_BACK_TO_FREE_STUFF])
     })
-})
+}) */
 
 //freeConsulHelp_btn button
 bot.action('freeTranslate_btn', async (ctx) => {
@@ -704,7 +746,7 @@ bot.action('freeCourses_btn', async (ctx) => {
 bot.action('return_to_free_stuff_btn', async (ctx) => {
     console.log(ctx.from.first_name, ctx.from.username + 'return_to_free_stuff_btn')
     await ctx.answerCbQuery();
-    return await ctx.editMessageText("Обери тему, яка тебе цікавить", {
+    return await ctx.editMessageText("Оберіть тему, яка вас цікавить", {
         parse_mode: 'HTML',
         disable_web_page_preview: true,
         ...Markup.inlineKeyboard(constans.MENU_FREE_STUFF)

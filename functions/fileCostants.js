@@ -1,6 +1,9 @@
 const { Telegraf, Markup } = require("telegraf");
 const financeText = require('../text/allowanceFinanceFile')
 
+const GREETING = 'Вітаю у довіднику! Оберіть тему, яка вас цікавить';
+/*const CREDITS = "Величезна подяка <b>Андрію Соколову</b> та його команді за те, що зібрали та написали такий величезний <a href="https://akrolesta.art/ua/spravochnik.html">довідник</a> щодо проживання у Литві.
+Також не менш величезна подяка <b>Наталії Ткач</b> за допомогу в оновлені інформації та підтримці цього проекту."*/
 const RETURN_BACK_TO_EDUCATION = '🔙 Повернутися до «Навчання»';
 const FORWARD_BTN = `Наступна сторінка ➡️`;
 const BACKWARD_BTN = `⬅️ Попередня сторінка`;
@@ -8,6 +11,7 @@ const RETURN_BACK_TO_MENU = "🔙 Повернутися до «Здоров'я�
 const RETURN_BACK_TO_FINANCE = '🔙 Повернутися до «Фінанси, Пільги»';
 const RETURN_BACK_TO_WORK = '🔙 Повернутися до «Робота»';
 const RETURN_BACK_TO_FIRST = '🔙 Повернутися до «По Прибутті»';
+const RETURN_BACK_LOOK_FOR_APART = Markup.button.callback('🔙 Повернутися до «🔎 Пошук житла»', "return_back_to_look_for_apart");
 const RETURN_BACK_TO_FREE_STUFF = Markup.button.callback('🔙 Повернутися до «Безкоштовні Послуги»', "return_to_free_stuff_btn");
 const RETURN_BACK_TO_GROUPLESSONS_EDUCATION = '🔙 Повернутися до «Гуртки, ЛекціЇ, Уроки»';
 const RETURN_BACK_TO_HUMANAID_MENU = Markup.button.callback('🔙 Повернутися до «Гуманітарна Допомога»', "return_to_human_aid_menu_btn");
@@ -48,6 +52,11 @@ const MENU_ABOUT_EXTRACURRICULARS = [
     [Markup.button.callback("🔙 Повернутися до «Безкоштовні Послуги»", 'return_to_free_stuff_btn')],
 ]
 
+const MENU_ABOUT_APARTMENTS = [
+    [Markup.button.callback("Адреси реєстраційних центрів", 'adresses_in_apartment')],
+    [Markup.button.callback("Самостійний пошук житла", 'lookforapartmants_BTN')]
+]
+
 //menu for work block
 const MENU_ABOUT_WORK = [
     [Markup.button.callback('Рекомендації / Допомога з пошуку роботи', 'recHelpLook_btn')],
@@ -63,7 +72,7 @@ const MENU_EDUCATION = [
 const MENU_FREE_STUFF = [
     [Markup.button.callback('💪🏻 Спорт', 'freeSport_btn'), Markup.button.callback('🚕 Транспорт', 'freeTransport_btn')],
     [Markup.button.callback('🤰🏻 Для жінок, для мам з дітьми', 'freeForMothers_btn'),  Markup.button.callback("🇪🇺 Консульска допомога", "freeConsulHelp_btn")],
-    [Markup.button.callback('👩‍🎨 Мистецькі подіЇ', 'freeArtEvents_btn'),     Markup.button.callback('👷‍♂️ КонсультаціЇ з праці', 'freeConsultationWork_btn')],   
+    [Markup.button.callback('👩‍🎨 Мистецькі подіЇ', 'freeArtEvents_btn')],   
     [Markup.button.callback('🔡 Послуги перекладача', 'freeTranslate_btn'),     Markup.button.callback('🖨 Друк', 'freePrint_btn')],   
     [Markup.button.callback('🌐 Інтернет, Комунікація', 'freeInternet_btn'),     Markup.button.callback('🏢 Юридичні послуги', 'freeLegal_btn')],   
     [Markup.button.callback('🐈 Для домашніх тварин', 'freePetStuff_btn'),     Markup.button.callback('💅🏻 Послуги краси', 'freeBeautyStuff_btn')],   
@@ -72,6 +81,7 @@ const MENU_FREE_STUFF = [
 ]
 
 const MENU_WITH_CITIES_OF_HUMAN_AID = [
+    [Markup.button.callback("Вільнюс", 'vilnius_humanAid_btn')],
     [Markup.button.callback("Каунас", 'kaunas_humanAid_btn'), Markup.button.callback("Клайпеда", 'klaipeda_humanAid_btn')],
     [Markup.button.callback("Паневєжіс", 'panevezis_humanAid_btn'), Markup.button.callback("Aлітус", 'alitus_humanAid_btn')],
     [Markup.button.callback("Шяуляй", 'shaulyay_humanAid_btn'), Markup.button.url("Інші міста", 'https://www.redcross.lt/kontakti-z-organizaciyami-yaki-nadayut-gumanitarnu-dopomogu-ukrayincyam-ua')],
@@ -95,6 +105,7 @@ const MENU_BUTTONS_SITES = [
 module.exports.MAIN_MENU_ARRAY = MAIN_MENU_ARRAY;
 module.exports.MAIN_MENU_NAMES = MAIN_MENU_NAMES;
 module.exports.MENU_HEALTH = MENU_HEALTH;
+module.exports.MENU_ABOUT_APARTMENTS = MENU_ABOUT_APARTMENTS;
 module.exports.MENU_REGISTRATION = MENU_REGISTRATION;
 module.exports.RETURN_BACK_TO_SITES = RETURN_BACK_TO_SITES;
 module.exports.MENU_BUTTONS_SITES = MENU_BUTTONS_SITES;
@@ -111,7 +122,9 @@ module.exports.RETURN_BACK_TO_WORK = RETURN_BACK_TO_WORK;
 module.exports.RETURN_BACK_TO_FREE_STUFF = RETURN_BACK_TO_FREE_STUFF;
 module.exports.MENU_ABOUT_WORK = MENU_ABOUT_WORK;
 module.exports.RETURN_BACK_TO_EDUCATION = RETURN_BACK_TO_EDUCATION;
+module.exports.RETURN_BACK_LOOK_FOR_APART = RETURN_BACK_LOOK_FOR_APART;
 module.exports.MENU_ABOUT_EXTRACURRICULARS = MENU_ABOUT_EXTRACURRICULARS;
 module.exports.RETURN_BACK_TO_FIRST = RETURN_BACK_TO_FIRST;
+module.exports.GREETING = GREETING;
 module.exports.RETURN_BACK_TO_HUMANAID_MENU = RETURN_BACK_TO_HUMANAID_MENU;
 module.exports.RETURN_BACK_TO_GROUPLESSONS_EDUCATION = RETURN_BACK_TO_GROUPLESSONS_EDUCATION;

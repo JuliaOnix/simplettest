@@ -17,6 +17,14 @@ https://icanhelp.host/
 • http://www.alio.lt/ 
 • https://domoplius.lt/ru/
 • https://ru.ntzemelapis.lt/
+• https://rinka.lt
+• https://skelbimai.lt
+• https://skelbikas.lt
+• https://kampas.lt
+• https://ehaus.lt
+• https://capital.lt
+• https://ober-house.lt
+• https://enuoma.lt
 `
 
 module.exports.sites = sites;

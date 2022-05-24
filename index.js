@@ -29,7 +29,7 @@ bot.command('start', async (ctx) => {
     return startBot(ctx);
 });
 
-//NOTE here I am refactoring code
+
 //listening to, HEARS
 bot.hears(constans.MAIN_MENU_NAMES[0], (ctx) => mainMenuFunctionsFile.mainInfoAboutRefugee(ctx));
 bot.hears(constans.MAIN_MENU_NAMES[1], (ctx) => mainMenuFunctionsFile.usefulContacts(ctx));

@@ -26,9 +26,6 @@ const messageFromDeveloper = `Якщо у вас виникла проблема
 <b>Рекомендація</b>: Частіше перезапускайте бота за допомогою /start для оновлення контенту :)`
 
 const SOURSES = `
-Величезна подяка <b>Андрію Соколову</b> та його команді за те, що зібрали та написали такий величезний <a href="https://akrolesta.art/ua/spravochnik.html">довідник</a> щодо проживання у Литві. 
-Також не менш величезна подяка <b>Наталії Ткач</b> за допомогу в оновлені інформації та підтримці цього проекту.
-
 <b>Джерела інформації:</b>
 <a href="https://akrolesta.art/ua/spravochnik.html">https://akrolesta.art/ua</a>
 https://ukraina.vilnius.lt

@@ -88,6 +88,8 @@ const infoAboutFinanceHelp = `
 - хто отримав ВНЖ на руки
 - офіційний договір оренди мінімум на 6 міс.
 - працевлаштування/біржа праці
+🌐 <a href="https://paslaugos.vilnius.lt/service-list/vienkartines-ismokos-uzsienieciui-isikurti-skyrimas?lang=uk">Інструкція 'Одноразові виплати на проживання'</a>
+🌐 <a href="https://paslaugos.vilnius.lt/service-list/Menesines-kompensacijos-vaiko-ugdymo-pagal-ikimokyklinio-ar-priesmokyklinio-ugdymo-programa-islaidoms-apmoketi-skyrimas?lang=uk">Інструкція 'На підготовку дітей'</a>
 
 <b>Каунас</b>
 <u>Розмір:</u>
@@ -141,8 +143,8 @@ parama.filialas@klaipeda.lt
 - Гігієнічні набори для дітей
 - Невідкладна медична допомога
 
-Соціальні послуги та пільги, на які ви маєте право, описані в колонці 2 наступної таблиці (Українським військовим біженцям, яким надано колективний тимчасовий захист у Литві з 4 березня 2022 року): <a href='https://socmin.lrv.lt/uploads/socmin/documents/files/2022%2003%2023_SADM_Parama%20Ukrainos%20karo%20pabegeliams%20pagal%20asmens%20statusa_A4_UA.pdf'>Скачати 
-пам'ятку</a> 
+<b>Соціальні послуги та пільги: </b><a href='https://socmin.lrv.lt/uploads/socmin/documents/files/2022%2003%2023_SADM_Parama%20Ukrainos%20karo%20pabegeliams%20pagal%20asmens%20statusa_A4_UA.pdf'>Скачати пам'ятку</a> 
+<b>Якщо бажаєте дізнатися більше про пільги </b><a href="https://docs.google.com/document/d/1f9VjxKSx5ZBBCYK28LHlo3ee-tFIxANbcA9JinpAlaI/edit#">Переходьте за посиланням</a>
 `
 
 const financeHelpAfterGotVNG = `

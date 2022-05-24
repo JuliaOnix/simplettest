@@ -28,7 +28,7 @@ https://icanhelp.host/
 ‼️ Виконуйте оплату лише після підписання договору.
 
 ❕Якщо бажаєте дізнатися більше про проживання, 
-<a href="https://akrolesta.art/ua/spravochnik.html">«натисніть тут»</a>
+<a href="https://telegra.ph/ZHile-05-24">«натисніть тут»</a>
 `
 
 const sites = `

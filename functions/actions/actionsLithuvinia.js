@@ -1,7 +1,7 @@
 const {Markup} = require("telegraf");
-const constans = require('./fileCostants')
-const language = require('../text/languageLitovskiy')
-const aboutLithuania = require('../text/aboutLithuania')
+const constans = require('../fileCostants')
+const language = require('../../text/languageLitovskiy')
+const aboutLithuania = require('../../text/aboutLithuania')
 
 async function showLanguagePage(ctx) {
     console.log(ctx.from.first_name, ctx.from.username + "language_btn")

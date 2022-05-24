@@ -1,6 +1,6 @@
 const {Markup} = require("telegraf");
-const constans = require('../functions/fileCostants')
-const workInfo = require('../text/workInfoFile')
+const constans = require('../../functions/fileCostants')
+const workInfo = require('../../text/workInfoFile')
 
 async function showRecomandationPage(ctx)  {
     console.log(`${ctx.from.username} recHelpLook_btn choosed`)

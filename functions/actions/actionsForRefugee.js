@@ -1,7 +1,7 @@
 const {Markup} = require("telegraf");
-const constans = require('../functions/fileCostants')
-const aboutDocuments = require('../text/newText/mainPage')
-const contacts = require('../text/contacts')
+const constans = require('../fileCostants')
+const aboutDocuments = require('../../text/newText/mainPage')
+const contacts = require('../../text/contacts')
 
 async function showRecoverDecuments(ctx) {
     console.log(`${ctx.from.username} recoverDocuments_BTN`)

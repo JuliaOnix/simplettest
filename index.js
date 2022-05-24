@@ -1,16 +1,17 @@
 const { Telegraf, Markup } = require("telegraf");
 require("dotenv").config();
 
-const ACTIONS_EDUCATION = require('./functions/actionsEducationPage')
-const ACTIONS_HUMAN_AID = require('./functions/actionsHumanAid')
-const ACTIONS_INFO_REFUGEE = require('./functions/actionsForRefugee')
-const ACTIONS_HEALTH = require('./functions/actionsHealth')
-const ACTIONS_ALLOWANCE = require('./functions/actionsAllowance')
-const ACTIONS_WORK = require('./functions/actionsWork')
-const ACTIONS_FREE_STUFF = require('./functions/actionsFreeMenuStaff')
-const ACTIONS_SOCIAL = require('./functions/actionsSocial')
-const ACTIONS_LITVA = require('./functions/actionsLithuvinia')
-const ACTIONS_APARTMENTS = require('./functions/actionsApartments')
+const ACTIONS_EDUCATION = require('./functions/actions/actionsEducationPage')
+const ACTIONS_HUMAN_AID = require('./functions/actions/actionsHumanAid')
+const ACTIONS_INFO_REFUGEE = require('./functions/actions/actionsForRefugee')
+const ACTIONS_HEALTH = require('./functions/actions/actionsHealth')
+const ACTIONS_ALLOWANCE = require('./functions/actions/actionsAllowance')
+const ACTIONS_WORK = require('./functions/actions/actionsWork')
+const ACTIONS_FREE_STUFF = require('./functions/actions/actionsFreeMenuStaff')
+const ACTIONS_SOCIAL = require('./functions/actions/actionsSocial')
+const ACTIONS_LITVA = require('./functions/actions/actionsLithuvinia')
+const ACTIONS_APARTMENTS = require('./functions/actions/actionsApartments')
+
 const mainMenuFunctionsFile = require('./functions/functionsMainMenu')
 const constans = require('./functions/fileCostants')
 

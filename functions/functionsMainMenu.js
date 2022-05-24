@@ -127,10 +127,15 @@ async function workinLitva(ctx) {
 //show menu about finance
 async function allowanceFinanceFunc(ctx) {
     console.log(`${ctx.from.username} allowanceFinanceFunc choosed`)
-    await ctx.replyWithHTML(allowanceFinanceVar.infoAboutBanks, Markup.inlineKeyboard([
-        [Markup.button.callback('Пільги, на які ви маєте право', 'pilgi_btn')],
-        [Markup.button.callback('Де обміняти гривні на евро', 'exchange_currency_btn')],
-    ]));
+    await ctx.replyWithHTML(allowanceFinanceVar.infoAboutBanks, { 
+        parse_mode: "HTML",
+        disable_web_page_preview: true,
+        ...Markup.inlineKeyboard(
+        [
+            [Markup.button.callback('Пільги, на які ви маєте право', 'pilgi_btn')],
+            [Markup.button.callback('Де обміняти гривні на евро', 'exchange_currency_btn')],
+        ]
+    )});
 }
 
 //freeStuff

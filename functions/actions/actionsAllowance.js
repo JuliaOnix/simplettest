@@ -1,6 +1,6 @@
 const {Markup} = require("telegraf");
-const constans = require('../functions/fileCostants')
-const allowanceFinanceVar = require('../text/allowanceFinanceFile')
+const constans = require('../fileCostants')
+const allowanceFinanceVar = require('../../text/allowanceFinanceFile')
 
 async function showPilgiPage(ctx) {
     console.log(`${ctx.from.username} pilgi_btn choosed`)
@@ -14,6 +14,7 @@ async function showPilgiPage(ctx) {
         ])
     });
 }
+
 
 async function showExchangeCurrencePage(ctx) {
     console.log(`${ctx.from.username} currency_btn choosed`)

@@ -1,5 +1,5 @@
 const {Markup} = require("telegraf");
-const constans = require('../functions/fileCostants')
+const constans = require('../fileCostants')
 
 async function showSport(ctx) {
     console.log(ctx.from.first_name, ctx.from.username + 'freeSport_btn')

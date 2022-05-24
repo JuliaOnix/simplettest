@@ -229,7 +229,7 @@ Laisva Kėdė
 📧 socialinispokytis@gmail.com
 
 ❕Якщо бажаєте дізнатися більше про роботу, 
-<a href="https://akrolesta.art/ua/spravochnik.html">«натисніть тут»</a>
+<a href="https://telegra.ph/Rabota-05-24-6">«натисніть тут»</a>
 `
 
 module.exports.basicInfoAboutWork = basicInfoAboutWork;

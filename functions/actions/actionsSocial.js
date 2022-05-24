@@ -1,7 +1,7 @@
 const {Markup} = require("telegraf");
-const constans = require('../functions/fileCostants')
-const sitesInfo = require('../text/sitesWithServices')
-const sitesKatalog = require('../text/oftenAks')
+const constans = require('../../functions/fileCostants')
+const sitesInfo = require('../../text/sitesWithServices')
+const sitesKatalog = require('../../text/oftenAks')
 
 async function showTelegramChannels(ctx) {
     console.log(ctx.from.first_name, ctx.from.username + "telegramChannels_btn")

@@ -1,5 +1,5 @@
-const humanAidInfo = require('../text/humanitarianAidText')
-const constans = require('../functions/fileCostants')
+const humanAidInfo = require('../../text/humanitarianAidText')
+const constans = require('../fileCostants')
 const {Markup} = require("telegraf");
 
 async function vilniusPage(ctx) {

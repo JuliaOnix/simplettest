@@ -1,6 +1,6 @@
 const {Markup} = require("telegraf");
-const constans = require('../functions/fileCostants')
-const educationShcools = require('../text/educationAndSportInfo')
+const constans = require('../fileCostants')
+const educationShcools = require('../../text/educationAndSportInfo')
 
 //ANCHOR I AM HERE
 async function univer(ctx) {

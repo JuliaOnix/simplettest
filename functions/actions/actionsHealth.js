@@ -1,7 +1,7 @@
 const {Markup } = require("telegraf");
-const constans = require('./fileCostants')
-const freeMedInfo = require('../text/freeMedServices')
-const medInfo = require('../text/medicineInfo')
+const constans = require('../fileCostants')
+const freeMedInfo = require('../../text/freeMedServices')
+const medInfo = require('../../text/medicineInfo')
 
 async function showDentalPage(ctx) {
     console.log(`${ctx.from.username} dental_btn choosed`)

@@ -9,9 +9,7 @@ async function univer(ctx) {
     await ctx.editMessageText(educationShcools.universities, {
         parse_mode: "HTML",
         disable_web_page_preview: true,
-        ...Markup.inlineKeyboard([
-            [Markup.button.callback(constans.RETURN_BACK_TO_EDUCATION, 'returnBackEducation_btn')]
-        ])
+        ...Markup.inlineKeyboard([constans.RETURN_BACK_TO_EDUCATION])
     })
 }
 
@@ -21,9 +19,7 @@ async function sportEducation(ctx) {
     await ctx.editMessageText(educationShcools.sportPlaces, {
         parse_mode: "HTML",
         disable_web_page_preview: true,
-        ...Markup.inlineKeyboard([
-            [Markup.button.callback(constans.RETURN_BACK_TO_EDUCATION, 'returnBackEducation_btn')]
-        ])
+        ...Markup.inlineKeyboard([constans.RETURN_BACK_TO_EDUCATION])
     })
 }
 
@@ -34,9 +30,7 @@ async function profEducation(ctx) {
     {
         parse_mode: "HTML",
         disable_web_page_preview: true,
-        ...Markup.inlineKeyboard([
-            [Markup.button.callback(constans.RETURN_BACK_TO_EDUCATION, 'returnBackEducation_btn')]
-        ])
+        ...Markup.inlineKeyboard([constans.RETURN_BACK_TO_EDUCATION])
     })
 }
 
@@ -53,6 +47,7 @@ async function showMoreArtEvents(ctx) {
     })
 }
 
+//art in FREE STUFF MENU
 async function showArtAndTeatr(ctx) {
     console.log(`${ctx.from.username} artANDTeatr_btn choosed`)
     await ctx.answerCbQuery();
@@ -89,6 +84,45 @@ async function showLections(ctx) {
     })
 }
 
+//art in EDUCATION MENU
+async function showArtAndTeatrEDUCATION(ctx) {
+    console.log(`${ctx.from.username} artANDTeatr_btn choosed`)
+    await ctx.answerCbQuery();
+    await ctx.editMessageText(educationShcools.artfree, {
+        parse_mode: "HTML", 
+        disable_web_page_preview: true,
+        ...Markup.inlineKeyboard([
+            [Markup.button.callback(constans.RETURN_BACK_TO_GROUPLESSONS_EDUCATION, 'return_back_In_GroupMenu_EDUCATION_btn')]
+        ])
+    })
+}
+
+async function showSportLessonsEDUCATION(ctx) {
+    console.log(`${ctx.from.username} sportLessons_btn choosed`)
+    await ctx.answerCbQuery();
+    await ctx.editMessageText(educationShcools.sportfree, {
+        parse_mode: "HTML", 
+        disable_web_page_preview: true,
+        ...Markup.inlineKeyboard([
+            [Markup.button.callback(constans.RETURN_BACK_TO_GROUPLESSONS_EDUCATION, 'return_back_In_GroupMenu_EDUCATION_btn')]
+        ])
+    })
+}
+
+async function showLectionsEDUCATION(ctx) {
+    console.log(`${ctx.from.username} lections_btn choosed`)
+    await ctx.answerCbQuery();
+    await ctx.editMessageText(educationShcools.groupsLections, {
+        parse_mode: "HTML", 
+        disable_web_page_preview: true,
+        ...Markup.inlineKeyboard([
+            [Markup.button.callback(constans.RETURN_BACK_TO_GROUPLESSONS_EDUCATION, 'return_back_In_GroupMenu_EDUCATION_btn')]
+        ])
+    })
+}
+
+
+
 async function showHelpFromEd(ctx) {
     console.log(`${ctx.from.username} helpFromEduc_btn choosed`)
     await ctx.answerCbQuery();
@@ -111,6 +145,16 @@ async function showMenuGroupChildren(ctx) {
     }); 
 }
 
+async function showMenuGroupChildren_in_EDUCATION_MENU(ctx) {
+    console.log(`${ctx.from.username} ${ctx.from.first_name} showMenuGroupChildren_in_EDUCATION_MENU choosed`)
+    await ctx.answerCbQuery();
+    await ctx.editMessageText('ГУРТКИ, ЛЕКЦІЇ, УРОКИ', {
+        parse_mode: "HTML",
+        disable_web_page_preview: true,
+        ...Markup.inlineKeyboard(constans.MENU_ABOUT_EXTRACURRICULARSFOR_EDUCATIONMENU)
+    }); 
+}
+
 async function returnBackFromGroupChildren(ctx) {
     console.log(`${ctx.from.username} return_back_In_GroupMenu_btn`)
     await ctx.answerCbQuery();
@@ -118,6 +162,26 @@ async function returnBackFromGroupChildren(ctx) {
         parse_mode: "HTML", 
         disable_web_page_preview: true,
         ...Markup.inlineKeyboard(constans.MENU_ABOUT_EXTRACURRICULARS)
+    });
+}
+
+async function returnBackFromGroupChildrenTOEDUCATION(ctx) {
+    console.log(`${ctx.from.username} return_back_In_GroupMenu_btn`)
+    await ctx.answerCbQuery();
+    await ctx.editMessageText('ГУРТКИ, ЛЕКЦІЇ, УРОКИ', {
+        parse_mode: "HTML", 
+        disable_web_page_preview: true,
+        ...Markup.inlineKeyboard(constans.MENU_ABOUT_EXTRACURRICULARSFOR_EDUCATIONMENU)
+    });
+}
+
+async function showOnlineEducation(ctx) {
+    console.log(`${ctx.from.username} showOnlineEducation_btn`)
+    await ctx.answerCbQuery();
+    await ctx.editMessageText(educationShcools.freeEducationOnlinePlatforms, {
+        parse_mode: "HTML", 
+        disable_web_page_preview: true,
+        ...Markup.inlineKeyboard([constans.RETURN_BACK_TO_EDUCATION])
     });
 }
 
@@ -141,4 +205,10 @@ module.exports.showLections = showLections;
 module.exports.showHelpFromEd = showHelpFromEd;
 module.exports.returnBack = returnBack;
 module.exports.showMenuGroupChildren = showMenuGroupChildren;
+module.exports.showOnlineEducation = showOnlineEducation;
 module.exports.returnBackFromGroupChildren = returnBackFromGroupChildren;
+module.exports.showMenuGroupChildren_in_EDUCATION_MENU = showMenuGroupChildren_in_EDUCATION_MENU;
+module.exports.returnBackFromGroupChildrenTOEDUCATION = returnBackFromGroupChildrenTOEDUCATION;
+module.exports.showArtAndTeatrEDUCATION = showArtAndTeatrEDUCATION;
+module.exports.showSportLessonsEDUCATION = showSportLessonsEDUCATION;
+module.exports.showLectionsEDUCATION = showLectionsEDUCATION;

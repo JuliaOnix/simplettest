@@ -2,7 +2,7 @@ const { Telegraf, Markup } = require("telegraf");
 const financeText = require('../text/allowanceFinanceFile')
 
 const GREETING = 'Вітаю у довіднику! Оберіть тему, яка вас цікавить';
-const RETURN_BACK_TO_EDUCATION = '🔙 Повернутися до «Навчання»';
+const RETURN_BACK_TO_EDUCATION = Markup.button.callback('🔙 Повернутися до «Навчання»', 'returnBackEducation_btn');
 const FORWARD_BTN = `Наступна сторінка ➡️`;
 const BACKWARD_BTN = `⬅️ Попередня сторінка`;
 const RETURN_BACK_TO_MENU = "🔙 Повернутися до «Здоров'я»";
@@ -50,6 +50,12 @@ const MENU_ABOUT_EXTRACURRICULARS = [
     [Markup.button.callback("🔙 Повернутися до «Безкоштовні Послуги»", 'return_to_free_stuff_btn')],
 ]
 
+const MENU_ABOUT_EXTRACURRICULARSFOR_EDUCATIONMENU = [
+    [Markup.button.callback('Мистецтво, театр', 'artANDTeatr_EDUCATION_btn'), Markup.button.callback('Спорт', 'sportLessons_EDUCATION_btn')],
+    [Markup.button.callback('Уроки', 'lections_EDUCATION_btn')],
+    [RETURN_BACK_TO_EDUCATION],
+]
+
 const MENU_ABOUT_APARTMENTS = [
     [Markup.button.callback("Адреси реєстраційних центрів", 'adresses_in_apartment')],
     [Markup.button.callback("Самостійний пошук житла", 'lookforapartmants_BTN')]
@@ -63,8 +69,9 @@ const MENU_ABOUT_WORK = [
 
 //menu for education block
 const MENU_EDUCATION = [
-    [Markup.button.callback('Професійне навчання', 'profEduc_btn'),  Markup.button.callback("Вища освіта (університети)", "univer_btn")],
-    [Markup.button.callback('Для спортсменів', 'sportEduc_btn')]
+    [Markup.button.callback('Онлайн навчання', 'showOnlineEducation_btn'), Markup.button.callback('Професійне навчання', 'profEduc_btn')],
+    [Markup.button.callback('Для спортсменів', 'sportEduc_btn'),  Markup.button.callback("Вища освіта (університети)", "univer_btn")],
+    [Markup.button.callback('Гуртки для дітей', 'lessonsforChildren_IN_EDUCATION_btn')]
 ];
 
 const MENU_FREE_STUFF = [
@@ -124,5 +131,6 @@ module.exports.RETURN_BACK_LOOK_FOR_APART = RETURN_BACK_LOOK_FOR_APART;
 module.exports.MENU_ABOUT_EXTRACURRICULARS = MENU_ABOUT_EXTRACURRICULARS;
 module.exports.RETURN_BACK_TO_FIRST = RETURN_BACK_TO_FIRST;
 module.exports.GREETING = GREETING;
+module.exports.MENU_ABOUT_EXTRACURRICULARSFOR_EDUCATIONMENU = MENU_ABOUT_EXTRACURRICULARSFOR_EDUCATIONMENU;
 module.exports.RETURN_BACK_TO_HUMANAID_MENU = RETURN_BACK_TO_HUMANAID_MENU;
 module.exports.RETURN_BACK_TO_GROUPLESSONS_EDUCATION = RETURN_BACK_TO_GROUPLESSONS_EDUCATION;

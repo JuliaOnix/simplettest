@@ -74,10 +74,17 @@ bot.action('univer_btn', (ctx) => ACTIONS_EDUCATION.univer(ctx));
 bot.action('sportEduc_btn', (ctx) => ACTIONS_EDUCATION.sportEducation(ctx));
 bot.action('profEduc_btn', (ctx) => ACTIONS_EDUCATION.profEducation(ctx));
 bot.action('show_more_art_btn', (ctx) => ACTIONS_EDUCATION.showMoreArtEvents(ctx));
+
 bot.action('artANDTeatr_btn', (ctx) => ACTIONS_EDUCATION.showArtAndTeatr(ctx));
 bot.action('sportLessons_btn', (ctx) => ACTIONS_EDUCATION.showSportLessons(ctx));
 bot.action('lections_btn', (ctx) => ACTIONS_EDUCATION.showLections(ctx));
+
+bot.action('artANDTeatr_EDUCATION_btn', (ctx) => ACTIONS_EDUCATION.showArtAndTeatrEDUCATION(ctx));
+bot.action('sportLessons_EDUCATION_btn', (ctx) => ACTIONS_EDUCATION.showSportLessonsEDUCATION(ctx));
+bot.action('lections_EDUCATION_btn', (ctx) => ACTIONS_EDUCATION.showLectionsEDUCATION(ctx));
+
 bot.action('helpFromEduc_btn', (ctx) => ACTIONS_EDUCATION.showHelpFromEd(ctx));
+bot.action('showOnlineEducation_btn', (ctx) => ACTIONS_EDUCATION.showOnlineEducation(ctx));
 bot.action('returnBackEducation_btn', (ctx) => ACTIONS_EDUCATION.returnBack(ctx));
 
 //ANCHOR REFUGEE BLOCK
@@ -96,7 +103,10 @@ bot.action('backToTheWorkMenu_btn', (ctx) => ACTIONS_WORK.returnBack(ctx));
 
 //ANCHOR Menu with groups lessons
 bot.action('lessonsforChildren_btn', (ctx) => ACTIONS_EDUCATION.showMenuGroupChildren(ctx));
+//NOTE HERE
+bot.action('lessonsforChildren_IN_EDUCATION_btn', (ctx) => ACTIONS_EDUCATION.showMenuGroupChildren_in_EDUCATION_MENU(ctx));
 bot.action('return_back_In_GroupMenu_btn', (ctx) => ACTIONS_EDUCATION.returnBackFromGroupChildren(ctx));
+bot.action('return_back_In_GroupMenu_EDUCATION_btn', (ctx) => ACTIONS_EDUCATION.returnBackFromGroupChildrenTOEDUCATION(ctx));
 
 //ANCHOR Apartments Block
 bot.action('lookforapartmants_BTN', (ctx) => ACTIONS_APARTMENTS.showLookFor(ctx));

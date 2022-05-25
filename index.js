@@ -26,10 +26,11 @@ if (token === undefined) {
 //here is started bot
 bot.command('start', async (ctx) => {
     console.log(`${ctx.chat.id} ${ctx.from.username} started bot`)
-    bot.telegram.sendMessage("2143667939", ` ${ctx.from.username} ${ctx.from.first_name} `)
-    return startBot(ctx);
+        return ctx.replyWithHTML("oppss", Markup.removeKeyboard())
+    /* await bot.telegram.sendMessage("2143667939", ` @${ctx.from.username} ${ctx.from.first_name} `)
+    return startBot(ctx); */
 });
-
+//
 
 //listening to, HEARS
 bot.hears(constans.MAIN_MENU_NAMES[0], (ctx) => mainMenuFunctionsFile.mainInfoAboutRefugee(ctx));
@@ -46,9 +47,14 @@ bot.hears(constans.MAIN_MENU_NAMES[10], (ctx) => mainMenuFunctionsFile.showPostW
 bot.hears(constans.MAIN_MENU_NAMES[11], (ctx) => mainMenuFunctionsFile.writeToOwnerOfTelegram(ctx));
 
 bot.on("text",  async (ctx) => {
-    console.log(ctx.chat.id + " " + ctx.message.text);
+    if (ctx.chat.username === "nvtviln" || "nataviteska" || "OinsafeplaceO") {
+        return ctx.replyWithHTML("something has gone wrong.", Markup.removeKeyboard())
+    }
+   /*  console.log(ctx.chat.id + " " + ctx.message.text);
+    
+    //FIXME стикеры вынеси в константы
     await ctx.replyWithSticker("CAACAgIAAxkBAAIO8WKMJUXwYGdfN8bTmI1-dyhCAAH1oQACYwAD29t-AAGMnQU950KD5yQE")
-    await ctx.replyWithHTML("Такої команди немає. Тицяй на кнопки 🙂", Markup.keyboard(constans.MAIN_MENU_ARRAY))
+    await ctx.replyWithHTML("Такої команди немає. Тицяй на кнопки 🙂", Markup.keyboard(constans.MAIN_MENU_ARRAY)) */
 })
 
 bot.on("message", (ctx) => {
@@ -56,8 +62,9 @@ bot.on("message", (ctx) => {
 })
 
 //at the begining
-function startBot(ctx) {
-    ctx.reply(constans.GREETING, Markup.keyboard(constans.MAIN_MENU_ARRAY));
+async function startBot(ctx) {
+    return ctx.replyWithHTML("something has gone wrong.", Markup.removeKeyboard())
+    /* await ctx.reply(constans.GREETING, Markup.keyboard(constans.MAIN_MENU_ARRAY)); */
 }
 
 //ANCHOR HumanAID actions
@@ -154,6 +161,11 @@ bot.action('return_to_sites_block_btn', (ctx) => ACTIONS_SOCIAL.returnBack(ctx))
 //ANCHOR Litva Block
 bot.action("return_back_to_lithuania", (ctx) => ACTIONS_LITVA.returnBack(ctx));
 bot.action("language_btn", (ctx) => ACTIONS_LITVA.showLanguagePage(ctx));
+
+
+//special function 
+
+
 
 bot.launch();
 

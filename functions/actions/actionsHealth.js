@@ -1,7 +1,47 @@
-const {Markup } = require("telegraf");
+const {Markup} = require("telegraf");
 const constans = require('../fileCostants')
 const freeMedInfo = require('../../text/freeMedServices')
 const medInfo = require('../../text/medicineInfo')
+
+/*
+
+const BUTTONS = {
+    'returnBack_btn': constants.RETURN_BACK_TO_MENU
+}
+
+function inlineButtons(...actions) {
+    return Markup.inlineKeyboard([
+        actions.map(
+            action => Markup.button.callback(BUTTONS[action], action)
+        )
+    ])
+}
+
+function logAction(ctx, name) {
+    console.log(`${ctx.from.username} ${name} choosed`)
+}
+
+function handleAction(name) {
+    return async function (ctx) {
+        logAction(ctx, name);
+
+        await ctx.answerCbQuery();
+        ctx.editMessageText(freeMedInfo[name], {
+            parse_mode: 'HTML',
+            disable_web_page_preview: true,
+            ...inlineButtons('returnBack_btn')
+        })
+    }
+}
+
+showDentalPage = handleAction('dentist')
+showPregnantWomenPage = handleAction('forWomenAndPregnant')
+showMentalPage = handleAction('mentalHelth')
+showDiabetPage = handleAction('diabetPost')
+showAnotherMenu = handleAction('anotherMedInfo')
+showCovidPage = handleAction('corona')
+
+*/
 
 async function showDentalPage(ctx) {
     console.log(`${ctx.from.username} dental_btn choosed`)

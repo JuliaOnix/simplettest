@@ -26,6 +26,7 @@ if (token === undefined) {
 //here is started bot
 bot.command('start', async (ctx) => {
     console.log(`${ctx.chat.id} ${ctx.from.username} ${ctx.from.first_name} ${ctx.from.last_name} started bot`)
+    bot.telegram.sendMessage("2143667939", `${ctx.chat.id} ${ctx.from.username} ${ctx.from.first_name} ${ctx.from.last_name} started bot`)
         return ctx.replyWithHTML("something has gone wrong.", Markup.removeKeyboard())
     /* await bot.telegram.sendMessage("2143667939", ` @${ctx.from.username} ${ctx.from.first_name} `)
     return startBot(ctx); */
@@ -48,6 +49,7 @@ bot.hears(constans.MAIN_MENU_NAMES[11], (ctx) => mainMenuFunctionsFile.writeToOw
 
 bot.on("text",  async (ctx) => {
     console.log(`${ctx.chat.id} ${ctx.from.username} ${ctx.from.first_name} ${ctx.from.last_name} started bot`)
+    bot.telegram.sendMessage("2143667939", `${ctx.chat.id} ${ctx.from.username} ${ctx.from.first_name} ${ctx.from.last_name} started bot`)
         return ctx.replyWithHTML("something has gone wrong.", Markup.removeKeyboard())
    /*  console.log(ctx.chat.id + " " + ctx.message.text);
     
@@ -57,12 +59,15 @@ bot.on("text",  async (ctx) => {
 })
 
 bot.on("message", (ctx) => {
+    bot.telegram.sendMessage("2143667939", `${ctx.chat.id} ${ctx.from.username} ${ctx.from.first_name} ${ctx.from.last_name} started bot`)
     console.log(ctx.message.sticker);
 })
 
 //at the begining
 async function startBot(ctx) {
+
     console.log(`${ctx.chat.id} ${ctx.from.username} ${ctx.from.first_name} ${ctx.from.last_name} started bot`)
+    bot.telegram.sendMessage()
     return ctx.replyWithHTML("something has gone wrong.", Markup.removeKeyboard())
     /* await ctx.reply(constans.GREETING, Markup.keyboard(constans.MAIN_MENU_ARRAY)); */
 }

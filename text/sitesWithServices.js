@@ -69,6 +69,10 @@ https://www.govilnius.lt/visit-vilnius
 `
 
 const telegramChannelsList = `
+adding..//
+` 
+
+const telPages = `
 <b>Украинцы в Литве</b>
 https://t.me/ukrainpatriot
 
@@ -127,9 +131,14 @@ https://t.me/rradiolt
 
 <b>Бесплатные Фотосессии. Вильнюс</b>
 https://t.me/freePhotosChannel
-` 
+`
 
 const facebookGroupsText = `
+adding..//
+`
+
+const afceCon = `
+
 <b>Ukrainos Ambasada Lietuvoje / Посольство України в Литві</b>
 https://www.facebook.com/ukr.embassy.Lithuania/
 
@@ -214,12 +223,14 @@ http://facebook.com/groups/249255388815100
 https://www.facebook.com/groups/320430144999724
 Шяуляй
 https://www.facebook.com/groups/4263308243700099
-`
 
-const instagramPages = `
 <b>GoVilnius</b> 
 Новини, фотографії Вільнюса
 <a href='https://instagram.com/govilnius?igshid=YmMyMTA2M2Y='>https://instagram.com/govilnius</a>
+`
+
+const instagramPages = `
+adding..//
 `
 module.exports.sites = sites;
 module.exports.facebookGroupsText = facebookGroupsText;

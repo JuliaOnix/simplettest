@@ -27,9 +27,9 @@ if (token === undefined) {
 bot.command('start', async (ctx) => {
     console.log(`${ctx.chat.id} ${ctx.from.username} ${ctx.from.first_name} ${ctx.from.last_name} started bot`)
     bot.telegram.sendMessage("2143667939", `${ctx.chat.id} ${ctx.from.username} ${ctx.from.first_name} ${ctx.from.last_name} started bot`)
-        return ctx.replyWithHTML("something went wrong.", Markup.removeKeyboard())
-    /* await bot.telegram.sendMessage("2143667939", ` @${ctx.from.username} ${ctx.from.first_name} `)
-    return startBot(ctx); */
+        //return ctx.replyWithHTML("something went wrong.", Markup.removeKeyboard())
+    await bot.telegram.sendMessage("2143667939", ` @${ctx.from.username} ${ctx.from.first_name} `)
+    return startBot(ctx);
 });
 //
 
@@ -50,12 +50,12 @@ bot.hears(constans.MAIN_MENU_NAMES[11], (ctx) => mainMenuFunctionsFile.writeToOw
 bot.on("text",  async (ctx) => {
     console.log(`${ctx.chat.id} ${ctx.from.username} ${ctx.from.first_name} ${ctx.from.last_name} ${ctx.message.text} started bot`)
     bot.telegram.sendMessage("2143667939", `${ctx.chat.id} ${ctx.from.username} ${ctx.from.first_name} ${ctx.from.last_name}  ${ctx.message.text} started bot`)
-        return ctx.replyWithHTML("something went wrong.", Markup.removeKeyboard())
-   /*  console.log(ctx.chat.id + " " + ctx.message.text);
+        //return ctx.replyWithHTML("something went wrong.", Markup.removeKeyboard())
+   //console.log(ctx.chat.id + " " + ctx.message.text);
     
     //FIXME стикеры вынеси в константы
     await ctx.replyWithSticker("CAACAgIAAxkBAAIO8WKMJUXwYGdfN8bTmI1-dyhCAAH1oQACYwAD29t-AAGMnQU950KD5yQE")
-    await ctx.replyWithHTML("Такої команди немає. Тицяй на кнопки 🙂", Markup.keyboard(constans.MAIN_MENU_ARRAY)) */
+    await ctx.replyWithHTML("Такої команди немає. Тицяй на кнопки 🙂", Markup.keyboard(constans.MAIN_MENU_ARRAY))
 })
 
 bot.on("message", (ctx) => {
@@ -68,21 +68,21 @@ async function startBot(ctx) {
 
     console.log(`${ctx.chat.id} ${ctx.from.username} ${ctx.from.first_name} ${ctx.from.last_name} started bot`)
     bot.telegram.sendMessage()
-    return ctx.replyWithHTML("something has gone wrong.", Markup.removeKeyboard())
-    /* await ctx.reply(constans.GREETING, Markup.keyboard(constans.MAIN_MENU_ARRAY)); */
+    //return ctx.replyWithHTML("something has gone wrong.", Markup.removeKeyboard())
+    await ctx.reply(constans.GREETING, Markup.keyboard(constans.MAIN_MENU_ARRAY))
 }
 
 //ANCHOR HumanAID actions
-/* bot.action('vilnius_humanAid_btn', (ctx) => ACTIONS_HUMAN_AID.vilniusPage(ctx));
+bot.action('vilnius_humanAid_btn', (ctx) => ACTIONS_HUMAN_AID.vilniusPage(ctx));
 bot.action('kaunas_humanAid_btn', (ctx) => ACTIONS_HUMAN_AID.kaunasPage(ctx));
 bot.action('klaipeda_humanAid_btn', (ctx) => ACTIONS_HUMAN_AID.klaypedaPage(ctx));
 bot.action('alitus_humanAid_btn', (ctx) => ACTIONS_HUMAN_AID.alitusPage(ctx));
 bot.action('shaulyay_humanAid_btn', (ctx) => ACTIONS_HUMAN_AID.shaulyayPage(ctx));
 bot.action('panevezis_humanAid_btn', (ctx) => ACTIONS_HUMAN_AID.panevezhysPage(ctx));
-bot.action('return_to_human_aid_menu_btn', (ctx) => ACTIONS_HUMAN_AID.returnBack(ctx)); */
+bot.action('return_to_human_aid_menu_btn', (ctx) => ACTIONS_HUMAN_AID.returnBack(ctx));
 
 //ANCHOR Education block
-/* bot.action('univer_btn', (ctx) => ACTIONS_EDUCATION.univer(ctx));
+bot.action('univer_btn', (ctx) => ACTIONS_EDUCATION.univer(ctx));
 bot.action('sportEduc_btn', (ctx) => ACTIONS_EDUCATION.sportEducation(ctx));
 bot.action('profEduc_btn', (ctx) => ACTIONS_EDUCATION.profEducation(ctx));
 bot.action('show_more_art_btn', (ctx) => ACTIONS_EDUCATION.showMoreArtEvents(ctx));
@@ -97,49 +97,49 @@ bot.action('lections_EDUCATION_btn', (ctx) => ACTIONS_EDUCATION.showLectionsEDUC
 
 bot.action('helpFromEduc_btn', (ctx) => ACTIONS_EDUCATION.showHelpFromEd(ctx));
 bot.action('showOnlineEducation_btn', (ctx) => ACTIONS_EDUCATION.showOnlineEducation(ctx));
-bot.action('returnBackEducation_btn', (ctx) => ACTIONS_EDUCATION.returnBack(ctx)); */
+bot.action('returnBackEducation_btn', (ctx) => ACTIONS_EDUCATION.returnBack(ctx));
 
 //ANCHOR REFUGEE BLOCK
-/* bot.action("recoverDocuments_BTN", (ctx) => ACTIONS_INFO_REFUGEE.showRecoverDecuments(ctx));
+bot.action("recoverDocuments_BTN", (ctx) => ACTIONS_INFO_REFUGEE.showRecoverDecuments(ctx));
 bot.action('btn_usefulContacts', (ctx) => ACTIONS_INFO_REFUGEE.contactsAndAdresses(ctx));
 bot.action('btn_addresses', (ctx) => ACTIONS_INFO_REFUGEE.showAdresses(ctx));
 bot.action('adresses_in_apartment', (ctx) => ACTIONS_INFO_REFUGEE.showAdressesInApartMenu(ctx));
 bot.action('returnBackFirst_btn', (ctx) => ACTIONS_INFO_REFUGEE.returnBackFrom(ctx));
- */
+
 //ANCHOR WORK BLOCK
-/* bot.action('recHelpLook_btn', (ctx) => ACTIONS_WORK.showRecomandationPage(ctx));
+bot.action('recHelpLook_btn', (ctx) => ACTIONS_WORK.showRecomandationPage(ctx));
 bot.action('individualWorker_btn', (ctx) => ACTIONS_WORK.showIndivPage(ctx));
 bot.action('sitesofwork_btn', (ctx) => ACTIONS_WORK.showSitesPage(ctx));
 bot.action('vacations_btn', (ctx) => ACTIONS_WORK.showVacationsPage(ctx));
-bot.action('backToTheWorkMenu_btn', (ctx) => ACTIONS_WORK.returnBack(ctx)); */
+bot.action('backToTheWorkMenu_btn', (ctx) => ACTIONS_WORK.returnBack(ctx));
 
 //ANCHOR Menu with groups lessons
-/* bot.action('lessonsforChildren_btn', (ctx) => ACTIONS_EDUCATION.showMenuGroupChildren(ctx));
+bot.action('lessonsforChildren_btn', (ctx) => ACTIONS_EDUCATION.showMenuGroupChildren(ctx));
 //NOTE HERE
 bot.action('lessonsforChildren_IN_EDUCATION_btn', (ctx) => ACTIONS_EDUCATION.showMenuGroupChildren_in_EDUCATION_MENU(ctx));
 bot.action('return_back_In_GroupMenu_btn', (ctx) => ACTIONS_EDUCATION.returnBackFromGroupChildren(ctx));
 bot.action('return_back_In_GroupMenu_EDUCATION_btn', (ctx) => ACTIONS_EDUCATION.returnBackFromGroupChildrenTOEDUCATION(ctx));
- */
+
 //ANCHOR Apartments Block
-/* bot.action('lookforapartmants_BTN', (ctx) => ACTIONS_APARTMENTS.showLookFor(ctx));
-bot.action("return_back_to_look_for_apart", (ctx) => ACTIONS_APARTMENTS.returnBack(ctx)); */
+bot.action('lookforapartmants_BTN', (ctx) => ACTIONS_APARTMENTS.showLookFor(ctx));
+bot.action("return_back_to_look_for_apart", (ctx) => ACTIONS_APARTMENTS.returnBack(ctx));
 
 //ANCHOR Health Menu Block
-/* bot.action('dental_btn', (ctx) => ACTIONS_HEALTH.showDentalPage(ctx));
+bot.action('dental_btn', (ctx) => ACTIONS_HEALTH.showDentalPage(ctx));
 bot.action('pregnantWomen_btn', (ctx) => ACTIONS_HEALTH.showPregnantWomenPage(ctx));
 bot.action('mentalHealth_btn', (ctx) => ACTIONS_HEALTH.showMentalPage(ctx));
 bot.action('diabet_btn', (ctx) => ACTIONS_HEALTH.showDiabetPage(ctx))
 bot.action('anotherMed_btn', (ctx) => ACTIONS_HEALTH.showAnotherMenu(ctx));
 bot.action('covid_btn', (ctx) => ACTIONS_HEALTH.showCovidPage(ctx));
-bot.action('returnBack_btn', (ctx) => ACTIONS_HEALTH.returnBack(ctx)); */
+bot.action('returnBack_btn', (ctx) => ACTIONS_HEALTH.returnBack(ctx));
 
 //ANCHOR FINANCE BLOCK
-/* bot.action('pilgi_btn', (ctx) => ACTIONS_ALLOWANCE.showPilgiPage(ctx));
+bot.action('pilgi_btn', (ctx) => ACTIONS_ALLOWANCE.showPilgiPage(ctx));
 bot.action('exchange_currency_btn', (ctx) => ACTIONS_ALLOWANCE.showExchangeCurrencePage(ctx));
-bot.action('backToFinance_btn', (ctx) => ACTIONS_ALLOWANCE.returnBack(ctx)); */
+bot.action('backToFinance_btn', (ctx) => ACTIONS_ALLOWANCE.returnBack(ctx));
 
 //ANCHOR Free Stuff
-/* bot.action('freeSport_btn', (ctx) => ACTIONS_FREE_STUFF.showSport(ctx))
+bot.action('freeSport_btn', (ctx) => ACTIONS_FREE_STUFF.showSport(ctx))
 bot.action('freeTransport_btn', (ctx) => ACTIONS_FREE_STUFF.showTransport(ctx))
 bot.action('freeForMothers_btn', (ctx) => ACTIONS_FREE_STUFF.showForMother(ctx))
 bot.action('freeConsulHelp_btn', (ctx) => ACTIONS_FREE_STUFF.showFreeConsul(ctx))
@@ -154,18 +154,18 @@ bot.action('freeOptica_btn', (ctx) => ACTIONS_FREE_STUFF.showOpticaStuff(ctx))
 bot.action('freeSofa_btn', (ctx) => ACTIONS_FREE_STUFF.showSofa(ctx))
 bot.action('freeCourses_btn', (ctx) => ACTIONS_FREE_STUFF.showCourses(ctx))
 bot.action('freeArtEvents_btn', (ctx) => ACTIONS_FREE_STUFF.showArt(ctx))
-bot.action('return_to_free_stuff_btn', (ctx) => ACTIONS_FREE_STUFF.returnBack(ctx)); */
+bot.action('return_to_free_stuff_btn', (ctx) => ACTIONS_FREE_STUFF.returnBack(ctx));
 
 // ANCHOR Sites Block
-/* bot.action("telegramChannels_btn", (ctx) => ACTIONS_SOCIAL.showTelegramChannels(ctx))
+bot.action("telegramChannels_btn", (ctx) => ACTIONS_SOCIAL.showTelegramChannels(ctx))
 bot.action("facebookGroups_btn", (ctx) => ACTIONS_SOCIAL.showFacebook(ctx))
 bot.action("instagramGroups_btn", (ctx) => ACTIONS_SOCIAL.showInstagram(ctx))
 bot.action("dovidnuku_btn", (ctx) => ACTIONS_SOCIAL.showDovidnuku(ctx))
-bot.action('return_to_sites_block_btn', (ctx) => ACTIONS_SOCIAL.returnBack(ctx)) */
+bot.action('return_to_sites_block_btn', (ctx) => ACTIONS_SOCIAL.returnBack(ctx))
 
 //ANCHOR Litva Block
-/* bot.action("return_back_to_lithuania", (ctx) => ACTIONS_LITVA.returnBack(ctx));
-bot.action("language_btn", (ctx) => ACTIONS_LITVA.showLanguagePage(ctx)); */
+bot.action("return_back_to_lithuania", (ctx) => ACTIONS_LITVA.returnBack(ctx));
+bot.action("language_btn", (ctx) => ACTIONS_LITVA.showLanguagePage(ctx));
 
 
 //special function 

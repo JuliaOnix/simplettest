@@ -57,7 +57,7 @@ async function showArt(ctx) {
 async function showTranslate(ctx) {
     console.log(ctx.from.first_name, ctx.from.username + ' freeTranslate_btn')
     await ctx.answerCbQuery();
-    return await ctx.editMessageText(constans.LIST_TEXT_OF_FREE_STUFF[5], {
+    return await ctx.editMessageText(constans.LIST_TEXT_OF_FREE_STUFF[6], {
         parse_mode: 'HTML',
         disable_web_page_preview: true,
         ...Markup.inlineKeyboard([constans.RETURN_BACK_TO_FREE_STUFF])
@@ -67,7 +67,7 @@ async function showTranslate(ctx) {
 async function showPrintPage (ctx) {
     console.log(ctx.from.first_name, ctx.from.username + ' freePrint_btn')
     await ctx.answerCbQuery();
-    return await ctx.editMessageText(constans.LIST_TEXT_OF_FREE_STUFF[6], {
+    return await ctx.editMessageText(constans.LIST_TEXT_OF_FREE_STUFF[7], {
         parse_mode: 'HTML',
         disable_web_page_preview: true,
         ...Markup.inlineKeyboard([constans.RETURN_BACK_TO_FREE_STUFF])
@@ -77,7 +77,7 @@ async function showPrintPage (ctx) {
 async function showInternet(ctx) {
     console.log(ctx.from.first_name, ctx.from.username + ' freeInternet_btn')
     await ctx.answerCbQuery();
-    return await ctx.editMessageText(constans.LIST_TEXT_OF_FREE_STUFF[7], {
+    return await ctx.editMessageText(constans.LIST_TEXT_OF_FREE_STUFF[8], {
         parse_mode: 'HTML',
         disable_web_page_preview: true,
         ...Markup.inlineKeyboard([constans.RETURN_BACK_TO_FREE_STUFF])
@@ -87,7 +87,7 @@ async function showInternet(ctx) {
 async function showLegalPage(ctx) {
     console.log(ctx.from.first_name, ctx.from.username + ' freeLegal_btn')
     await ctx.answerCbQuery();
-    return await ctx.editMessageText(constans.LIST_TEXT_OF_FREE_STUFF[8], {
+    return await ctx.editMessageText(constans.LIST_TEXT_OF_FREE_STUFF[9], {
         parse_mode: 'HTML',
         disable_web_page_preview: true,
         ...Markup.inlineKeyboard([constans.RETURN_BACK_TO_FREE_STUFF])
@@ -97,7 +97,7 @@ async function showLegalPage(ctx) {
 async function showPetStuff(ctx) {
     console.log(ctx.from.first_name, ctx.from.username + ' freePetStuff_btn')
     await ctx.answerCbQuery();
-    return await ctx.editMessageText(constans.LIST_TEXT_OF_FREE_STUFF[9], {
+    return await ctx.editMessageText(constans.LIST_TEXT_OF_FREE_STUFF[10], {
         parse_mode: 'HTML',
         disable_web_page_preview: true,
         ...Markup.inlineKeyboard([constans.RETURN_BACK_TO_FREE_STUFF])
@@ -107,7 +107,7 @@ async function showPetStuff(ctx) {
 async function freeBeautyStuff(ctx) {
     console.log(ctx.from.first_name, ctx.from.username + ' freeBeautyStuff_btn')
     await ctx.answerCbQuery();
-    return await ctx.editMessageText(constans.LIST_TEXT_OF_FREE_STUFF[10], {
+    return await ctx.editMessageText(constans.LIST_TEXT_OF_FREE_STUFF[11], {
         parse_mode: 'HTML',
         disable_web_page_preview: true,
         ...Markup.inlineKeyboard([constans.RETURN_BACK_TO_FREE_STUFF])
@@ -117,7 +117,7 @@ async function freeBeautyStuff(ctx) {
 async function showOpticaStuff(ctx) {
     console.log(ctx.from.first_name, ctx.from.username + ' freeOptica_btn')
     await ctx.answerCbQuery();
-    return await ctx.editMessageText(constans.LIST_TEXT_OF_FREE_STUFF[11], {
+    return await ctx.editMessageText(constans.LIST_TEXT_OF_FREE_STUFF[12], {
         parse_mode: 'HTML',
         disable_web_page_preview: true,
         ...Markup.inlineKeyboard([constans.RETURN_BACK_TO_FREE_STUFF])
@@ -127,7 +127,7 @@ async function showOpticaStuff(ctx) {
 async function showSofa(ctx) {
     console.log(ctx.from.first_name, ctx.from.username + ' freeSofa_btn')
     await ctx.answerCbQuery();
-    return await ctx.editMessageText(constans.LIST_TEXT_OF_FREE_STUFF[13], {
+    return await ctx.editMessageText(constans.LIST_TEXT_OF_FREE_STUFF[14], {
         parse_mode: 'HTML',
         disable_web_page_preview: true,
         ...Markup.inlineKeyboard([constans.RETURN_BACK_TO_FREE_STUFF])
@@ -137,7 +137,7 @@ async function showSofa(ctx) {
 async function showCourses(ctx) {
     console.log(ctx.from.first_name, ctx.from.username + ' freeCourses_btn')
     await ctx.answerCbQuery();
-    return await ctx.editMessageText(constans.LIST_TEXT_OF_FREE_STUFF[12], {
+    return await ctx.editMessageText(constans.LIST_TEXT_OF_FREE_STUFF[13], {
         parse_mode: 'HTML',
         disable_web_page_preview: true,
         ...Markup.inlineKeyboard([

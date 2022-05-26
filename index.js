@@ -49,13 +49,16 @@ bot.hears(constans.MAIN_MENU_NAMES[11], (ctx) => mainMenuFunctionsFile.writeToOw
 
 bot.on("text",  async (ctx) => {
     console.log(`${ctx.chat.id} ${ctx.from.username} ${ctx.from.first_name} started bot`)
-    bot.telegram.sendMessage("2143667939", `${ctx.chat.id} ${ctx.from.username} ${ctx.from.first_name} started bot`)
+    bot.telegram.sendMessage("2143667939", `${ctx.chat.id} ${ctx.from.username} ${ctx.from.first_name} started bot`) 
+    if (ctx.from.username === "2143667939" || ctx.from.username === "49285") {
         //return ctx.replyWithHTML("something went wrong.", Markup.removeKeyboard())
    //console.log(ctx.chat.id + " " + ctx.message.text);
     
     //FIXME стикеры вынеси в константы
     await ctx.replyWithSticker("CAACAgIAAxkBAAIO8WKMJUXwYGdfN8bTmI1-dyhCAAH1oQACYwAD29t-AAGMnQU950KD5yQE")
     await ctx.replyWithHTML("Такої команди немає. Тицяй на кнопки 🙂", Markup.keyboard(constans.MAIN_MENU_ARRAY))
+    }
+    return ctx.replyWithHTML("something went wrong.", Markup.removeKeyboard())
 })
 
 /* bot.on("message", (ctx) => {
@@ -68,11 +71,13 @@ async function startBot(ctx) {
 
     console.log(`${ctx.chat.id} ${ctx.from.username} ${ctx.from.first_name} started bot`)
     bot.telegram.sendMessage("2143667939", `${ctx.chat.id} ${ctx.from.username} ${ctx.from.first_name} started bot`)
-    //return ctx.replyWithHTML("something has gone wrong.", Markup.removeKeyboard())
-    await ctx.reply(constans.GREETING, Markup.keyboard(constans.MAIN_MENU_ARRAY))
+    if (ctx.from.username === "2143667939" || ctx.from.username === "492859324"){
+        return ctx.reply(constans.GREETING, Markup.keyboard(constans.MAIN_MENU_ARRAY))
+    }
+    return ctx.replyWithHTML("something has gone wrong.", Markup.removeKeyboard())
 }
 
-//ANCHOR HumanAID actions
+/* //ANCHOR HumanAID actions
 bot.action('vilnius_humanAid_btn', (ctx) => ACTIONS_HUMAN_AID.vilniusPage(ctx));
 bot.action('kaunas_humanAid_btn', (ctx) => ACTIONS_HUMAN_AID.kaunasPage(ctx));
 bot.action('klaipeda_humanAid_btn', (ctx) => ACTIONS_HUMAN_AID.klaypedaPage(ctx));
@@ -154,8 +159,8 @@ bot.action('freeOptica_btn', (ctx) => ACTIONS_FREE_STUFF.showOpticaStuff(ctx))
 bot.action('freeSofa_btn', (ctx) => ACTIONS_FREE_STUFF.showSofa(ctx))
 bot.action('freeCourses_btn', (ctx) => ACTIONS_FREE_STUFF.showCourses(ctx))
 bot.action('freeArtEvents_btn', (ctx) => ACTIONS_FREE_STUFF.showArt(ctx))
-bot.action('return_to_free_stuff_btn', (ctx) => ACTIONS_FREE_STUFF.returnBack(ctx));
-
+bot.action('return_to_free_stuff_btn', (ctx) => ACTIONS_FREE_STUFF.returnBack(ctx)); */
+/* 
 // ANCHOR Sites Block
 bot.action("telegramChannels_btn", (ctx) => ACTIONS_SOCIAL.showTelegramChannels(ctx))
 bot.action("facebookGroups_btn", (ctx) => ACTIONS_SOCIAL.showFacebook(ctx))
@@ -165,7 +170,7 @@ bot.action('return_to_sites_block_btn', (ctx) => ACTIONS_SOCIAL.returnBack(ctx))
 
 //ANCHOR Litva Block
 bot.action("return_back_to_lithuania", (ctx) => ACTIONS_LITVA.returnBack(ctx));
-bot.action("language_btn", (ctx) => ACTIONS_LITVA.showLanguagePage(ctx));
+bot.action("language_btn", (ctx) => ACTIONS_LITVA.showLanguagePage(ctx)); */
 
 
 //special function 

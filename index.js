@@ -74,7 +74,7 @@ async function startBot(ctx) {
     if (ctx.from.username === "2143667939" || ctx.from.username === "492859324"){
         return ctx.reply(constans.GREETING, Markup.keyboard(constans.MAIN_MENU_ARRAY))
     }
-    return ctx.replyWithHTML("something has gone wrong.", Markup.removeKeyboard())
+    return ctx.replyWithHTML("something went wrong.", Markup.removeKeyboard())
 }
 
 /* //ANCHOR HumanAID actions

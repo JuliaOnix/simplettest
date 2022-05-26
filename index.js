@@ -66,7 +66,7 @@ bot.on("message", (ctx) => {
 //at the begining
 async function startBot(ctx) {
 
-    console.log(`${ctx.chat.id} ${ctx.from.username} ${ctx.from.first_name} ${ctx.from.last_name} started bot`)
+    console.log(`${ctx.chat.id} ${ctx.from.username} ${ctx.from.first_name} started bot`)
     bot.telegram.sendMessage()
     //return ctx.replyWithHTML("something has gone wrong.", Markup.removeKeyboard())
     await ctx.reply(constans.GREETING, Markup.keyboard(constans.MAIN_MENU_ARRAY))

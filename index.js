@@ -58,7 +58,7 @@ bot.on("text",  async (ctx) => {
     await ctx.replyWithSticker("CAACAgIAAxkBAAIO8WKMJUXwYGdfN8bTmI1-dyhCAAH1oQACYwAD29t-AAGMnQU950KD5yQE")
     await ctx.replyWithHTML("Такої команди немає. Тицяй на кнопки 🙂", Markup.keyboard(constans.MAIN_MENU_ARRAY))
     }
-    return ctx.replyWithHTML("something went wrong.", Markup.removeKeyboard())
+    return ctx.replyWithHTML("something went wrong. Our channel @ua_lt_channel", Markup.removeKeyboard())
 })
 
 /* bot.on("message", (ctx) => {
@@ -74,7 +74,7 @@ async function startBot(ctx) {
     if (ctx.from.username === "2143667939" || ctx.from.username === "492859324"){
         return ctx.reply(constans.GREETING, Markup.keyboard(constans.MAIN_MENU_ARRAY))
     }
-    return ctx.replyWithHTML("something went wrong.", Markup.removeKeyboard())
+    return ctx.replyWithHTML("something went wrong. @ua_lt_channel", Markup.removeKeyboard())
 }
 
 /* //ANCHOR HumanAID actions

@@ -22,15 +22,14 @@ const FREESTUFFMENU =
 
 
 const messageFromDeveloper = ` 
-Висловлюю величезну подяку <b>Андрію Соколову</b> та його команді за те, що зібрали та написали такий величезний <a href="https://akrolesta.art/ua/spravochnik.html">довідник</a> щодо проживання у Литві. ❤️
+Висловлюю величезну подяку <b>Андрію Соколову</b> та його команді за те, що зібрали та написали такий величезний <a href="https://akrolesta.art/ua/spravochnik.html">довідник</a> щодо проживання у Литві. ❤️\n
+Не менш величезна подяка людям, які також допомогали з контентом: <b>Наталії Ткач</b> за додавання нової інформації та <b>Юлії Аннусько</b> за редагування та форматування контенту. ❤️
 `
 
 const SOURSES = `
 <b>Рекомендація</b>: Частіше перезапускайте бота за допомогою /start для оновлення контенту :)
 
-🔎 Шукаємо волонтерів, які допоможуть тестувати бота, 
-а також інформувати про помилки у тексті та в посиланнях. 
-А також, будемо раді, якщо ви будете ділитися з нами актуальною інформацією, <a href='https://t.me/UkraineBotSupport'>пишіть на нашу сторінку</a>. 
+Якщо виникла проблема з ботом, ви помітили помилку, або ви бажаєте додати інформацію, пишіть => <a href="https://t.me/UkraineBotSupport">на мою сторінку</a>
 
 <b>Джерела інформації:</b>
 <a href="https://akrolesta.art/ua/spravochnik.html">https://akrolesta.art/ua</a>
@@ -38,40 +37,40 @@ https://ukraina.vilnius.lt
 https://helpua.lt/
 https://www.renkuosilietuva.lt/ru/informacia-dla-grazdan-ukrainy/
 `
+
+const ourTelegram = `
+<b>Наш телеграм канал</b>
+https://t.me/+uA00yl9KweQ1MTQy
+
+Будемо раді Вас бачити і у ньому також! :)
+`
 // ANCHOR First button
 async function mainInfoAboutRefugee(ctx) {
     console.log(`${ctx.from.username} main info about refugee`)
-    if (ctx.from.username === "2143667939" || ctx.from.username === "492859324"){
     await ctx.replyWithHTML(aboutDocuments.registartion, {
         parse_mode: "HTML", 
         disable_web_page_preview: true,
         ...Markup.inlineKeyboard(constans.MENU_REGISTRATION)
     });
 }
-}
 
 //show block about education and sport for children also
 async function educationAndSportFunc(ctx) {
-    if (ctx.from.username === "2143667939" || ctx.from.username === "492859324"){
     console.log(`${ctx.from.username} ${ctx.message.text} choosed`)
     await ctx.replyWithHTML(educationShcools.generalInfoAboutSchool, Markup.inlineKeyboard(constans.MENU_EDUCATION));
-    }
 }
 
 async function showPostWithSites(ctx) {
     console.log(`${ctx.from.username} ${ctx.message.text} choosed`)
-    if (ctx.from.username === "2143667939" || ctx.from.username === "492859324"){
     await ctx.replyWithHTML(sitesPost.sites, {
         parse_mode: 'HTML',
         disable_web_page_preview: true, 
         ...Markup.inlineKeyboard(constans.MENU_BUTTONS_SITES)
     });
 }
-}
 
 //show info about med insurance
 async function infoAboutMedicineFunc(ctx) {
-    if (ctx.from.username === "2143667939" || ctx.from.username === "492859324"){
     console.log(`${ctx.from.username} ${ctx.message.text} choosed`)
     await ctx.replyWithHTML(medInfo.aboutMedicine, {
         parse_mode: 'HTML',
@@ -79,10 +78,8 @@ async function infoAboutMedicineFunc(ctx) {
         ...Markup.inlineKeyboard(constans.MENU_HEALTH)
     });
 }
-}
 
 async function writeToOwnerOfTelegram(ctx) {
-    if (ctx.from.username === "2143667939" || ctx.from.username === "492859324"){
     console.log(`${ctx.from.username} ${ctx.message.text} choosed`)
     await ctx.replyWithSticker('CAACAgIAAxkBAAIH2mKHkobggkZ52R3V5MqPuA87854qAAJvAAPb234AAZlbUKh7k4B0JAQ');
     await ctx.replyWithHTML(messageFromDeveloper, {
@@ -93,32 +90,27 @@ async function writeToOwnerOfTelegram(ctx) {
         parse_mode: "HTML", 
         disable_web_page_preview: true
     })
-}
+    await ctx.replyWithHTML(ourTelegram)
 }
 
 //show info about humanitarianAid
 async function humanitarianAidFunc(ctx) {
-    if (ctx.from.username === "2143667939" || ctx.from.username === "492859324"){
     console.log(`${ctx.from.username} ${ctx.message.text} choosed`)
     await ctx.replyWithHTML(humanInfo.humanAid, Markup.inlineKeyboard(constans.MENU_WITH_CITIES_OF_HUMAN_AID));
-    }
 }
 
 //useful contacts 
 async function usefulContacts(ctx) { 
-    if (ctx.from.username === "2143667939" || ctx.from.username === "492859324"){
     console.log(`${ctx.from.username} ${ctx.message.text} choosed`)
-    let string = contacts.address + contacts.usefulContacts + contacts.medContacts;
+    let string = contacts.usefulContacts + contacts.medContacts;
     return ctx.replyWithHTML(string, {
         parse_mode: "HTML", 
-        disable_web_page_preview: true
+        disable_web_page_preview: true, ...Markup.inlineKeyboard([Markup.button.callback("Адреси реєстраційних центрів", 'btn_addresses_from_CONTACTS')])
     });
-}
 }
 
 //info how look for apartments
 async function lookforanApartment(ctx) { 
-    if (ctx.from.username === "2143667939" || ctx.from.username === "492859324"){
     console.log(`${ctx.from.username} ${ctx.message.text} choosed`)
     await ctx.replyWithHTML(aboutApartments.aboutApartmentsMainPage, {
         parse_mode: "HTML",
@@ -126,12 +118,10 @@ async function lookforanApartment(ctx) {
         ...Markup.inlineKeyboard(constans.MENU_ABOUT_APARTMENTS)
     }); 
 }
-}
 
 //About Lithuania
 async function aboutLithuaniaFunc(ctx) {
     console.log(`${ctx.from.username} ${ctx.message.text} choosed`)
-    if (ctx.from.username === "2143667939" || ctx.from.username === "492859324"){
     await ctx.replyWithHTML(aboutLithuania.post, {
         parse_mode: "HTML",
         disable_web_page_preview: true,
@@ -140,42 +130,35 @@ async function aboutLithuaniaFunc(ctx) {
         ])
     })
 }
-}
 
 //show work posts
 async function workinLitva(ctx) {
     console.log(`${ctx.from.username} workinLitva choosed`)
-    if (ctx.from.username === "2143667939" || ctx.from.username === "492859324"){
     await ctx.replyWithHTML(workInfo.basicInfoAboutWork, Markup.inlineKeyboard(constans.MENU_ABOUT_WORK))
-    }
 }
 
 //show menu about finance
 async function allowanceFinanceFunc(ctx) {
     console.log(`${ctx.from.username} allowanceFinanceFunc choosed`)
-    if (ctx.from.username === "2143667939" || ctx.from.username === "492859324"){
     await ctx.replyWithHTML(allowanceFinanceVar.infoAboutBanks, { 
         parse_mode: "HTML",
         disable_web_page_preview: true,
         ...Markup.inlineKeyboard(
         [
-            [Markup.button.callback('Пільги, на які ви маєте право', 'pilgi_btn')],
+            [Markup.button.callback('Пільги', 'pilgi_btn')],
             [Markup.button.callback('Де обміняти гривні на евро', 'exchange_currency_btn')],
         ]
     )});
-    }
 }
 
 //freeStuff
 async function freeStuffForUkraineFunc(ctx) {
     console.log(`${ctx.from.username} freeStuffForUkraineFunc choosed`)
-    if (ctx.from.username === "2143667939" || ctx.from.username === "492859324"){
     await ctx.replyWithHTML("Оберіть тему, яка вас цікавить", {
         parse_mode: 'HTML',
         disable_web_page_preview: true,
         ...Markup.inlineKeyboard(constans.MENU_FREE_STUFF)
     })
-}
 }
 
 module.exports.usefulContacts = usefulContacts;

@@ -29,6 +29,7 @@ https://planetofhotels.com/guide/ru/litva/klaypeda
 або посвідчення особи, дітям - свідоцтво про народження.)
 https://ltglink.lt/en
 
+
 🚌 Автобуси
 https://autobusubilietai.lt/ru
 

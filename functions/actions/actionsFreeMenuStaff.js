@@ -1,5 +1,6 @@
 const {Markup} = require("telegraf");
 const constans = require('../fileCostants')
+const freeEvents  = require('../../text/newText/freeEvents')
 
 async function showSport(ctx) {
     console.log(ctx.from.first_name, ctx.from.username + 'freeSport_btn')
@@ -44,11 +45,35 @@ async function showFreeConsul(ctx) {
 async function showArt(ctx) {
     console.log(ctx.from.first_name, ctx.from.username + ' freeshowArtEvents_btn')
     await ctx.answerCbQuery();
-    return await ctx.editMessageText(constans.LIST_TEXT_OF_FREE_STUFF[4], {
+    return await ctx.editMessageText(freeEvents.general, {
         parse_mode: 'HTML',
         disable_web_page_preview: true,
         ...Markup.inlineKeyboard([
-            [Markup.button.callback("Показати більше...", "show_more_art_btn")],
+            [Markup.button.callback("Вільнюс", "show_vilnius_events_BTN"), Markup.button.callback("Каунас", "show_kaunas_events_BTN")],
+            [constans.RETURN_BACK_TO_FREE_STUFF]
+        ])
+    })
+}
+
+async function showVilniusPage(ctx) {
+    console.log(ctx.from.first_name, ctx.from.username + ' freeshowArtEvents_btn')
+    await ctx.answerCbQuery();
+    return await ctx.editMessageText(freeEvents.vilnius, {
+        parse_mode: 'HTML',
+        disable_web_page_preview: true,
+        ...Markup.inlineKeyboard([
+            [constans.RETURN_BACK_TO_FREE_STUFF]
+        ])
+    })
+}
+
+async function showKaunasPage(ctx) {
+    console.log(ctx.from.first_name, ctx.from.username + ' freeshowArtEvents_btn')
+    await ctx.answerCbQuery();
+    return await ctx.editMessageText(freeEvents.kaunas, {
+        parse_mode: 'HTML',
+        disable_web_page_preview: true,
+        ...Markup.inlineKeyboard([
             [constans.RETURN_BACK_TO_FREE_STUFF]
         ])
     })
@@ -171,3 +196,5 @@ module.exports.showOpticaStuff = showOpticaStuff;
 module.exports.showSofa = showSofa;
 module.exports.showCourses = showCourses;
 module.exports.returnBack = returnBack;
+module.exports.showKaunasPage = showKaunasPage;
+module.exports.showVilniusPage = showVilniusPage;

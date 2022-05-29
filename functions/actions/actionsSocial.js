@@ -24,7 +24,7 @@ async function showFacebook(ctx) {
 }
 
 async function showInstagram(ctx)  {
-    console.log(ctx.from.first_name, ctx.from.username + "instagramGroups_btn")
+    console.log(ctx.from.first_name, ctx.from.username + " instagramGroups_btn")
     await ctx.answerCbQuery();
     return await ctx.editMessageText(sitesInfo.instagramPages, {
         parse_mode: 'HTML',
@@ -34,7 +34,7 @@ async function showInstagram(ctx)  {
 }
 
 async function showDovidnuku(ctx) {
-    console.log(ctx.from.first_name, ctx.from.username + "dovidnuku_btn")
+    console.log(ctx.from.first_name, ctx.from.username + " dovidnuku_btn")
     await ctx.answerCbQuery();
     return await ctx.editMessageText(sitesKatalog.qAndA, {
         parse_mode: 'HTML',
@@ -44,7 +44,7 @@ async function showDovidnuku(ctx) {
 }
 
 async function returnBack(ctx) {
-    console.log(ctx.from.first_name, ctx.from.username + "return_to_sites_block_btn")
+    console.log(ctx.from.first_name, ctx.from.username + " return_to_sites_block_btn")
     await ctx.answerCbQuery();
     return await ctx.editMessageText(sitesInfo.sites, {
         parse_mode: 'HTML',

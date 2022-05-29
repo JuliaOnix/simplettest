@@ -5,6 +5,7 @@ const GREETING = 'Вітаю у довіднику! Оберіть тему, я�
 const RETURN_BACK_TO_EDUCATION = Markup.button.callback('🔙 Повернутися до «Навчання»', 'returnBackEducation_btn');
 const FORWARD_BTN = `Наступна сторінка ➡️`;
 const BACKWARD_BTN = `⬅️ Попередня сторінка`;
+const RETURN_CONTACTS_MENU = Markup.button.callback('🔙 Повернутися до «Контакти»', "RETURN_CONTACTS_MENU");
 const RETURN_BACK_TO_MENU = "🔙 Повернутися до «Здоров'я»";
 const RETURN_BACK_TO_FINANCE = '🔙 Повернутися до «Фінанси, Пільги»';
 const RETURN_BACK_TO_WORK = '🔙 Повернутися до «Робота»';
@@ -20,8 +21,7 @@ const MAIN_MENU_NAMES =
 [
     '🛬 По Прибутті', '📞 Корисні контакти', '🔎 Пошук житла', 
     '📦 Гуманітарна Допомога',"🩺 Здоров'я", '💵 Фінанси, Пільги', '🏭 Робота', 
-    '🏫 Навчання', '🆓 Безкоштовні Послуги', "🇱🇹 Литва", 
-    '📡 Каталог сайтів', 'Розробники'
+    '🏫 Навчання', "🇱🇹 Литва", '📡 Каталог сайтів', 'Розробники'
 ];
 
 const MENU_REGISTRATION = [
@@ -29,11 +29,10 @@ const MENU_REGISTRATION = [
     [Markup.button.callback("Відновлення документів", "recoverDocuments_BTN")],
 ];
 
-const MAIN_MENU_ARRAY = [[MAIN_MENU_NAMES[0]],
-[MAIN_MENU_NAMES[1], MAIN_MENU_NAMES[2], MAIN_MENU_NAMES[6]],
-[MAIN_MENU_NAMES[4], MAIN_MENU_NAMES[3], MAIN_MENU_NAMES[5]],
-[MAIN_MENU_NAMES[8], MAIN_MENU_NAMES[7], MAIN_MENU_NAMES[9]],
-[MAIN_MENU_NAMES[10],MAIN_MENU_NAMES[11]]]
+const MAIN_MENU_ARRAY = [[MAIN_MENU_NAMES[0], MAIN_MENU_NAMES[1], MAIN_MENU_NAMES[2]],
+[MAIN_MENU_NAMES[3], MAIN_MENU_NAMES[4], MAIN_MENU_NAMES[5]],
+[MAIN_MENU_NAMES[6], MAIN_MENU_NAMES[7], MAIN_MENU_NAMES[8]],
+[MAIN_MENU_NAMES[9], MAIN_MENU_NAMES[10]]]
 
 
 //menu for health block 
@@ -71,24 +70,23 @@ const MENU_ABOUT_WORK = [
 const MENU_EDUCATION = [
     [Markup.button.callback('Онлайн навчання', 'showOnlineEducation_btn'), Markup.button.callback('Професійне навчання', 'profEduc_btn')],
     [Markup.button.callback('Для спортсменів', 'sportEduc_btn'),  Markup.button.callback("Вища освіта (університети)", "univer_btn")],
-    [Markup.button.callback('Гуртки для дітей', 'lessonsforChildren_IN_EDUCATION_btn')]
 ];
 
-const MENU_FREE_STUFF = [
+/* const MENU_FREE_STUFF = [
     [Markup.button.callback('💪🏻 Спорт', 'freeSport_btn'), Markup.button.callback('🚕 Транспорт', 'freeTransport_btn')],
     [Markup.button.callback('🤰🏻 Для жінок, для мам з дітьми', 'freeForMothers_btn'),  Markup.button.callback("🇪🇺 Консульска допомога", "freeConsulHelp_btn")],
-    [Markup.button.callback('👩‍🎨 Мистецькі подіЇ', 'freeArtEvents_btn')],   
+    [Markup.button.callback('👩‍🎨 Розваги', 'freeArtEvents_btn')],   
     [Markup.button.callback('🔡 Послуги перекладача', 'freeTranslate_btn'),     Markup.button.callback('🖨 Друк', 'freePrint_btn')],   
     [Markup.button.callback('🌐 Інтернет, Комунікація', 'freeInternet_btn'),     Markup.button.callback('🏢 Юридичні послуги', 'freeLegal_btn')],   
     [Markup.button.callback('🐈 Для домашніх тварин', 'freePetStuff_btn'),     Markup.button.callback('💅🏻 Послуги краси', 'freeBeautyStuff_btn')],   
     [Markup.button.callback('👓 Оптика', 'freeOptica_btn'),     Markup.button.callback('🎨 Курси, ЛекціЇ', 'freeCourses_btn')],   
     [Markup.button.callback('🛋 Мебель', 'freeSofa_btn'), Markup.button.callback('Гуртки для дітей', 'lessonsforChildren_btn')],   
-]
+] */
 
 const MENU_WITH_CITIES_OF_HUMAN_AID = [
     [Markup.button.callback("Вільнюс", 'vilnius_humanAid_btn')],
     [Markup.button.callback("Каунас", 'kaunas_humanAid_btn'), Markup.button.callback("Клайпеда", 'klaipeda_humanAid_btn')],
-    [Markup.button.callback("Паневєжіс", 'panevezis_humanAid_btn'), Markup.button.callback("Aлітус", 'alitus_humanAid_btn')],
+    [Markup.button.callback("Паневежис", 'panevezis_humanAid_btn'), Markup.button.callback("Aлітус", 'alitus_humanAid_btn')],
     [Markup.button.callback("Шяуляй", 'shaulyay_humanAid_btn'), Markup.button.url("Інші міста", 'https://www.redcross.lt/kontakti-z-organizaciyami-yaki-nadayut-gumanitarnu-dopomogu-ukrayincyam-ua')],
 ]
 
@@ -116,7 +114,7 @@ module.exports.RETURN_BACK_TO_SITES = RETURN_BACK_TO_SITES;
 module.exports.MENU_BUTTONS_SITES = MENU_BUTTONS_SITES;
 module.exports.MENU_WITH_CITIES_OF_HUMAN_AID = MENU_WITH_CITIES_OF_HUMAN_AID;
 module.exports.LIST_TEXT_OF_FREE_STUFF = LIST_TEXT_OF_FREE_STUFF;
-module.exports.MENU_FREE_STUFF = MENU_FREE_STUFF;
+//module.exports.MENU_FREE_STUFF = MENU_FREE_STUFF;
 module.exports.MENU_EDUCATION = MENU_EDUCATION;
 module.exports.MENU_BUTTONS = MENU_BUTTONS;
 module.exports.FORWARD_BTN = FORWARD_BTN;
@@ -131,6 +129,7 @@ module.exports.RETURN_BACK_LOOK_FOR_APART = RETURN_BACK_LOOK_FOR_APART;
 module.exports.MENU_ABOUT_EXTRACURRICULARS = MENU_ABOUT_EXTRACURRICULARS;
 module.exports.RETURN_BACK_TO_FIRST = RETURN_BACK_TO_FIRST;
 module.exports.GREETING = GREETING;
+module.exports.RETURN_CONTACTS_MENU = RETURN_CONTACTS_MENU;
 module.exports.MENU_ABOUT_EXTRACURRICULARSFOR_EDUCATIONMENU = MENU_ABOUT_EXTRACURRICULARSFOR_EDUCATIONMENU;
 module.exports.RETURN_BACK_TO_HUMANAID_MENU = RETURN_BACK_TO_HUMANAID_MENU;
 module.exports.RETURN_BACK_TO_GROUPLESSONS_EDUCATION = RETURN_BACK_TO_GROUPLESSONS_EDUCATION;

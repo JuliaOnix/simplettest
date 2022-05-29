@@ -1,11 +1,25 @@
 const dentist = `
 <b>Палата стоматологів</b>	
-Екстрена стоматологічна допомога
-<a href="https://telegra.ph/V%D1%96lnyus-Stomatolog%D1%96ya-05-23">Список безкоштовних клінік у Вільнюсі</a>
-<a href="https://telegra.ph/Stomatol%D1%96ya-Kaunas-05-23">Список безкоштовних клінік у Каунасі</a>
-
-Безкоштовна допомога <b>по всій Литві</b>. Відкривайте сайт та шукайте своє місто.
+Екстрена стоматологічна допомога безкоштовна по всій Литві. 
+Відкривайте сайт та шукайте своє місто. (Їх тут дуже багато, кожен зможе знайти своє місто)
 <a href='https://odontologurumai.lt/lt/apie-rumus/naujienos/1859-%C4%AFstaigos,-teikian%C4%8Dios-nemokam%C4%85-b%C5%ABtin%C4%85j%C4%85-pagalb%C4%85-nukent%C4%97jusiems-nuo-karo-ukrainoje?fbclid=IwAR21wXYqP57jnXihE7H2v39jUzVbbMyMnPn6VFbx6LvBWccD0cxomBz0l4M'>Посилання на сайт</a>
+
+<b>Для зручності деякі міста ми перенесли у документи:</b>
+<a href="https://telegra.ph/V%D1%96lnyus-Stomatolog%D1%96ya-05-23">Вільнюс</a>
+<a href="https://telegra.ph/Stomatol%D1%96ya-Kaunas-05-23">Каунас</a>
+<a href="https://telegra.ph/Klajpeda-Stomatolog%D1%96ya-05-27">Клайпеда</a> - у розробці, є усі контакти
+<a href="https://telegra.ph/SHaulyaj-Stomatolog%D1%96ya-05-27">Шяуляй</a> - у розробці, є усі контакти
+<a href="https://telegra.ph/Panevezhis-05-27">Паневежис</a> - у розробці
+<a href="https://telegra.ph/Al%D1%96tus-05-27">Алітус</a>
+<a href="https://telegra.ph/Mar%D1%96yampole-Stomatolog%D1%96ya-05-27">Маріямполе</a> - у розробці
+<a href="https://telegra.ph/GARGZHDAJ-05-27">Гаргждай</a>
+<a href="https://telegra.ph/TEL%C5%A0IAI-Stomatolog%D1%96ya-05-27">TELŠIAI</a>
+<a href="https://telegra.ph/K%C4%96DAINIAI-Stomatolog%D1%96ya-05-27">KĖDAINIAI</a>
+<a href="https://telegra.ph/MA%C5%BDEIKIAI-Stomatolog%D1%96ya-05-27">MAŽEIKIAI</a> - у розробці
+<a href="https://telegra.ph/KELM%C4%96-05-27">KELMĖ </a> - у розробці
+<a href="https://telegra.ph/Palanga-Stomatolog%D1%96ya-05-27">Паланга</a> - у розробці
+
+Пізніше додамо інші міста
 
 <b>Parko odontologijos klinika</b>	
 Стоматологічна допомога

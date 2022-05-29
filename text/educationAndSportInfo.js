@@ -220,17 +220,9 @@ I - V 8.30 -17.30
 ` */
 
 const groupsLections = `		
-<b>Гуртки та діяльність у Вільнюсі</b>	
-Муніципалітет Вільнюса склав список неформальної освіти	
-Контакти є в документі
-<a href="https://docs.google.com/document/d/1GvsgKB6oyPGMLqsA59lAOpwKPROUmdrlmYFTrgDv-fU/edit">Документ</a> 	
+	
 
-<b>Lingua Lituanica</b>	
-🌐 https://lingualit.lt/lt/naujienos/nemokamas-lietuviu-kalbos-vaiku-kursas-ukrainieciams/ 
-Безкоштовний курс литовської мови для дітей українських біженців. При реєстрації на курс необхідно пред’явити реєстраційну картку в міграційному відділі.	
-<u>Регистрация здесь</u> - <a href="https://docs.google.com/forms/d/e/1FAIpQLSccTfafGuu5rZAavsqjujBday2QJoPK5grfimNQtW6bESDdBA/viewform">Тут</a>
-Заняття проводитимуться в групах 
-📍 Vilnius <a href="https://goo.gl/maps/geuiAcE5PpoMex8M7">Gedimino pr. 26</a> 
+
 
 <b>Vilniaus Universitetas | Вільнюський університет</b>	
 🌐 https://www.flf.vu.lt/naujienos/bendros-naujienos/5316-kursai	
@@ -242,23 +234,9 @@ const groupsLections = `
 Каунас	
 https://www.facebook.com/azuoluvila
 
-<b>Kauno lėlių teatras Каунаський театр ляльок</b>	
-Щиро запрошуємо громадян України безкоштовно відвідувати наші театральні вистави.
-🌐 http://www.kaunoleles.lt  
-https://www.facebook.com/kauno.valstybinis.leliu.teatras		
-Реєстрація: 
-📞 +37037221691
-📞 +37062074242
-📧 kasa@kaunoleles.lt  
-Репертуар
-http://www.kaunoleles.lt/445/
 
-<b>Ukrainiankids.lt</b>	
-Гуртки для дітей
-🌐 https://ukrainiankids.lt/gurtky-dlya-ditey/		
-📞 +37061670503
-📞 +37060403245
-📧 ukraina@tukstantmeciovaikai.lt
+
+
 
 <b>Workshops for kids</b>
 https://www.facebook.com/ira.branitskaya  
@@ -278,14 +256,7 @@ https://www.facebook.com/ieva.variakojytereynshtrom
 📧 lena.eltang@gmail.com 
 або прямо Facebook https://www.facebook.com/profile.php?id=100001739466370
 
-<b>Muzikos mokykla Ugnelė Музична школа Ugnelė</b>	
-Уроки музики для дітей від 1 до 18 років, кабінети для вчителів музики з України, музичні інструменти
-🌐 http://www.ugnele.lt/  
-<a href="https://www.facebook.com/MuzikosMokyklaUgnele/photos/a.224420607664527/4544559605650584/">Сторінка у Фесбуці</a> 	
-Реєстрація та додаткова інформація: 
-📧 choras.ugnele@gmail.com 
-📞 +37062968060 (LT, EN) 
-📞 +37065063423 (LT, RU)
+
 
 <b>„VILNIAUS ETNINĖS KULTŪROS CENTRAS“ „ВІЛЬНЮСЬКИЙ ЦЕНТР ЕТНІЧНОЇ КУЛЬТУРИ“</b>
 Творчі майстер-класи для дітей та дорослих.
@@ -298,10 +269,7 @@ https://www.facebook.com/VilniausEtninesKulturosCentras/photos/a.447187831470/10
 Книги для дітей українською мовою, онлайн	
 🌐 <a href="https://lla.lt/lt/naujienos/405-knygos-vaikams-ukrainieciu-kalba?fbclid=IwAR3EdO66DE6Vz2RomEHHRK9vVSAvcsGU9IsuRXszdBHpzpaWTL2QoIJugO8">lla.lt</a>	
 
-<b>Lietuvos vaikų ir jaunimo centras Литовський дитячий та юнацький центр</b>
-Гуртки для дітей
-📍 Vilnius	
-Реєстрація онлайн <a href="https://lvjc.lt/naujiena/nemokami-bureliai-ukrainos-seimu-vaikams/">на цьому сайті</a>	
+
 
 <b>Клайпедський центр дитячого дозвілля</b>	
 Гуртки для дітей та юнацтва	

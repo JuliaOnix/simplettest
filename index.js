@@ -11,13 +11,12 @@ const ACTIONS_FREE_STUFF = require('./functions/actions/actionsFreeMenuStaff')
 const ACTIONS_SOCIAL = require('./functions/actions/actionsSocial')
 const ACTIONS_LITVA = require('./functions/actions/actionsLithuvinia')
 const ACTIONS_APARTMENTS = require('./functions/actions/actionsApartments')
-
+const ACTIONS_BENEFITS = require('./functions/actions/actionsBenefits')
 const mainMenuFunctionsFile = require('./functions/functionsMainMenu')
 const constans = require('./functions/fileCostants')
 
 const token = process.env.BOT_TOKEN
 const bot = new Telegraf(token);
-let currentPostFree;
 
 if (token === undefined) {
     throw new Error('BOT_TOKEN must be provided!')
@@ -27,7 +26,6 @@ if (token === undefined) {
 bot.command('start', async (ctx) => {
     console.log(`${ctx.chat.id} ${ctx.from.username} ${ctx.from.first_name} ${ctx.from.last_name} started bot`)
     bot.telegram.sendMessage("2143667939", `${ctx.chat.id} ${ctx.from.username} ${ctx.from.first_name} ${ctx.from.last_name} started bot`)
-        //return ctx.replyWithHTML("something went wrong.", Markup.removeKeyboard())
     await bot.telegram.sendMessage("2143667939", ` @${ctx.from.username} ${ctx.from.first_name} `)
     return startBot(ctx);
 });
@@ -42,42 +40,37 @@ bot.hears(constans.MAIN_MENU_NAMES[4], (ctx) => mainMenuFunctionsFile.infoAboutM
 bot.hears(constans.MAIN_MENU_NAMES[5], (ctx) => mainMenuFunctionsFile.allowanceFinanceFunc(ctx));
 bot.hears(constans.MAIN_MENU_NAMES[6], (ctx) => mainMenuFunctionsFile.workinLitva(ctx));
 bot.hears(constans.MAIN_MENU_NAMES[7], (ctx) => mainMenuFunctionsFile.educationAndSportFunc(ctx));
-bot.hears(constans.MAIN_MENU_NAMES[8], (ctx) => mainMenuFunctionsFile.freeStuffForUkraineFunc(ctx, currentPostFree));
-bot.hears(constans.MAIN_MENU_NAMES[9], (ctx) => mainMenuFunctionsFile.aboutLithuaniaFunc(ctx));
-bot.hears(constans.MAIN_MENU_NAMES[10], (ctx) => mainMenuFunctionsFile.showPostWithSites(ctx));
-bot.hears(constans.MAIN_MENU_NAMES[11], (ctx) => mainMenuFunctionsFile.writeToOwnerOfTelegram(ctx));
+//bot.hears(constans.MAIN_MENU_NAMES[8], (ctx) => mainMenuFunctionsFile.freeStuffForUkraineFunc(ctx, currentPostFree));
+bot.hears(constans.MAIN_MENU_NAMES[8], (ctx) => mainMenuFunctionsFile.aboutLithuaniaFunc(ctx));
+bot.hears(constans.MAIN_MENU_NAMES[9], (ctx) => mainMenuFunctionsFile.showPostWithSites(ctx));
+bot.hears(constans.MAIN_MENU_NAMES[10], (ctx) => mainMenuFunctionsFile.writeToOwnerOfTelegram(ctx));
+
+
 
 bot.on("text",  async (ctx) => {
     console.log(`${ctx.chat.id} ${ctx.from.username} ${ctx.from.first_name} started bot`)
     bot.telegram.sendMessage("2143667939", `${ctx.chat.id} ${ctx.from.username} ${ctx.from.first_name} started bot`) 
-    if (ctx.from.username === "2143667939" || ctx.from.username === "49285") {
         //return ctx.replyWithHTML("something went wrong.", Markup.removeKeyboard())
    //console.log(ctx.chat.id + " " + ctx.message.text);
     
     //FIXME стикеры вынеси в константы
     await ctx.replyWithSticker("CAACAgIAAxkBAAIO8WKMJUXwYGdfN8bTmI1-dyhCAAH1oQACYwAD29t-AAGMnQU950KD5yQE")
-    await ctx.replyWithHTML("Такої команди немає. Тицяй на кнопки 🙂", Markup.keyboard(constans.MAIN_MENU_ARRAY))
-    }
-    return ctx.replyWithHTML("<b>Бот наразі знаходиться у розробці.</b> \n\nТакож було створено канал https://t.me/+uA00yl9KweQ1MTQy \nЛаскаво просимо!", Markup.removeKeyboard())
+    await ctx.replyWithHTML("Такої команди немає. Тицяй на кнопки 🙂", Markup.keyboard(constans.MAIN_MENU_ARRAY).resize())
+    //return ctx.replyWithHTML("<b>Бот наразі знаходиться у розробці.</b> \n\nТакож було створено канал https://t.me/+uA00yl9KweQ1MTQy \nЛаскаво просимо!", Markup.removeKeyboard())
 })
 
-/* bot.on("message", (ctx) => {
+bot.on("message", (ctx) => {
     bot.telegram.sendMessage("2143667939", `${ctx.chat.id} ${ctx.from.username} ${ctx.from.first_name} ${ctx.from.last_name} ${ctx.message.text}started bot`)
     console.log(ctx.message.sticker);
-}) */
+})
 
 //at the begining
 async function startBot(ctx) {
-
-    console.log(`${ctx.chat.id} ${ctx.from.username} ${ctx.from.first_name} started bot`)
-    bot.telegram.sendMessage("2143667939", `${ctx.chat.id} ${ctx.from.username} ${ctx.from.first_name} started bot`)
-    if (ctx.from.username === "2143667939" || ctx.from.username === "492859324"){
-        return ctx.reply(constans.GREETING, Markup.keyboard(constans.MAIN_MENU_ARRAY))
-    }
-    return ctx.replyWithHTML("<b>Бот наразі знаходиться у розробці.</b> \n\nТакож було створено канал https://t.me/+uA00yl9KweQ1MTQy  \nЛаскаво просимо!", Markup.removeKeyboard())
+        return ctx.reply(constans.GREETING, Markup.keyboard(constans.MAIN_MENU_ARRAY).resize())
+    //return ctx.replyWithHTML("<b>Бот наразі знаходиться у розробці.</b> \n\nТакож було створено канал https://t.me/+uA00yl9KweQ1MTQy  \nЛаскаво просимо!", Markup.removeKeyboard())
 }
 
-/* //ANCHOR HumanAID actions
+//ANCHOR HumanAID actions
 bot.action('vilnius_humanAid_btn', (ctx) => ACTIONS_HUMAN_AID.vilniusPage(ctx));
 bot.action('kaunas_humanAid_btn', (ctx) => ACTIONS_HUMAN_AID.kaunasPage(ctx));
 bot.action('klaipeda_humanAid_btn', (ctx) => ACTIONS_HUMAN_AID.klaypedaPage(ctx));
@@ -159,8 +152,8 @@ bot.action('freeOptica_btn', (ctx) => ACTIONS_FREE_STUFF.showOpticaStuff(ctx))
 bot.action('freeSofa_btn', (ctx) => ACTIONS_FREE_STUFF.showSofa(ctx))
 bot.action('freeCourses_btn', (ctx) => ACTIONS_FREE_STUFF.showCourses(ctx))
 bot.action('freeArtEvents_btn', (ctx) => ACTIONS_FREE_STUFF.showArt(ctx))
-bot.action('return_to_free_stuff_btn', (ctx) => ACTIONS_FREE_STUFF.returnBack(ctx)); */
-/* 
+bot.action('return_to_free_stuff_btn', (ctx) => ACTIONS_FREE_STUFF.returnBack(ctx));
+
 // ANCHOR Sites Block
 bot.action("telegramChannels_btn", (ctx) => ACTIONS_SOCIAL.showTelegramChannels(ctx))
 bot.action("facebookGroups_btn", (ctx) => ACTIONS_SOCIAL.showFacebook(ctx))
@@ -170,13 +163,23 @@ bot.action('return_to_sites_block_btn', (ctx) => ACTIONS_SOCIAL.returnBack(ctx))
 
 //ANCHOR Litva Block
 bot.action("return_back_to_lithuania", (ctx) => ACTIONS_LITVA.returnBack(ctx));
-bot.action("language_btn", (ctx) => ACTIONS_LITVA.showLanguagePage(ctx)); */
-
+bot.action("language_btn", (ctx) => ACTIONS_LITVA.showLanguagePage(ctx));
 
 //special function 
 
+//ANCHOR BENEFITS ANOTHER CITIES 
+bot.action("showKaunasBenefits_BTN", (ctx) => ACTIONS_BENEFITS.showKaunasPage(ctx));
+bot.action("showKlaypedaBenefits_BTN", (ctx) => ACTIONS_BENEFITS.showKlaypedaPage(ctx));
+bot.action("showMoreBenefits_BTN", (ctx) => ACTIONS_BENEFITS.showMoreBenefitsPage(ctx));
+
+//FIXME FREE EVENTS
+
+bot.action("show_vilnius_events_BTN", (ctx) => ACTIONS_FREE_STUFF.showVilniusPage(ctx));
+bot.action("show_kaunas_events_BTN", (ctx) => ACTIONS_FREE_STUFF.showKaunasPage(ctx));
 
 
+bot.action("btn_addresses_from_CONTACTS", (ctx) => ACTIONS_INFO_REFUGEE.showAdressasInContacts(ctx));
+bot.action("RETURN_CONTACTS_MENU", (ctx) => ACTIONS_INFO_REFUGEE.returnContactsMenu(ctx))
 bot.launch();
 
 process.once('SIGINT', () => bot.stop('SIGINT'));

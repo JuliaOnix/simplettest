@@ -59,8 +59,31 @@ async function returnBackFrom(ctx) {
     });
 }
 
+async function showAdressasInContacts(ctx) {
+    console.log(`${ctx.from.username} returnBackFirst_btn choosed`)
+    await ctx.answerCbQuery();
+    return await ctx.editMessageText(contacts.address, {
+        parse_mode: "HTML",
+        disable_web_page_preview: true, 
+        ...Markup.inlineKeyboard([constans.RETURN_CONTACTS_MENU])
+    });
+}
+
+async function returnContactsMenu(ctx) {
+    console.log(`${ctx.from.username} returnBackFirst_btn choosed`)
+    let string = contacts.usefulContacts + contacts.medContacts;
+    await ctx.answerCbQuery();
+    return ctx.editMessageText(string, {
+        parse_mode: "HTML",
+        disable_web_page_preview: true, 
+        ...Markup.inlineKeyboard([Markup.button.callback("Адреси реєстраційних центрів", 'btn_addresses_from_CONTACTS')])
+    });
+}
+
 module.exports.showRecoverDecuments = showRecoverDecuments;
 module.exports.contactsAndAdresses = contactsAndAdresses;
 module.exports.showAdresses = showAdresses;
 module.exports.showAdressesInApartMenu = showAdressesInApartMenu;
 module.exports.returnBackFrom = returnBackFrom;
+module.exports.returnContactsMenu = returnContactsMenu;
+module.exports.showAdressasInContacts = showAdressasInContacts;

@@ -29,8 +29,6 @@ const messageFromDeveloper = `
 const SOURSES = `
 <b>Рекомендація</b>: Частіше перезапускайте бота за допомогою /start для оновлення контенту :)
 
-Якщо виникла проблема з ботом, ви помітили помилку, або ви бажаєте додати інформацію, пишіть => <a href="https://t.me/UkraineBotSupport">на мою сторінку</a>
-
 <b>Джерела інформації:</b>
 <a href="https://akrolesta.art/ua/spravochnik.html">https://akrolesta.art/ua</a>
 https://ukraina.vilnius.lt
@@ -39,10 +37,10 @@ https://www.renkuosilietuva.lt/ru/informacia-dla-grazdan-ukrainy/
 `
 
 const ourTelegram = `
-<b>Наш телеграм канал</b>
+<b>Тут про зміни, мітинги, заходи та інші новини</b>
 https://t.me/+uA00yl9KweQ1MTQy
 
-Будемо раді Вас бачити і у ньому також! :)
+<b>Будемо раді Вас бачити і у ньому також! :)</b>
 `
 // ANCHOR First button
 async function mainInfoAboutRefugee(ctx) {

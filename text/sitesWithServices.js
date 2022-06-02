@@ -72,11 +72,14 @@ const telegramChannelsList = `
 <b>Наш телеграм канал</b>
 https://t.me/ua_lt_channel
 
-<b>Вільнюс. Ми з України</b>
-https://t.me/vilnius_ukr
-
 <b>Украинцы в Литве</b>
 https://t.me/ukrainpatriot
+
+<b>Українці в Литві</b>
+https://t.me/ukraincilitva
+
+<b>Вільнюс. Ми з України</b>
+https://t.me/vilnius_ukr
 
 <b>Українці KAUNAS</b>
 https://t.me/zustrichiiznayomsvavkaunasi
@@ -86,6 +89,9 @@ https://t.me/ukraincivklaipedi
 
 <b>Укринці в Паланзі</b>
 https://t.me/+Q6KPSibr39hlOGUy
+
+<b>Українські мами в Каунасі</b> 
+https://t.me/beauty_industry_chat
 
 <b>Доставка/перевозка людей/грузов в Украину и обратно</b>
 https://t.me/+JTp703gf23ViNmIy
@@ -174,6 +180,18 @@ https://www.facebook.com/groups/668743400840858/
 
 <b>Українці в Литві, м.Маріямполе: </b>
 https://www.facebook.com/groups/413914537172259/
+
+<b>Група в fb Українці в Каунасі</b> 
+https://www.facebook.com/groups/479655308899391/?ref=share
+
+<b>Українські психологи в Каунасі</b> 
+https://www.facebook.com/groups/352386036806778/?ref=share
+
+<b>Ukrainiečiai Kaune - Украинцы в Каунасе</b> 
+https://www.facebook.com/groups/356243299713614/?ref=share
+
+<b>Україночки в Каунасі 🇺🇦 Творче обєднання</b> 
+https://www.facebook.com/groups/471961771327433/?ref=share
 
 <b>Русскоязычные девушки Вильнюса</b> 
 https://www.facebook.com/groups/2639955882956165

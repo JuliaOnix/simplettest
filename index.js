@@ -66,7 +66,8 @@ bot.on("message", (ctx) => {
 
 //at the begining
 async function startBot(ctx) {
-        return ctx.reply(constans.GREETING, Markup.keyboard(constans.MAIN_MENU_ARRAY).resize())
+    
+    return ctx.reply(constans.GREETING, Markup.keyboard(constans.MAIN_MENU_ARRAY).resize())
     //return ctx.replyWithHTML("<b>Бот наразі знаходиться у розробці.</b> \n\nТакож було створено канал https://t.me/+uA00yl9KweQ1MTQy  \nЛаскаво просимо!", Markup.removeKeyboard())
 }
 

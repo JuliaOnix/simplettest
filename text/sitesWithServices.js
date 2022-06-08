@@ -69,7 +69,7 @@ https://www.govilnius.lt/visit-vilnius
 `
 
 const telegramChannelsList = `
-<b>Наш телеграм канал</b>
+<b>Довідник | Заходи | Мітинги</b>
 https://t.me/ua_lt_channel
 
 <b>Украинцы в Литве</b>
@@ -97,7 +97,7 @@ https://t.me/beauty_industry_chat
 https://t.me/+JTp703gf23ViNmIy
 
 <b>АБФ в Литве</b>
-(Канал волонтеров. Обучаюие мероприятия )
+(Канал волонтеров. Обучающие мероприятия )
 https://t.me/abflithuania
 
 <b>Мама в Вильнюсе</b>

@@ -24,6 +24,8 @@ const vilnius = `
 - працевлаштування/біржа праці
 🌐 <a href="https://paslaugos.vilnius.lt/service-list/vienkartines-ismokos-uzsienieciui-isikurti-skyrimas?lang=uk">Інструкція 'Одноразові виплати на проживання'</a>
 🌐 <a href="https://paslaugos.vilnius.lt/service-list/Menesines-kompensacijos-vaiko-ugdymo-pagal-ikimokyklinio-ar-priesmokyklinio-ugdymo-programa-islaidoms-apmoketi-skyrimas?lang=uk">Інструкція 'На підготовку дітей'</a>
+
+<b>Помітили помилку, або застарілу інформацію? <a href="https://t.me/ua_lt_inbox_bot">Напишіть нам</a></b>
 `
 
 const kaunas = `
@@ -38,6 +40,8 @@ const kaunas = `
 дійсний паспорт або посвідчення особи, тимчасове посвідчення особи, дозвіл на тимчасове проживання або копію картки, виданої міграційним управлінням.
 <u>Як отримати виплату:</u> 
 на рахунки литовських банків або на такі платіжні платформи: Verified Payments, Monese, N26 Bank, Foxpay, Verse Payments Lithuania, Revolut Limited, Paysera. 
+
+<b>Помітили помилку, або застарілу інформацію? <a href="https://t.me/ua_lt_inbox_bot">Напишіть нам</a></b>
 `
 
 const klaypeda = `
@@ -83,6 +87,8 @@ parama.filialas@klaipeda.lt
 
 <b>Соціальні послуги та пільги: </b><a href='https://socmin.lrv.lt/uploads/socmin/documents/files/2022%2003%2023_SADM_Parama%20Ukrainos%20karo%20pabegeliams%20pagal%20asmens%20statusa_A4_UA.pdf'>Скачати пам'ятку</a> 
 <b>Якщо бажаєте дізнатися більше про пільги </b><a href="https://docs.google.com/document/d/1f9VjxKSx5ZBBCYK28LHlo3ee-tFIxANbcA9JinpAlaI/edit#">Переходьте за посиланням</a>
+
+<b>Помітили помилку, або застарілу інформацію? <a href="https://t.me/ua_lt_inbox_bot">Напишіть нам</a></b>
 `
 module.exports.vilnius = vilnius;
 module.exports.kaunas = kaunas;

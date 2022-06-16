@@ -25,6 +25,8 @@ https://icanhelp.host/
 • https://capital.lt
 • https://ober-house.lt
 • https://enuoma.lt
+
+<b>Помітили помилку, або застарілу інформацію? <a href="https://t.me/ua_lt_inbox_bot">Напишіть нам</a></b>
 `
 
 module.exports.sites = sites;

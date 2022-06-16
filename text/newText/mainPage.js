@@ -31,6 +31,8 @@ const registartion =   `
 <b>На цьому сайті є багато відповідей на часті запитання</b> - <a href='https://www.renkuosilietuva.lt/ru/informacia-dla-grazdan-ukrainy/'>www.renkuosilietuva.lt</a>
 
 📌 Натисніть на кнопку «Адреси реєстраційних центрів» - якщо бажаєте дізнатись про адреси центрів та побудувати маршрут.
+
+<b>Помітили помилку, або застарілу інформацію? <a href="https://t.me/ua_lt_inbox_bot">Напишіть нам</a></b>
 `
 
 const recoverDocuments = `
@@ -48,6 +50,8 @@ const recoverDocuments = `
 📧 s.bedryga@mail.unba.org.ua
 Адреси іноземних представників 
 🌐 https://unba.org.ua/foreign-representations 
+
+<b>Помітили помилку, або застарілу інформацію? <a href="https://t.me/ua_lt_inbox_bot">Напишіть нам</a></b>
 `
 
 module.exports.recoverDocuments = recoverDocuments;

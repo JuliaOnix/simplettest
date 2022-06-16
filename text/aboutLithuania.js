@@ -36,6 +36,8 @@ https://autobusubilietai.lt/ru
 https://infobus.eu/bus/lithuania
 
 https://ecolines.net/lt/ru
+
+<b>Помітили помилку, або застарілу інформацію? <a href="https://t.me/ua_lt_inbox_bot">Напишіть нам</a></b>
 `
 
 module.exports.post = post;

@@ -72,74 +72,61 @@ const telegramChannelsList = `
 <b>Довідник | Заходи | Мітинги</b>
 https://t.me/ua_lt_channel
 
-<b>Украинцы в Литве</b>
-https://t.me/ukrainpatriot
-
-<b>Українці в Литві</b>
-https://t.me/ukraincilitva
-
-<b>Вільнюс. Ми з України</b>
-https://t.me/vilnius_ukr
-
-<b>Українці KAUNAS</b>
-https://t.me/zustrichiiznayomsvavkaunasi
-
-<b>Українці в Клайпеді</b>
-https://t.me/ukraincivklaipedi
-
-<b>Укринці в Паланзі</b>
-https://t.me/+Q6KPSibr39hlOGUy
-
-<b>Українські мами в Каунасі</b> 
-https://t.me/beauty_industry_chat
-
-<b>Доставка/перевозка людей/грузов в Украину и обратно</b>
-https://t.me/+JTp703gf23ViNmIy
-
 <b>АБФ в Литве</b>
 (Канал волонтеров. Обучающие мероприятия )
 https://t.me/abflithuania
-
-<b>Мама в Вильнюсе</b>
-(Чат для мамочек из Вильнюса)
-https://t.me/mamavilnius
-
-<b>ВильнюсЧат × Литва</b>
-(Чатик Вильнюса)
-https://t.me/vilnius_lithuania
-
-<b>Vilnius Girls</b>
-(Группа для девушек из Вильнюса)
-https://t.me/VilniusGirls 
-
-<b>Vilnius Pet’s Community</b>
-(Чат для тех, у кого есть питомцы)
-https://t.me/vilnius_dog
-
-<b>Нужный справочник Вильнюс</b>
-(Справочник по услугам)
-https://t.me/spravkavilnius
-
-<b>Vilnius Market</b>
-(Покупка/Продажа)
-https://t.me/vilniusmarket
-
-<b>Чат - Беларусы Вільні</b>
-(Чат беларусов в Литве)
-https://t.me/belarusVLN
-
-<b>Новости Литвы</b>
-https://t.me/rudelfi
-
-<b>Новости Литвы</b>
-https://t.me/rradiolt
-
-<b>Бесплатные Фотосессии. Вильнюс</b>
-https://t.me/freePhotosChannel
 ` 
 
 const facebookGroupsText = `
-<b>Ukrainos Ambasada Lietuvoje / Посольство України в Литві</b>
+<b>Группы Вильнюса, где отдают мебель и другие б/у вещи</b> 
+Free your Stuff VILNIUS / Atiduotuvė
+https://www.facebook.com/groups/1822607451305797
+Vilniuje atiduodu už šokoladą arba kavą
+https://www.facebook.com/groups/402245120175026
+Free atiduodu, dovanoju Vilnius
+https://www.facebook.com/groups/496838900815085
+Atiduotuve Vilnius / Free your stuff
+https://www.facebook.com/groups/130415577697665
+Dovanoju, atiduodu. VILNIUS
+https://www.facebook.com/groups/648801559074232
+Барахолка в Литве
+https://www.facebook.com/groups/116329859740519
+
+<b>Отдам даром(группы в fb):</b>
+Каунас
+https://www.facebook.com/groups/777531836529525
+Клайпеда
+https://www.facebook.com/groups/668172780250851
+По всей Литве
+https://www.facebook.com/groups/714686082617374
+По всей Литве
+https://www.facebook.com/groups/dovanuoj
+
+💅🏻💇🏻‍♀️ <b>Ищут моделей:</b>
+По всей Литве
+https://www.facebook.com/groups/485814969203661
+По всей Литве
+https://www.facebook.com/groups/390641094460378
+По всей Литве
+https://www.facebook.com/groups/2323366677989432
+Каунас
+https://www.facebook.com/groups/976573235815146
+Вильнюс
+http://facebook.com/groups/249255388815100
+Вильнюс 
+https://www.facebook.com/groups/320430144999724
+Шяуляй
+https://www.facebook.com/groups/4263308243700099
+`
+
+
+const instagramPages = `
+<b>GoVilnius</b> 
+Новини, фотографії Вільнюса
+<a href='https://instagram.com/govilnius?igshid=YmMyMTA2M2Y='>https://instagram.com/govilnius</a>
+`
+
+const face = `<b>Ukrainos Ambasada Lietuvoje / Посольство України в Литві</b>
 https://www.facebook.com/ukr.embassy.Lithuania/
 
 <b>Українці у Литві / Украинцы в Литве / Ukrainiečiai Lietuvoje</b>
@@ -194,54 +181,69 @@ https://www.facebook.com/groups/356243299713614/?ref=share
 https://www.facebook.com/groups/471961771327433/?ref=share
 
 <b>Русскоязычные девушки Вильнюса</b> 
-https://www.facebook.com/groups/2639955882956165
+https://www.facebook.com/groups/2639955882956165`
 
-<b>Группы Вильнюса, где отдают мебель и другие б/у вещи</b> 
-Free your Stuff VILNIUS / Atiduotuvė
-https://www.facebook.com/groups/1822607451305797
-Vilniuje atiduodu už šokoladą arba kavą
-https://www.facebook.com/groups/402245120175026
-Free atiduodu, dovanoju Vilnius
-https://www.facebook.com/groups/496838900815085
-Atiduotuve Vilnius / Free your stuff
-https://www.facebook.com/groups/130415577697665
-Dovanoju, atiduodu. VILNIUS
-https://www.facebook.com/groups/648801559074232
-Барахолка в Литве
-https://www.facebook.com/groups/116329859740519
+const tele = `
+<b>Мама в Вильнюсе</b>
+(Чат для мамочек из Вильнюса)
+https://t.me/mamavilnius
 
-<b>Отдам даром(группы в fb):</b>
-Каунас
-https://www.facebook.com/groups/777531836529525
-Клайпеда
-https://www.facebook.com/groups/668172780250851
-По всей Литве
-https://www.facebook.com/groups/714686082617374
-По всей Литве
-https://www.facebook.com/groups/dovanuoj
+<b>ВильнюсЧат × Литва</b>
+(Чатик Вильнюса)
+https://t.me/vilnius_lithuania
 
-💅🏻💇🏻‍♀️ <b>Ищут моделей:</b>
-По всей Литве
-https://www.facebook.com/groups/485814969203661
-По всей Литве
-https://www.facebook.com/groups/390641094460378
-По всей Литве
-https://www.facebook.com/groups/2323366677989432
-Каунас
-https://www.facebook.com/groups/976573235815146
-Вильнюс
-http://facebook.com/groups/249255388815100
-Вильнюс 
-https://www.facebook.com/groups/320430144999724
-Шяуляй
-https://www.facebook.com/groups/4263308243700099
-`
+<b>Vilnius Girls</b>
+(Группа для девушек из Вильнюса)
+https://t.me/VilniusGirls 
 
+<b>Vilnius Pet’s Community</b>
+(Чат для тех, у кого есть питомцы)
+https://t.me/vilnius_dog
 
-const instagramPages = `
-<b>GoVilnius</b> 
-Новини, фотографії Вільнюса
-<a href='https://instagram.com/govilnius?igshid=YmMyMTA2M2Y='>https://instagram.com/govilnius</a>
+<b>Нужный справочник Вильнюс</b>
+(Справочник по услугам)
+https://t.me/spravkavilnius
+
+<b>Vilnius Market</b>
+(Покупка/Продажа)
+https://t.me/vilniusmarket
+
+<b>Чат - Беларусы Вільні</b>
+(Чат беларусов в Литве)
+https://t.me/belarusVLN
+
+<b>Новости Литвы</b>
+https://t.me/rudelfi
+
+<b>Новости Литвы</b>
+https://t.me/rradiolt
+
+<b>Бесплатные Фотосессии. Вильнюс</b>
+https://t.me/freePhotosChannel
+
+<b>Украинцы в Литве</b>
+https://t.me/ukrainpatriot
+
+<b>Українці в Литві</b>
+https://t.me/ukraincilitva
+
+<b>Вільнюс. Ми з України</b>
+https://t.me/vilnius_ukr
+
+<b>Українці KAUNAS</b>
+https://t.me/zustrichiiznayomsvavkaunasi
+
+<b>Українці в Клайпеді</b>
+https://t.me/ukraincivklaipedi
+
+<b>Укринці в Паланзі</b>
+https://t.me/+Q6KPSibr39hlOGUy
+
+<b>Українські мами в Каунасі</b> 
+https://t.me/beauty_industry_chat
+
+<b>Доставка/перевозка людей/грузов в Украину и обратно</b>
+https://t.me/+JTp703gf23ViNmIy
 `
 module.exports.sites = sites;
 module.exports.facebookGroupsText = facebookGroupsText;

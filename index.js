@@ -31,6 +31,22 @@ bot.command('start', async (ctx) => {
 });
 //
 
+//Получает текущий айди и удаляет все в обратном порядке
+
+/* bot.command('deleteAll', async (ctx) => {
+    let res = await ctx.reply('deleting');
+    console.log(res);
+    for(let i = res.message_id; i >= 0; i--) {
+        console.log(`chat_id: ${ctx.chat.id}, message_id: ${i}`);
+        try {
+            let res = await ctx.telegram.deleteMessage(ctx.chat.id, i);
+            console.log(res);
+        } catch (e) {
+            console.error(e);
+        }
+    }
+}); */
+
 //listening to, HEARS
 bot.hears(constans.MAIN_MENU_NAMES[0], (ctx) => mainMenuFunctionsFile.mainInfoAboutRefugee(ctx));
 bot.hears(constans.MAIN_MENU_NAMES[1], (ctx) => mainMenuFunctionsFile.usefulContacts(ctx));

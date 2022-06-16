@@ -104,7 +104,7 @@ I–VII 08:00–20:00
 <u>Telegram-Група:</u> https://t.me/skladdapamoga
 Адреса складу Dapamoga, VšĮ: 
 📍 <a href="https://goo.gl/maps/chrNMmAmjZq18vB59">Savanoriu 134b</a> 
-Если вы на машине, то вводите адрес для навигации
+Якщо ви на авто, то краще ввести цю адресу:
 📍 <a href="https://goo.gl/maps/ZqwmaUWQYqYwvyKJ9">Naujoji Riovonių gatvė 10</a>
 
 <b>Офіс «Наш дім»</b>

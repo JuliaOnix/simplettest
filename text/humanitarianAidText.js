@@ -128,6 +128,11 @@ I–VII 08:00–20:00
 <b>Фонд «Врятуємо дітей»</b>
 📍 <a href="https://goo.gl/maps/PKEePiiqHh4srUoJ6">Klaipedos 6</a> 	
 
+<b>Литовський Червоний Хрест видає карти «Добрий подарунок» 50Євро</b>
+<a href="https://t.me/ua_lt_channel/83">Деталі та адреси</a>
+
+<code>https://t.me/vilnius_ukr</code>
+
 <b>Помітили помилку, або застарілу інформацію? <a href="https://t.me/ua_lt_inbox_bot">Напишіть нам</a></b>
 `
 

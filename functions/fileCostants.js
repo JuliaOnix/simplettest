@@ -1,7 +1,9 @@
 const { Telegraf, Markup } = require("telegraf");
 const financeText = require('../text/allowanceFinanceFile')
+const addInfoGreeting = `C 20 червня працює <u>цілодобова</u> «гаряча лінія» для надання інформацію про соціальний та медичний захист, центри реєстрації, повернення додому та інші важливі питання.
+📞 <b>1808</b> — оператори консультуватимуть біженців українською, англійською та російською мовами.`
 
-const GREETING = 'Вітаю у довіднику! Оберіть тему, яка вас цікавить';
+const GREETING = `👋🏻 Вітаю у <b>Довіднику</b>! Оберіть тему, яка вас цікавить.\n\n ${addInfoGreeting}`;
 const RETURN_BACK_TO_EDUCATION = Markup.button.callback('🔙 Повернутися до «Навчання»', 'returnBackEducation_btn');
 const FORWARD_BTN = `Наступна сторінка ➡️`;
 const BACKWARD_BTN = `⬅️ Попередня сторінка`;
@@ -15,6 +17,8 @@ const RETURN_BACK_TO_FREE_STUFF = Markup.button.callback('🔙 Повернут�
 const RETURN_BACK_TO_GROUPLESSONS_EDUCATION = '🔙 Повернутися до «Гуртки, ЛекціЇ, Уроки»';
 const RETURN_BACK_TO_HUMANAID_MENU = Markup.button.callback('🔙 Повернутися до «Гуманітарна Допомога»', "return_to_human_aid_menu_btn");
 const RETURN_BACK_TO_SITES = Markup.button.callback('🔙 Повернутися до «Каталог сайтів»', "return_to_sites_block_btn");
+
+
 
 //menu in chatbot
 const MAIN_MENU_NAMES = 

@@ -82,8 +82,7 @@ bot.on("message", (ctx) => {
 
 //at the begining
 async function startBot(ctx) {
-    
-    return ctx.reply(constans.GREETING, Markup.keyboard(constans.MAIN_MENU_ARRAY).resize())
+    return ctx.replyWithHTML(constans.GREETING, Markup.keyboard(constans.MAIN_MENU_ARRAY).resize())
     //return ctx.replyWithHTML("<b>Бот наразі знаходиться у розробці.</b> \n\nТакож було створено канал https://t.me/+uA00yl9KweQ1MTQy  \nЛаскаво просимо!", Markup.removeKeyboard())
 }
 
@@ -150,6 +149,8 @@ bot.action('returnBack_btn', (ctx) => ACTIONS_HEALTH.returnBack(ctx));
 
 //ANCHOR FINANCE BLOCK
 bot.action('pilgi_btn', (ctx) => ACTIONS_ALLOWANCE.showPilgiPage(ctx));
+bot.action('pilgi2_btn', (ctx) => ACTIONS_ALLOWANCE.showPilgi2Page(ctx));
+bot.action('pansion_btn', (ctx) => ACTIONS_ALLOWANCE.showPanshionPage(ctx));
 bot.action('exchange_currency_btn', (ctx) => ACTIONS_ALLOWANCE.showExchangeCurrencePage(ctx));
 bot.action('backToFinance_btn', (ctx) => ACTIONS_ALLOWANCE.returnBack(ctx));
 
@@ -190,11 +191,8 @@ bot.action("showKlaypedaBenefits_BTN", (ctx) => ACTIONS_BENEFITS.showKlaypedaPag
 bot.action("showMoreBenefits_BTN", (ctx) => ACTIONS_BENEFITS.showMoreBenefitsPage(ctx));
 
 //FIXME FREE EVENTS
-
 bot.action("show_vilnius_events_BTN", (ctx) => ACTIONS_FREE_STUFF.showVilniusPage(ctx));
 bot.action("show_kaunas_events_BTN", (ctx) => ACTIONS_FREE_STUFF.showKaunasPage(ctx));
-
-
 bot.action("btn_addresses_from_CONTACTS", (ctx) => ACTIONS_INFO_REFUGEE.showAdressasInContacts(ctx));
 bot.action("RETURN_CONTACTS_MENU", (ctx) => ACTIONS_INFO_REFUGEE.returnContactsMenu(ctx))
 bot.launch();

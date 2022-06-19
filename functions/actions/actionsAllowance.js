@@ -65,8 +65,8 @@ async function returnBack(ctx) {
         parse_mode: "HTML",
         disable_web_page_preview: true,
         ...Markup.inlineKeyboard([
-            [Markup.button.callback('Пільги', 'pilgi_btn')],
-            [Markup.button.callback('Також про пільги', 'pilgi2_btn')],
+            [Markup.button.callback('Пільги', 'pilgi2_btn')],
+            [Markup.button.callback('Пільги по містам', 'pilgi_btn')],
             [Markup.button.callback('Пенсія', 'pansion_btn')],
             [Markup.button.callback('Де обміняти гривні на евро', 'exchange_currency_btn')],
         ])

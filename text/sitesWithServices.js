@@ -93,31 +93,24 @@ const telegramChannelsList = `
 <b><a href="https://t.me/+JTp703gf23ViNmIy">Доставка/перевозка людей/грузов в Украину и обратно</a></b>
 
 <b><a href="https://t.me/mamavilnius">Мама в Вильнюсе</a></b>
-(Чат для мамочек из Вильнюса)
 
 <b><a href="https://t.me/vilnius_lithuania">ВильнюсЧат × Литва</a></b>
-(Чатик Вильнюса)
-
-<b><a href="https://t.me/VilniusGirls">Vilnius Girls</a></b>
-(Группа для девушек из Вильнюса) 
 
 <b><a href="https://t.me/vilnius_dog">Vilnius Pet’s Community</a></b>
-(Чат для тех, у кого есть питомцы)
+(Чат для тех, у кого есть питомцы.)
 
 <b><a href="https://t.me/spravkavilnius">Нужный справочник Вильнюс</a></b>
-(Справочник по услугам)
+(Списки услуг в Вильнюсе: маникюр, педикюр, фотографы и т.п.)
 
 <b><a href="https://t.me/vilniusmarket">Vilnius Market</a></b>
-(Покупка/Продажа)
+(Покупка/Продажа в Вильнюсе)
 
 <b><a href="https://t.me/belarusVLN">Чат - Беларусы Вільні</a></b>
-(Чат беларусов в Литве)
+(Чат беларусов, но тоже можно задавать вопросы о жизне в Литве и досуге.)
 
 <b><a href="https://t.me/rudelfi">Новости Литвы</a></b>
 
 <b><a href="https://t.me/rradiolt">Новости Литвы</a></b>
-
-<b><a href="https://t.me/freePhotosChannel">Бесплатные Фотосессии. Вильнюс</a></b>
 ` 
 
 const facebookGroupsText = `

@@ -64,8 +64,8 @@ bot.hears(constans.MAIN_MENU_NAMES[10], (ctx) => mainMenuFunctionsFile.writeToOw
 
 
 bot.on("text",  async (ctx) => {
-    console.log(`${ctx.chat.id} ${ctx.from.username} ${ctx.from.first_name} started bot`)
-    bot.telegram.sendMessage("2143667939", `${ctx.chat.id} ${ctx.from.username} ${ctx.from.first_name} started bot`) 
+    console.log(`${ctx.chat.id} ${ctx.from.username} ${ctx.from.first_name} wrote text`)
+    bot.telegram.sendMessage("2143667939", `${ctx.chat.id} ${ctx.from.username} ${ctx.from.first_name} wrote text`) 
         //return ctx.replyWithHTML("something went wrong.", Markup.removeKeyboard())
    //console.log(ctx.chat.id + " " + ctx.message.text);
     
@@ -76,7 +76,7 @@ bot.on("text",  async (ctx) => {
 })
 
 bot.on("message", (ctx) => {
-    bot.telegram.sendMessage("2143667939", `${ctx.chat.id} ${ctx.from.username} ${ctx.from.first_name} ${ctx.from.last_name} ${ctx.message.text}started bot`)
+    bot.telegram.sendMessage("2143667939", `${ctx.chat.id} ${ctx.from.username} ${ctx.from.first_name} ${ctx.from.last_name} ${ctx.message.text} wrote message`)
     console.log(ctx.message.sticker);
 })
 

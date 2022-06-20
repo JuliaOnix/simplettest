@@ -116,6 +116,9 @@ const telegramChannelsList = `
 const facebookGroupsText = `
 <b>Групи у фейсбуці:</b>
 
+<b><a href="https://www.facebook.com/ukrainos.centras">Український центр - Ukrainos centras</a></b>
+(Новини, та безкоштовні заходи для українців)
+
 <b><a href="https://www.facebook.com/ukr.embassy.Lithuania/">Ukrainos Ambasada Lietuvoje / Посольство України в Литві</a></b>
 
 <b><a href="https://www.facebook.com/groups/2294077994171869">Українці у Литві / Украинцы в Литве / Ukrainiečiai Lietuvoje</a></b>

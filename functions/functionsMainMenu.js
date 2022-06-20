@@ -46,6 +46,7 @@ https://t.me/+uA00yl9KweQ1MTQy
 async function mainInfoAboutRefugee(ctx) {
     console.log(`${ctx.from.username} main info about refugee`)
     await ctx.replyWithHTML(aboutDocuments.registartion, {
+        protect_content: true,
         parse_mode: "HTML", 
         disable_web_page_preview: true,
         ...Markup.inlineKeyboard(constans.MENU_REGISTRATION)
@@ -55,7 +56,7 @@ async function mainInfoAboutRefugee(ctx) {
 //show block about education and sport for children also
 async function educationAndSportFunc(ctx) {
     console.log(`${ctx.from.username} ${ctx.message.text} choosed`)
-    await ctx.replyWithHTML(educationShcools.generalInfoAboutSchool, Markup.inlineKeyboard(constans.MENU_EDUCATION));
+    await ctx.replyWithHTML(educationShcools.generalInfoAboutSchool, {protect_content:true, ...Markup.inlineKeyboard(constans.MENU_EDUCATION)});
 }
 
 async function showPostWithSites(ctx) {
@@ -63,6 +64,7 @@ async function showPostWithSites(ctx) {
     await ctx.replyWithHTML(sitesPost.sites, {
         parse_mode: 'HTML',
         disable_web_page_preview: true, 
+        protect_content:true,
         ...Markup.inlineKeyboard(constans.MENU_BUTTONS_SITES)
     });
 }
@@ -73,6 +75,7 @@ async function infoAboutMedicineFunc(ctx) {
     await ctx.replyWithHTML(medInfo.aboutMedicine, {
         parse_mode: 'HTML',
         disable_web_page_preview: true,
+        protect_content:true,
         ...Markup.inlineKeyboard(constans.MENU_HEALTH)
     });
 }
@@ -82,11 +85,13 @@ async function writeToOwnerOfTelegram(ctx) {
     await ctx.replyWithSticker('CAACAgIAAxkBAAIH2mKHkobggkZ52R3V5MqPuA87854qAAJvAAPb234AAZlbUKh7k4B0JAQ');
     await ctx.replyWithHTML(messageFromDeveloper, {
         parse_mode: "HTML", 
-        disable_web_page_preview: true
+        disable_web_page_preview: true,
+        protect_content:true,
     })
     await ctx.replyWithHTML(SOURSES, {
         parse_mode: "HTML", 
-        disable_web_page_preview: true
+        disable_web_page_preview: true,
+        protect_content:true,
     })
     await ctx.replyWithHTML(ourTelegram)
 }
@@ -94,7 +99,7 @@ async function writeToOwnerOfTelegram(ctx) {
 //show info about humanitarianAid
 async function humanitarianAidFunc(ctx) {
     console.log(`${ctx.from.username} ${ctx.message.text} choosed`)
-    await ctx.replyWithHTML(humanInfo.humanAid, Markup.inlineKeyboard(constans.MENU_WITH_CITIES_OF_HUMAN_AID));
+    await ctx.replyWithHTML(humanInfo.humanAid, {protect_content:true , ...Markup.inlineKeyboard(constans.MENU_WITH_CITIES_OF_HUMAN_AID)});
 }
 
 //useful contacts 
@@ -103,7 +108,9 @@ async function usefulContacts(ctx) {
     let string = contacts.usefulContacts + contacts.medContacts;
     return ctx.replyWithHTML(string, {
         parse_mode: "HTML", 
-        disable_web_page_preview: true, ...Markup.inlineKeyboard([Markup.button.callback("Адреси реєстраційних центрів", 'btn_addresses_from_CONTACTS')])
+        disable_web_page_preview: true, 
+        protect_content:true,
+         ...Markup.inlineKeyboard([Markup.button.callback("Адреси реєстраційних центрів", 'btn_addresses_from_CONTACTS')])
     });
 }
 
@@ -113,6 +120,7 @@ async function lookforanApartment(ctx) {
     await ctx.replyWithHTML(aboutApartments.aboutApartmentsMainPage, {
         parse_mode: "HTML",
         disable_web_page_preview: true,
+        protect_content:true,
         ...Markup.inlineKeyboard(constans.MENU_ABOUT_APARTMENTS)
     }); 
 }
@@ -123,6 +131,7 @@ async function aboutLithuaniaFunc(ctx) {
     await ctx.replyWithHTML(aboutLithuania.post, {
         parse_mode: "HTML",
         disable_web_page_preview: true,
+        protect_content:true,
         ...Markup.inlineKeyboard([
             [Markup.button.callback("Сайти, де можна вивчати литовську", "language_btn")]
         ])
@@ -132,7 +141,7 @@ async function aboutLithuaniaFunc(ctx) {
 //show work posts
 async function workinLitva(ctx) {
     console.log(`${ctx.from.username} workinLitva choosed`)
-    await ctx.replyWithHTML(workInfo.basicInfoAboutWork, Markup.inlineKeyboard(constans.MENU_ABOUT_WORK))
+    await ctx.replyWithHTML(workInfo.basicInfoAboutWork, {protect_content:true, ...Markup.inlineKeyboard(constans.MENU_ABOUT_WORK)})
 }
 
 //show menu about finance
@@ -141,10 +150,12 @@ async function allowanceFinanceFunc(ctx) {
     await ctx.replyWithHTML(allowanceFinanceVar.infoAboutBanks, { 
         parse_mode: "HTML",
         disable_web_page_preview: true,
+        protect_content:true,
         ...Markup.inlineKeyboard(
         [
             [Markup.button.callback('Пільги', 'pilgi2_btn')],
             [Markup.button.callback('Пільги по містам', 'pilgi_btn')],
+            [Markup.button.callback('Виплати', 'childrenMoney_btn')],
             [Markup.button.callback('Пенсія', 'pansion_btn')],
             [Markup.button.callback('Де обміняти гривні на евро', 'exchange_currency_btn')],
         ]
@@ -157,6 +168,7 @@ async function freeStuffForUkraineFunc(ctx) {
     await ctx.replyWithHTML("Оберіть тему, яка вас цікавить", {
         parse_mode: 'HTML',
         disable_web_page_preview: true,
+        protect_content:true,
         ...Markup.inlineKeyboard(constans.MENU_FREE_STUFF)
     })
 }

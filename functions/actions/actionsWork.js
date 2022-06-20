@@ -8,6 +8,7 @@ async function showRecomandationPage(ctx)  {
     await ctx.editMessageText(workInfo.recommendationsForHowToWork, {
         parse_mode: "HTML",
         disable_web_page_preview: true, 
+        protect_content: true,
         ...Markup.inlineKeyboard(
             [
                 [Markup.button.callback('Індивідуальна зайнятість', 'individualWorker_btn'), Markup.button.callback('Сайти для пошуку роботиашч', 'sitesofwork_btn')],
@@ -49,6 +50,7 @@ async function showVacationsPage(ctx) {
     await ctx.editMessageText(workInfo.vacationONGoogleDocs, {
         parse_mode: "HTML",
         disable_web_page_preview: true,
+        protect_content: true,
         ...Markup.inlineKeyboard([
             [Markup.button.callback(constans.RETURN_BACK_TO_WORK, 'backToTheWorkMenu_btn')]
         ])

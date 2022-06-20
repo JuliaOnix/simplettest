@@ -56,7 +56,9 @@ async function showDentalPage(ctx) {
     await ctx.answerCbQuery();
     await ctx.editMessageText(freeMedInfo.dentist, {
         parse_mode: 'HTML',
-        disable_web_page_preview: true, ...Markup.inlineKeyboard([
+        disable_web_page_preview: true, 
+        protect_content: true,
+        ...Markup.inlineKeyboard([
             [Markup.button.callback(constans.RETURN_BACK_TO_MENU, 'returnBack_btn')]
         ])
     });
@@ -67,7 +69,9 @@ async function showPregnantWomenPage(ctx)  {
     await ctx.answerCbQuery();
     await ctx.editMessageText(freeMedInfo.forWomenAndPregnant, {
         parse_mode: 'HTML',
-        disable_web_page_preview: true, ...Markup.inlineKeyboard([
+        disable_web_page_preview: true, 
+        protect_content: true,
+        ...Markup.inlineKeyboard([
             [Markup.button.callback(constans.RETURN_BACK_TO_MENU, 'returnBack_btn')]
         ])
     });
@@ -79,6 +83,7 @@ async function showMentalPage(ctx) {
     await ctx.editMessageText(freeMedInfo.mentalHelth, {
         parse_mode: 'HTML',
         disable_web_page_preview: true,
+        protect_content: true,
         ...Markup.inlineKeyboard([
             [Markup.button.callback(constans.RETURN_BACK_TO_MENU, 'returnBack_btn')]
         ])
@@ -91,6 +96,7 @@ async function showDiabetPage(ctx) {
     await ctx.editMessageText(freeMedInfo.diabetPost, {
         parse_mode: 'HTML',
         disable_web_page_preview: true,
+        protect_content: true,
         ...Markup.inlineKeyboard([
             [Markup.button.callback(constans.RETURN_BACK_TO_MENU, 'returnBack_btn')]
         ])
@@ -103,6 +109,7 @@ async function showAnotherMenu(ctx) {
     await ctx.editMessageText(freeMedInfo.anotherMedInfo, {
         parse_mode: 'HTML',
         disable_web_page_preview: true,
+        protect_content: true,
         ...Markup.inlineKeyboard([
             [Markup.button.callback(constans.RETURN_BACK_TO_MENU, 'returnBack_btn')]
         ])
@@ -115,6 +122,7 @@ async function showCovidPage(ctx) {
     await ctx.editMessageText(freeMedInfo.corona, {
         parse_mode: 'HTML',
         disable_web_page_preview: true,
+        protect_content: true,
         ...Markup.inlineKeyboard([
             [Markup.button.callback(constans.RETURN_BACK_TO_MENU, 'returnBack_btn')]
         ])
@@ -128,6 +136,7 @@ async function returnBack(ctx) {
     return await ctx.editMessageText(medInfo.aboutMedicine, {
         parse_mode: 'HTML',
         disable_web_page_preview: true,
+        protect_content: true,
         ...Markup.inlineKeyboard(constans.MENU_HEALTH)
     })
 }

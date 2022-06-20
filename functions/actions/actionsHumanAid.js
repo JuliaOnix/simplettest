@@ -8,6 +8,7 @@ async function vilniusPage(ctx) {
     await ctx.editMessageText(humanAidInfo.vilniusHelp, {
         parse_mode: "HTML",
         disable_web_page_preview: true,
+        protect_content: true,
         ...Markup.inlineKeyboard([constans.RETURN_BACK_TO_HUMANAID_MENU])
     })
 }
@@ -18,6 +19,7 @@ async function kaunasPage(ctx) {
     return await ctx.editMessageText(humanAidInfo.kaunasText, {
         parse_mode: 'HTML',
         disable_web_page_preview: true,
+        protect_content: true,
         ...Markup.inlineKeyboard([constans.RETURN_BACK_TO_HUMANAID_MENU])
     })
 }
@@ -28,6 +30,7 @@ async function klaypedaPage(ctx) {
     return await ctx.editMessageText(humanAidInfo.klaipedaText, {
         parse_mode: 'HTML',
         disable_web_page_preview: true,
+        protect_content: true,
         ...Markup.inlineKeyboard([constans.RETURN_BACK_TO_HUMANAID_MENU])
     })
 }
@@ -38,6 +41,7 @@ async function alitusPage(ctx) {
     return await ctx.editMessageText(humanAidInfo.alitusText, {
         parse_mode: 'HTML',
         disable_web_page_preview: true,
+        protect_content: true,
         ...Markup.inlineKeyboard([constans.RETURN_BACK_TO_HUMANAID_MENU])
     })
 }
@@ -48,6 +52,7 @@ async function shaulyayPage(ctx) {
     return await ctx.editMessageText(humanAidInfo.shaulyayText, {
         parse_mode: 'HTML',
         disable_web_page_preview: true,
+        protect_content: true,
         ...Markup.inlineKeyboard([constans.RETURN_BACK_TO_HUMANAID_MENU])
     })
 }
@@ -58,6 +63,7 @@ async function panevezhysPage(ctx) {
     return await ctx.editMessageText(humanAidInfo.panesvezhisText, {
         parse_mode: 'HTML',
         disable_web_page_preview: true,
+        protect_content: true,
         ...Markup.inlineKeyboard([constans.RETURN_BACK_TO_HUMANAID_MENU])
     })
 }
@@ -68,6 +74,7 @@ async function returnBack(ctx) {
     return await ctx.editMessageText(humanAidInfo.humanAid, {
         parse_mode: 'HTML',
         disable_web_page_preview: true,
+        protect_content: true,
         ...Markup.inlineKeyboard(constans.MENU_WITH_CITIES_OF_HUMAN_AID)
     })
 }

@@ -8,6 +8,7 @@ async function showSport(ctx) {
     return await ctx.editMessageText(constans.LIST_TEXT_OF_FREE_STUFF[0], {
         parse_mode: 'HTML',
         disable_web_page_preview: true,
+        protect_content: true,
         ...Markup.inlineKeyboard([constans.RETURN_BACK_TO_FREE_STUFF])
     })
 }
@@ -18,6 +19,7 @@ async function showTransport(ctx)  {
     return await ctx.editMessageText(constans.LIST_TEXT_OF_FREE_STUFF[1], {
         parse_mode: 'HTML',
         disable_web_page_preview: true,
+        protect_content: true,
         ...Markup.inlineKeyboard([constans.RETURN_BACK_TO_FREE_STUFF])
     })
 }
@@ -28,6 +30,7 @@ async function showForMother(ctx)  {
     return await ctx.editMessageText(constans.LIST_TEXT_OF_FREE_STUFF[2], {
         parse_mode: 'HTML',
         disable_web_page_preview: true,
+        protect_content: true,
         ...Markup.inlineKeyboard([constans.RETURN_BACK_TO_FREE_STUFF])
     })
 }
@@ -38,6 +41,7 @@ async function showFreeConsul(ctx) {
     return await ctx.editMessageText(constans.LIST_TEXT_OF_FREE_STUFF[3], {
         parse_mode: 'HTML',
         disable_web_page_preview: true,
+        protect_content: true,
         ...Markup.inlineKeyboard([constans.RETURN_BACK_TO_FREE_STUFF])
     })
 }
@@ -48,6 +52,7 @@ async function showArt(ctx) {
     return await ctx.editMessageText(freeEvents.general, {
         parse_mode: 'HTML',
         disable_web_page_preview: true,
+        protect_content: true,
         ...Markup.inlineKeyboard([
             [Markup.button.callback("Вільнюс", "show_vilnius_events_BTN"), Markup.button.callback("Каунас", "show_kaunas_events_BTN")],
             [constans.RETURN_BACK_TO_FREE_STUFF]
@@ -61,6 +66,7 @@ async function showVilniusPage(ctx) {
     return await ctx.editMessageText(freeEvents.vilnius, {
         parse_mode: 'HTML',
         disable_web_page_preview: true,
+        protect_content: true,
         ...Markup.inlineKeyboard([
             [constans.RETURN_BACK_TO_FREE_STUFF]
         ])
@@ -73,6 +79,7 @@ async function showKaunasPage(ctx) {
     return await ctx.editMessageText(freeEvents.kaunas, {
         parse_mode: 'HTML',
         disable_web_page_preview: true,
+        protect_content: true,
         ...Markup.inlineKeyboard([
             [constans.RETURN_BACK_TO_FREE_STUFF]
         ])
@@ -85,6 +92,7 @@ async function showTranslate(ctx) {
     return await ctx.editMessageText(constans.LIST_TEXT_OF_FREE_STUFF[6], {
         parse_mode: 'HTML',
         disable_web_page_preview: true,
+        protect_content: true,
         ...Markup.inlineKeyboard([constans.RETURN_BACK_TO_FREE_STUFF])
     })
 }
@@ -95,6 +103,7 @@ async function showPrintPage (ctx) {
     return await ctx.editMessageText(constans.LIST_TEXT_OF_FREE_STUFF[7], {
         parse_mode: 'HTML',
         disable_web_page_preview: true,
+        protect_content: true,
         ...Markup.inlineKeyboard([constans.RETURN_BACK_TO_FREE_STUFF])
     })
 }
@@ -105,6 +114,7 @@ async function showInternet(ctx) {
     return await ctx.editMessageText(constans.LIST_TEXT_OF_FREE_STUFF[8], {
         parse_mode: 'HTML',
         disable_web_page_preview: true,
+        protect_content: true,
         ...Markup.inlineKeyboard([constans.RETURN_BACK_TO_FREE_STUFF])
     })
 }
@@ -115,6 +125,7 @@ async function showLegalPage(ctx) {
     return await ctx.editMessageText(constans.LIST_TEXT_OF_FREE_STUFF[9], {
         parse_mode: 'HTML',
         disable_web_page_preview: true,
+        protect_content: true,
         ...Markup.inlineKeyboard([constans.RETURN_BACK_TO_FREE_STUFF])
     })
 }
@@ -125,6 +136,7 @@ async function showPetStuff(ctx) {
     return await ctx.editMessageText(constans.LIST_TEXT_OF_FREE_STUFF[10], {
         parse_mode: 'HTML',
         disable_web_page_preview: true,
+        protect_content: true,
         ...Markup.inlineKeyboard([constans.RETURN_BACK_TO_FREE_STUFF])
     })
 }
@@ -135,6 +147,7 @@ async function freeBeautyStuff(ctx) {
     return await ctx.editMessageText(constans.LIST_TEXT_OF_FREE_STUFF[11], {
         parse_mode: 'HTML',
         disable_web_page_preview: true,
+        protect_content: true,
         ...Markup.inlineKeyboard([constans.RETURN_BACK_TO_FREE_STUFF])
     })
 }
@@ -145,6 +158,7 @@ async function showOpticaStuff(ctx) {
     return await ctx.editMessageText(constans.LIST_TEXT_OF_FREE_STUFF[12], {
         parse_mode: 'HTML',
         disable_web_page_preview: true,
+        protect_content: true,
         ...Markup.inlineKeyboard([constans.RETURN_BACK_TO_FREE_STUFF])
     })
 }
@@ -155,6 +169,7 @@ async function showSofa(ctx) {
     return await ctx.editMessageText(constans.LIST_TEXT_OF_FREE_STUFF[14], {
         parse_mode: 'HTML',
         disable_web_page_preview: true,
+        protect_content: true,
         ...Markup.inlineKeyboard([constans.RETURN_BACK_TO_FREE_STUFF])
     })
 }
@@ -165,6 +180,7 @@ async function showCourses(ctx) {
     return await ctx.editMessageText(constans.LIST_TEXT_OF_FREE_STUFF[13], {
         parse_mode: 'HTML',
         disable_web_page_preview: true,
+        protect_content: true,
         ...Markup.inlineKeyboard([
             [constans.RETURN_BACK_TO_FREE_STUFF],
         ])
@@ -177,6 +193,7 @@ async function returnBack(ctx) {
     return await ctx.editMessageText("Оберіть тему, яка вас цікавить", {
         parse_mode: 'HTML',
         disable_web_page_preview: true,
+        protect_content: true,
         ...Markup.inlineKeyboard(constans.MENU_FREE_STUFF)
     })
 }

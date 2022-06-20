@@ -9,6 +9,7 @@ async function showRecoverDecuments(ctx) {
     await ctx.editMessageText(aboutDocuments.recoverDocuments, {
         parse_mode: "HTML",
         disable_web_page_preview: true,
+        protect_content: true,
         ...Markup.inlineKeyboard([
             [Markup.button.callback(constans.RETURN_BACK_TO_FIRST, 'returnBackFirst_btn')]
         ])
@@ -21,6 +22,7 @@ async function contactsAndAdresses(ctx) {
     await ctx.editMessageText(contacts.usefulContacts, {
         parse_mode: "HTML",
         disable_web_page_preview: true,
+        protect_content: true,
         ...Markup.inlineKeyboard([
             [Markup.button.callback(constans.RETURN_BACK_TO_FIRST, 'returnBackFirst_btn')]
         ])
@@ -33,6 +35,7 @@ async function showAdresses(ctx) {
     await ctx.editMessageText(contacts.address, {
         parse_mode: "HTML",
         disable_web_page_preview: true,
+        protect_content: true,
         ...Markup.inlineKeyboard([
             [Markup.button.callback(constans.RETURN_BACK_TO_FIRST, 'returnBackFirst_btn')]
         ])
@@ -45,6 +48,7 @@ async function showAdressesInApartMenu(ctx) {
     await ctx.editMessageText(contacts.address, {
         parse_mode: "HTML",
         disable_web_page_preview: true,
+        protect_content: true,
         ...Markup.inlineKeyboard([constans.RETURN_BACK_LOOK_FOR_APART])
     });
 }
@@ -55,6 +59,7 @@ async function returnBackFrom(ctx) {
     return await ctx.editMessageText(aboutDocuments.registartion, {
         parse_mode: "HTML",
         disable_web_page_preview: true, 
+        protect_content: true,
         ...Markup.inlineKeyboard(constans.MENU_REGISTRATION)
     });
 }
@@ -65,6 +70,7 @@ async function showAdressasInContacts(ctx) {
     return await ctx.editMessageText(contacts.address, {
         parse_mode: "HTML",
         disable_web_page_preview: true, 
+        protect_content: true,
         ...Markup.inlineKeyboard([constans.RETURN_CONTACTS_MENU])
     });
 }
@@ -76,6 +82,7 @@ async function returnContactsMenu(ctx) {
     return ctx.editMessageText(string, {
         parse_mode: "HTML",
         disable_web_page_preview: true, 
+        protect_content: true,
         ...Markup.inlineKeyboard([Markup.button.callback("Адреси реєстраційних центрів", 'btn_addresses_from_CONTACTS')])
     });
 }

@@ -100,5 +100,21 @@ const pension = `
 Помітили помилку, або застарілу інформацію? <a href="https://t.me/ua_lt_inbox_bot">Напишіть нам</a>
 `
 
+const children = `
+Після отримання пластикового посвідки на проживання можна подавати заяву в центрі самоврядування на допомогу дітям до 18 років у розмірі 80,5 євро на місяць. 
+Багатодітним +47 євро на дитину.
+<a href="https://www.renkuosilietuva.lt/ru/Posobiya-v-svyazi-s-rozhdeniem-i-ukhodom-za-rebenkom/">Перейти за посиланням, щоб дізнатися більше</a>
+
+Заявка в електронному вигляді для виплати дошкільникам. З 1 липня садок платний. У серпні Ви отримуєте квитанцію за липень місяць, оплачуєте та з цією квитанцією звертаєтесь на Конституцію, 3, щоб оформити компенсації. Або в електронному вигляді:
+<a href="https://paslaugos.vilnius.lt/service-list/Menesines-kompensacijos-vaiko-ugdymo-pagal-ikimokyklinio-ar-priesmokyklinio-ugdymo-programa-islaidoms-apmoketi-skyrimas?lang=uk">Перейти за посиланням</a>
+
+Заява в електронному вигляді для облаштування житла. 
+Тут найважливіше – розібратися з оформленням офіційного договору оренди та отримати згоду від власника житла.
+<a href="https://paslaugos.vilnius.lt/service-list/vienkartines-ismokos-uzsienieciui-isikurti-skyrimas">Дізнатися більше про виплати</a>
+
+<a href="https://socmin.lrv.lt/uploads/socmin/documents/files/Vizualai%20ukrainai_Rusu%20kalba.pdf">Про соціальні виплати українцям</a>
+`
+
 module.exports.text = text;
 module.exports.pension = pension;
+module.exports.children = children;

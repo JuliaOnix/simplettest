@@ -71,7 +71,7 @@ bot.on("text",  async (ctx) => {
     
     //FIXME стикеры вынеси в константы
     await ctx.replyWithSticker("CAACAgIAAxkBAAIO8WKMJUXwYGdfN8bTmI1-dyhCAAH1oQACYwAD29t-AAGMnQU950KD5yQE")
-    await ctx.replyWithHTML("Такої команди немає. Тицяй на кнопки 🙂", Markup.keyboard(constans.MAIN_MENU_ARRAY).resize())
+    await ctx.replyWithHTML("Такої команди немає. Тицяй на кнопки 🙂", {protect_content: true,  ...Markup.keyboard(constans.MAIN_MENU_ARRAY).resize()})
     //return ctx.replyWithHTML("<b>Бот наразі знаходиться у розробці.</b> \n\nТакож було створено канал https://t.me/+uA00yl9KweQ1MTQy \nЛаскаво просимо!", Markup.removeKeyboard())
 })
 
@@ -82,7 +82,7 @@ bot.on("message", (ctx) => {
 
 //at the begining
 async function startBot(ctx) {
-    return ctx.replyWithHTML(constans.GREETING, Markup.keyboard(constans.MAIN_MENU_ARRAY).resize())
+    return ctx.replyWithHTML(constans.GREETING, {protect_content: true,  ...Markup.keyboard(constans.MAIN_MENU_ARRAY).resize()})
     //return ctx.replyWithHTML("<b>Бот наразі знаходиться у розробці.</b> \n\nТакож було створено канал https://t.me/+uA00yl9KweQ1MTQy  \nЛаскаво просимо!", Markup.removeKeyboard())
 }
 
@@ -150,6 +150,7 @@ bot.action('returnBack_btn', (ctx) => ACTIONS_HEALTH.returnBack(ctx));
 //ANCHOR FINANCE BLOCK
 bot.action('pilgi_btn', (ctx) => ACTIONS_ALLOWANCE.showPilgiPage(ctx));
 bot.action('pilgi2_btn', (ctx) => ACTIONS_ALLOWANCE.showPilgi2Page(ctx));
+bot.action('childrenMoney_btn', (ctx) => ACTIONS_ALLOWANCE.showChildrenMoneyPage(ctx));
 bot.action('pansion_btn', (ctx) => ACTIONS_ALLOWANCE.showPanshionPage(ctx));
 bot.action('exchange_currency_btn', (ctx) => ACTIONS_ALLOWANCE.showExchangeCurrencePage(ctx));
 bot.action('backToFinance_btn', (ctx) => ACTIONS_ALLOWANCE.returnBack(ctx));
@@ -199,7 +200,3 @@ bot.launch();
 
 process.once('SIGINT', () => bot.stop('SIGINT'));
 process.once('SIGTERM', () => bot.stop('SIGTERM'));
-
-
-
-

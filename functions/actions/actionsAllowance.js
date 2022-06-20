@@ -12,6 +12,7 @@ async function showPilgiPage(ctx) {
     {
         parse_mode: 'HTML',
         disable_web_page_preview: true,
+        protect_content: true,
         ...Markup.inlineKeyboard([
             [Markup.button.callback("Каунас", 'showKaunasBenefits_BTN'), Markup.button.callback("Клайпеда", 'showKlaypedaBenefits_BTN')],
             [Markup.button.callback(constans.RETURN_BACK_TO_FINANCE, 'backToFinance_btn')]
@@ -26,6 +27,21 @@ async function showPilgi2Page(ctx) {
     {
         parse_mode: 'HTML',
         disable_web_page_preview: true,
+        protect_content: true,
+        ...Markup.inlineKeyboard([
+            [Markup.button.callback(constans.RETURN_BACK_TO_FINANCE, 'backToFinance_btn')]
+        ])
+    });
+}
+
+async function showChildrenMoneyPage(ctx) {
+    console.log(`${ctx.from.username} children money choosed`)
+    await ctx.answerCbQuery();
+    await ctx.editMessageText(pension.children,
+    {
+        parse_mode: 'HTML',
+        disable_web_page_preview: true,
+        protect_content: true,
         ...Markup.inlineKeyboard([
             [Markup.button.callback(constans.RETURN_BACK_TO_FINANCE, 'backToFinance_btn')]
         ])
@@ -39,6 +55,7 @@ async function showPanshionPage(ctx) {
     {
         parse_mode: 'HTML',
         disable_web_page_preview: true,
+        protect_content: true,
         ...Markup.inlineKeyboard([
             [Markup.button.callback(constans.RETURN_BACK_TO_FINANCE, 'backToFinance_btn')]
         ])
@@ -52,6 +69,7 @@ async function showExchangeCurrencePage(ctx) {
     {
         parse_mode: 'HTML',
         disable_web_page_preview: true,
+        protect_content: true,
         ...Markup.inlineKeyboard([
             [Markup.button.callback(constans.RETURN_BACK_TO_FINANCE, 'backToFinance_btn')]
         ])
@@ -64,9 +82,11 @@ async function returnBack(ctx) {
     return await ctx.editMessageText(allowanceFinanceVar.infoAboutBanks, {
         parse_mode: "HTML",
         disable_web_page_preview: true,
+        protect_content: true,
         ...Markup.inlineKeyboard([
             [Markup.button.callback('Пільги', 'pilgi2_btn')],
             [Markup.button.callback('Пільги по містам', 'pilgi_btn')],
+            [Markup.button.callback('Виплати', 'childrenMoney_btn')],
             [Markup.button.callback('Пенсія', 'pansion_btn')],
             [Markup.button.callback('Де обміняти гривні на евро', 'exchange_currency_btn')],
         ])
@@ -78,3 +98,4 @@ module.exports.showPilgi2Page = showPilgi2Page;
 module.exports.showPanshionPage = showPanshionPage;
 module.exports.showExchangeCurrencePage = showExchangeCurrencePage;
 module.exports.returnBack = returnBack;
+module.exports.showChildrenMoneyPage = showChildrenMoneyPage;

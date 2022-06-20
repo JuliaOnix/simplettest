@@ -10,6 +10,7 @@ async function showLanguagePage(ctx) {
     return await ctx.editMessageText(language.sites, {
         parse_mode: 'HTML',
         disable_web_page_preview: true, 
+        protect_content: true,
         ...Markup.inlineKeyboard([Markup.button.callback("Назад", "return_back_to_lithuania")])
     })
 }
@@ -20,6 +21,7 @@ async function returnBack(ctx) {
     return await ctx.editMessageText(aboutLithuania.post, {
         parse_mode: 'HTML',
         disable_web_page_preview: true,
+        protect_content: true,
         ...Markup.inlineKeyboard(
             [Markup.button.callback("Сайти, де можна вивчати литовську", "language_btn")]
     )})

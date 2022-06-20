@@ -9,6 +9,7 @@ async function showTelegramChannels(ctx) {
     return await ctx.editMessageText(sitesInfo.telegramChannelsList, {
         parse_mode: 'HTML',
         disable_web_page_preview: true,
+        protect_content: true,
         ...Markup.inlineKeyboard([constans.RETURN_BACK_TO_SITES])
     })
 }
@@ -19,6 +20,7 @@ async function showFacebook(ctx) {
     return await ctx.editMessageText(sitesInfo.facebookGroupsText, {
         parse_mode: 'HTML',
         disable_web_page_preview: true,
+        protect_content: true,
         ...Markup.inlineKeyboard([constans.RETURN_BACK_TO_SITES])
     })
 }
@@ -29,6 +31,7 @@ async function showInstagram(ctx)  {
     return await ctx.editMessageText(sitesInfo.instagramPages, {
         parse_mode: 'HTML',
         disable_web_page_preview: true,
+        protect_content: true,
         ...Markup.inlineKeyboard([constans.RETURN_BACK_TO_SITES])
     })
 }
@@ -39,6 +42,7 @@ async function showDovidnuku(ctx) {
     return await ctx.editMessageText(sitesKatalog.qAndA, {
         parse_mode: 'HTML',
         disable_web_page_preview: true,
+        protect_content: true,
         ...Markup.inlineKeyboard([constans.RETURN_BACK_TO_SITES])
     })
 }
@@ -49,6 +53,7 @@ async function returnBack(ctx) {
     return await ctx.editMessageText(sitesInfo.sites, {
         parse_mode: 'HTML',
         disable_web_page_preview: true,
+        protect_content: true,
         ...Markup.inlineKeyboard(constans.MENU_BUTTONS_SITES)
     })
 }

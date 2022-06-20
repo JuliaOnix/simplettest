@@ -9,6 +9,7 @@ async function showLookFor(ctx) {
     await ctx.editMessageText(apartmentsinfo.sites, {
         parse_mode: "HTML",
         disable_web_page_preview: true,
+        protect_content: true,
         ...Markup.inlineKeyboard([constans.RETURN_BACK_LOOK_FOR_APART])
     });
 }
@@ -19,6 +20,7 @@ async function returnBack(ctx) {
     await ctx.editMessageText(apartmentsinfo.aboutApartmentsMainPage, {
         parse_mode: "HTML",
         disable_web_page_preview: true,
+        protect_content: true,
         ...Markup.inlineKeyboard(constans.MENU_ABOUT_APARTMENTS)
     });
 }

@@ -9,6 +9,7 @@ async function univer(ctx) {
     await ctx.editMessageText(educationShcools.universities, {
         parse_mode: "HTML",
         disable_web_page_preview: true,
+        protect_content: true,
         ...Markup.inlineKeyboard([constans.RETURN_BACK_TO_EDUCATION])
     })
 }
@@ -19,6 +20,7 @@ async function sportEducation(ctx) {
     await ctx.editMessageText(educationShcools.sportPlaces, {
         parse_mode: "HTML",
         disable_web_page_preview: true,
+        protect_content: true,
         ...Markup.inlineKeyboard([constans.RETURN_BACK_TO_EDUCATION])
     })
 }
@@ -30,6 +32,7 @@ async function profEducation(ctx) {
     {
         parse_mode: "HTML",
         disable_web_page_preview: true,
+        protect_content: true,
         ...Markup.inlineKeyboard([constans.RETURN_BACK_TO_EDUCATION])
     })
 }
@@ -41,6 +44,7 @@ async function showMoreArtEvents(ctx) {
     return await ctx.editMessageText(educationShcools.artfree, {
         parse_mode: 'HTML',
         disable_web_page_preview: true,
+        protect_content: true,
         ...Markup.inlineKeyboard([
             [constans.RETURN_BACK_TO_FREE_STUFF]
         ])
@@ -54,6 +58,7 @@ async function showArtAndTeatr(ctx) {
     await ctx.editMessageText(educationShcools.artfree, {
         parse_mode: "HTML", 
         disable_web_page_preview: true,
+        protect_content: true,
         ...Markup.inlineKeyboard([
             [Markup.button.callback(constans.RETURN_BACK_TO_GROUPLESSONS_EDUCATION, 'return_back_In_GroupMenu_btn')]
         ])

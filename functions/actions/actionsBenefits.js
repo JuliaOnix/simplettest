@@ -9,6 +9,7 @@ async function showKaunasPage(ctx) {
     {
         parse_mode: 'HTML',
         disable_web_page_preview: true,
+        protect_content: true,
         ...Markup.inlineKeyboard([
             [Markup.button.callback(constans.RETURN_BACK_TO_FINANCE, 'backToFinance_btn')]
         ])
@@ -21,6 +22,7 @@ async function showKlaypedaPage(ctx) {
     {
         parse_mode: 'HTML',
         disable_web_page_preview: true,
+        protect_content: true,
         ...Markup.inlineKeyboard([
             [Markup.button.callback(constans.RETURN_BACK_TO_FINANCE, 'backToFinance_btn')]
         ])
@@ -33,6 +35,7 @@ async function showMoreBenefitsPage(ctx) {
     {
         parse_mode: 'HTML',
         disable_web_page_preview: true,
+        protect_content: true,
         ...Markup.inlineKeyboard([
             [Markup.button.callback(constans.RETURN_BACK_TO_FINANCE, 'backToFinance_btn')]
         ])

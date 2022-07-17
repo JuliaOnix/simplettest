@@ -87,6 +87,8 @@ const ukranianSymb = `
 `
 
 const children = `
+• <a href="https://www.neformalusugdymas.lt/?fbclid=IwAR2cgUk5rAbpJkhMmLdM50ei2rXx-kc4l0sUePWghqgb_vNI-tOcx7Bxb5I">Всі заходи для дітей та молоді</a>
+• <a href="https://studyin.lt/ua/?fbclid=IwAR0jxujR2sM-pprM9q3jH6kRBsA1qrjrzoi1cxaaTSytVmc7AD_k7xPl67A#higher-education-in-lithuania-ru">Вища освіта у Литві</a>
 • <a href="https://vilnia-by.com/archives/9017">Шкільна освіта у Литві</a>
 • <a href="https://www.govilnius.lt/relocate-and-live/education-options/kindergartens">Дитячі садочки</a>
 • <a href="https://maps.vilnius.lt/darzeliai#layers">Карта дитячих садків</a>

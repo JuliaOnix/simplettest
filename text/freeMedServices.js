@@ -48,6 +48,8 @@ const corona = `
 <b>Зареєструватися на вакцинацію</b> можна за номером <b>1808</b> або <a href='https://vakcina.myhybridlab.com/selfregister/vaccine'>ТУТ</a>
 
 <a href='https://koronastop.lrv.lt/ru/vaktsinatsiia/informatsiia-v-sviazi-s-vaktsinatsiei-inostrantsev'>koronastop.lrv.lt</a> описані які документи потрібні, і що робити, якщо їх немає
+
+
 `
 
 const forWomenAndPregnant = `

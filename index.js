@@ -82,7 +82,8 @@ bot.on("message", (ctx) => {
 
 //at the begining
 async function startBot(ctx) {
-    return ctx.replyWithHTML(constans.GREETING, {protect_content: true,  ...Markup.keyboard(constans.MAIN_MENU_ARRAY).resize()})
+    return ctx.replyWithHTML(constans.GREETING, {protect_content: true, parse_mode: 'HTML',
+    disable_web_page_preview: true,  ...Markup.keyboard(constans.MAIN_MENU_ARRAY).resize()})
     //return ctx.replyWithHTML("<b>Бот наразі знаходиться у розробці.</b> \n\nТакож було створено канал https://t.me/+uA00yl9KweQ1MTQy  \nЛаскаво просимо!", Markup.removeKeyboard())
 }
 
@@ -174,6 +175,18 @@ bot.action('freeArtEvents_btn', (ctx) => ACTIONS_FREE_STUFF.showArt(ctx))
 bot.action('return_to_free_stuff_btn', (ctx) => ACTIONS_FREE_STUFF.returnBack(ctx));
 
 // ANCHOR Sites Block
+bot.action("services_sites_btn", (ctx) => ACTIONS_SOCIAL.showServicesSites(ctx))
+bot.action("another_sites_btn", (ctx) => ACTIONS_SOCIAL.showAnotherSites(ctx))
+bot.action("afisha_sites_btn", (ctx) => ACTIONS_SOCIAL.showAfishaSites(ctx))
+bot.action("med_sites_btn", (ctx) => ACTIONS_SOCIAL.showMedSites(ctx))
+bot.action("products_sites_btn", (ctx) => ACTIONS_SOCIAL.showProductSites(ctx))
+bot.action("children_sites_btn", (ctx) => ACTIONS_SOCIAL.showChildrenSites(ctx))
+bot.action("mun_sites_btn", (ctx) => ACTIONS_SOCIAL.showMunSites(ctx))
+bot.action("work_sites_btn", (ctx) => ACTIONS_SOCIAL.showWorkSites(ctx))
+bot.action("cars_sites_btn", (ctx) => ACTIONS_SOCIAL.showAutoSites(ctx))
+bot.action("zoo_sites_btn", (ctx) => ACTIONS_SOCIAL.showZooSites(ctx))
+bot.action("houses_sites_btn", (ctx) => ACTIONS_SOCIAL.showHouseSites(ctx))
+bot.action("ukraine_sites_btn", (ctx) => ACTIONS_SOCIAL.showUkshowUkranianSymbSites(ctx))
 bot.action("telegramChannels_btn", (ctx) => ACTIONS_SOCIAL.showTelegramChannels(ctx))
 bot.action("facebookGroups_btn", (ctx) => ACTIONS_SOCIAL.showFacebook(ctx))
 bot.action("instagramGroups_btn", (ctx) => ACTIONS_SOCIAL.showInstagram(ctx))

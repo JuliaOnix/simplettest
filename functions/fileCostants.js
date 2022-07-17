@@ -2,10 +2,10 @@ const { Telegraf, Markup } = require("telegraf");
 const financeText = require('../text/allowanceFinanceFile')
 const addInfoGreeting = `C 20 червня працює <b>24/7</b> «гаряча лінія» для надання інформації про соціальний та медичний захист, центри реєстрації, повернення додому та інші важливі питання. \n
 📞 <b>1808</b> — оператори консультуватимуть біженців українською, англійською та російською мовами. \n
-Якщо Ви бажаєте додати інформацію до бота, або у вас залишились питання про Литву, пишіть на цю сторінку <b>@ua_lt_inbox_bot</b>`
+Якщо Ви бажаєте додати інформацію до бота, або у вас є питання, пишіть на цю сторінку <b>@ua_lt_inbox_bot</b>`
 
 
-const GREETING = `👋🏻 Вітаю у <b>Довіднику</b>! Оберіть тему, яка вас цікавить.\n\n ${addInfoGreeting}`;
+const GREETING = `👋🏻 Вітаю у <b><a href="https://t.me/ua_lt_channel">Довіднику</a></b>! Оберіть тему, яка вас цікавить.\n\n ${addInfoGreeting}`;
 const RETURN_BACK_TO_EDUCATION = Markup.button.callback('🔙 Повернутися до «Навчання»', 'returnBackEducation_btn');
 const FORWARD_BTN = `Наступна сторінка ➡️`;
 const BACKWARD_BTN = `⬅️ Попередня сторінка`;
@@ -107,6 +107,12 @@ const MENU_BUTTONS = [
 ];
 
 const MENU_BUTTONS_SITES = [
+    [Markup.button.callback('🏥 Медицина', 'med_sites_btn'), Markup.button.callback('🥬 Їжа та продукти', 'products_sites_btn')],
+    [Markup.button.callback('👶 Діти', 'children_sites_btn'), Markup.button.callback('👨🏻‍🎨 Робота', 'work_sites_btn')],
+    [Markup.button.callback('🏡 Нерухомість', 'houses_sites_btn'), Markup.button.callback('👨🏼‍💻 Послуги', 'services_sites_btn')],
+    [Markup.button.callback('🚘 Авто/Транспорт', 'cars_sites_btn'), Markup.button.callback('🦜 ЗООтовари та послуги', 'zoo_sites_btn')],
+    [Markup.button.callback('🛒 Інші магазини', 'another_sites_btn'), Markup.button.callback('📰 Афіша та новини', 'afisha_sites_btn')],
+    [Markup.button.callback('🇺🇦 Українська символіка', 'ukraine_sites_btn'), Markup.button.callback('Державні та муніципальні послуги', 'mun_sites_btn')],
     [Markup.button.callback('Сайти довідники', 'dovidnuku_btn'), Markup.button.callback('Facebook групи', 'facebookGroups_btn')],
     [Markup.button.callback('Instagram канали', 'instagramGroups_btn'), Markup.button.callback('Телеграм канали', 'telegramChannels_btn')]
 ]

@@ -61,7 +61,7 @@ async function educationAndSportFunc(ctx) {
 
 async function showPostWithSites(ctx) {
     console.log(`${ctx.from.username} ${ctx.message.text} choosed`)
-    await ctx.replyWithHTML(sitesPost.sites, {
+    await ctx.replyWithHTML("Каталог сайтів", {
         parse_mode: 'HTML',
         disable_web_page_preview: true, 
         protect_content:true,

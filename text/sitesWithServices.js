@@ -87,6 +87,7 @@ const ukranianSymb = `
 `
 
 const children = `
+• <a href="https://ukrainiankids.lt/">Безкоштовні заходи, гуртки, табори, допомога українським дітям</a>
 • <a href="https://www.neformalusugdymas.lt/?fbclid=IwAR2cgUk5rAbpJkhMmLdM50ei2rXx-kc4l0sUePWghqgb_vNI-tOcx7Bxb5I">Всі заходи для дітей та молоді</a>
 • <a href="https://studyin.lt/ua/?fbclid=IwAR0jxujR2sM-pprM9q3jH6kRBsA1qrjrzoi1cxaaTSytVmc7AD_k7xPl67A#higher-education-in-lithuania-ru">Вища освіта у Литві</a>
 • <a href="https://vilnia-by.com/archives/9017">Шкільна освіта у Литві</a>
@@ -226,18 +227,7 @@ const facebookGroupsText = `
 • <b><a href="https://www.facebook.com/%D0%A8%D0%B0%D1%85%D0%B8-%D0%A3%D0%BA%D1%80%D0%B0%D1%97%D0%BD%D0%B0-%C5%A0achmatai-Ukraina-104103198962485">Шахи / Україна - Šachmatai / Ukraina</a></b>
 • <b><a href="https://www.facebook.com/groups/868903884507780/">Допомога українським родинам</a></b>
 • <b><a href="https://www.facebook.com/groups/356243299713614/">Українці в Каунасі</a></b>
-• <b><a href="https://www.facebook.com/groups/669398504323707">Українці в Укмерзі - Украинки и украинцы в Укмерге</a></b>
-• <b><a href="https://www.facebook.com/groups/286679646911263/">Допомога народу України</a></b>
-• <b><a href="https://www.facebook.com/groups/901162937247328/">Українки в Литві</a></b>
 • <b><a href="https://www.facebook.com/groups/3112002959126318/">Литва допомагає Україні</a></b>
-• <b><a href="https://www.facebook.com/groups/2294077994171869">Група українці ЛТ</a></b>
-• <b><a href="https://www.facebook.com/groups/371063444546375/posts/375909924061727/">Допомога для українців, Клайпеда</a></b>  
-• <b><a href="https://www.facebook.com/groups/668743400840858/">Купую в українців у LT</a></b>
-• <b><a href="https://www.facebook.com/groups/413914537172259/">Українці в Литві, м.Маріямполе</a></b>
-• <b><a href="https://www.facebook.com/groups/479655308899391/?ref=share">Група в fb Українці в Каунасі</a></b> 
-• <b><a href="https://www.facebook.com/groups/352386036806778/?ref=share">Українські психологи в Каунасі</a></b> 
-• <b><a href="https://www.facebook.com/groups/356243299713614/?ref=share">Ukrainiečiai Kaune - Украинцы в Каунасе</a></b> 
-• <b><a href="https://www.facebook.com/groups/471961771327433/?ref=share">Україночки в Каунасі 🇺🇦 Творче об'єднання</a></b>  
 
 <b>Групи Вільнюса, де віддають меблі та інші речі</b> 
 • <a href="https://www.facebook.com/groups/1822607451305797">Free your Stuff VILNIUS/Atiduotuvė</a>
@@ -252,15 +242,6 @@ const facebookGroupsText = `
 • <a href="https://www.facebook.com/groups/668172780250851">Клайпеда</a>
 • <a href="https://www.facebook.com/groups/714686082617374">Литва</a>
 • <a href="https://www.facebook.com/groups/dovanuoj">Литва</a>
-
-<b>Шукають моделей у різних сферах краси:</b>
-• <a href="https://www.facebook.com/groups/485814969203661">Литва</a>
-• <a href="https://www.facebook.com/groups/390641094460378">Литва</a>
-• <a href="https://www.facebook.com/groups/2323366677989432">Литва</a>
-• <a href="https://www.facebook.com/groups/976573235815146">Каунас</a>
-• <a href="http://facebook.com/groups/249255388815100">Вільнюс</a>
-• <a href="https://www.facebook.com/groups/320430144999724">Вільнюс</a> 
-• <a href="https://www.facebook.com/groups/4263308243700099">Шяуляй</a>
 `
 
 

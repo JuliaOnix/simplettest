@@ -49,6 +49,9 @@ const products = `
 `
 
 const different_shops = `
+• <a href="https://nuolaiduvisata.lt/">Де можна знайти інформацію про знижки та акції</a>
+• <a href="https://ru.skelbiu.lt/">Портал оголошень</a> 
+
 <b>Фізичні (не онлайн) магазини електронікі та побутової техніки</b>
 • https://topocentras.lt 
 • https://elektromartk.lt 

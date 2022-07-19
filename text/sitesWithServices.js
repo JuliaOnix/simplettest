@@ -221,6 +221,10 @@ const houses = `
 • https://capital.lt
 • https://ober-house.lt
 • https://enuoma.lt
+
+<b>Пошук житла на декілька днів</b>
+• <a href="https://www.airbnb.com.ua/?_set_bev_on_new_domain=1658259777_NzI2OTk1YjNmYWY5">airbnb.com.ua</a>
+• <a href="https://www.booking.com/index.uk.html?aid=397594&label=gog235jc-1DCAEoggI46AdIIVgDaIgBiAEBmAEhuAEXyAEM2AED6AEB-AECiAIBqAIDuALak9yWBsACAdICJGRjZTEzMjc5LWZhZTYtNDI4MC1iYTMyLWU0NWZlZTdjZGJhNdgCBOACAQ&sid=f73893163805735bae7a90dd3e2033a9&lang=uk&sb_price_type=total&soz=1&lang_click=other&cdl=ru&lang_changed=1">booking.com/ua</a>
 `
 
 const facebookGroupsText = `

@@ -32,7 +32,7 @@ const MAIN_MENU_NAMES =
 
 const MENU_REGISTRATION = [
     [Markup.button.callback("Адреси реєстраційних центрів", 'btn_addresses')],
-    [Markup.button.callback("Відновлення документів", "recoverDocuments_BTN")],
+    [Markup.button.callback("Про документи", "recoverDocuments_BTN")],
 ];
 
 const MAIN_MENU_ARRAY = [[MAIN_MENU_NAMES[0], MAIN_MENU_NAMES[1], MAIN_MENU_NAMES[2]],
@@ -63,7 +63,7 @@ const MENU_ABOUT_EXTRACURRICULARSFOR_EDUCATIONMENU = [
 
 const MENU_ABOUT_APARTMENTS = [
     [Markup.button.callback("Адреси реєстраційних центрів", 'adresses_in_apartment')],
-    [Markup.button.callback("Самостійний пошук житла", 'lookforapartmants_BTN')]
+    [Markup.button.callback("Сайти для пошук житла", 'lookforapartmants_BTN')]
 ]
 
 //menu for work block

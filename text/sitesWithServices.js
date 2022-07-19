@@ -171,6 +171,8 @@ https://skelbiu.lt/
 • <a href="https://autogidas.lt/ru/ket/">Питання та відповіді ПДР</a>
 • <a href="http://auto-loads.com">Транспорт машин</a> 
 • <a href="https://www.cab.lt/web/en/insurance-check">Перевірка дійсності страхової на Авто</a>
+• <a href="https://judu.lt/en/">Маршрути та розклад міського транспорту для Вільнюса</a>
+• <a href="https://www.litrail.lt/ru/home">Cайт литовських залізниць</a>
 
 <b>Автозапчастини/автобарахолки:</b> 
 • https://www.pigiausiosdalys.lt/

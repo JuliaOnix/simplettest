@@ -158,12 +158,6 @@ const work = `
 `
 
 const cars = `
-<b>Автомобілі (купівля-продаж):</b>
-https://ru.autoplius.lt/
-https://ru.autogidas.lt/
-https://alio.lt/
-https://skelbiu.lt/
-
 • <a href="https://parking.lt/">Платні стоянки у Вільнюсі</a>
 • <a href="http://greencard.lt/">Страхування GreenCard</a>
 • <a href="https://www.regitra.lt/en/services/driving-licences">Regitra Про отримання/зміну прав у Литві</a>
@@ -173,6 +167,12 @@ https://skelbiu.lt/
 • <a href="https://www.cab.lt/web/en/insurance-check">Перевірка дійсності страхової на Авто</a>
 • <a href="https://judu.lt/en/">Маршрути та розклад міського транспорту для Вільнюса</a>
 • <a href="https://www.litrail.lt/ru/home">Cайт литовських залізниць</a>
+
+<b>Автомобілі (купівля-продаж):</b>
+https://ru.autoplius.lt/
+https://ru.autogidas.lt/
+https://alio.lt/
+https://skelbiu.lt/
 
 <b>Автозапчастини/автобарахолки:</b> 
 • https://www.pigiausiosdalys.lt/

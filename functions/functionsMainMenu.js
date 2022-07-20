@@ -56,7 +56,8 @@ async function mainInfoAboutRefugee(ctx) {
 //show block about education and sport for children also
 async function educationAndSportFunc(ctx) {
     console.log(`${ctx.from.username} ${ctx.message.text} choosed`)
-    await ctx.replyWithHTML(educationShcools.generalInfoAboutSchool, {protect_content:true, ...Markup.inlineKeyboard(constans.MENU_EDUCATION)});
+    await ctx.replyWithHTML(educationShcools.generalInfoAboutSchool, {protect_content:true, parse_mode: 'HTML',
+    disable_web_page_preview: true,  ...Markup.inlineKeyboard(constans.MENU_EDUCATION)});
 }
 
 async function showPostWithSites(ctx) {
@@ -99,7 +100,8 @@ async function writeToOwnerOfTelegram(ctx) {
 //show info about humanitarianAid
 async function humanitarianAidFunc(ctx) {
     console.log(`${ctx.from.username} ${ctx.message.text} choosed`)
-    await ctx.replyWithHTML(humanInfo.humanAid, {protect_content:true , ...Markup.inlineKeyboard(constans.MENU_WITH_CITIES_OF_HUMAN_AID)});
+    await ctx.replyWithHTML(humanInfo.humanAid, {protect_content:true , parse_mode: 'HTML',
+    disable_web_page_preview: true,  ...Markup.inlineKeyboard(constans.MENU_WITH_CITIES_OF_HUMAN_AID)});
 }
 
 //useful contacts 
@@ -141,7 +143,8 @@ async function aboutLithuaniaFunc(ctx) {
 //show work posts
 async function workinLitva(ctx) {
     console.log(`${ctx.from.username} workinLitva choosed`)
-    await ctx.replyWithHTML(workInfo.basicInfoAboutWork, {protect_content:true, ...Markup.inlineKeyboard(constans.MENU_ABOUT_WORK)})
+    await ctx.replyWithHTML(workInfo.basicInfoAboutWork, {protect_content:true, parse_mode: "HTML",
+    disable_web_page_preview: true, ...Markup.inlineKeyboard(constans.MENU_ABOUT_WORK)})
 }
 
 //show menu about finance

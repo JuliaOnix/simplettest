@@ -195,7 +195,7 @@ async function returnBack(ctx) {
     await ctx.answerCbQuery();
     await ctx.editMessageText(educationShcools.generalInfoAboutSchool, {
         parse_mode: "HTML", 
-        disable_web_page_preview: false,
+        disable_web_page_preview: true,
         ...Markup.inlineKeyboard(constans.MENU_EDUCATION)
     })
 }

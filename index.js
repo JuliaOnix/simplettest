@@ -52,14 +52,14 @@ bot.hears(constans.MAIN_MENU_NAMES[0], (ctx) => mainMenuFunctionsFile.mainInfoAb
 bot.hears(constans.MAIN_MENU_NAMES[1], (ctx) => mainMenuFunctionsFile.usefulContacts(ctx));
 bot.hears(constans.MAIN_MENU_NAMES[2], (ctx) => mainMenuFunctionsFile.lookforanApartment(ctx));
 bot.hears(constans.MAIN_MENU_NAMES[3], (ctx) => mainMenuFunctionsFile.humanitarianAidFunc(ctx));
-bot.hears(constans.MAIN_MENU_NAMES[4], (ctx) => mainMenuFunctionsFile.infoAboutMedicineFunc(ctx));
-bot.hears(constans.MAIN_MENU_NAMES[5], (ctx) => mainMenuFunctionsFile.allowanceFinanceFunc(ctx));
-bot.hears(constans.MAIN_MENU_NAMES[6], (ctx) => mainMenuFunctionsFile.workinLitva(ctx));
-bot.hears(constans.MAIN_MENU_NAMES[7], (ctx) => mainMenuFunctionsFile.educationAndSportFunc(ctx));
+//bot.hears(constans.MAIN_MENU_NAMES[4], (ctx) => mainMenuFunctionsFile.infoAboutMedicineFunc(ctx));
+bot.hears(constans.MAIN_MENU_NAMES[4], (ctx) => mainMenuFunctionsFile.allowanceFinanceFunc(ctx));
+bot.hears(constans.MAIN_MENU_NAMES[5], (ctx) => mainMenuFunctionsFile.workinLitva(ctx));
+bot.hears(constans.MAIN_MENU_NAMES[6], (ctx) => mainMenuFunctionsFile.educationAndSportFunc(ctx));
 //bot.hears(constans.MAIN_MENU_NAMES[8], (ctx) => mainMenuFunctionsFile.freeStuffForUkraineFunc(ctx, currentPostFree));
-bot.hears(constans.MAIN_MENU_NAMES[8], (ctx) => mainMenuFunctionsFile.aboutLithuaniaFunc(ctx));
-bot.hears(constans.MAIN_MENU_NAMES[9], (ctx) => mainMenuFunctionsFile.showPostWithSites(ctx));
-bot.hears(constans.MAIN_MENU_NAMES[10], (ctx) => mainMenuFunctionsFile.writeToOwnerOfTelegram(ctx));
+bot.hears(constans.MAIN_MENU_NAMES[7], (ctx) => mainMenuFunctionsFile.aboutLithuaniaFunc(ctx));
+bot.hears(constans.MAIN_MENU_NAMES[8], (ctx) => mainMenuFunctionsFile.showPostWithSites(ctx));
+bot.hears(constans.MAIN_MENU_NAMES[9], (ctx) => mainMenuFunctionsFile.writeToOwnerOfTelegram(ctx));
 
 
 

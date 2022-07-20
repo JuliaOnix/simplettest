@@ -189,7 +189,6 @@ const telegramChannelsList = `
 • <b><a href="https://t.me/ukrainpatriot">Украинцы в Литве</a></b>
 • <b><a href="https://t.me/ukraincilitva">Українці у Литві</a></b>
 • <b><a href="https://t.me/vilnius_ukr">Вільнюс. Ми з України</a></b>
-• <b><a href="https://t.me/letsbefriendsinvilnius">Україночки Вільнюс</a></b>
 • <b><a href="https://t.me/zustrichiiznayomsvavkaunasi">Українці KAUNAS</a></b>
 • <b><a href="https://t.me/ukraincivklaipedi">Українці в Клайпеді</a></b>
 • <b><a href="https://t.me/+Q6KPSibr39hlOGUy">Укринці в Паланзі</a></b>

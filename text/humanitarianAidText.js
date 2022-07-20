@@ -1,8 +1,4 @@
 const humanAid = `
-<b>Підтримка в Литві</b>	
-Речі першої необхідності, іграшки та інші потреби дітей.
-<a href='https://docs.google.com/forms/d/e/1FAIpQLSeDC2Ja7fD0Pc8g80ggFMYW4uGzkl41tp301vVQUzjOb8bPcg/viewform'>Заповнити форму</a> 		
-
 <b>Продовольчі картки «Maisto bankAS»</b> 
 вартістю 115 євро, за їх допомогою можна купити продукти 
 харчування в одній із торгових мереж Литви)

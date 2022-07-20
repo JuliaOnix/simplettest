@@ -54,7 +54,7 @@ const different_shops = `
 
 <b>Фізичні (не онлайн) магазини електронікі та побутової техніки</b>
 • https://topocentras.lt 
-• https://elektromartk.lt 
+• https://elektromarkt.lt 
 • https://euronics.lt
 
 <b>Універсальні онлайн-магазини (на кшталт амазону, але тільки литовські):</b>

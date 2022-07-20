@@ -149,9 +149,6 @@ I–VII 08:00–20:00
 <u>Telegram-Група:</u> https://t.me/virtualsklad
 📍 <a href="https://goo.gl/maps/VF8AhTjLYamEH9fE8">Vilniaus g 20 БелДом</a>
 
-<b>Фонд «Врятуємо дітей»</b>
-📍 <a href="https://goo.gl/maps/PKEePiiqHh4srUoJ6">Klaipedos 6</a> 	
-
 <b>Помітили помилку, або застарілу інформацію? <a href="https://t.me/ua_lt_inbox_bot">Напишіть нам</a></b>
 `
 

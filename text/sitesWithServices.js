@@ -158,6 +158,7 @@ const work = `
 `
 
 const cars = `
+• <a href="https://bananacar.lt/ua?language=ruua">BananaCar - схожий на український аналог BlaBlaCar</a>
 • <a href="https://parking.lt/">Платні стоянки у Вільнюсі</a>
 • <a href="http://greencard.lt/">Страхування GreenCard</a>
 • <a href="https://www.regitra.lt/en/services/driving-licences">Regitra Про отримання/зміну прав у Литві</a>

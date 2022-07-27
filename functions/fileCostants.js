@@ -26,7 +26,7 @@ const RETURN_BACK_TO_SITES = Markup.button.callback('🔙 Повернутися
 const MAIN_MENU_NAMES = 
 [
     '🛬 По Прибутті', '📞 Корисні контакти', '🔎 Пошук житла', 
-    '📦 Гуманітарна Допомога', '💵 Фінанси, Пільги', '🏭 Робота', 
+    '📦 Гуманітарна Допомога', `💊 Здоров'я` , '💵 Фінанси, Пільги', '🏭 Робота', 
     '🏫 Навчання', "🇱🇹 Литва", '📡 Каталог сайтів', 'Розробники'
 ];
 
@@ -36,9 +36,9 @@ const MENU_REGISTRATION = [
 ];
 
 const MAIN_MENU_ARRAY = [[MAIN_MENU_NAMES[0], MAIN_MENU_NAMES[1], MAIN_MENU_NAMES[2]],
-[MAIN_MENU_NAMES[3], MAIN_MENU_NAMES[4]],
-[MAIN_MENU_NAMES[5], MAIN_MENU_NAMES[6], MAIN_MENU_NAMES[7]],
-[MAIN_MENU_NAMES[8], MAIN_MENU_NAMES[9]]]
+[MAIN_MENU_NAMES[3], MAIN_MENU_NAMES[4], MAIN_MENU_NAMES[5]],
+[MAIN_MENU_NAMES[6], MAIN_MENU_NAMES[7], MAIN_MENU_NAMES[8]],
+[MAIN_MENU_NAMES[9], MAIN_MENU_NAMES[10]]]
 
 
 //menu for health block 

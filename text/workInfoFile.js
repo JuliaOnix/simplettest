@@ -13,6 +13,12 @@ const basicInfoAboutWork = `
 <b>Вебінар російською мовою про працевлаштування, охорону здоров'я, соціальні гарантії та освіту для  дітей в Литві:</b>
 <a href="https://www.youtube.com/watch?v=neijMI6xKng">Вебінар</a> 
 
+<b>Вебінар про алгоритм пошуку роботи в Литві</b> ➡️ <a href="https://www.youtube.com/watch?v=2_MRUXK7IHE&ab_channel=InternationalHouseVilnius">Вебінар</a>
+<b>Матеріали з вебінару</b> ➡️ <a href="https://drive.google.com/drive/folders/1fZLpFJngHTPFPsAO2U_eelzeV8tdmG6a">матеріли</a>
+
+<b>Вебінар про роботу, але з юридичної точки зору</b> ➡️ https://youtu.be/kfbfsg5pvhU 
+<b>Матеріали з вебінару</b> ➡️ <a href="https://drive.google.com/drive/folders/1D1miNaG4tM97RvpC3AI1ENlre0Dva_QM">матеріали</a>
+
 <b>Знати свої права! Інформація щодо інспекції праці для українців:</b>
 <a href="https://www.vdi.lt/Forms/Tekstas1.aspx?Tekstai_ID=3601">Сайт</a> 
 <a href="https://www.vdi.lt/PdfUploads/ukr.pdf">Скачати пам'ятку</a> 

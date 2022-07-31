@@ -49,7 +49,12 @@ const products = `
 `
 
 const different_shops = `
-• <a href="https://nuolaiduvisata.lt/">Де можна знайти інформацію про знижки та акції</a>
+<b>Сайти та додатки, де можна дізнатись про знижки та акції у торгових мережах</b>
+• https://nuolaiduvisata.lt/
+• https://pricer.lt/ru/pricer-top
+• https://manoakcijos.lt/
+• https://m.raskakcija.lt/
+
 • <a href="https://ru.skelbiu.lt/">Портал оголошень</a> 
 
 <b>Фізичні (не онлайн) магазини електронікі та побутової техніки</b>
@@ -192,8 +197,6 @@ const telegramChannelsList = `
 • <b><a href="https://t.me/vilnius_ukr">Вільнюс. Ми з України</a></b>
 • <b><a href="https://t.me/zustrichiiznayomsvavkaunasi">Українці KAUNAS</a></b>
 • <b><a href="https://t.me/kaunasua">Україночки в Каунасі Творчість, дозвілля</a></b>
-• <b><a href="https://t.me/+LzvdXO_2DzVlMDdi">Група Б'юті Каунас</a></b> 
-• <b href="https://t.me/+lSyntwEngqo5Yzcy">Група б'юті в Каунасі 2</b>
 • <b><a href="https://t.me/ukraincivklaipedi">Українці в Клайпеді</a></b>
 • <b><a href="https://t.me/+Q6KPSibr39hlOGUy">Укринці в Паланзі</a></b>
 • <b><a href="https://t.me/lubaukraina">Украинцы в Шауляй</a></b>
@@ -207,6 +210,8 @@ const telegramChannelsList = `
 (Купівля/Продаж у Вільнюсі)
 • <b><a href="https://t.me/belarusVLN">Чат - Беларусы Вільні</a></b>
 (Чат білорусів, але теж можна ставити запитання про життя у Литві та дозвілля.)
+• <b><a href="https://t.me/+LzvdXO_2DzVlMDdi">Група Б'юті Каунас</a></b> 
+• <b><a href="https://t.me/+lSyntwEngqo5Yzcy">Група б'юті в Каунасі 2</a></b> 
 ` 
 
 const houses = `

@@ -17,7 +17,8 @@ const registartion =   `
 ❕Якщо ви плануєте перебувати в Литві до 3 місяців і маєте біометричний паспорт, для вас діятиме безвізовий режим  90 днів. Ви можете вільно пересуватися в межах ЄС.
 
 <b>Вебінар про правовий статус, охорону здоров'я, працевлаштування, освіту дітей та соціальні гарантії</b>
-<a href="https://www.youtube.com/watch?v=neijMI6xKng&ab_channel=IOMVilnius">Вебінар</a>
+<a href="https://www.youtube.com/watch?v=rwQTHteEONs&ab_channel=InternationalHouseVilnius">Вебінар</a>
+<a href="https://www.youtube.com/watch?v=neijMI6xKng&ab_channel=IOMVilnius">Вебінар 2</a>
 
 <b>Пам'ятки, які можна завантажити:</b>
 <a href="https://www.renkuosilietuva.lt/file/manual/Renkuosi%20Lietuva%20%D0%9F%D1%80%D0%B0%D0%B2%D0%BE%D0%B2%D0%BE%D0%B9%20%D1%81%D1%82%D0%B0%D1%82%D1%83%D1%81%20%D0%BF%D1%80%D0%B8%D0%B1%D1%8B%D0%B2%D0%B0%D1%8E%D1%89%D0%B8%D1%85%20%D0%B2%20%D0%9B%D0%B8%D1%82%D0%B2%D1%83%20%D0%B3%D1%80%D0%B0%D0%B6%D0%B4%D0%B0%D0%BD%20%D0%A3%D0%BA%D1%80%D0%B0%D0%B8%D0%BD%D1%8B.pdf">Я обираю Литву - Правовий статус</a>
@@ -49,6 +50,10 @@ const recoverDocuments = `
 📧 s.bedryga@mail.unba.org.ua
 Адреси іноземних представників 
 🌐 https://unba.org.ua/foreign-representations  
+
+<b>Про документи, загранпаспорти</b>
+Продовження, умови, адреси, перелік документів
+🌐 <a href="https://lithuania.mfa.gov.ua/konsulski-pitannya/pasportni-diyi/pasportni-diyi-v-umovah-voyennogo-stanu">Сайт mfa.gov.ua</a>
 
 <b>Помітили помилку, або застарілу інформацію? <a href="https://t.me/ua_lt_inbox_bot">Напишіть нам</a></b>
 `

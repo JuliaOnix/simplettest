@@ -35,7 +35,7 @@ bot.command('start', async (ctx) => {
 bot.command('addinfo', async (ctx) => {
     console.log("someone press the button 'add info'");
     await ctx.replyWithHTML(newInfoBlock.text, {
-        protect_content: true,
+        protect_content: false,
         parse_mode: "HTML", 
         disable_web_page_preview: true,
     });

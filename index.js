@@ -136,6 +136,11 @@ bot.action('returnBackEducation_btn', (ctx) => ACTIONS_EDUCATION.returnBack(ctx)
 
 //ANCHOR REFUGEE BLOCK
 bot.action("recoverDocuments_BTN", (ctx) => ACTIONS_INFO_REFUGEE.showRecoverDecuments(ctx));
+bot.action("show_Eorope_Post_BTN", (ctx) => ACTIONS_INFO_REFUGEE.showEuropePass(ctx));
+bot.action("show_about_lisence_BTN", (ctx) => ACTIONS_INFO_REFUGEE.showLisencePass(ctx));
+bot.action("documents_for_car_btn", (ctx) => ACTIONS_INFO_REFUGEE.showDocsAbroudCar(ctx));
+bot.action("exchangeLisence_btn", (ctx) => ACTIONS_INFO_REFUGEE.showExchangeLisence(ctx));
+bot.action("go_abroud_with", (ctx) => ACTIONS_INFO_REFUGEE.showGo_Abroud(ctx));
 bot.action('btn_usefulContacts', (ctx) => ACTIONS_INFO_REFUGEE.contactsAndAdresses(ctx));
 bot.action('btn_addresses', (ctx) => ACTIONS_INFO_REFUGEE.showAdresses(ctx));
 bot.action('adresses_in_apartment', (ctx) => ACTIONS_INFO_REFUGEE.showAdressesInApartMenu(ctx));
@@ -230,6 +235,10 @@ bot.action("show_kaunas_events_BTN", (ctx) => ACTIONS_FREE_STUFF.showKaunasPage(
 bot.action("btn_addresses_from_CONTACTS", (ctx) => ACTIONS_INFO_REFUGEE.showAdressasInContacts(ctx));
 bot.action("RETURN_CONTACTS_MENU", (ctx) => ACTIONS_INFO_REFUGEE.returnContactsMenu(ctx))
 bot.launch();
+
+//ANCHOR Lithuanian block
+bot.action("show_apps_BTN", (ctx) => ACTIONS_LITVA.showAppsPage(ctx))
+bot.action("show_funs_BTN", (ctx) => ACTIONS_LITVA.showFunsPage(ctx))
 
 process.once('SIGINT', () => bot.stop('SIGINT'));
 process.once('SIGTERM', () => bot.stop('SIGTERM'));

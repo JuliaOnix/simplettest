@@ -34,6 +34,8 @@ const medPost = `
 • https://www.medcentras.lt/
 • https://uostopoliklinika.lt/
 • <a href="https://www.antakpol.lt/go.php/lit/Covid-19-tyrimai/">Antakalnio poliklinika</a>
+
+• <a href="https://lkakeliautojai.lt/en/pirmos-pagalbos-suteikimo-kursas-keliautojams-7">Курси виживання та надання першої допомоги</a>
 `
 
 //ANCHOR Продукти/Їжа
@@ -95,6 +97,8 @@ const ukranianSymb = `
 `
 
 const children = `
+• <a href="https://socmin.lrv.lt/lt/veiklos-sritys/socialine-parama-kas-man-priklauso/auginu-vaika?lang=uk">Тут перераховані всі посібники, які можна отримати сім'ям із дітьми. І посилання де отримати, що заповнювати</a>
+
 • <a href="https://ukrainiankids.lt/">Безкоштовні заходи, гуртки, табори, допомога українським дітям</a>
 • <a href="https://www.neformalusugdymas.lt/?fbclid=IwAR2cgUk5rAbpJkhMmLdM50ei2rXx-kc4l0sUePWghqgb_vNI-tOcx7Bxb5I">Всі заходи для дітей та молоді</a>
 • <a href="https://studyin.lt/ua/?fbclid=IwAR0jxujR2sM-pprM9q3jH6kRBsA1qrjrzoi1cxaaTSytVmc7AD_k7xPl67A#higher-education-in-lithuania-ru">Вища освіта у Литві</a>
@@ -102,6 +106,8 @@ const children = `
 • <a href="https://www.govilnius.lt/relocate-and-live/education-options/kindergartens">Дитячі садочки</a>
 • <a href="https://maps.vilnius.lt/darzeliai#layers">Карта дитячих садків</a>
 • <a href="https://www.superaukle.lt/">Пошук нянь онлайн</a>
+• <a href="https://rekvizitai.vz.lt/m/ru/companies/?q=&c=100152469&ct=2000867">Дитячі садочки у <b>Каунасі</b></a>
+• <a href="https://www.klaipeda.lt/lt/naujienos/naujienos/7655/kvieciame-registruotis-i-vaiku-vasaros-poilsio-stovyklas:2912">величезний список літніх занять та таборів для дітей та молоді 5-18 років Клайпеда та район</a>
 `
 
 const afisha = `
@@ -135,6 +141,11 @@ const munInfo = `
 • <a href="http://atliekos.lt/">Інформація про сортування сміття</a>
 • <a href="https://greenbelarus.info/articles/03-11-2021/pervoe-chto-delayut-belarusy-eto-ischut-musorku-kak-sortiruyut-musor-v-vilnyuse">Про сортування сміття у Вільнюсі</a>
 • <a href="https://savitarna.chc.lt/saskaitos/water">Тут можна ввести свою адресу та дізнатися дати відключення гарячої води (LT)</a>
+• <a href="https://vilnia-by.com/archives/9067">Про комунальні послуги</a>
+• <a href="https://www.vdi.lt/Forms/Rusu.aspx">Якщо роботодавець порушує ваші права</a>
+• <a href="https://vertimukaraliai.lt/kontaktai/">Бюро перекладів</a>
+
+• <a href="https://hoodmaps.com/vilnius-neighborhood-map">є жартівлива карта, за якою можна до певної міри уявити чим живуть різні райони (або які у людей стереотипи)</a>
 `
 
 const zoo = `

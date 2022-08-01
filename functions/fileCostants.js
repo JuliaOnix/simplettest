@@ -20,6 +20,11 @@ const RETURN_BACK_TO_GROUPLESSONS_EDUCATION = '🔙 Повернутися до 
 const RETURN_BACK_TO_HUMANAID_MENU = Markup.button.callback('🔙 Повернутися до «Гуманітарна Допомога»', "return_to_human_aid_menu_btn");
 const RETURN_BACK_TO_SITES = Markup.button.callback('🔙 Повернутися до «Каталог сайтів»', "return_to_sites_block_btn");
 
+//about funs in Lithuania
+const sitesForLearning = "Литовська мова";
+const appsInLit = "Корисні додатки"
+const reccForEveryCities = "Кафе, Ресторани, Розваги";
+
 
 
 //menu in chatbot
@@ -32,7 +37,9 @@ const MAIN_MENU_NAMES =
 
 const MENU_REGISTRATION = [
     [Markup.button.callback("Адреси реєстраційних центрів", 'btn_addresses')],
-    [Markup.button.callback("Про документи", "recoverDocuments_BTN")],
+    [Markup.button.callback("Якщо немає документів", "recoverDocuments_BTN")],
+    [Markup.button.callback("Про загранпаспорт", "show_Eorope_Post_BTN")],
+    [Markup.button.callback("Про посвідчення водія", "show_about_lisence_BTN")],
 ];
 
 const MAIN_MENU_ARRAY = [[MAIN_MENU_NAMES[0], MAIN_MENU_NAMES[1], MAIN_MENU_NAMES[2]],
@@ -143,3 +150,6 @@ module.exports.RETURN_CONTACTS_MENU = RETURN_CONTACTS_MENU;
 module.exports.MENU_ABOUT_EXTRACURRICULARSFOR_EDUCATIONMENU = MENU_ABOUT_EXTRACURRICULARSFOR_EDUCATIONMENU;
 module.exports.RETURN_BACK_TO_HUMANAID_MENU = RETURN_BACK_TO_HUMANAID_MENU;
 module.exports.RETURN_BACK_TO_GROUPLESSONS_EDUCATION = RETURN_BACK_TO_GROUPLESSONS_EDUCATION;
+module.exports.sitesForLearning = sitesForLearning;
+module.exports.reccForEveryCities = reccForEveryCities;
+module.exports.appsInLit = appsInLit;

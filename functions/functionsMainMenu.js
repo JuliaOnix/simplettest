@@ -24,6 +24,8 @@ const FREESTUFFMENU =
 const messageFromDeveloper = ` 
 Висловлюю величезну подяку <b>Андрію Соколову</b> та його команді за те, що зібрали та написали такий величезний <a href="https://akrolesta.art/ua/spravochnik.html">довідник</a> щодо проживання у Литві. ❤️\n
 Не менш величезна подяка людям, які також допомогали з контентом: <b>Наталії Ткач</b> за додавання нової інформації та <b>Юлії Аннусько</b> за редагування та форматування контенту. ❤️
+
+<b>Зв'язок з розробниками</b> - @ua_lt_inbox_bot
 `
 
 const SOURSES = `
@@ -135,7 +137,9 @@ async function aboutLithuaniaFunc(ctx) {
         disable_web_page_preview: true,
         protect_content:true,
         ...Markup.inlineKeyboard([
-            [Markup.button.callback("Сайти, де можна вивчати литовську", "language_btn")]
+            [Markup.button.callback(constans.sitesForLearning, "language_btn")],
+            [Markup.button.callback(constans.appsInLit, "show_apps_BTN")],
+            [Markup.button.callback(constans.reccForEveryCities, "show_funs_BTN")]
         ])
     })
 }

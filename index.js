@@ -1,4 +1,5 @@
 const { Telegraf, Markup } = require("telegraf");
+const newInfoBlock = require("./text/newText/addnewinfoBlock")
 require("dotenv").config();
 
 const ACTIONS_EDUCATION = require('./functions/actions/actionsEducationPage')
@@ -28,6 +29,25 @@ bot.command('start', async (ctx) => {
     bot.telegram.sendMessage("2143667939", `${ctx.chat.id} ${ctx.from.username} ${ctx.from.first_name} ${ctx.from.last_name} started bot`)
     await bot.telegram.sendMessage("2143667939", ` @${ctx.from.username} ${ctx.from.first_name} `)
     return startBot(ctx);
+});
+
+//add new information in bot
+bot.command('addinfo', async (ctx) => {
+    console.log("someone press the button 'add info'");
+    await ctx.replyWithHTML(newInfoBlock.text, {
+        protect_content: true,
+        parse_mode: "HTML", 
+        disable_web_page_preview: true,
+    });
+});
+
+bot.command('question', async (ctx) => {
+    console.log("someone press the button 'спитати'");
+    await ctx.replyWithHTML(newInfoBlock.text2, {
+        protect_content: true,
+        parse_mode: "HTML", 
+        disable_web_page_preview: true,
+    });
 });
 //
 

@@ -143,6 +143,7 @@ const munInfo = `
 • <a href="https://savitarna.chc.lt/saskaitos/water">Тут можна ввести свою адресу та дізнатися дати відключення гарячої води (LT)</a>
 • <a href="https://vilnia-by.com/archives/9067">Про комунальні послуги</a>
 • <a href="https://www.vdi.lt/Forms/Rusu.aspx">Якщо роботодавець порушує ваші права</a>
+• <a href="https://fakty.com.ua/ua/ukraine/suspilstvo/20220102-yak-zamoviti-dovidku-pro-nesudimist-cherez-privat24/">Як замовити довідку про несудимість через Приват24</a>
 • <a href="https://vertimukaraliai.lt/kontaktai/">Бюро перекладів</a>
 
 • <a href="https://hoodmaps.com/vilnius-neighborhood-map">є жартівлива карта, за якою можна до певної міри уявити чим живуть різні райони (або які у людей стереотипи)</a>

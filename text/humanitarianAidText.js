@@ -53,6 +53,43 @@ Technopolis Будинок БЕТА (BETA), 4 поверх.
 які вам додому привезуть речі першої потреби (харчування, засоби гігієни)
 <u><a href="https://forms.gle/P3Z2CBagxg2qLahd8">🌐 Форма для запису</a></u>
 
+<b>Vilnius Red Cross</b>
+психологічна, юридична, гуманітарна допомога
+Контакти
+📞 +37060980408
+📞 +37065971598
+📧 info@redcross.lt
+📧 vilnius@redcross.lt
+🌐 www.redcross.lt 
+
+<b>Збережіть дітей</b>
+допомога дітям та вагітним жінкам
+Контакти та робочі години
+8.30 -17.30
+📧 irena.andrijevskaja@savethechildren.org
+📧 informacija@savethechildren.org
+📞 +37052610815
+📍 <a href="https://goo.gl/maps/QScMnxJ95fmNUwFN9">g. 39/Klaipėdos g. 6</a>
+🌐 https://gelbekitvaikus.lt/ 
+
+<b>Банк їжі</b>
+продукти харчування
+Контакти
+📞 +37067691941
+📞 +37068644244
+📧 milda@maistobankas.lt
+📧 info@maistobankas.lt
+📍 <a href="https://goo.gl/maps/nHed9L4BhbJw4YfR8">Vytenio g. 54</a>
+🌐 https://www.maistobankas.lt/ 
+
+<b>Служба підтримки Мальтійського ордену</b>
+гуманітарна допомога, продовольчі посилки, медичні товари, супровід до житла
+Контакти та робочі години
+I–VII 08:00–20:00 
+📞 +37060023220
+📧 info@maltieciai.lt 
+🌐 www.maltieciai.lt 
+
 📌<b>Речі, посуд, іграшки можна взяти у волонтерів на складах.
 Обов'язково заздалегідь дізнайтесь у групах графік роботи.</b>
 

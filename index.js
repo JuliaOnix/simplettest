@@ -221,6 +221,7 @@ bot.action('return_to_sites_block_btn', (ctx) => ACTIONS_SOCIAL.returnBack(ctx))
 //ANCHOR Litva Block
 bot.action("return_back_to_lithuania", (ctx) => ACTIONS_LITVA.returnBack(ctx));
 bot.action("language_btn", (ctx) => ACTIONS_LITVA.showLanguagePage(ctx));
+bot.action("show_how_to_recTrash_BTN", (ctx) => ACTIONS_LITVA.showRecycleTrashPage(ctx));
 
 //special function 
 

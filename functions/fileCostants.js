@@ -24,8 +24,7 @@ const RETURN_BACK_TO_SITES = Markup.button.callback('🔙 Повернутися
 const sitesForLearning = "Литовська мова";
 const appsInLit = "Корисні додатки"
 const reccForEveryCities = "Кафе, Ресторани, Розваги";
-
-
+const recTrash = 'Переробка сміття'
 
 //menu in chatbot
 const MAIN_MENU_NAMES = 
@@ -153,3 +152,4 @@ module.exports.RETURN_BACK_TO_GROUPLESSONS_EDUCATION = RETURN_BACK_TO_GROUPLESSO
 module.exports.sitesForLearning = sitesForLearning;
 module.exports.reccForEveryCities = reccForEveryCities;
 module.exports.appsInLit = appsInLit;
+module.exports.recTrash = recTrash;

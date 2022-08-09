@@ -138,6 +138,7 @@ async function aboutLithuaniaFunc(ctx) {
         ...Markup.inlineKeyboard([
             [Markup.button.callback(constans.sitesForLearning, "language_btn")],
             [Markup.button.callback(constans.appsInLit, "show_apps_BTN")],
+            [Markup.button.callback(constans.recTrash, "show_how_to_recTrash_BTN")],
             [Markup.button.callback(constans.reccForEveryCities, "show_funs_BTN")]
         ])
     })

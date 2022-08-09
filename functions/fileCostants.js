@@ -116,7 +116,7 @@ const MENU_BUTTONS_SITES = [
     [Markup.button.callback('🏡 Нерухомість', 'houses_sites_btn'), Markup.button.callback('👨🏼‍💻 Послуги', 'services_sites_btn')],
     [Markup.button.callback('🚘 Авто/Транспорт', 'cars_sites_btn'), Markup.button.callback('🦜 ЗООтовари та послуги', 'zoo_sites_btn')],
     [Markup.button.callback('🛒 Інше', 'another_sites_btn'), Markup.button.callback('📰 Афіша та новини', 'afisha_sites_btn')],
-    [Markup.button.callback('🇺🇦 Українська символіка', 'ukraine_sites_btn'), Markup.button.callback('Державні та муніципальні послуги', 'mun_sites_btn')],
+    [Markup.button.callback('🇺🇦 Україна', 'ukraine_sites_btn'), Markup.button.callback('Державні та муніципальні послуги', 'mun_sites_btn')],
     [Markup.button.callback('Сайти довідники', 'dovidnuku_btn'), Markup.button.callback('Facebook групи', 'facebookGroups_btn')],
     [Markup.button.callback('Instagram канали', 'instagramGroups_btn'), Markup.button.callback('Телеграм канали', 'telegramChannels_btn')]
 ]

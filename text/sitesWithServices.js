@@ -51,6 +51,13 @@ const products = `
 `
 
 const different_shops = `
+<b>Служби доставки</b>
+• <a href="https://www.omniva.lt/chastnyj/pomoshtx/usloviq_i_ceny">Omniva</a>
+• <a href="https://venipak.com/lt/ru/">Venipak</a>
+• <a href="https://www.lpexpress.lt/home">LPexpress</a>
+• <a href="https://itella.lt/en/">Itella</a>
+• <a href="https://www.dpd.com/lt/lt/">Dpd</a>
+
 <b>Сайти та додатки, де можна дізнатись про знижки та акції у торгових мережах</b>
 • https://nuolaiduvisata.lt/
 • https://pricer.lt/ru/pricer-top

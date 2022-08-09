@@ -94,6 +94,12 @@ const ukranianSymb = `
 • <a href="https://www.akabaltic.lt/veliavu-gamyba/ukrainos-veliavos.html">https://www.akabaltic.lt</a>
 • <a href="https://koalaprint.lt/produktai/veliavu-gamyba/ukrainos-veliavos/">https://koalaprint.lt</a>
 • <a href="https://flagmanas.lt/ukrainos-atributika/">https://flagmanas.lt</a>
+
+• <b>Український центр у Вільнюсі</b>
+https://www.facebook.com/ukrainos.centras
+• <b>CulturEUkraine - Kaunas 2022</b>
+(український центр у Каунасі)
+https://kaunas2022.eu/ukraine/
 `
 
 const children = `
@@ -207,7 +213,7 @@ const telegramChannelsList = `
 • <b><a href="https://t.me/ukrainpatriot">Украинцы в Литве</a></b>
 • <b><a href="https://t.me/ukraincilitva">Українці у Литві</a></b>
 • <b><a href="https://t.me/vilnius_ukr">Вільнюс. Ми з України</a></b>
-• <b><a href="https://t.me/zustrichiiznayomsvavkaunasi">Українці KAUNAS</a></b>
+• <b><a href="https://t.me/ukraincilitva/2015">Українці KAUNAS</a></b>
 • <b><a href="https://t.me/kaunasua">Україночки в Каунасі Творчість, дозвілля</a></b>
 • <b><a href="https://t.me/ukraincivklaipedi">Українці в Клайпеді</a></b>
 • <b><a href="https://t.me/+Q6KPSibr39hlOGUy">Укринці в Паланзі</a></b>
@@ -257,6 +263,8 @@ const facebookGroupsText = `
 • <b><a href="https://www.facebook.com/%D0%A8%D0%B0%D1%85%D0%B8-%D0%A3%D0%BA%D1%80%D0%B0%D1%97%D0%BD%D0%B0-%C5%A0achmatai-Ukraina-104103198962485">Шахи / Україна - Šachmatai / Ukraina</a></b>
 • <b><a href="https://www.facebook.com/groups/868903884507780/">Допомога українським родинам</a></b>
 • <b><a href="https://www.facebook.com/groups/356243299713614/">Українці в Каунасі</a></b>
+• <b><a href="https://www.facebook.com/groups/1178469319566752/?ref=share">Art Space Каунас</a></b>
+(творчі зустрічі та заняття, росклад занять)
 • <b><a href="https://www.facebook.com/groups/3112002959126318/">Литва допомагає Україні</a></b>
 
 <b>Групи Вільнюса, де віддають меблі та інші речі</b> 

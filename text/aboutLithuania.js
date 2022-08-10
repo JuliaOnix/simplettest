@@ -26,10 +26,12 @@ https://planetofhotels.com/guide/ru/litva/klaypeda
 ▪️ https://ltglink.lt/en - сайт литовських залізниць, де зручно перевіряти розклад поїздів до Каунасу, Клайпеди та електричок до аеропорту
 
 🚌 Автобуси
+(майже у кожного є додатки для телефону)
 ▪️ https://autobusubilietai.lt/ru
 ▪️ https://infobus.eu/bus/lithuania
 ▪️ https://ecolines.net/lt/ru
-▪️ FlixBus додаток або сайт https://global.flixbus.com/ 
+▪️ https://www.eurolines.lt/ru
+▪️ https://global.flixbus.com/ 
 
 ▪️ bananacar.lt, по принципу BlaBlaCar.
 

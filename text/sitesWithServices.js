@@ -106,7 +106,7 @@ const ukranianSymb = `
 https://www.facebook.com/ukrainos.centras
 • <b>CulturEUkraine - Kaunas 2022</b>
 (український центр у Каунасі)
-https://kaunas2022.eu/ukraine/
+https://kaunas2022.eu/uk/cultureukraine/
 `
 
 const children = `

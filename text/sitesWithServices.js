@@ -128,7 +128,10 @@ const afisha = `
 • https://www.delfi.lt/ru/
 • https://rusradio.lt/
 • https://www.lrt.lt/ru/novosti
-• https://www.govilnius.lt/visit-vilnius 
+
+<b>Афіша</b>
+• <a href="https://www.govilnius.lt/visit-vilnius">Вільнюс Go Vilnius</a>  
+• <a href="https://kultura.kaunas.lt/en/events/list/all-events">Каунас</a>
 `
 
 const services = `

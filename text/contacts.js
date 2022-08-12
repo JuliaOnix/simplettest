@@ -32,9 +32,6 @@ const address = `
 <b>📍 Вільнюс</b>
 <a href="https://goo.gl/maps/R5enwhEULDXHUvxQ8">Vytenio g. 18</a> 
 
-<b>📍 Каунас</b>
-<a href="https://goo.gl/maps/TiqYSWToy2eP3yXK8">Vytauto pr. 79</a>
-
 <b>📍 Алітус</b>
 <a href="https://goo.gl/maps/UmsqgtbJ2dzGWkq7A">Juozapavičiaus 33</a>
 

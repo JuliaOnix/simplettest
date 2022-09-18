@@ -89,7 +89,7 @@ bot.on("text",  async (ctx) => {
     
     //FIXME стикеры вынеси в константы
     await ctx.replyWithSticker("CAACAgIAAxkBAAIO8WKMJUXwYGdfN8bTmI1-dyhCAAH1oQACYwAD29t-AAGMnQU950KD5yQE")
-    await ctx.replyWithHTML("Спробуй оновити /start", {protect_content: true,  ...Markup.keyboard(constans.MAIN_MENU_ARRAY).resize()})
+    await ctx.replyWithHTML("Спробуй оновити /start", {protect_content: true, ...Markup.keyboard(constans.MAIN_MENU_ARRAY).resize() })
     //return ctx.replyWithHTML("<b>Бот наразі знаходиться у розробці.</b> \n\nТакож було створено канал https://t.me/+uA00yl9KweQ1MTQy \nЛаскаво просимо!", Markup.removeKeyboard())
 })
 
@@ -100,7 +100,7 @@ bot.on("message", (ctx) => {
 
 //at the begining
 async function startBot(ctx) {
-    //await ctx.replyWithHTML("something went wrong.", Markup.removeKeyboard())
+    ctx.replyWithHTML(" ", Markup.removeKeyboard())
     return ctx.replyWithHTML(mainMenu.GREETING, {protect_content: true, parse_mode: 'HTML',
     disable_web_page_preview: true,  ...Markup.inlineKeyboard(mainMenu.main_kaybord).resize()})
     //return ctx.replyWithHTML("<b>Бот наразі знаходиться у розробці.</b> \n\nТакож було створено канал https://t.me/+uA00yl9KweQ1MTQy  \nЛаскаво просимо!", Markup.removeKeyboard())

@@ -100,7 +100,7 @@ bot.on("message", (ctx) => {
 
 //at the begining
 async function startBot(ctx) {
-    await ctx.replyWithHTML("Спробуй знову /start", Markup.removeKeyboard())
+    await ctx.replyWithHTML(`👋🏻 Вітаю у <b><a href="https://t.me/ua_lt_channel">Довіднику</a></b>! `, Markup.removeKeyboard())
     return ctx.replyWithHTML(mainMenu.GREETING, {protect_content: true, parse_mode: 'HTML',
     disable_web_page_preview: true,  ...Markup.inlineKeyboard(mainMenu.main_kaybord).resize()})
     //return ctx.replyWithHTML("<b>Бот наразі знаходиться у розробці.</b> \n\nТакож було створено канал https://t.me/+uA00yl9KweQ1MTQy  \nЛаскаво просимо!", Markup.removeKeyboard())

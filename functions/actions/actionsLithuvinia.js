@@ -1,5 +1,5 @@
 const {Markup, Telegraf} = require("telegraf");
-const constans = require('../fileCostants')
+const MAIN_MENU = require('../updates_20_09_22/Main_Manu')
 const language = require('../../text/languageLitovskiy')
 const aboutLithuania = require('../../text/aboutLithuania')
 const trashText = require('../../text/newText/recycleTrash')
@@ -47,13 +47,7 @@ async function returnBack(ctx) {
         parse_mode: 'HTML',
         disable_web_page_preview: true,
         protect_content: true,
-        ...Markup.inlineKeyboard([
-            [Markup.button.callback(constans.sitesForLearning, "language_btn")],
-            [Markup.button.callback(constans.appsInLit, "show_apps_BTN")],
-            [Markup.button.callback(constans.recTrash, "show_how_to_recTrash_BTN")],
-            [Markup.button.callback(constans.reccForEveryCities, "show_funs_BTN")]
-        ]
-    )})
+        ...Markup.inlineKeyboard(MAIN_MENU.ABOUT_LITHUANIA)})
 }
 
 async function showRecycleTrashPage(ctx) {

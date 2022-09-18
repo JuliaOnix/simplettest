@@ -2,6 +2,7 @@ const {Markup} = require("telegraf");
 const constans = require('../../functions/fileCostants')
 const sitesInfo = require('../../text/sitesWithServices')
 const sitesKatalog = require('../../text/oftenAks')
+const MAIN_MENU = require('../updates_20_09_22/Main_Manu')
 
 async function showAutoSites(ctx) {
     console.log(ctx.from.first_name, ctx.from.username + "AutoSites_btn")
@@ -199,7 +200,7 @@ async function returnBack(ctx) {
         parse_mode: 'HTML',
         disable_web_page_preview: true,
         protect_content: true,
-        ...Markup.inlineKeyboard(constans.MENU_BUTTONS_SITES)
+        ...Markup.inlineKeyboard(MAIN_MENU.MENU_BUTTONS_SITES)
     })
 }
 

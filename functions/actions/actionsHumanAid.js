@@ -1,4 +1,4 @@
-const humanAidInfo = require('../../text/humanitarianAidText')
+
 const constans = require('../fileCostants')
 const {Markup} = require("telegraf");
 

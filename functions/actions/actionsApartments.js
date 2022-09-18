@@ -1,6 +1,5 @@
 const {Markup} = require("telegraf");
 const constans = require('../fileCostants')
-const apartmentsinfo = require('../../text/newText/whereLive')
 
 
 async function showLookFor(ctx) {

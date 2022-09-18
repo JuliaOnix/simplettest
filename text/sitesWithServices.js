@@ -180,6 +180,7 @@ const zoo = `
 `
 
 const work = `	
+<b>Сайти для пошуку роботи</b>
 • <b><a href="https://cvonline.lt/lt/	">CV online</a></b>	
 • <b><a href="https://www.cv.lt/">Cv.lt</a></b>	
 • <b><a href="https://www.cvmarket.lt">CV Market</a></b>	
@@ -188,6 +189,23 @@ const work = `
 • <b><a href="https://asgaliu.lt/uk/">Для творців</a></b>		
 Якщо ви вмієте вишивати, плести, робити тортики та інше
 • <b><a href="https://www.afr.lt/ru/predlozheniya-o-rabote">Alliance for Recruitment</a></b>	
+
+<b>Вебінар російською мовою про працевлаштування, охорону здоров'я, соціальні гарантії та освіту для  дітей в Литві:</b>
+<a href="https://www.youtube.com/watch?v=neijMI6xKng">Вебінар</a> 
+
+<b>Вебінар про алгоритм пошуку роботи в Литві</b> ➡️ <a href="https://www.youtube.com/watch?v=2_MRUXK7IHE&ab_channel=InternationalHouseVilnius">Вебінар</a>
+<b>Матеріали з вебінару</b> ➡️ <a href="https://drive.google.com/drive/folders/1fZLpFJngHTPFPsAO2U_eelzeV8tdmG6a">матеріли</a>
+
+<b>Вебінар про роботу, але з юридичної точки зору</b> ➡️ https://youtu.be/kfbfsg5pvhU 
+<b>Матеріали з вебінару</b> ➡️ <a href="https://drive.google.com/drive/folders/1D1miNaG4tM97RvpC3AI1ENlre0Dva_QM">матеріали</a>
+
+<b>Знати свої права! Інформація щодо інспекції праці для українців:</b>
+<a href="https://www.vdi.lt/Forms/Tekstas1.aspx?Tekstai_ID=3601">Сайт</a> 
+<a href="https://www.vdi.lt/PdfUploads/ukr.pdf">Скачати пам'ятку</a> 
+
+<b>Увага! Остерігайтеся експлуатації!</b>
+Завжди існує ризик експлуатації та насильства на роботі. 
+Більше інформації – <a href="https://docs.google.com/document/d/1cuqYAQA3YYNlKbg0MRyVG1Qhr6PctL1XBWQjht2RYBc/edit">у документі</a>
 `
 
 const cars = `
@@ -224,6 +242,7 @@ const telegramChannelsList = `
 • <b><a href="https://t.me/ukraincilitva">Українці у Литві</a></b>
 • <b><a href="https://t.me/vilnius_ukr">Вільнюс. Ми з України</a></b>
 • <b><a href="https://t.me/ukraincilitva/2015">Українці KAUNAS</a></b>
+(треба написати адміну й вони додадуть вас до групи)
 • <b><a href="https://t.me/kaunasua">Україночки в Каунасі Творчість, дозвілля</a></b>
 • <b><a href="https://t.me/ukraincivklaipedi">Українці в Клайпеді</a></b>
 • <b><a href="https://t.me/+Q6KPSibr39hlOGUy">Укринці в Паланзі</a></b>
@@ -238,8 +257,6 @@ const telegramChannelsList = `
 (Купівля/Продаж у Вільнюсі)
 • <b><a href="https://t.me/belarusVLN">Чат - Беларусы Вільні</a></b>
 (Чат білорусів, але теж можна ставити запитання про життя у Литві та дозвілля.)
-• <b><a href="https://t.me/+LzvdXO_2DzVlMDdi">Група Б'юті Каунас</a></b> 
-• <b><a href="https://t.me/+lSyntwEngqo5Yzcy">Група б'юті в Каунасі 2</a></b> 
 ` 
 
 const houses = `
@@ -262,19 +279,14 @@ const houses = `
 • <a href="https://www.airbnb.com.ua/?_set_bev_on_new_domain=1658259777_NzI2OTk1YjNmYWY5">airbnb.com.ua</a>
 • <a href="https://www.booking.com/index.uk.html?aid=397594&label=gog235jc-1DCAEoggI46AdIIVgDaIgBiAEBmAEhuAEXyAEM2AED6AEB-AECiAIBqAIDuALak9yWBsACAdICJGRjZTEzMjc5LWZhZTYtNDI4MC1iYTMyLWU0NWZlZTdjZGJhNdgCBOACAQ&sid=f73893163805735bae7a90dd3e2033a9&lang=uk&sb_price_type=total&soz=1&lang_click=other&cdl=ru&lang_changed=1">booking.com/ua</a>
 `
-
+ 
 const facebookGroupsText = `
 <b>Групи у фейсбуці:</b>
 • <b><a href="https://www.facebook.com/ukrainos.centras">Український центр - Ukrainos centras</a></b>
 • (Новини, та безкоштовні заходи для українців)
 • <b><a href="https://www.facebook.com/ukr.embassy.Lithuania/">Ukrainos Ambasada Lietuvoje / Посольство України в Литві</a></b>
-• <b><a href="https://www.facebook.com/groups/2294077994171869">Українці у Литві / Украинцы в Литве / Ukrainiečiai Lietuvoje</a></b>
 • <b><a href="https://www.facebook.com/groups/5046154952110242">Українські діти у Литві - Ukrainos vaikai Lietuvoje</a></b>
-• <b><a href="https://www.facebook.com/%D0%A8%D0%B0%D1%85%D0%B8-%D0%A3%D0%BA%D1%80%D0%B0%D1%97%D0%BD%D0%B0-%C5%A0achmatai-Ukraina-104103198962485">Шахи / Україна - Šachmatai / Ukraina</a></b>
 • <b><a href="https://www.facebook.com/groups/868903884507780/">Допомога українським родинам</a></b>
-• <b><a href="https://www.facebook.com/groups/356243299713614/">Українці в Каунасі</a></b>
-• <b><a href="https://www.facebook.com/groups/1178469319566752/?ref=share">Art Space Каунас</a></b>
-(творчі зустрічі та заняття, росклад занять)
 • <b><a href="https://www.facebook.com/groups/3112002959126318/">Литва допомагає Україні</a></b>
 
 <b>Групи Вільнюса, де віддають меблі та інші речі</b> 
@@ -314,7 +326,3 @@ module.exports.houses = houses;
 module.exports.facebookGroupsText = facebookGroupsText;
 module.exports.telegramChannelsList = telegramChannelsList;
 module.exports.instagramPages = instagramPages;
-
-
-
-

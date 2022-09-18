@@ -2,18 +2,9 @@ const { Telegraf, Markup } = require("telegraf");
 const newInfoBlock = require("./text/newText/addnewinfoBlock")
 require("dotenv").config();
 
-const ACTIONS_EDUCATION = require('./functions/actions/actionsEducationPage')
-const ACTIONS_HUMAN_AID = require('./functions/actions/actionsHumanAid')
-/* const ACTIONS_INFO_REFUGEE = require('./functions/actions/actionsForRefugee') */
-const ACTIONS_HEALTH = require('./functions/actions/actionsHealth')
-//const ACTIONS_ALLOWANCE = require('./functions/actions/actionsAllowance')
-const ACTIONS_FREE_STUFF = require('./functions/actions/actionsFreeMenuStaff')
 const ACTIONS_SOCIAL = require('./functions/actions/actionsSocial')
 const ACTIONS_LITVA = require('./functions/actions/actionsLithuvinia')
-const ACTIONS_APARTMENTS = require('./functions/actions/actionsApartments')
-const ACTIONS_BENEFITS = require('./functions/actions/actionsBenefits')
 const constans = require('./functions/fileCostants')
-
 
 const mainMenu = require('./functions/updates_20_09_22/Main_Manu')
 

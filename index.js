@@ -89,7 +89,7 @@ bot.on("text",  async (ctx) => {
     
     //FIXME стикеры вынеси в константы
     await ctx.replyWithSticker("CAACAgIAAxkBAAIO8WKMJUXwYGdfN8bTmI1-dyhCAAH1oQACYwAD29t-AAGMnQU950KD5yQE")
-    await ctx.replyWithHTML("Такої команди немає. Тицяй на кнопки 🙂", {protect_content: true,  ...Markup.keyboard(constans.MAIN_MENU_ARRAY).resize()})
+    await ctx.replyWithHTML("Спробуй оновити /start", {protect_content: true,  ...Markup.keyboard(constans.MAIN_MENU_ARRAY).resize()})
     //return ctx.replyWithHTML("<b>Бот наразі знаходиться у розробці.</b> \n\nТакож було створено канал https://t.me/+uA00yl9KweQ1MTQy \nЛаскаво просимо!", Markup.removeKeyboard())
 })
 

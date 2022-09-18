@@ -74,7 +74,7 @@ const ABOUT_LITHUANIA = [
 // ANCHOR First button
 async function mainInfoAboutRefugee(ctx) {
     await ctx.answerCbQuery();
-    //console.log(`${ctx.from.username} main info about refugee`)
+    console.log(`${ctx.from.username} main info about refugee`)
     await ctx.editMessageText(aboutDocuments.registartion, {
         protect_content: true,
         parse_mode: "HTML", 
@@ -85,21 +85,13 @@ async function mainInfoAboutRefugee(ctx) {
 
 async function showPostWithSites(ctx) {
     await ctx.answerCbQuery();
-    //console.log(`${ctx.from.username} ${ctx.message.text} choosed`)
+    console.log(`${ctx.from.username} show sites choosed`)
     await ctx.editMessageText("Каталог сайтів", {
         parse_mode: 'HTML',
         disable_web_page_preview: true, 
         protect_content:true,
         ...Markup.inlineKeyboard(MENU_BUTTONS_SITES)
     });
-}
-
-//show info about humanitarianAid
-async function humanitarianAidFunc(ctx) {
-    await ctx.answerCbQuery();
-    //console.log(`${ctx.from.username} ${ctx.message.text} choosed`)
-    await ctx.editMessageText(humanInfo.humanAid, {protect_content:true , parse_mode: 'HTML',
-    disable_web_page_preview: true,  ...Markup.inlineKeyboard(MENU_WITH_CITIES_OF_HUMAN_AID)});
 }
 
 //useful contacts 
@@ -117,7 +109,7 @@ async function usefulContacts(ctx) {
 //info how look for apartments
 async function lookforanApartment(ctx) {
     await ctx.answerCbQuery(); 
-    //console.log(`${ctx.from.username} ${ctx.message.text} choosed`)
+    console.log(`${ctx.from.username} look for aparts choosed`)
     await ctx.editMessageText(sites.houses, {
         parse_mode: "HTML",
         disable_web_page_preview: true,
@@ -129,7 +121,7 @@ async function lookforanApartment(ctx) {
 //About Lithuania
 async function aboutLithuaniaFunc(ctx) {
     await ctx.answerCbQuery();
-    //console.log(`${ctx.from.username} ${ctx.message.text} choosed`)
+    console.log(`${ctx.from.username} about Litva choosed`)
     await ctx.editMessageText(aboutLithuania.post, {
         parse_mode: "HTML",
         disable_web_page_preview: true,
@@ -141,14 +133,14 @@ async function aboutLithuaniaFunc(ctx) {
 //show work posts
 async function workinLitva(ctx) {
     await ctx.answerCbQuery();
-    //console.log(`${ctx.from.username} workinLitva choosed`)
+    console.log(`${ctx.from.username} workinLitva choosed`)
     await ctx.editMessageText(sites.work, {protect_content:true, parse_mode: "HTML",
     disable_web_page_preview: true, ...Markup.inlineKeyboard(MENU_ABOUT_WORK)})
 }
 
 async function returnBackToMainMenuFunc(ctx) {
     await ctx.answerCbQuery();
-    //console.log(`${ctx.from.username} main info about refugee`)
+    console.log(`${ctx.from.username} main info about refugee`)
     await ctx.editMessageText(GREETING, {
         protect_content: true,
         parse_mode: "HTML", 
@@ -164,7 +156,6 @@ module.exports.ABOUT_LITHUANIA = ABOUT_LITHUANIA;
 module.exports.main_kaybord = main_kaybord;
 module.exports.workinLitva = workinLitva;
 module.exports.mainInfoAboutRefugee = mainInfoAboutRefugee;
-module.exports.humanitarianAidFunc = humanitarianAidFunc;
 module.exports.lookforanApartment = lookforanApartment;
 module.exports.showPostWithSites = showPostWithSites;
 module.exports.aboutLithuaniaFunc = aboutLithuaniaFunc;

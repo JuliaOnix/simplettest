@@ -5,7 +5,7 @@ const aboutLithuania = require('../../text/aboutLithuania')
 const trashText = require('../../text/newText/recycleTrash')
 
 async function showLanguagePage(ctx) {
-    console.log(ctx.from.first_name, ctx.from.username + "language_btn")
+    console.log(`${ctx.from.username} language_btn`)
     //let text = ctx.telegram.copyMessage(ctx.chat.id, "@englishFreeTeacherYes", 30)
     await ctx.answerCbQuery();
     return await ctx.editMessageText(language.sites, {
@@ -17,7 +17,7 @@ async function showLanguagePage(ctx) {
 }
 
 async function showFunsPage(ctx) {
-    console.log(ctx.from.first_name, ctx.from.username + "language_btn")
+    console.log(`${ctx.from.username} language_btn`)
     //let text = ctx.telegram.copyMessage(ctx.chat.id, "@englishFreeTeacherYes", 30)
     await ctx.answerCbQuery();
     return await ctx.editMessageText(language.sites, {
@@ -29,7 +29,7 @@ async function showFunsPage(ctx) {
 }
 
 async function showAppsPage(ctx) {
-    console.log(ctx.from.first_name, ctx.from.username + "apps_btn")
+    console.log(`${ctx.from.username} apps_btn`)
     //let text = ctx.telegram.copyMessage(ctx.chat.id, "@englishFreeTeacherYes", 30)
     await ctx.answerCbQuery();
     return await ctx.editMessageText(aboutLithuania.apps, {
@@ -41,7 +41,7 @@ async function showAppsPage(ctx) {
 }
 
 async function returnBack(ctx) {
-    console.log(ctx.from.first_name, ctx.from.username + "return back To Lithuania")
+    console.log(`${ctx.from.username} return back to Litva menu`)
     await ctx.answerCbQuery();
     return await ctx.editMessageText(aboutLithuania.post, {
         parse_mode: 'HTML',

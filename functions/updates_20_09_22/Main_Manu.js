@@ -73,6 +73,7 @@ const ABOUT_LITHUANIA = [
 
 // ANCHOR First button
 async function mainInfoAboutRefugee(ctx) {
+    await ctx.answerCbQuery();
     //console.log(`${ctx.from.username} main info about refugee`)
     await ctx.editMessageText(aboutDocuments.registartion, {
         protect_content: true,

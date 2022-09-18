@@ -46,7 +46,7 @@ https://t.me/+uA00yl9KweQ1MTQy
 // ANCHOR First button
 async function mainInfoAboutRefugee(ctx) {
     console.log(`${ctx.from.username} main info about refugee`)
-    await ctx.replyWithHTML(aboutDocuments.registartion, {
+    await ctx.editMessageText(aboutDocuments.registartion, {
         protect_content: true,
         parse_mode: "HTML", 
         disable_web_page_preview: true,
@@ -56,14 +56,14 @@ async function mainInfoAboutRefugee(ctx) {
 
 //show block about education and sport for children also
 async function educationAndSportFunc(ctx) {
-    console.log(`${ctx.from.username} ${ctx.message.text} choosed`)
-    await ctx.replyWithHTML(educationShcools.generalInfoAboutSchool, {protect_content:true, parse_mode: 'HTML',
+    //console.log(`${ctx.from.username} ${ctx.message.text} choosed`)
+    await ctx.editMessageText(educationShcools.generalInfoAboutSchool, {protect_content:true, parse_mode: 'HTML',
     disable_web_page_preview: true,  ...Markup.inlineKeyboard(constans.MENU_EDUCATION)});
 }
 
 async function showPostWithSites(ctx) {
-    console.log(`${ctx.from.username} ${ctx.message.text} choosed`)
-    await ctx.replyWithHTML("Каталог сайтів", {
+    //console.log(`${ctx.from.username} ${ctx.message.text} choosed`)
+    await ctx.editMessageText("Каталог сайтів", {
         parse_mode: 'HTML',
         disable_web_page_preview: true, 
         protect_content:true,
@@ -73,8 +73,8 @@ async function showPostWithSites(ctx) {
 
 //show info about med insurance
 async function infoAboutMedicineFunc(ctx) {
-    console.log(`${ctx.from.username} ${ctx.message.text} choosed`)
-    await ctx.replyWithHTML(medInfo.aboutMedicine, {
+    //console.log(`${ctx.from.username} ${ctx.message.text} choosed`)
+    await ctx.editMessageText(medInfo.aboutMedicine, {
         parse_mode: 'HTML',
         disable_web_page_preview: true,
         protect_content:true,
@@ -83,9 +83,9 @@ async function infoAboutMedicineFunc(ctx) {
 }
 
 async function writeToOwnerOfTelegram(ctx) {
-    console.log(`${ctx.from.username} ${ctx.message.text} choosed`)
+    //console.log(`${ctx.from.username} ${ctx.message.text} choosed`)
     await ctx.replyWithSticker('CAACAgIAAxkBAAIH2mKHkobggkZ52R3V5MqPuA87854qAAJvAAPb234AAZlbUKh7k4B0JAQ');
-    await ctx.replyWithHTML(messageFromDeveloper, {
+    await ctx.editMessageText(messageFromDeveloper, {
         parse_mode: "HTML", 
         disable_web_page_preview: true,
         protect_content:true,
@@ -100,8 +100,8 @@ async function writeToOwnerOfTelegram(ctx) {
 
 //show info about humanitarianAid
 async function humanitarianAidFunc(ctx) {
-    console.log(`${ctx.from.username} ${ctx.message.text} choosed`)
-    await ctx.replyWithHTML(humanInfo.humanAid, {protect_content:true , parse_mode: 'HTML',
+    //console.log(`${ctx.from.username} ${ctx.message.text} choosed`)
+    await ctx.editMessageText(humanInfo.humanAid, {protect_content:true , parse_mode: 'HTML',
     disable_web_page_preview: true,  ...Markup.inlineKeyboard(constans.MENU_WITH_CITIES_OF_HUMAN_AID)});
 }
 
@@ -109,18 +109,18 @@ async function humanitarianAidFunc(ctx) {
 async function usefulContacts(ctx) { 
     console.log(`${ctx.from.username} ${ctx.message.text} choosed`)
     let string = contacts.usefulContacts + contacts.medContacts;
-    return ctx.replyWithHTML(string, {
+    return ctx.editMessageText(string, {
         parse_mode: "HTML", 
         disable_web_page_preview: true, 
         protect_content:true,
-         ...Markup.inlineKeyboard([Markup.button.callback("Адреси реєстраційних центрів", 'btn_addresses_from_CONTACTS')])
+         ...Markup.inlineKeyboard()
     });
 }
 
 //info how look for apartments
 async function lookforanApartment(ctx) { 
-    console.log(`${ctx.from.username} ${ctx.message.text} choosed`)
-    await ctx.replyWithHTML(aboutApartments.aboutApartmentsMainPage, {
+    //console.log(`${ctx.from.username} ${ctx.message.text} choosed`)
+    await ctx.editMessageText(aboutApartments.aboutApartmentsMainPage, {
         parse_mode: "HTML",
         disable_web_page_preview: true,
         protect_content:true,
@@ -130,8 +130,8 @@ async function lookforanApartment(ctx) {
 
 //About Lithuania
 async function aboutLithuaniaFunc(ctx) {
-    console.log(`${ctx.from.username} ${ctx.message.text} choosed`)
-    await ctx.replyWithHTML(aboutLithuania.post, {
+    //console.log(`${ctx.from.username} ${ctx.message.text} choosed`)
+    await ctx.editMessageText(aboutLithuania.post, {
         parse_mode: "HTML",
         disable_web_page_preview: true,
         protect_content:true,
@@ -146,15 +146,15 @@ async function aboutLithuaniaFunc(ctx) {
 
 //show work posts
 async function workinLitva(ctx) {
-    console.log(`${ctx.from.username} workinLitva choosed`)
-    await ctx.replyWithHTML(workInfo.basicInfoAboutWork, {protect_content:true, parse_mode: "HTML",
+    //console.log(`${ctx.from.username} workinLitva choosed`)
+    await ctx.editMessageText(workInfo.basicInfoAboutWork, {protect_content:true, parse_mode: "HTML",
     disable_web_page_preview: true, ...Markup.inlineKeyboard(constans.MENU_ABOUT_WORK)})
 }
 
 //show menu about finance
 async function allowanceFinanceFunc(ctx) {
-    console.log(`${ctx.from.username} allowanceFinanceFunc choosed`)
-    await ctx.replyWithHTML(allowanceFinanceVar.infoAboutBanks, { 
+    //console.log(`${ctx.from.username} allowanceFinanceFunc choosed`)
+    await ctx.editMessageText(allowanceFinanceVar.infoAboutBanks, { 
         parse_mode: "HTML",
         disable_web_page_preview: true,
         protect_content:true,
@@ -171,7 +171,7 @@ async function allowanceFinanceFunc(ctx) {
 
 //freeStuff
 async function freeStuffForUkraineFunc(ctx) {
-    console.log(`${ctx.from.username} freeStuffForUkraineFunc choosed`)
+    //console.log(`${ctx.from.username} freeStuffForUkraineFunc choosed`)
     await ctx.replyWithHTML("Оберіть тему, яка вас цікавить", {
         parse_mode: 'HTML',
         disable_web_page_preview: true,

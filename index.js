@@ -68,20 +68,29 @@ bot.command('question', async (ctx) => {
 }); */
 
 //listening to, HEARS
-bot.hears(constans.MAIN_MENU_NAMES[0], (ctx) => mainMenuFunctionsFile.mainInfoAboutRefugee(ctx));
-bot.hears(constans.MAIN_MENU_NAMES[1], (ctx) => mainMenuFunctionsFile.usefulContacts(ctx));
-bot.hears(constans.MAIN_MENU_NAMES[2], (ctx) => mainMenuFunctionsFile.lookforanApartment(ctx));
-bot.hears(constans.MAIN_MENU_NAMES[3], (ctx) => mainMenuFunctionsFile.humanitarianAidFunc(ctx));
-bot.hears(constans.MAIN_MENU_NAMES[4], (ctx) => mainMenuFunctionsFile.infoAboutMedicineFunc(ctx));
-bot.hears(constans.MAIN_MENU_NAMES[5], (ctx) => mainMenuFunctionsFile.allowanceFinanceFunc(ctx));
-bot.hears(constans.MAIN_MENU_NAMES[6], (ctx) => mainMenuFunctionsFile.workinLitva(ctx));
-bot.hears(constans.MAIN_MENU_NAMES[7], (ctx) => mainMenuFunctionsFile.educationAndSportFunc(ctx));
+//bot.hears(constans.MAIN_MENU_NAMES[0], (ctx) => mainMenuFunctionsFile.mainInfoAboutRefugee(ctx));
+//bot.hears(constans.MAIN_MENU_NAMES[1], (ctx) => mainMenuFunctionsFile.usefulContacts(ctx));
+//bot.hears(constans.MAIN_MENU_NAMES[2], (ctx) => mainMenuFunctionsFile.lookforanApartment(ctx));
+//bot.hears(constans.MAIN_MENU_NAMES[3], (ctx) => mainMenuFunctionsFile.humanitarianAidFunc(ctx));
+//bot.hears(constans.MAIN_MENU_NAMES[4], (ctx) => mainMenuFunctionsFile.infoAboutMedicineFunc(ctx));
+//bot.hears(constans.MAIN_MENU_NAMES[5], (ctx) => mainMenuFunctionsFile.allowanceFinanceFunc(ctx));
+//bot.hears(constans.MAIN_MENU_NAMES[6], (ctx) => mainMenuFunctionsFile.workinLitva(ctx));
+//bot.hears(constans.MAIN_MENU_NAMES[7], (ctx) => mainMenuFunctionsFile.educationAndSportFunc(ctx));
 //bot.hears(constans.MAIN_MENU_NAMES[8], (ctx) => mainMenuFunctionsFile.freeStuffForUkraineFunc(ctx, currentPostFree));
-bot.hears(constans.MAIN_MENU_NAMES[8], (ctx) => mainMenuFunctionsFile.aboutLithuaniaFunc(ctx));
-bot.hears(constans.MAIN_MENU_NAMES[9], (ctx) => mainMenuFunctionsFile.showPostWithSites(ctx));
-bot.hears(constans.MAIN_MENU_NAMES[10], (ctx) => mainMenuFunctionsFile.writeToOwnerOfTelegram(ctx));
+//bot.hears(constans.MAIN_MENU_NAMES[8], (ctx) => mainMenuFunctionsFile.aboutLithuaniaFunc(ctx));
+//bot.hears(constans.MAIN_MENU_NAMES[9], (ctx) => mainMenuFunctionsFile.showPostWithSites(ctx));
+//bot.hears(constans.MAIN_MENU_NAMES[10], (ctx) => mainMenuFunctionsFile.writeToOwnerOfTelegram(ctx));
 
-
+bot.action('main_info', (ctx) => mainMenuFunctionsFile.mainInfoAboutRefugee(ctx))
+bot.action('about_flats', (ctx) => mainMenuFunctionsFile.lookforanApartment(ctx))
+bot.action('help_refugee', (ctx) => mainMenuFunctionsFile.humanitarianAidFunc(ctx))
+bot.action('medicine', (ctx) => mainMenuFunctionsFile.infoAboutMedicineFunc(ctx))
+bot.action('finance', (ctx) => mainMenuFunctionsFile.allowanceFinanceFunc(ctx))
+bot.action('work', (ctx) => mainMenuFunctionsFile.workinLitva(ctx))
+bot.action('education', (ctx) => mainMenuFunctionsFile.educationAndSportFunc(ctx))
+bot.action('lithuania', (ctx) => mainMenuFunctionsFile.aboutLithuaniaFunc(ctx))
+bot.action('social_media', (ctx) => mainMenuFunctionsFile.showPostWithSites(ctx))
+bot.action('owner', (ctx) => mainMenuFunctionsFile.writeToOwnerOfTelegram(ctx))
 
 bot.on("text",  async (ctx) => {
     console.log(`${ctx.chat.id} ${ctx.from.username} ${ctx.from.first_name} wrote text`)
@@ -102,8 +111,15 @@ bot.on("message", (ctx) => {
 
 //at the begining
 async function startBot(ctx) {
+    //await ctx.replyWithHTML("something went wrong.", Markup.removeKeyboard())
     return ctx.replyWithHTML(constans.GREETING, {protect_content: true, parse_mode: 'HTML',
-    disable_web_page_preview: true,  ...Markup.keyboard(constans.MAIN_MENU_ARRAY).resize()})
+    disable_web_page_preview: true,  ...Markup.inlineKeyboard([
+        [Markup.button.callback('Головна інформація' ,'main_info'), Markup.button.callback('Пошук житла' ,'about_flats')],
+        [Markup.button.callback('Пошук роботи' , 'work'), Markup.button.callback('Гум. допомога' ,'help_refugee')],
+        [Markup.button.callback('Медична допомога' ,'medicine'), Markup.button.callback('Фінанси' ,'finance')],
+        [Markup.button.callback('Про навчання' ,'education'), Markup.button.callback('Про Литву' ,'lithuania')],
+        [Markup.button.callback('Соц. мережі' ,'social_media'), Markup.button.callback('Розробники' ,'owner')],
+    ]).resize()})
     //return ctx.replyWithHTML("<b>Бот наразі знаходиться у розробці.</b> \n\nТакож було створено канал https://t.me/+uA00yl9KweQ1MTQy  \nЛаскаво просимо!", Markup.removeKeyboard())
 }
 

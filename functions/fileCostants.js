@@ -35,7 +35,6 @@ const MAIN_MENU_NAMES =
 ];
 
 const MENU_REGISTRATION = [
-    [Markup.button.callback("Адреси реєстраційних центрів", 'btn_addresses')],
     [Markup.button.callback("Якщо немає документів", "recoverDocuments_BTN")],
     [Markup.button.callback("Про загранпаспорт", "show_Eorope_Post_BTN")],
     [Markup.button.callback("Про посвідчення водія", "show_about_lisence_BTN")],
@@ -68,7 +67,6 @@ const MENU_ABOUT_EXTRACURRICULARSFOR_EDUCATIONMENU = [
 ]
 
 const MENU_ABOUT_APARTMENTS = [
-    [Markup.button.callback("Адреси реєстраційних центрів", 'adresses_in_apartment')],
     [Markup.button.callback("Сайти для пошук житла", 'lookforapartmants_BTN')]
 ]
 

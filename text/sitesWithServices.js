@@ -42,7 +42,7 @@ const medPost = `
 const products = `
 <b>Доставка їжи/продуктів</b>
 Готові страви/ресторанні страви:
-• https://food.bolt.eu
+• https://food.bolt.euvvv
 • https://wolt.com/ru
 Магазинні продукти:
 • https://barbora.lt

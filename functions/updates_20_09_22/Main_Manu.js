@@ -61,7 +61,7 @@ const MENU_BUTTONS_SITES = [
 const sitesForLearning = "Литовська мова";
 const appsInLit = "Корисні додатки"
 const reccForEveryCities = "Кафе, Ресторани, Розваги";
-const recTrash = 'Переробка сміття'
+//const recTrash = 'Переробка сміття'
 
 const ABOUT_LITHUANIA = [
     [Markup.button.callback(sitesForLearning, "language_btn")],
@@ -83,6 +83,7 @@ async function mainInfoAboutRefugee(ctx) {
 }
 
 async function showPostWithSites(ctx) {
+    await ctx.answerCbQuery();
     //console.log(`${ctx.from.username} ${ctx.message.text} choosed`)
     await ctx.editMessageText("Каталог сайтів", {
         parse_mode: 'HTML',
@@ -94,6 +95,7 @@ async function showPostWithSites(ctx) {
 
 //show info about humanitarianAid
 async function humanitarianAidFunc(ctx) {
+    await ctx.answerCbQuery();
     //console.log(`${ctx.from.username} ${ctx.message.text} choosed`)
     await ctx.editMessageText(humanInfo.humanAid, {protect_content:true , parse_mode: 'HTML',
     disable_web_page_preview: true,  ...Markup.inlineKeyboard(MENU_WITH_CITIES_OF_HUMAN_AID)});
@@ -112,7 +114,8 @@ async function usefulContacts(ctx) {
 }
 
 //info how look for apartments
-async function lookforanApartment(ctx) { 
+async function lookforanApartment(ctx) {
+    await ctx.answerCbQuery(); 
     //console.log(`${ctx.from.username} ${ctx.message.text} choosed`)
     await ctx.editMessageText(sites.houses, {
         parse_mode: "HTML",
@@ -124,6 +127,7 @@ async function lookforanApartment(ctx) {
 
 //About Lithuania
 async function aboutLithuaniaFunc(ctx) {
+    await ctx.answerCbQuery();
     //console.log(`${ctx.from.username} ${ctx.message.text} choosed`)
     await ctx.editMessageText(aboutLithuania.post, {
         parse_mode: "HTML",
@@ -135,12 +139,14 @@ async function aboutLithuaniaFunc(ctx) {
 
 //show work posts
 async function workinLitva(ctx) {
+    await ctx.answerCbQuery();
     //console.log(`${ctx.from.username} workinLitva choosed`)
     await ctx.editMessageText(sites.work, {protect_content:true, parse_mode: "HTML",
     disable_web_page_preview: true, ...Markup.inlineKeyboard(MENU_ABOUT_WORK)})
 }
 
 async function returnBackToMainMenuFunc(ctx) {
+    await ctx.answerCbQuery();
     //console.log(`${ctx.from.username} main info about refugee`)
     await ctx.editMessageText(GREETING, {
         protect_content: true,

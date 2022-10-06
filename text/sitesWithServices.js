@@ -249,21 +249,6 @@ const telegramChannelsList = `
 • <b><a href="https://t.me/vilnius_ukr">Вільнюс. Ми з України</a></b>
 (група Вільнюса, чат)
 
-• <b><a href="https://t.me/ukraincilitva/2015">Українці KAUNAS</a></b>
-(треба написати адміну і вони додадуть вас до групи, чат)
-
-• <b><a href="https://t.me/kaunasua">Україночки в Каунасі Творчість, дозвілля</a></b>
-(група, чат)
-
-• <b><a href="https://t.me/ukraincivklaipedi">Українці в Клайпеді</a></b>
-(група, чат)
-
-• <b><a href="https://t.me/+Q6KPSibr39hlOGUy">Укринці в Паланзі</a></b>
-(група, чат)
-
-• <b><a href="https://t.me/lubaukraina">Украинцы в Шауляй</a></b>
-(група, чат)
-
 • <b><a href="https://t.me/mamavilnius">Мама в Вильнюсе</a></b>
 (група Вільнюса для мам)
 
@@ -281,6 +266,21 @@ const telegramChannelsList = `
 
 • <b><a href="https://t.me/belarusVLN">Чат - Беларусы Вільні</a></b>
 (Чат білорусів, але теж можна ставити запитання про життя у Литві та дозвілля.)
+
+• <b><a href="https://t.me/ukraincilitva/2015">Українці KAUNAS</a></b>
+(треба написати адміну і вони додадуть вас до групи, чат)
+
+• <b><a href="https://t.me/kaunasua">Україночки в Каунасі Творчість, дозвілля</a></b>
+(група, чат)
+
+• <b><a href="https://t.me/ukraincivklaipedi">Українці в Клайпеді</a></b>
+(група, чат)
+
+• <b><a href="https://t.me/+Q6KPSibr39hlOGUy">Укринці в Паланзі</a></b>
+(група, чат)
+
+• <b><a href="https://t.me/lubaukraina">Украинцы в Шауляй</a></b>
+(група, чат)
 
 <b>Для того, щоб додати групу до списку, треба просто надіслати нам @ua_lt_inbox_bot повідомлення з посиланням на вашу групу та опис групи.</b>
 ` 

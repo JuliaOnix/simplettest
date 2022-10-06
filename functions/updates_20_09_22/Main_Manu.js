@@ -13,9 +13,9 @@ const GREETING = `${ADDITIONAL_INFO}`;
 const BACK_TO_THE_MAIN_MENU = Markup.button.callback('Головне меню', 'back_to_the_main_menu')
 
 const main_kaybord = [
-    [Markup.button.callback('Головна інформація' ,'main_info')],
-    [Markup.button.callback('Пошук роботи' , 'work'), Markup.button.callback('Пошук житла' ,'about_flats')],
-    [Markup.button.callback('Про Литву' ,'lithuania'), Markup.button.callback('Каталог сайтів' ,'social_media')],
+    [Markup.button.callback('⭐️ Головна інформація' ,'main_info')],
+    [Markup.button.callback('👷🏻 Пошук роботи' , 'work'), Markup.button.callback('🏡 Пошук житла' ,'about_flats')],
+    [Markup.button.callback('🇱🇹 Про Литву' ,'lithuania'), Markup.button.callback('🗂 Каталог сайтів' ,'social_media')],
 ];
 
 //menu for work block

@@ -155,7 +155,7 @@ async function showTelegramChannels(ctx) {
     return await ctx.editMessageText(sitesInfo.telegramChannelsList, {
         parse_mode: 'HTML',
         disable_web_page_preview: true,
-        protect_content: true,
+        protect_content: false,
         ...Markup.inlineKeyboard([constans.RETURN_BACK_TO_SITES])
     })
 }

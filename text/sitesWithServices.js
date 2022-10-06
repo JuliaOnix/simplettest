@@ -239,32 +239,46 @@ const telegramChannelsList = `
 <b>Групи у телеграмі:</b>
 • <b><a href="https://t.me/ua_lt_channel">Довідник | Заходи | Мітинги</a></b>
 (канал з інформацією про курси, новини, про допомогу та інше)
+
 • <b><a href="https://t.me/ukrainpatriot">Украинцы в Литве</a></b>
 (група Литви, чат)
+
 • <b><a href="https://t.me/ukraincilitva">Українці у Литві</a></b>
 (канал з посиланнями)
+
 • <b><a href="https://t.me/vilnius_ukr">Вільнюс. Ми з України</a></b>
 (група Вільнюса, чат)
+
 • <b><a href="https://t.me/ukraincilitva/2015">Українці KAUNAS</a></b>
 (треба написати адміну і вони додадуть вас до групи, чат)
+
 • <b><a href="https://t.me/kaunasua">Україночки в Каунасі Творчість, дозвілля</a></b>
 (група, чат)
+
 • <b><a href="https://t.me/ukraincivklaipedi">Українці в Клайпеді</a></b>
 (група, чат)
+
 • <b><a href="https://t.me/+Q6KPSibr39hlOGUy">Укринці в Паланзі</a></b>
 (група, чат)
+
 • <b><a href="https://t.me/lubaukraina">Украинцы в Шауляй</a></b>
 (група, чат)
+
 • <b><a href="https://t.me/mamavilnius">Мама в Вильнюсе</a></b>
 (група Вільнюса для мам)
+
 • <b><a href="https://t.me/vilnius_lithuania">ВильнюсЧат × Литва</a></b>
 (група, чат, спілкування на різні теми)
+
 • <b><a href="https://t.me/vilnius_dog">Vilnius Pet’s Community</a></b>
 (група, чат для тих, хто має тварин)
+
 • <b><a href="https://t.me/spravkavilnius">Нужный справочник Вильнюс</a></b>
 (Списки послуг у Вільнюсі: манікюр, педикюр, фотографи тощо.)
+
 • <b><a href="https://t.me/vilniusmarket">Vilnius Market</a></b>
 (Купівля/Продаж у Вільнюсі)
+
 • <b><a href="https://t.me/belarusVLN">Чат - Беларусы Вільні</a></b>
 (Чат білорусів, але теж можна ставити запитання про життя у Литві та дозвілля.)
 
